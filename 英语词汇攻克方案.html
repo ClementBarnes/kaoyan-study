@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>英语词汇攻克方案 · 词根组网法</title>
+<style>
+  :root{
+    --purple:#534AB7; --purple-l:#EEEDFE; --purple-d:#3C3489;
+    --blue:#185FA5; --blue-l:#E6F1FB; --blue-d:#0C447C;
+    --coral:#993C1D; --coral-l:#FAECE7; --coral-d:#712B13;
+    --ink:#2C2C2A; --muted:#5F5E5A; --line:#D3D1C7; --bg:#F8F7F4;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;color:var(--ink);background:var(--bg);line-height:1.75;font-size:15px;padding:24px;max-width:880px;margin:0 auto}
+  h1{font-size:26px;font-weight:600;letter-spacing:.5px;margin-bottom:4px}
+  h2{font-size:19px;font-weight:600;margin:36px 0 14px;padding-bottom:8px;border-bottom:2px solid var(--ink)}
+  h3{font-size:16px;font-weight:600;margin:22px 0 10px}
+  h4{font-size:14px;font-weight:600;margin:16px 0 8px;color:var(--muted)}
+  p{margin:8px 0}
+  .sub{color:var(--muted);font-size:14px;margin-bottom:6px}
+  .tag{display:inline-block;font-size:12px;padding:2px 10px;border-radius:20px;font-weight:500;margin-right:6px}
+  .t-purple{background:var(--purple-l);color:var(--purple-d)}
+  .t-blue{background:var(--blue-l);color:var(--blue-d)}
+  .t-coral{background:var(--coral-l);color:var(--coral-d)}
+  .hero{background:#fff;border:1px solid var(--line);border-radius:14px;padding:28px 30px;margin-bottom:8px}
+  .hero .meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+  .hero .meta span{font-size:13px;background:var(--bg);padding:5px 12px;border-radius:8px;border:1px solid var(--line)}
+  .card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:18px 20px;margin:12px 0}
+  table{width:100%;border-collapse:collapse;margin:12px 0;font-size:14px;background:#fff;border:1px solid var(--line);border-radius:10px;overflow:hidden}
+  th{background:#F1EFE8;text-align:left;padding:10px 12px;font-weight:600;font-size:13px;border-bottom:1px solid var(--line)}
+  td{padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+  tr:last-child td{border-bottom:none}
+  .warn{background:#FAEEDA;border:1px solid #FAC775;color:#633806;border-radius:10px;padding:14px 18px;margin:14px 0;font-size:14px}
+  .quote{font-style:italic;color:var(--muted);border-left:3px solid var(--line);padding-left:14px;margin:14px 0}
+  .root{border-left:5px solid var(--purple);background:#fff;border:1px solid var(--line);border-left:5px solid var(--purple);border-radius:10px;padding:16px 18px;margin:14px 0}
+  .root .rt{font-size:17px;font-weight:600;color:var(--purple-d)}
+  .root .mean{color:var(--coral-d);font-size:14px;font-weight:600}
+  .w{border:1px solid var(--line);border-radius:8px;padding:10px 12px;margin:8px 0;background:var(--bg)}
+  .w b{color:var(--blue-d)}
+  .hook{font-size:13px;color:var(--muted);margin-top:4px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  .mini{background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:12px 14px;font-size:13px}
+  .mini b{display:block;margin-bottom:4px;font-size:14px}
+  ul{margin:8px 0 8px 4px;padding-left:20px}
+  li{margin:5px 0}
+  footer{margin-top:40px;padding-top:18px;border-top:1px solid var(--line);color:var(--muted);font-size:12px;text-align:center}
+  @media print{body{background:#fff;padding:0;font-size:12pt}.root,.card{page-break-inside:avoid}a{color:var(--ink);text-decoration:none}}
+</style><style>
+  .back-home{position:fixed;right:18px;bottom:18px;z-index:9999;display:inline-flex;align-items:center;gap:6px;padding:10px 16px;background:#2C2C2A;color:#fff;font-size:14px;font-weight:600;text-decoration:none;border-radius:999px;box-shadow:0 4px 14px rgba(0,0,0,.22);font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif}
+  .back-home:active{transform:scale(.96)}
+  @media(max-width:600px){.back-home{padding:9px 13px;font-size:13px;right:12px;bottom:12px}}
+</style>
+</head>
+<body>
+<a href="index.html" class="back-home" title="返回备考中心首页">← 目录</a>
+
+
+<div class="hero">
+  <h1>英语词汇攻克方案</h1>
+  <p class="sub">针对「基础薄弱 + 首字母顺序记不住」量身定制 · 词根组网法</p>
+  <div class="meta">
+    <span>制定：2026.8.4（起跑日反馈后）</span>
+    <span>方法：词根组网 + 高频优先 + 语境记忆</span>
+    <span>每日新词：约 30 个（按根分组）</span>
+  </div>
+</div>
+
+<div class="warn"><b>为什么废弃首字母 A-Z 词表？</b> abandon、ability、able、about 这种排列，词与词之间没有语义联系，大脑只能硬记一串随机字母，今天记明天忘；且前 30 个里混着低频词，性价比极低。人的记忆靠<b>网络</b>——把同源词捆成一串，记一个根就能串起一串词。</div>
+
+<h2>一、三原则（背词前先记住）</h2>
+<div class="grid2">
+  <div class="mini"><b>① 词根词缀组网</b>按同源词根成串记，建立语义网络，记忆效率翻几倍。</div>
+  <div class="mini"><b>② 高频优先</b>先攻考试最常出现的词，不碰冷门词，把有限时间砸在刀刃上。</div>
+  <div class="mini"><b>③ 语境 + 间隔复习</b>单词放进例句里记；按艾宾浩斯曲线反复刷，对抗遗忘。</div>
+  <div class="mini"><b>④ 长难句先预习生词</b>拆句前先查该句生词，否则词汇缺口会掩盖你的语法能力。</div>
+</div>
+
+<h2>二、第一批词根组网（今日/明日可用）</h2>
+<p class="sub">每个词根配「记忆钩子」，把抽象词根和一个画面/汉字绑死，看见词根就想起意思。</p>
+
+<div class="root">
+  <div class="rt">词根 ① -spect / -spic &nbsp;<span class="mean">= 看（look / see）</span></div>
+  <p class="hook">钩子：spec → 联想「Spectator 观众（看比赛的人）」，核心就是"看"。</p>
+  <div class="w"><b>inspect</b> /ɪnˈspekt/ v. 检查，视察（in- 向内 + 看 → 往里看 → 检查）<br><span class="hook">例：The manager will inspect the factory. 经理将视察工厂。</span></div>
+  <div class="w"><b>respect</b> /rɪˈspekt/ v./n. 尊重（re- 回 + 看 → 回头看 → 看重 → 尊重）<br><span class="hook">例：We should respect the elderly. 我们应尊重老人。</span></div>
+  <div class="w"><b>expect</b> /ɪkˈspekt/ v. 期待，预期（ex- 向外 + 看 → 向外看 → 盼望）<br><span class="hook">例：I expect a call from him. 我等他的电话。</span></div>
+  <div class="w"><b>aspect</b> /ˈæspekt/ n. 方面，外观（a- 朝向 + 看 → 看过去的样子 → 面貌/方面）<br><span class="hook">例：This is only one aspect of the problem. 这只是问题的一个方面。</span></div>
+  <div class="w"><b>prospect</b> /ˈprɒspekt/ n. 前景，展望（pro- 向前 + 看 → 向前看 → 前景）<br><span class="hook">例：The prospect of promotion excited him. 升职的前景令他兴奋。</span></div>
+  <div class="w"><b>perspective</b> /pəˈspektɪv/ n. 观点，视角（per- 贯穿 + 看 → 看透 → 视角）<br><span class="hook">例：from my perspective 依我看。</span></div>
+</div>
+
+<div class="root">
+  <div class="rt">词根 ② -port &nbsp;<span class="mean">= 拿 / 运 / 带（carry / bring）</span></div>
+  <p class="hook">钩子：port → 联想「护照 passport（带在身上的通关证件）」「机场 port（港口）」，核心是"搬运/携带"。</p>
+  <div class="w"><b>import</b> /ˈɪmpɔːt/ v./n. 进口（im- 进 + 运 → 运进来 → 进口）<br><span class="hook">例：We import oil from abroad. 我们从国外进口石油。</span></div>
+  <div class="w"><b>export</b> /ˈekspɔːt/ v./n. 出口（ex- 出 + 运 → 运出去 → 出口）<br><span class="hook">反义对照记：import 进 / export 出。</span></div>
+  <div class="w"><b>transport</b> /trænsˈpɔːt/ v./n. 运输（trans- 跨越 + 运 → 运送）<br><span class="hook">例：Public transport is convenient. 公共交通很方便。</span></div>
+  <div class="w"><b>report</b> /rɪˈpɔːt/ v./n. 报告（re- 回 + 带 → 带回来 → 汇报）<br><span class="hook">例：He reported the news to his boss. 他向老板汇报了消息。</span></div>
+  <div class="w"><b>support</b> /səˈpɔːt/ v./n. 支持（sup- 在下 + 运 → 从下托住 → 支持）<br><span class="hook">例：Her family supports her decision. 家人支持她的决定。</span></div>
+  <div class="w"><b>portable</b> /ˈpɔːtəbl/ adj. 便携的（-able 能…的 → 能带走的）<br><span class="hook">例：a portable computer 便携电脑。</span></div>
+</div>
+
+<div class="root">
+  <div class="rt">词根 ③ -dict / -dic &nbsp;<span class="mean">= 说（say / speak）</span></div>
+  <p class="hook">钩子：dict → 联想「dictionary 字典（说话/词义的集子）」，核心是"说"。</p>
+  <div class="w"><b>dictate</b> /dɪkˈteɪt/ v. 口述，命令（dict 说 + -ate 动 → 说出来 → 口述/ dictate）<br><span class="hook">例：The boss dictated a letter. 老板口述了一封信。</span></div>
+  <div class="w"><b>predict</b> /prɪˈdɪkt/ v. 预测（pre- 前 + 说 → 预先说 → 预言）<br><span class="hook">例：Scientists predict the weather. 科学家预测天气。</span></div>
+  <div class="w"><b>contradict</b> /ˌkɒntrəˈdɪkt/ v. 反驳，矛盾（contra- 反 + 说 → 反着说 → 反驳）<br><span class="hook">例：His words contradict the facts. 他的话与事实矛盾。</span></div>
+  <div class="w"><b>indicate</b> /ˈɪndɪkeɪt/ v. 表明，指示（in- 朝向 + 说 → 说出来 → 指示）<br><span class="hook">例：The map indicates the way. 地图指示了路线。</span></div>
+  <div class="w"><b>dedicate</b> /ˈdedɪkeɪt/ v. 致力于，奉献（de- 加强 + 说 → 宣示 → 献身）<br><span class="hook">例：He dedicated himself to research. 他投身研究。</span></div>
+</div>
+
+<div class="root">
+  <div class="rt">词根 ④ -mit / -miss &nbsp;<span class="mean">= 送 / 派（send）</span></div>
+  <p class="hook">钩子：mit → 联想「missile 导弹（送出去的武器）」「admit 承认（送进来）」，核心是"送"。</p>
+  <div class="w"><b>admit</b> /ədˈmɪt/ v. 承认，准许进入（ad- 朝向 + 送 → 送进来 → 接纳/承认）<br><span class="hook">例：He admitted his mistake. 他承认了错误。</span></div>
+  <div class="w"><b>commit</b> /kəˈmɪt/ v. 犯（错），承诺（com- 共同 + 送 → 交付 → 承诺/犯）<br><span class="hook">例：commit a crime 犯罪；commit to 承诺。</span></div>
+  <div class="w"><b>permit</b> /pəˈmɪt/ v. 允许（per- 穿过 + 送 → 放行 → 允许）<br><span class="hook">例：Smoking is not permitted here. 此处禁止吸烟。</span></div>
+  <div class="w"><b>submit</b> /səbˈmɪt/ v. 提交，屈服（sub- 下 + 送 → 呈上去 → 提交）<br><span class="hook">例：Please submit your paper. 请提交论文。</span></div>
+  <div class="w"><b>mission</b> /ˈmɪʃn/ n. 任务，使命（-ion 名词 → 被派出去的事）<br><span class="hook">例：a business mission 商务使命。</span></div>
+  <div class="w"><b>dismiss</b> /dɪsˈmɪs/ v. 解雇，解散（dis- 离开 + 送 → 打发走 → 解散）<br><span class="hook">例：The case was dismissed. 案件被驳回。</span></div>
+</div>
+
+<div class="root">
+  <div class="rt">词根 ⑤ -struct &nbsp;<span class="mean">= 建造（build）</span></div>
+  <p class="hook">钩子：struct → 联想「structure 结构（建造出来的框架）」，核心是"建造"。</p>
+  <div class="w"><b>structure</b> /ˈstrʌktʃə/ n. 结构，建筑物<br><span class="hook">例：the structure of a sentence 句子结构。</span></div>
+  <div class="w"><b>construct</b> /kənˈstrʌkt/ v. 建造，构建（con- 共同 + 建 → 搭建）<br><span class="hook">例：construct a bridge 建桥。</span></div>
+  <div class="w"><b>instruct</b> /ɪnˈstrʌkt/ v. 指导，通知（in- 向内 + 建 → 建入脑中 → 教导）<br><span class="hook">例：The teacher instructed us. 老师指导了我们。</span></div>
+  <div class="w"><b>destroy</b> /dɪˈstrɔɪ/ v. 摧毁（de- 否定 + 建 → 拆掉 → 摧毁）<br><span class="hook">例：The fire destroyed the building. 大火摧毁了大楼。</span></div>
+</div>
+
+<h2>三、每日复习节奏（艾宾浩斯间隔）</h2>
+<p>只背不复习 = 白背。按下面节奏回刷，对抗遗忘曲线：</p>
+<table>
+<tr><th>学习日</th><th>当天操作</th><th>复习触发</th></tr>
+<tr><td>Day 1</td><td>学新词根组（约30词），每个词读2遍+记钩子+看例句</td><td>睡前过一遍</td></tr>
+<tr><td>Day 2</td><td>先快速复习 Day1，再学新组</td><td>—</td></tr>
+<tr><td>Day 4</td><td>复习 Day1 词（遮住释义自测）</td><td>—</td></tr>
+<tr><td>Day 7</td><td>复习 Day1 + Day4 之间所有词</td><td>—</td></tr>
+<tr><td>Day 15</td><td>总复盘，标记仍不熟的词，单独加练</td><td>—</td></tr>
+</table>
+<p class="sub">工具建议：用「墨墨背单词 / 不背单词」APP 自建词库导入上述词，APP 会自动按遗忘曲线推送复习；不想用 APP，就用本方案文档 + 遮住释义自测。</p>
+
+<h2>四、和长难句怎么配合</h2>
+<div class="card">
+  <p><b>正确顺序：</b></p>
+  <ol style="padding-left:22px">
+    <li>拿到长难句，<b>先圈出生词</b>，查释义、记进当天词根组；</li>
+    <li>生词解决后，<b>再拆语法结构</b>（找主干 → 拆修饰 → 验证翻译）；</li>
+    <li>翻译完，把句中的词根词再默背一遍，<b>在阅读语境里巩固一次</b>。</li>
+  </ol>
+  <p class="hook">首日长难句卡住，本质是生词挡路，不是语法差——按这个顺序来，你会发现语法其实跟得上。</p>
+</div>
+
+<div class="quote">词根组网不是让你背字典，是给你一把"猜词钥匙"：考场上遇到不认识的 -spect 词，你至少能猜到它和"看"有关。先求"眼熟"，再求"精确"，弱基础阶段别苛求一次背死。</div>
+
+<footer>
+  英语词汇攻克方案 · 配套《2027级MBA备考作战手册》<br>
+  方法基于 2026.8.4 首日自测反馈调整（英语基础薄弱、A-Z 失效、逻辑良好）
+</footer>
+
+</body>
+</html>

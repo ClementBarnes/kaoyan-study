@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>今日学习单 · 2026-08-05（周三·Day2）</title>
+<style>
+  :root{
+    --purple:#534AB7; --purple-l:#EEEDFE; --purple-d:#3C3489;
+    --blue:#185FA5; --blue-l:#E6F1FB; --blue-d:#0C447C;
+    --coral:#993C1D; --coral-l:#FAECE7; --coral-d:#712B13;
+    --ink:#2C2C2A; --muted:#5F5E5A; --line:#D3D1C7; --bg:#F8F7F4;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;color:var(--ink);background:var(--bg);line-height:1.75;font-size:15px;padding:24px;max-width:880px;margin:0 auto}
+  h1{font-size:26px;font-weight:600;letter-spacing:.5px;margin-bottom:4px}
+  h2{font-size:19px;font-weight:600;margin:34px 0 14px;padding-bottom:8px;border-bottom:2px solid var(--ink)}
+  h3{font-size:16px;font-weight:600;margin:22px 0 10px}
+  h4{font-size:14px;font-weight:600;margin:16px 0 8px;color:var(--muted)}
+  p{margin:8px 0}
+  .sub{color:var(--muted);font-size:14px;margin-bottom:6px}
+  .tag{display:inline-block;font-size:12px;padding:2px 10px;border-radius:20px;font-weight:500;margin-right:6px}
+  .t-purple{background:var(--purple-l);color:var(--purple-d)}
+  .t-blue{background:var(--blue-l);color:var(--blue-d)}
+  .t-coral{background:var(--coral-l);color:var(--coral-d)}
+  .hero{background:#fff;border:1px solid var(--line);border-radius:14px;padding:26px 30px;margin-bottom:8px}
+  .hero .meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+  .hero .meta span{font-size:13px;background:var(--bg);padding:5px 12px;border-radius:8px;border:1px solid var(--line)}
+  .card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:18px 20px;margin:12px 0}
+  .hour{border-left:5px solid;padding-left:18px;margin:18px 0}
+  .hour.h1{border-color:var(--purple)}
+  .hour.h2{border-color:var(--blue)}
+  .hour h3{margin-top:4px}
+  table{width:100%;border-collapse:collapse;margin:12px 0;font-size:14px;background:#fff;border:1px solid var(--line);border-radius:10px;overflow:hidden}
+  th{background:#F1EFE8;text-align:left;padding:9px 12px;font-weight:600;font-size:13px;border-bottom:1px solid var(--line)}
+  td{padding:9px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+  tr:last-child td{border-bottom:none}
+  .warn{background:#FAEEDA;border:1px solid #FAC775;color:#633806;border-radius:10px;padding:14px 18px;margin:14px 0;font-size:14px}
+  .quote{font-style:italic;color:var(--muted);border-left:3px solid var(--line);padding-left:14px;margin:14px 0}
+  .w{border:1px solid var(--line);border-radius:8px;padding:9px 12px;margin:6px 0;background:var(--bg)}
+  .w b{color:var(--blue-d)}
+  .hook{font-size:13px;color:var(--muted);margin-top:3px}
+  .root{display:inline-block;background:var(--purple-l);color:var(--purple-d);font-size:12px;padding:1px 7px;border-radius:5px;font-weight:600;margin-right:4px}
+  .step{background:#fff;border:1px solid var(--line);border-radius:8px;padding:10px 14px;margin:8px 0}
+  .step b{color:var(--purple-d)}
+  .checklist{background:#fff;border:1px solid var(--line);border-radius:10px;padding:14px 18px;margin:10px 0}
+  .checklist li{list-style:none;margin-left:-18px}
+  .checklist li:before{content:"☐ ";color:var(--muted);font-size:16px}
+  .ans{color:var(--coral-d);font-weight:600}
+  ul{margin:8px 0 8px 4px;padding-left:20px}
+  li{margin:5px 0}
+  footer{margin-top:36px;padding-top:18px;border-top:1px solid var(--line);color:var(--muted);font-size:12px;text-align:center}
+  code{background:var(--purple-l);color:var(--purple-d);padding:1px 6px;border-radius:5px;font-size:13px}
+  @media print{body{background:#fff;padding:0;font-size:12pt}.hour,.card{page-break-inside:avoid}}
+</style><style>
+  .back-home{position:fixed;right:18px;bottom:18px;z-index:9999;display:inline-flex;align-items:center;gap:6px;padding:10px 16px;background:#2C2C2A;color:#fff;font-size:14px;font-weight:600;text-decoration:none;border-radius:999px;box-shadow:0 4px 14px rgba(0,0,0,.22);font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif}
+  .back-home:active{transform:scale(.96)}
+  @media(max-width:600px){.back-home{padding:9px 13px;font-size:13px;right:12px;bottom:12px}}
+</style>
+</head>
+<body>
+<a href="index.html" class="back-home" title="返回备考中心首页">← 目录</a>
+
+
+<div class="hero">
+  <h1>今日学习单 · Day 2</h1>
+  <p class="sub">2026.8.5 周三 ｜ 在职备考第 2 天 ｜ 约 2 小时</p>
+  <div class="meta">
+    <span>第1小时：英语（单词+长难句）</span>
+    <span>第2小时：数学（算术与代数·开张）</span>
+    <span>逻辑下一节：周四</span>
+  </div>
+</div>
+
+<div class="warn"><b>今日定位：</b>英语继续用「不背单词 + 词根组网」；数学从今天正式起步，先打最底层的<b>实数与绝对值</b>——这是后面方程、应用题、数据分析的地基，联考里是"送分概念"，务必拿稳。逻辑感觉不错，周四再加码。</div>
+
+<div class="hour h1">
+  <h3><span class="tag t-purple">第 1 小时</span>英语 · 单词 + 长难句</h3>
+
+  <h4>① 单词（打开不背单词 · 约 30 分钟）</h4>
+  <ul>
+    <li>完成 App 今日推送：<b>新词 10–15 个 + 自动复习</b>。今天仍在<b>第一批词根（已导入的 27 词）</b>范围内，不用急着要第二批。</li>
+    <li>重点巩固两组：<span class="root">-spect</span>看（inspect/respect/expect/aspect/prospect/perspective）和 <span class="root">-port</span>运（import/export/transport/report/support/portable）。</li>
+    <li>每个词<b>点例句原声听 1–2 遍</b>，听熟比盯着字母有用。遇到卡壳的词，在 App 里标"难词"，它会多给你复习几次。</li>
+  </ul>
+
+  <h4>② 长难句 2（约 30 分钟 · 先查生词，再拆语法）</h4>
+  <div class="card">
+    <p><b>原句：</b></p>
+    <p style="font-size:16px;line-height:1.9">The report, <u>which was published yesterday</u>, indicates that the company will <b>transport</b> more products to <b>support</b> the local market.</p>
+
+    <p class="sub" style="margin-top:12px">📌 先预习这句的生词（标 <span class="root">词根</span> 的是你已导入的词，正好复习）：</p>
+    <div class="w"><b>report</b> /rɪˈpɔːt/ 报告 <span class="root">-port 运/带</span><span class="hook">带回来 → 汇报</span></div>
+    <div class="w"><b>publish</b> /ˈpʌblɪʃ/ 出版、发布 <span class="hook">生词，重点记</span></div>
+    <div class="w"><b>indicate</b> /ˈɪndɪkeɪt/ 表明 <span class="root">-dic 说</span><span class="hook">第一批已学</span></div>
+    <div class="w"><b>transport</b> /trænsˈpɔːt/ 运输 <span class="root">-port 运</span><span class="hook">第一批已学</span></div>
+    <div class="w"><b>product</b> /ˈprɒdʌkt/ 产品 <span class="hook">生词，记 pro-前 + -duct 引导 = 生产出的东西</span></div>
+    <div class="w"><b>support</b> /səˈpɔːt/ 支持 <span class="root">-port 运</span><span class="hook">第一批已学</span></div>
+    <div class="w"><b>local</b> /ˈləʊkl/ 当地的 <span class="hook">生词</span> ｜ <b>market</b> /ˈmɑːkɪt/ 市场（基础词，应认识）</div>
+
+    <p class="sub" style="margin-top:14px">🔧 三步法拆解：</p>
+    <div class="step"><b>第1步 · 找主干</b>：The report indicates that...（主 + 谓 + 宾；宾语是个 that 从句）</div>
+    <div class="step"><b>第2步 · 拆修饰</b>：
+      <ul>
+        <li><code>which was published yesterday</code> → 非限制性定语从句，修饰 the report，插在主语后。翻译时先<b>拿掉它</b>抓主干。</li>
+        <li><code>that the company will transport more products</code> → 宾语从句，作 indicates 的宾语。</li>
+        <li><code>to support the local market</code> → 不定式短语作目的状语，修饰 transport（"为了支持当地市场"）。</li>
+      </ul>
+    </div>
+    <div class="step"><b>第3步 · 验证翻译</b>：这份昨天发布的报告表明，该公司将运输更多产品，以支持当地市场。</div>
+
+    <p class="hook" style="margin-top:10px">💡 技巧：长句里逗号中间的 <code>which / who</code> 从句，先删掉，主干立刻浮现。今天这句用到的 <code>report / indicate / transport / support</code> 全是昨天词根表的词——在句子里再认一次，记得更牢。</p>
+  </div>
+</div>
+
+<div class="hour h2">
+  <h3><span class="tag t-blue">第 2 小时</span>数学 · 算术与代数基础（开张）</h3>
+  <p class="sub">今天只攻一块地基：实数分类 + 质数合数 + 绝对值。概念为主，配 3 道例题 + 3 道自练。</p>
+
+  <h4>知识点</h4>
+  <div class="card">
+    <p><b>1. 实数分类</b></p>
+    <ul>
+      <li><b>有理数</b>：整数（正整数 / 0 / 负整数）+ 分数（有限小数、循环小数）</li>
+      <li><b>无理数</b>：无限不循环小数（如 √2、π）</li>
+    </ul>
+    <p><b>2. 质数与合数（高频坑）</b></p>
+    <ul>
+      <li><b>质数</b>：大于 1、只有 1 和自身两个因数的自然数。前几个：2, 3, 5, 7, 11, 13, 17, 19…</li>
+      <li><span class="ans">2 是唯一的偶质数</span>——联考必考坑，记住。</li>
+      <li><b>1 既不是质数也不是合数</b>。</li>
+    </ul>
+    <p><b>3. 绝对值</b></p>
+    <ul>
+      <li>几何意义：数轴上某点到原点的距离，恒有 |a| ≥ 0。</li>
+      <li>代数定义：|a| = a（a ≥ 0）；|a| = −a（a &lt; 0）。</li>
+      <li>常用：|ab| = |a|·|b|；|a+b| ≤ |a| + |b|。</li>
+    </ul>
+  </div>
+
+  <h4>例题（先看，再盖住答案想一遍）</h4>
+  <table>
+    <tr><th>题</th><th>问</th><th>答</th></tr>
+    <tr><td>例1</td><td>下列既是质数又是偶数的是？ A.0 B.1 C.2 D.9</td><td class="ans">C（2 是唯一的偶质数）</td></tr>
+    <tr><td>例2</td><td>当 x &lt; 3 时，化简 |x − 3| = ？</td><td class="ans">3 − x（因为 x−3 &lt; 0）</td></tr>
+    <tr><td>例3</td><td>|−7| = ？</td><td class="ans">7</td></tr>
+  </table>
+
+  <h4>今日自练（动手做，别看答案）</h4>
+  <div class="card">
+    <ol style="padding-left:22px">
+      <li>写出 10 以内的所有质数。 <span class="ans">（答：2, 3, 5, 7）</span></li>
+      <li>当 a &gt; 0 时，|−a| = ？ <span class="ans">（答：a，因为 −a &lt; 0，|-a| = −(−a) = a）</span></li>
+      <li>判断：1 是质数。 <span class="ans">（答：错，1 非质非合）</span></li>
+    </ol>
+  </div>
+  <p class="hook">做不出来别慌，这是第一天，目标是"见过这些概念"。卡住的记下，明天继续滚。数学后面会越滚越快。</p>
+</div>
+
+<h2>睡前 10 分钟</h2>
+<div class="checklist">
+<ul>
+  <li>不背单词今日任务完成勾掉 ☑</li>
+  <li>长难句2 能自己默译出中文意思 ☑</li>
+  <li>数学例1–3 三个结论能口述（尤其"2是偶质数""1非质非合"）☑</li>
+  <li>日历上勾掉"8.5 ✓"，告诉自己：连续第 2 天，没断档。</li>
+</ul>
+</div>
+
+<div class="quote">老师的话：数学第一天不求快，把"实数/质数/绝对值"这几个地基概念认全，后面方程、应用题才有土可扎。你逻辑好，说明抽象规则你吃得进——数学也是规则，别怕它。</div>
+
+<footer>
+  今日学习单 · 2026.8.5（周三）· 配套《2027级MBA备考作战手册》与《英语词汇攻克方案》<br>
+  词表第一批（01_2026-08-04_词根词表.txt）已在 不背单词 中，今日不新增批次。
+</footer>
+
+</body>
+</html>
