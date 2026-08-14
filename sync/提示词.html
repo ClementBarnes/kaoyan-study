@@ -69,6 +69,7 @@
 【文件体系（工作区 C:\Users\cyql0\WorkBuddy\2026-08-04-00-52-59\）】
 - 源文件在根目录 + online/（GitHub Pages 部署目录）+ kaoyan-study/（Gitee 备份）。
 - online/ 是站点根：index.html（目录/首页）、今日学习单_YYYY-MM-DD.html、考研学习计划.html、英语词汇攻克方案.html、管综写作辅导手册.html、0N_..._词根词表.txt、在线中心二维码.png、.nojekyll。
+- online/sync/ 子目录：提示词.html（即本文件，跨电脑接手包，单独存放，不混入每日学习单列表）。
 - 每个子页面尾部有固定「← 目录」浮窗按钮（CSS 包在 &lt;style&gt; 内，href="../index.html" 用相对路径）。
 - 生成新学习单规范：沿用现有模板、含返回目录按钮、只用相对路径；.nojekyll 已存在，勿删（否则中文文件名 Pages 不生效）。
 
@@ -79,13 +80,13 @@
 - Gitee 备份：https://gitee.com/its-bald-its-bald/kaoyan_study （kaoyan-study/ 目录，独立仓库，按需手动 push）。CloudStudio 链接每次变已弃用。
 
 【每次生成前必做（同步机制）】
-1. 在 online/ 执行 git pull，确认别的电脑没改；并读取 提示词.html，核对「进度快照 / 最近更新」是否最新。
+1. 在 online/ 执行 git pull，确认别的电脑没改；并读取 sync/提示词.html，核对「进度快照 / 最近更新」是否最新。
 2. 生成当日学习单 + 新词根词表；更新 index.html 顶部「📌 同步提示词」与「最新」条目；同步新增/改动文件到根目录与 kaoyan-study/。
 3. 在 online/ 执行 git add -A &amp;&amp; commit &amp;&amp; push，触发 Pages 自动重部署（1-2 分钟生效，新文件 CDN 稍延迟）。
 4. 更新 提示词.html 的「进度快照」与「最近更新」日期，一并提交推送。
 
 【你今天要做的】
-按上述规范，生成 YYYY-MM-DD 当日学习单（Day N+1），词根继续第 N+1 批，更新 提示词.html 与 index.html，推送到 GitHub Pages。完成后用 present_files 展示成果。
+按上述规范，生成 YYYY-MM-DD 当日学习单（Day N+1），词根继续第 N+1 批，更新 sync/提示词.html 与 index.html，推送到 GitHub Pages。完成后用 present_files 展示成果。
 </textarea>
 
     <div class="snap">
