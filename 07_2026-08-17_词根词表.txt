@@ -1,0 +1,28 @@
+第07批 · 2026-08-17 · 词根词表（20词 · 4组新词根，去重未重复）
+
+-vers / -vert 转·转向
+reverse 反转、颠倒
+convert 转变、转化
+divert 使转向、使分心
+version 版本
+universe 宇宙（uni- 一 + vers → 转向一处 → 统一万物）
+
+-form 形·形状
+form 形式、形成
+reform 改革
+transform 使转变、使变形
+inform 通知、告知
+uniform 统一的（uni- 一 + form → 同一形状）
+
+-clud / -clus 关·闭
+include 包括（in- 内 + clud → 关进去）
+exclude 排除（ex- 外 + clud → 关在外）
+conclude 得出结论、结束（con- 全 + clud → 全关上）
+exclusive 独有的、排他的
+
+-pend / -pens 悬挂·称重·花费
+depend 依赖（de- 下 + pend → 挂在下）
+suspend 悬挂、暂停
+expense 花费、开支
+expensive 昂贵的
+pension 养老金、退休金
