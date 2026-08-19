@@ -1,0 +1,103 @@
+============================================================
+考研英语 · 词根单词总表（接手对照版）
+最近更新：2026-08-19 · Day14 · 第09批
+数据来源：01~09_词根词表.txt（一手源文件，非记忆）
+总条目：188 个（含重复族中的重复词，见末尾对照）
+用途：每次生成新词根前先扫「一、已用词根族清单」，
+      避免跨批复用旧族；新词根族须从未出现族中选取。
+============================================================
+
+【一、已用词根族清单（生成新批前先扫这一栏）】
+第01批: -spect  -port  -dict  -mit/-miss  -struct
+第02批: -form  -cess/-ceed  -cept  -ject
+第03批: -scrib  -tract  -vert  -fer
+第04批: -pose  -tain/-tend  -claim  -duc
+第05批: -scrib*  -sign  -fer*  -ject*      （*-与前期重复，见末尾）
+第06批: -cess/-ced*  -cur/-cours  -grad/-gress  -loc
+第07批: -vert*  -form*  -clud/-clus  -pend/-pens
+第08批: -vid/-vis  -press  -gress*  -rupt
+第09批: -voc/-vok  -sens/-sent  -nov  -spir
+
+【二、按批次全词表】
+
+=== 第01批 (08-04) 27词 ===
+-spect 看: inspect, respect, expect, aspect, prospect, perspective
+-port 拿·运: import, export, transport, report, support, portable
+-dict 说: dictate, predict, contradict, indicate, dedicate
+-mit/-miss 送: admit, commit, permit, submit, mission, dismiss
+-struct 建造: structure, construct, instruct, destroy
+
+=== 第02批 (08-07) 21词 ===
+-form 形: reform, transform, inform, perform, formal, formula
+-cess/-ceed 行走·过程: success, process, access, exceed, proceed
+-cept 取: accept, except, concept, receive, deceive
+-ject 扔: reject, project, object, subject, inject
+
+=== 第03批 (08-11) 20词 ===
+-scrib 写: describe, prescribe, subscribe, manuscript, inscribe
+-tract 拉: attract, contract, distract, extract, subtract
+-vert 转: convert, reverse, universe, advertise, diverse
+-fer 拿: refer, prefer, transfer, differ, offer
+
+=== 第04批 (08-13) 20词 ===
+-pose 放: compose, expose, oppose, propose, impose
+-tain/-tend 握·伸: contain, maintain, obtain, extend, intend
+-claim 喊: claim, proclaim, exclaim, acclaim, reclaim
+-duc 引: conduct, introduce, produce, reduce, educate
+
+=== 第05批 (08-14) 20词（含重复族，用户当复习放行）===
+-scrib 写*: describe, prescribe, subscribe, transcript, manuscript
+-sign 标记: signal, signify, design, assign, resign
+-fer 拿*: refer, transfer, infer, confer, differ
+-ject 扔*: reject, inject, project, object, subject
+
+=== 第06批 (08-16) 20词 ===
+-cess/-ced 走·去: proceed, succeed, exceed, recede, precede
+-cur/-cours 跑·流: occur, recur, current, currency, concur
+-grad/-gress 步·级: progress, gradual, grade, aggressive, degrade
+-loc 放·位置: locate, local, location, allocate, dislocate
+
+=== 第07批 (08-17) 20词 ===
+-vert/-vers 转·转向: reverse, convert, divert, version, universe
+-form 形: form, reform, transform, inform, uniform
+-clud/-clus 关·闭: include, exclude, conclude, exclusive
+-pend/-pens 悬挂·称重·花费: depend, suspend, expense, expensive, pension
+
+=== 第08批 (08-18) 20词 ===
+-vid/-vis 看·看见: video, visible, visit, advise, evident
+-press 压·按: press, pressure, compress, depress, express
+-gress 走·步伐: progress, congress, aggressive, digress, regress
+-rupt 断·破: rupture, abrupt, bankrupt, corrupt, disrupt
+
+=== 第09批 (08-19) 20词 ===
+-voc/-vok 叫·呼·声: voice, vocal, advocate, evoke, provoke
+-sens/-sent 感觉·感知: sense, sensible, sensitive, consent, resent
+-nov 新·更新: novel, innovate, innovation, novice, renew
+-spir 呼吸·精神: spirit, inspire, aspire, expire, conspire
+
+【三、重复族对照（审计确认，后续生成须规避）】
+- 第05批 -scrib 撞第03批：describe / prescribe / subscribe / manuscript
+- 第05批 -fer 撞第03批：refer / transfer / differ / offer（另加 infer / confer）
+- 第05批 -ject 撞第02批：reject / project / object / subject / inject
+- 第06批 -cess/-ced 撞第02批：proceed / exceed
+- 第07批 -vert 撞第03批：reverse / convert / universe
+- 第07批 -form 撞第02批：reform / transform / inform
+- 第08批 -gress 撞第06批：progress / aggressive
+说明：上述为历史事实。第05批用户已决定"当复习、不重做"；
+      其余重复为误判去重所致。后续新批只用未出现族
+      （如 -cap 抓 / -leg 绑 / -mand 命令 / -min 小 / -mob 动 /
+       -sol 单独 / -lev 轻 / -magn 大 / -cert 确定 等）。
+
+【四、待选未用族（供下一批参考）】
+-cap/-cip 抓: capture, capable, occupy, participate
+-leg/-lig 绑·选: legal, legend, intelligent, eligible
+-mand/-mend 命令: command, demand, recommend
+-min/-minu 小: minute, minimum, diminish
+-mob/-mot 动: mobile, motion, promote, remote
+-sol 单独: sole, solid, solve, absolute
+-lev/-liev 轻·升: level, elevate, relieve
+-magn 大: magnitude, magnificent, magnify
+-cert/-cern 确定·分辨: certain, concern, discern
+-fac/-fic/-fact 做: fact, factory, affect, effect, facility
+（以上仅列族与示例，生成新批时按本清单择未用族展开 20 词）
+============================================================
