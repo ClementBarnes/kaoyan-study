@@ -12,7 +12,7 @@
 3. 所有页面（含脚本生成页）必须含「←目录」返回首页浮窗（.back-home）：根目录页面 href='index.html'、子目录页面 '../index.html'；勿删 .nojekyll。
 4. 新词日（当天学习清单含新批次单词）必须加「单词阅读」环节：用 TTS 听书音频过一遍本批新词（单词×2→词义→例句→翻译），可直接开《单词总表.html》点该批「▶ 联播本批」连续听。顺序固定：先听建立印象 → 再正式背单词。
 
-【文件体系】工作区 = 根目录（工作稿）+ online/（GitHub Pages 部署根，唯一托管+备份）。online/ 含：index.html / 今日学习单_YYYY-MM-DD.html / 考研学习计划.html / 英语词汇攻克方案.html / 管综写作辅导手册.html / 单词总表.html（已合并听书：每词播放条+每批「联播本批」按钮）/ 单词总表.txt / 0N_*_词根词表.txt / kaoyan_words_bbdc.txt / audio/（TTS 音频）/ 听书.html（跳转单词总表）/ sync/。
+【文件体系】工作区 = 根目录（工作稿）+ online/（GitHub Pages 部署根，唯一托管+备份）。根目录含 tools/（生成脚本：build_master/gen_audio/gen_bbdc/gen_qr/add_back_button/future_batches）。online/ 含：index.html / 今日学习单_YYYY-MM-DD.html / 考研学习计划.html / 英语词汇攻克方案.html / 管综写作辅导手册.html / 单词总表.html（已合并听书：每词播放条+每批「联播本批」按钮）/ 单词总表.txt / 0N_*_词根词表.txt / kaoyan_words_bbdc.txt / audio/（TTS 音频）/ 听书.html（跳转单词总表）/ sync/。
 
 【同步流程】1) online/ git pull → 2) 读 sync/提示词.txt 核进度 → 3) 生成 + 改 index「最新」+ 同步根与 online/（两处同步单推）→ 4) online/ add-commit-push → 5) 更新 sync 两文件一并推。
 
