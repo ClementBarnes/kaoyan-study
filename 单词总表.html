@@ -1,154 +1,375 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang='zh-CN'>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>考研英语 · 词根单词总表</title>
+<meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<title>考研英语 · 词根单词总表（组网格式）</title>
 <style>
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-  body { font-family: "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
-         background: #f4f6fb; color: #1f2937; line-height: 1.7; padding: 32px 18px 80px; }
-  .wrap { max-width: 920px; margin: 0 auto; }
-  h1 { font-size: 26px; color: #1d4ed8; margin-bottom: 6px; }
-  .meta { color: #6b7280; font-size: 13px; margin-bottom: 20px; }
-  .banner { background: linear-gradient(135deg,#dbeafe,#eff6ff); border: 1px solid #bfdbfe;
-            border-radius: 12px; padding: 14px 18px; margin-bottom: 26px; font-size: 14px; }
-  .banner b { color: #1d4ed8; }
-  .batch { background: #fff; border-radius: 12px; padding: 18px 22px; margin-bottom: 18px;
-           box-shadow: 0 2px 10px rgba(0,0,0,.05); border-left: 5px solid #1d4ed8; }
-  .batch h2 { font-size: 18px; color: #111827; margin-bottom: 12px; }
-  .batch h2 .cnt { font-size: 13px; color: #6b7280; font-weight: normal; margin-left: 8px; }
-  .repeat { border-left-color: #f59e0b; }
-  .grp { margin: 10px 0; }
-  .grp .root { display: inline-block; background: #eef2ff; color: #3730a3; font-weight: 700;
-               padding: 2px 10px; border-radius: 6px; font-size: 14px; margin-right: 8px; }
-  .grp .words { color: #374151; }
-  .grp .words span { display: inline-block; margin: 2px 6px 2px 0; }
-  .star { color: #f59e0b; font-weight: 700; }
-  .dup-note { background: #fffbeb; border: 1px solid #fde68a; border-radius: 10px;
-              padding: 14px 18px; margin: 22px 0; font-size: 13.5px; }
-  .dup-note h3 { color: #b45309; font-size: 15px; margin-bottom: 8px; }
-  .dup-note li { margin: 4px 0 4px 18px; }
-  .pool { background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 10px;
-          padding: 14px 18px; margin-top: 22px; font-size: 13.5px; }
-  .pool h3 { color: #15803d; font-size: 15px; margin-bottom: 8px; }
-  .fab { position: fixed; right: 18px; bottom: 18px; background: #1d4ed8; color: #fff;
-         text-decoration: none; padding: 10px 16px; border-radius: 24px; font-size: 14px;
-         box-shadow: 0 4px 14px rgba(29,78,216,.4); }
-  .fab:hover { background: #1e40af; }
+* { box-sizing: border-box; }
+body { font-family: system-ui, "Segoe UI", "Microsoft YaHei", sans-serif;
+       background:#f6f7f9; color:#1f2937; max-width:940px; margin:0 auto; padding:22px 18px 60px; line-height:1.6; }
+h1 { font-size:24px; margin:0 0 4px; }
+.sub { color:#6b7280; font-size:14px; margin:0 0 18px; }
+.note { background:#fffbeb; border:1px solid #fde68a; border-radius:8px; padding:10px 14px; font-size:13px; color:#92400e; margin:0 0 22px; }
+.batch { margin:26px 0; }
+.batch > h2 { color:#fff; padding:9px 16px; border-radius:8px; font-size:17px; margin:0 0 14px; }
+.root { border:1px solid #e5e7eb; border-left:6px solid #999; border-radius:8px; padding:12px 16px; margin:14px 0; background:#fff; }
+.rt { font-weight:700; font-size:15.5px; margin-bottom:2px; }
+.mean { font-weight:400; color:#374151; }
+.hook { background:#fff7ed; border-left:3px solid #f59e0b; padding:6px 11px; margin:8px 0; border-radius:4px; font-size:13.5px; color:#9a3412; }
+.w { padding:7px 0; border-bottom:1px dashed #eef0f2; font-size:14px; }
+.w:last-child { border-bottom:none; }
+.w b { color:#111827; font-size:14.5px; }
+.ipa { color:#6b7280; font-style:italic; margin:0 4px; }
+.brk { color:#b45309; }
+.ex { display:block; color:#374151; margin-top:3px; font-size:13px; }
+footer { margin-top:34px; font-size:12.5px; color:#9ca3af; border-top:1px solid #e5e7eb; padding-top:14px; }
 </style>
 </head>
 <body>
-<div class="wrap">
-  <h1>考研英语 · 词根单词总表</h1>
-  <div class="meta">最近更新：2026-08-20 · Day15 · 第10批 ｜ 数据来源：01~10 词根词表（一手源文件）｜ 总条目 208 个</div>
-
-  <div class="banner">
-    <b>接手对照说明：</b>每次生成新词根前，先扫下面的批次看「词根族」，避免跨批复用旧族。
-    带 <span class="star">*</span> 的批次含与前期重复的族（见页面底部对照）。后续新批只用未出现族。
-  </div>
-
-  <div class="batch">
-    <h2>第01批 <span class="cnt">08-04 · 27词</span></h2>
-    <div class="grp"><span class="root">-spect 看</span><span class="words"><span>inspect</span><span>respect</span><span>expect</span><span>aspect</span><span>prospect</span><span>perspective</span></span></div>
-    <div class="grp"><span class="root">-port 拿·运</span><span class="words"><span>import</span><span>export</span><span>transport</span><span>report</span><span>support</span><span>portable</span></span></div>
-    <div class="grp"><span class="root">-dict 说</span><span class="words"><span>dictate</span><span>predict</span><span>contradict</span><span>indicate</span><span>dedicate</span></span></div>
-    <div class="grp"><span class="root">-mit/-miss 送</span><span class="words"><span>admit</span><span>commit</span><span>permit</span><span>submit</span><span>mission</span><span>dismiss</span></span></div>
-    <div class="grp"><span class="root">-struct 建造</span><span class="words"><span>structure</span><span>construct</span><span>instruct</span><span>destroy</span></span></div>
-  </div>
-
-  <div class="batch">
-    <h2>第02批 <span class="cnt">08-07 · 21词</span></h2>
-    <div class="grp"><span class="root">-form 形</span><span class="words"><span>reform</span><span>transform</span><span>inform</span><span>perform</span><span>formal</span><span>formula</span></span></div>
-    <div class="grp"><span class="root">-cess/-ceed 行走·过程</span><span class="words"><span>success</span><span>process</span><span>access</span><span>exceed</span><span>proceed</span></span></div>
-    <div class="grp"><span class="root">-cept 取</span><span class="words"><span>accept</span><span>except</span><span>concept</span><span>receive</span><span>deceive</span></span></div>
-    <div class="grp"><span class="root">-ject 扔</span><span class="words"><span>reject</span><span>project</span><span>object</span><span>subject</span><span>inject</span></span></div>
-  </div>
-
-  <div class="batch">
-    <h2>第03批 <span class="cnt">08-11 · 20词</span></h2>
-    <div class="grp"><span class="root">-scrib 写</span><span class="words"><span>describe</span><span>prescribe</span><span>subscribe</span><span>manuscript</span><span>inscribe</span></span></div>
-    <div class="grp"><span class="root">-tract 拉</span><span class="words"><span>attract</span><span>contract</span><span>distract</span><span>extract</span><span>subtract</span></span></div>
-    <div class="grp"><span class="root">-vert 转</span><span class="words"><span>convert</span><span>reverse</span><span>universe</span><span>advertise</span><span>diverse</span></span></div>
-    <div class="grp"><span class="root">-fer 拿</span><span class="words"><span>refer</span><span>prefer</span><span>transfer</span><span>differ</span><span>offer</span></span></div>
-  </div>
-
-  <div class="batch">
-    <h2>第04批 <span class="cnt">08-13 · 20词</span></h2>
-    <div class="grp"><span class="root">-pose 放</span><span class="words"><span>compose</span><span>expose</span><span>oppose</span><span>propose</span><span>impose</span></span></div>
-    <div class="grp"><span class="root">-tain/-tend 握·伸</span><span class="words"><span>contain</span><span>maintain</span><span>obtain</span><span>extend</span><span>intend</span></span></div>
-    <div class="grp"><span class="root">-claim 喊</span><span class="words"><span>claim</span><span>proclaim</span><span>exclaim</span><span>acclaim</span><span>reclaim</span></span></div>
-    <div class="grp"><span class="root">-duc 引</span><span class="words"><span>conduct</span><span>introduce</span><span>produce</span><span>reduce</span><span>educate</span></span></div>
-  </div>
-
-  <div class="batch repeat">
-    <h2>第05批 <span class="cnt">08-14 · 20词 · 含重复族 <span class="star">*</span></span></h2>
-    <div class="grp"><span class="root">-scrib 写 <span class="star">*</span></span><span class="words"><span>describe</span><span>subscribe</span><span>prescribe</span><span>transcript</span><span>manuscript</span></span></div>
-    <div class="grp"><span class="root">-sign 标记</span><span class="words"><span>signal</span><span>signify</span><span>design</span><span>assign</span><span>resign</span></span></div>
-    <div class="grp"><span class="root">-fer 拿 <span class="star">*</span></span><span class="words"><span>refer</span><span>transfer</span><span>infer</span><span>confer</span><span>differ</span></span></div>
-    <div class="grp"><span class="root">-ject 扔 <span class="star">*</span></span><span class="words"><span>reject</span><span>inject</span><span>project</span><span>object</span><span>subject</span></span></div>
-  </div>
-
-  <div class="batch">
-    <h2>第06批 <span class="cnt">08-16 · 20词</span></h2>
-    <div class="grp"><span class="root">-cess/-ced 走·去</span><span class="words"><span>proceed</span><span>succeed</span><span>exceed</span><span>recede</span><span>precede</span></span></div>
-    <div class="grp"><span class="root">-cur/-cours 跑·流</span><span class="words"><span>occur</span><span>recur</span><span>current</span><span>currency</span><span>concur</span></span></div>
-    <div class="grp"><span class="root">-grad/-gress 步·级</span><span class="words"><span>progress</span><span>gradual</span><span>grade</span><span>aggressive</span><span>degrade</span></span></div>
-    <div class="grp"><span class="root">-loc 放·位置</span><span class="words"><span>locate</span><span>local</span><span>location</span><span>allocate</span><span>dislocate</span></span></div>
-  </div>
-
-  <div class="batch repeat">
-    <h2>第07批 <span class="cnt">08-17 · 20词 · 含重复族 <span class="star">*</span></span></h2>
-    <div class="grp"><span class="root">-vert/-vers 转 <span class="star">*</span></span><span class="words"><span>reverse</span><span>convert</span><span>divert</span><span>version</span><span>universe</span></span></div>
-    <div class="grp"><span class="root">-form 形 <span class="star">*</span></span><span class="words"><span>form</span><span>reform</span><span>transform</span><span>inform</span><span>uniform</span></span></div>
-    <div class="grp"><span class="root">-clud/-clus 关·闭</span><span class="words"><span>include</span><span>exclude</span><span>conclude</span><span>exclusive</span></span></div>
-    <div class="grp"><span class="root">-pend/-pens 悬挂·称重·花费</span><span class="words"><span>depend</span><span>suspend</span><span>expense</span><span>expensive</span><span>pension</span></span></div>
-  </div>
-
-  <div class="batch">
-    <h2>第08批 <span class="cnt">08-18 · 20词</span></h2>
-    <div class="grp"><span class="root">-vid/-vis 看·看见</span><span class="words"><span>video</span><span>visible</span><span>visit</span><span>advise</span><span>evident</span></span></div>
-    <div class="grp"><span class="root">-press 压·按</span><span class="words"><span>press</span><span>pressure</span><span>compress</span><span>depress</span><span>express</span></span></div>
-    <div class="grp"><span class="root">-gress 走·步伐 <span class="star"></span></span><span class="words"><span>progress</span><span>congress</span><span>aggressive</span><span>digress</span><span>regress</span></span></div>
-    <div class="grp"><span class="root">-rupt 断·破</span><span class="words"><span>rupture</span><span>abrupt</span><span>bankrupt</span><span>corrupt</span><span>disrupt</span></span></div>
-  </div>
-
-  <div class="batch">
-    <h2>第09批 <span class="cnt">08-19 · 20词</span></h2>
-    <div class="grp"><span class="root">-voc/-vok 叫·呼·声</span><span class="words"><span>voice</span><span>vocal</span><span>advocate</span><span>evoke</span><span>provoke</span></span></div>
-    <div class="grp"><span class="root">-sens/-sent 感觉·感知</span><span class="words"><span>sense</span><span>sensible</span><span>sensitive</span><span>consent</span><span>resent</span></span></div>
-    <div class="grp"><span class="root">-nov 新·更新</span><span class="words"><span>novel</span><span>innovate</span><span>innovation</span><span>novice</span><span>renew</span></span></div>
-    <div class="grp"><span class="root">-spir 呼吸·精神</span><span class="words"><span>spirit</span><span>inspire</span><span>aspire</span><span>expire</span><span>conspire</span></span></div>
-  </div>
-
-  <div class="batch">
-    <h2>第10批 <span class="cnt">08-20 · 20词</span></h2>
-    <div class="grp"><span class="root">-cap/-cip 抓·取</span><span class="words"><span>capture</span><span>capable</span><span>capacity</span><span>captive</span><span>occupy</span></span></div>
-    <div class="grp"><span class="root">-leg/-lig 选·绑·读</span><span class="words"><span>legal</span><span>legend</span><span>college</span><span>eligible</span><span>privilege</span></span></div>
-    <div class="grp"><span class="root">-mand/-mend 命令·托付</span><span class="words"><span>command</span><span>demand</span><span>recommend</span><span>mandatory</span><span>commander</span></span></div>
-    <div class="grp"><span class="root">-min/-minu 小</span><span class="words"><span>minute</span><span>minimum</span><span>minor</span><span>minority</span><span>diminish</span></span></div>
-  </div>
-
-  <div class="dup-note">
-    <h3>重复族对照（审计确认，后续生成须规避）</h3>
-    <ul>
-      <li>第05批 -scrib 撞第03批：describe / prescribe / subscribe / manuscript</li>
-      <li>第05批 -fer 撞第03批：refer / transfer / differ / offer（另加 infer / confer）</li>
-      <li>第05批 -ject 撞第02批：reject / project / object / subject / inject</li>
-      <li>第06批 -cess/-ced 撞第02批：proceed / exceed</li>
-      <li>第07批 -vert 撞第03批：reverse / convert / universe</li>
-      <li>第07批 -form 撞第02批：reform / transform / inform</li>
-      <li>第08批 -gress 撞第06批：progress / aggressive</li>
-    </ul>
-    <p style="margin-top:8px;">说明：第05批用户已决定"当复习、不重做"；其余重复为误判去重所致。后续新批只用未出现族。</p>
-  </div>
-
-  <div class="pool">
-    <h3>待选未用族（供下一批参考）</h3>
-    <p>-mob/-mot 动：mobile / motion / promote / remote ｜ -sol 单独：sole / solid / solve / absolute ｜ -lev/-liev 轻·升：level / elevate / relieve ｜ -magn 大：magnitude / magnificent / magnify ｜ -cert/-cern 确定·分辨：certain / concern / discern ｜ -fac/-fic/-fact 做：fact / factory / affect / effect / facility ｜ -pel/-puls 推：compel / expel / propel / pulse ｜ -sec/-sequ 跟随：sequence / consequence / follow / execute ｜ -gen/-gener 生·类：generate / general / genius / generous ｜ -solv/-solut 解：solve / solution / resolve</p>
-  </div>
+<h1>考研英语 · 词根单词总表（词根组网法）</h1>
+<p class='sub'>按「第一批词根组网」格式整理 · 每个词根配记忆钩子，每个单词结构拆解+例句 · 相邻批次配色不同 · 跨批重复词根已合并</p>
+<div class='note'>说明：原总表 208 个词条（含跨批重复）已去重合并为 <b>34 个词根族</b>、约 <b>186</b> 个不重复词。重复族（-scrib/-fer/-ject 在第05批；-cess 在第06批；-vert/-form 在第07批；-gress 在第08批）均并入其首现批次，新词（如 transcript / divert / infer / congress 等）一并归入对应词根下。下方按批次展示，每批一种颜色，相邻批次颜色不同。</div>
+<div class='batch'><h2 style='background:#2563eb'>第01批 (08-04) · 27词</h2>
+<div class='root' style='border-left-color:#2563eb'>
+<div class='rt' style='color:#2563eb'>词根 ① -spect / -spic <span class='mean'>= 看（look / see）</span></div>
+<p class='hook'>钩子：spec → 联想「spectator 观众（看比赛的人）」，核心就是“看”。</p>
+<div class='w'><b>inspect</b><span class='ipa'>/ɪnˈspekt/</span>v. 检查，视察<span class='brk'>（in- 向内 + spect 看 → 往里看 → 检查）</span><span class='ex'>例：The manager will inspect the factory. 经理将视察工厂。</span></div>
+<div class='w'><b>respect</b><span class='ipa'>/rɪˈspekt/</span>v./n. 尊重<span class='brk'>（re- 回 + spect 看 → 回头看重 → 尊重）</span><span class='ex'>例：We should respect the elderly. 我们应尊重老人。</span></div>
+<div class='w'><b>expect</b><span class='ipa'>/ɪkˈspekt/</span>v. 期待，预期<span class='brk'>（ex- 向外 + spect 看 → 向外望 → 期待）</span><span class='ex'>例：I expect a call from him. 我等他的电话。</span></div>
+<div class='w'><b>aspect</b><span class='ipa'>/ˈæspekt/</span>n. 方面，外观<span class='brk'>（a- 朝向 + spect 看 → 看过去的样子 → 面貌/方面）</span><span class='ex'>例：This is only one aspect of the problem. 这只是问题的一个方面。</span></div>
+<div class='w'><b>prospect</b><span class='ipa'>/ˈprɒspekt/</span>n. 前景，展望<span class='brk'>（pro- 向前 + spect 看 → 向前看 → 前景）</span><span class='ex'>例：The prospect of promotion excited him. 升职的前景令他兴奋。</span></div>
+<div class='w'><b>perspective</b><span class='ipa'>/pəˈspektɪv/</span>n. 观点，视角<span class='brk'>（per- 贯穿 + spect 看 → 看透 → 视角）</span><span class='ex'>例：From my perspective, it is wrong. 依我看，这是错的。</span></div>
 </div>
-
-<a class="fab" href="index.html">← 目录</a>
-</body>
-</html>
+<div class='root' style='border-left-color:#2563eb'>
+<div class='rt' style='color:#2563eb'>词根 ② -port <span class='mean'>= 拿 / 运 / 带（carry / bring）</span></div>
+<p class='hook'>钩子：port → 联想「passport 护照（带在身上的通关证件）」「airport 机场/港口」，核心是“搬运/携带”。</p>
+<div class='w'><b>import</b><span class='ipa'>/ˈɪmpɔːt/</span>v./n. 进口<span class='brk'>（im- 进 + port 运 → 运进来 → 进口）</span><span class='ex'>例：We import oil from abroad. 我们从国外进口石油。</span></div>
+<div class='w'><b>export</b><span class='ipa'>/ˈekspɔːt/</span>v./n. 出口<span class='brk'>（ex- 出 + port 运 → 运出去 → 出口）</span><span class='ex'>例：We export goods to Europe. 我们向欧洲出口商品。</span></div>
+<div class='w'><b>transport</b><span class='ipa'>/trænsˈpɔːt/</span>v./n. 运输<span class='brk'>（trans- 跨越 + port 运 → 运送）</span><span class='ex'>例：Public transport is convenient. 公共交通很方便。</span></div>
+<div class='w'><b>report</b><span class='ipa'>/rɪˈpɔːt/</span>v./n. 报告<span class='brk'>（re- 回 + port 带 → 带回来 → 汇报）</span><span class='ex'>例：He reported the news to his boss. 他向老板汇报了消息。</span></div>
+<div class='w'><b>support</b><span class='ipa'>/səˈpɔːt/</span>v./n. 支持<span class='brk'>（sup- 在下 + port 托 → 从下托住 → 支持）</span><span class='ex'>例：Her family supports her decision. 家人支持她的决定。</span></div>
+<div class='w'><b>portable</b><span class='ipa'>/ˈpɔːtəbl/</span>adj. 便携的<span class='brk'>（port 运 + -able 能…的 → 能带走的）</span><span class='ex'>例：a portable computer 便携电脑</span></div>
+</div>
+<div class='root' style='border-left-color:#2563eb'>
+<div class='rt' style='color:#2563eb'>词根 ③ -dict / -dic <span class='mean'>= 说（say / speak）</span></div>
+<p class='hook'>钩子：dict → 联想「dictionary 字典（说/词义的集子）」，核心是“说”。</p>
+<div class='w'><b>dictate</b><span class='ipa'>/dɪkˈteɪt/</span>v. 口述，命令<span class='brk'>（dict 说 + -ate 动 → 说出来 → 口述）</span><span class='ex'>例：The boss dictated a letter. 老板口述了一封信。</span></div>
+<div class='w'><b>predict</b><span class='ipa'>/prɪˈdɪkt/</span>v. 预测<span class='brk'>（pre- 前 + dict 说 → 预先说 → 预言）</span><span class='ex'>例：Scientists predict the weather. 科学家预测天气。</span></div>
+<div class='w'><b>contradict</b><span class='ipa'>/ˌkɒntrəˈdɪkt/</span>v. 反驳，矛盾<span class='brk'>（contra- 反 + dict 说 → 反着说 → 反驳）</span><span class='ex'>例：His words contradict the facts. 他的话与事实矛盾。</span></div>
+<div class='w'><b>indicate</b><span class='ipa'>/ˈɪndɪkeɪt/</span>v. 表明，指示<span class='brk'>（in- 朝向 + dict 说 → 指明 → 指示）</span><span class='ex'>例：The map indicates the way. 地图指示了路线。</span></div>
+<div class='w'><b>dedicate</b><span class='ipa'>/ˈdedɪkeɪt/</span>v. 致力于<span class='brk'>（de- 加强 + dict 说 → 宣示 → 献身）</span><span class='ex'>例：He dedicated himself to research. 他投身研究。</span></div>
+</div>
+<div class='root' style='border-left-color:#2563eb'>
+<div class='rt' style='color:#2563eb'>词根 ④ -mit / -miss <span class='mean'>= 送 / 派（send）</span></div>
+<p class='hook'>钩子：mit → 联想「missile 导弹（送出去的武器）」「admit 承认（送进来）」，核心是“送”。</p>
+<div class='w'><b>admit</b><span class='ipa'>/ədˈmɪt/</span>v. 承认，准许进入<span class='brk'>（ad- 朝向 + mit 送 → 送进来 → 接纳/承认）</span><span class='ex'>例：He admitted his mistake. 他承认了错误。</span></div>
+<div class='w'><b>commit</b><span class='ipa'>/kəˈmɪt/</span>v. 犯（错），承诺<span class='brk'>（com- 共同 + mit 送 → 交付 → 承诺/犯）</span><span class='ex'>例：commit a crime 犯罪；commit to 承诺 犯罪；作出承诺</span></div>
+<div class='w'><b>permit</b><span class='ipa'>/pəˈmɪt/</span>v. 允许<span class='brk'>（per- 穿过 + mit 送 → 放行 → 允许）</span><span class='ex'>例：Smoking is not permitted here. 此处禁止吸烟。</span></div>
+<div class='w'><b>submit</b><span class='ipa'>/səbˈmɪt/</span>v. 提交，屈服<span class='brk'>（sub- 下 + mit 送 → 呈上去 → 提交）</span><span class='ex'>例：Please submit your paper. 请提交论文。</span></div>
+<div class='w'><b>mission</b><span class='ipa'>/ˈmɪʃn/</span>n. 任务，使命<span class='brk'>（-ion 名词 ← miss 送 → 被派出去的事）</span><span class='ex'>例：a business mission 商务使命</span></div>
+<div class='w'><b>dismiss</b><span class='ipa'>/dɪsˈmɪs/</span>v. 解雇，解散<span class='brk'>（dis- 离开 + miss 送 → 打发走 → 解散）</span><span class='ex'>例：The case was dismissed. 案件被驳回。</span></div>
+</div>
+<div class='root' style='border-left-color:#2563eb'>
+<div class='rt' style='color:#2563eb'>词根 ⑤ -struct <span class='mean'>= 建造（build）</span></div>
+<p class='hook'>钩子：struct → 联想「structure 结构（建造出来的框架）」，核心是“建造”。</p>
+<div class='w'><b>structure</b><span class='ipa'>/ˈstrʌktʃə/</span>n. 结构，建筑物<span class='brk'>（struct 建 + -ure 名词）</span><span class='ex'>例：the structure of a sentence 句子结构</span></div>
+<div class='w'><b>construct</b><span class='ipa'>/kənˈstrʌkt/</span>v. 建造，构建<span class='brk'>（con- 共同 + struct 建 → 搭建）</span><span class='ex'>例：construct a bridge 建桥</span></div>
+<div class='w'><b>instruct</b><span class='ipa'>/ɪnˈstrʌkt/</span>v. 指导，通知<span class='brk'>（in- 向内 + struct 建 → 建入脑中 → 教导）</span><span class='ex'>例：The teacher instructed us. 老师指导了我们。</span></div>
+<div class='w'><b>destroy</b><span class='ipa'>/dɪˈstrɔɪ/</span>v. 摧毁<span class='brk'>（de- 否定 + stroy[struct] 建 → 拆掉 → 摧毁）</span><span class='ex'>例：The fire destroyed the building. 大火摧毁了大楼。</span></div>
+</div>
+</div>
+<div class='batch'><h2 style='background:#dc2626'>第02批 (08-07) · 26词（含第07批 -form 合并）</h2>
+<div class='root' style='border-left-color:#dc2626'>
+<div class='rt' style='color:#dc2626'>词根 ① -form <span class='mean'>= 形 / 形状（form / shape）</span></div>
+<p class='hook'>钩子：form → 联想「form 表格/形状」「transform 变形（改变形状）」，核心是“形”。</p>
+<div class='w'><b>form</b><span class='ipa'>/fɔːm/</span>n. 形式，表格；v. 形成<span class='brk'>（本词根原形）</span><span class='ex'>例：Fill in the form. 填表格。</span></div>
+<div class='w'><b>reform</b><span class='ipa'>/rɪˈfɔːm/</span>v./n. 改革<span class='brk'>（re- 再 + form 形 → 重塑 → 改革）</span><span class='ex'>例：They reformed the system. 他们改革了制度。</span></div>
+<div class='w'><b>transform</b><span class='ipa'>/trænsˈfɔːm/</span>v. 改变，使变形<span class='brk'>（trans- 跨越 + form 形 → 变形）</span><span class='ex'>例：Technology transformed our life. 科技改变了我们的生活。</span></div>
+<div class='w'><b>inform</b><span class='ipa'>/ɪnˈfɔːm/</span>v. 通知，告知<span class='brk'>（in- 进入 + form 形 → 赋形/使知晓 → 通知）</span><span class='ex'>例：Please inform me of the change. 请通知我变动。</span></div>
+<div class='w'><b>perform</b><span class='ipa'>/pəˈfɔːm/</span>v. 执行，表演<span class='brk'>（per- 完全 + form 形 → 完成成形 → 执行）</span><span class='ex'>例：The band performed well. 乐队表演出色。</span></div>
+<div class='w'><b>formal</b><span class='ipa'>/ˈfɔːml/</span>adj. 正式的<span class='brk'>（form 形 + -al 形容词 → 成形的/规范的）</span><span class='ex'>例：a formal meeting 正式会议</span></div>
+<div class='w'><b>formula</b><span class='ipa'>/ˈfɔːmjələ/</span>n. 公式，配方<span class='brk'>（form 形 + -ula 小 → 固定形式 → 公式）</span><span class='ex'>例：a chemical formula 化学公式</span></div>
+<div class='w'><b>uniform</b><span class='ipa'>/ˈjuːnɪfɔːm/</span>adj. 一致的；n. 制服<span class='brk'>（uni- 一 + form 形 → 同一形状 → 统一/制服）</span><span class='ex'>例：school uniform 校服</span></div>
+</div>
+<div class='root' style='border-left-color:#dc2626'>
+<div class='rt' style='color:#dc2626'>词根 ② -cess / -ceed / -ced <span class='mean'>= 行走 / 过程 / 去（go）</span></div>
+<p class='hook'>钩子：cess → 联想「process 过程（向前走的过程）」「success 成功（走到终点）」，核心是“行走/去”。</p>
+<div class='w'><b>success</b><span class='ipa'>/səkˈses/</span>n. 成功<span class='brk'>（suc- 下 + cess 走 → 走下去 → 到达 → 成功）</span><span class='ex'>例：Hard work brings success. 努力带来成功。</span></div>
+<div class='w'><b>process</b><span class='ipa'>/ˈprəʊses/</span>n. 过程，进程<span class='brk'>（pro- 向前 + cess 走 → 向前走 → 过程）</span><span class='ex'>例：the learning process 学习过程</span></div>
+<div class='w'><b>access</b><span class='ipa'>/ˈækses/</span>n./v. 接近，进入<span class='brk'>（ac- 朝向 + cess 走 → 走向 → 接近）</span><span class='ex'>例：Get access to the data. 获取数据。</span></div>
+<div class='w'><b>exceed</b><span class='ipa'>/ɪkˈsiːd/</span>v. 超过<span class='brk'>（ex- 出 + ceed 走 → 走出 → 超出）</span><span class='ex'>例：The cost exceeded our budget. 成本超出预算。</span></div>
+<div class='w'><b>proceed</b><span class='ipa'>/prəˈsiːd/</span>v. 继续进行<span class='brk'>（pro- 向前 + ceed 走 → 向前走 → 继续）</span><span class='ex'>例：We proceeded with the plan. 我们推进计划。</span></div>
+<div class='w'><b>succeed</b><span class='ipa'>/səkˈsiːd/</span>v. 成功，继承<span class='brk'>（suc- 下 + ceed 走 → 走下去 → 成功）</span><span class='ex'>例：He succeeded in the exam. 他考试成功了。</span></div>
+<div class='w'><b>recede</b><span class='ipa'>/rɪˈsiːd/</span>v. 后退，退去<span class='brk'>（re- 回 + ced 走 → 往回走 → 后退）</span><span class='ex'>例：The flood receded. 洪水退去。</span></div>
+<div class='w'><b>precede</b><span class='ipa'>/prɪˈsiːd/</span>v. 在…之前<span class='brk'>（pre- 前 + cede 走 → 走在前面 → 先于）</span><span class='ex'>例：A precedes B. A 在 B 之前。</span></div>
+</div>
+<div class='root' style='border-left-color:#dc2626'>
+<div class='rt' style='color:#dc2626'>词根 ③ -cept <span class='mean'>= 取 / 拿（take）</span></div>
+<p class='hook'>钩子：cept → 联想「accept 接受（拿进来）」，核心是“取/拿”。</p>
+<div class='w'><b>accept</b><span class='ipa'>/əkˈsept/</span>v. 接受<span class='brk'>（ac- 朝向 + cept 取 → 拿进来 → 接受）</span><span class='ex'>例：I accept your invitation. 我接受你的邀请。</span></div>
+<div class='w'><b>except</b><span class='ipa'>/ɪkˈsept/</span>prep. 除…之外<span class='brk'>（ex- 出 + cept 取 → 取出 → 除开）</span><span class='ex'>例：Everyone came except him. 除他外都来了。</span></div>
+<div class='w'><b>concept</b><span class='ipa'>/ˈkɒnsept/</span>n. 概念<span class='brk'>（con- 共同 + cept 取 → 抽取出的共识 → 概念）</span><span class='ex'>例：a new concept 新概念</span></div>
+<div class='w'><b>receive</b><span class='ipa'>/rɪˈsiːv/</span>v. 收到<span class='brk'>（re- 回 + ceive[cept] 取 → 取回 → 收到）</span><span class='ex'>例：I received a gift. 我收到一份礼物。</span></div>
+<div class='w'><b>deceive</b><span class='ipa'>/dɪˈsiːv/</span>v. 欺骗<span class='brk'>（de- 向下 + ceive 取 → 骗取 → 欺骗）</span><span class='ex'>例：Don't deceive others. 别欺骗别人。</span></div>
+</div>
+<div class='root' style='border-left-color:#dc2626'>
+<div class='rt' style='color:#dc2626'>词根 ④ -ject <span class='mean'>= 扔 / 投（throw）</span></div>
+<p class='hook'>钩子：ject → 联想「project 项目（向前扔出的东西）」「reject 拒绝（扔回去）」，核心是“扔”。</p>
+<div class='w'><b>reject</b><span class='ipa'>/rɪˈdʒekt/</span>v. 拒绝，驳回<span class='brk'>（re- 回 + ject 扔 → 扔回去 → 拒绝）</span><span class='ex'>例：They rejected my idea. 他们拒绝了我的想法。</span></div>
+<div class='w'><b>project</b><span class='ipa'>/ˈprɒdʒekt/</span>n. 项目；v. 投射<span class='brk'>（pro- 向前 + ject 扔 → 向前扔 → 投射/项目）</span><span class='ex'>例：a new project 新项目</span></div>
+<div class='w'><b>object</b><span class='ipa'>/ˈɒbdʒɪkt/</span>n. 物体；v. 反对<span class='brk'>（ob- 逆 + ject 扔 → 反着扔 → 反对）</span><span class='ex'>例：I object to this plan. 我反对这个计划。</span></div>
+<div class='w'><b>subject</b><span class='ipa'>/ˈsʌbdʒɪkt/</span>n. 主题，科目<span class='brk'>（sub- 下 + ject 扔 → 被置于下方 → 主题/臣民）</span><span class='ex'>例：the subject of the talk 谈话主题</span></div>
+<div class='w'><b>inject</b><span class='ipa'>/ɪnˈdʒekt/</span>v. 注射，注入<span class='brk'>（in- 向内 + ject 扔 → 扔进去 → 注入）</span><span class='ex'>例：The nurse injected the drug. 护士注射了药物。</span></div>
+</div>
+</div>
+<div class='batch'><h2 style='background:#16a34a'>第03批 (08-11) · 25词（含第05批 -scrib/-fer 与第07批 -vert 合并）</h2>
+<div class='root' style='border-left-color:#16a34a'>
+<div class='rt' style='color:#16a34a'>词根 ① -scrib / -scribe <span class='mean'>= 写（write）</span></div>
+<p class='hook'>钩子：scrib → 联想「describe 描述（写下来）」「manuscript 手稿（手写的稿）」，核心是“写”。</p>
+<div class='w'><b>describe</b><span class='ipa'>/dɪˈskraɪb/</span>v. 描述<span class='brk'>（de- 向下 + scrib 写 → 写下来 → 描述）</span><span class='ex'>例：Can you describe the photo? 你能描述这张照片吗？</span></div>
+<div class='w'><b>prescribe</b><span class='ipa'>/prɪˈskraɪb/</span>v. 开处方，规定<span class='brk'>（pre- 前 + scrib 写 → 预先写 → 开处方）</span><span class='ex'>例：The doctor prescribed medicine. 医生开了药。</span></div>
+<div class='w'><b>subscribe</b><span class='ipa'>/səbˈskraɪb/</span>v. 订阅，同意<span class='brk'>（sub- 下 + scrib 写 → 在名下写 → 订阅）</span><span class='ex'>例：subscribe to a magazine 订阅杂志</span></div>
+<div class='w'><b>manuscript</b><span class='ipa'>/ˈmænjəskrɪpt/</span>n. 手稿，原稿<span class='brk'>（manu- 手 + script 写 → 手写稿）</span><span class='ex'>例：an ancient manuscript 古代手稿</span></div>
+<div class='w'><b>inscribe</b><span class='ipa'>/ɪnˈskraɪb/</span>v. 题写，刻<span class='brk'>（in- 向内 + scrib 写 → 写入 → 题刻）</span><span class='ex'>例：His name was inscribed on the stone. 他的名字刻在石头上。</span></div>
+<div class='w'><b>transcript</b><span class='ipa'>/ˈtrænskrɪpt/</span>n. 转录本，成绩单<span class='brk'>（trans- 跨越 + script 写 → 转写 → 转录）</span><span class='ex'>例：a school transcript 成绩单</span></div>
+</div>
+<div class='root' style='border-left-color:#16a34a'>
+<div class='rt' style='color:#16a34a'>词根 ② -tract <span class='mean'>= 拉 / 抽（pull）</span></div>
+<p class='hook'>钩子：tract → 联想「tractor 拖拉机（拉东西的机器）」，核心是“拉”。</p>
+<div class='w'><b>attract</b><span class='ipa'>/əˈtrækt/</span>v. 吸引<span class='brk'>（at- 朝向 + tract 拉 → 拉过来 → 吸引）</span><span class='ex'>例：The show attracted many people. 演出吸引了许多人。</span></div>
+<div class='w'><b>contract</b><span class='ipa'>/ˈkɒntrækt/</span>n. 合同；v. 收缩<span class='brk'>（con- 共同 + tract 拉 → 拉到一起 → 合同/收缩）</span><span class='ex'>例：sign a contract 签合同</span></div>
+<div class='w'><b>distract</b><span class='ipa'>/dɪˈstrækt/</span>v. 使分心<span class='brk'>（dis- 离开 + tract 拉 → 拉开注意力 → 分心）</span><span class='ex'>例：Don't distract me. 别让我分心。</span></div>
+<div class='w'><b>extract</b><span class='ipa'>/ɪkˈstrækt/</span>v. 提取，拔出<span class='brk'>（ex- 出 + tract 拉 → 拉出 → 提取）</span><span class='ex'>例：extract the tooth 拔牙</span></div>
+<div class='w'><b>subtract</b><span class='ipa'>/səbˈtrækt/</span>v. 减去<span class='brk'>（sub- 下 + tract 拉 → 拉下 → 减去）</span><span class='ex'>例：Subtract 3 from 10. 10减3。</span></div>
+</div>
+<div class='root' style='border-left-color:#16a34a'>
+<div class='rt' style='color:#16a34a'>词根 ③ -vert / -vers <span class='mean'>= 转 / 转向（turn）</span></div>
+<p class='hook'>钩子：vert → 联想「convert 转变（转过去）」「universe 宇宙（转成一体的）」，核心是“转”。</p>
+<div class='w'><b>convert</b><span class='ipa'>/kənˈvɜːt/</span>v. 转变，转换<span class='brk'>（con- 共同 + vert 转 → 转过去 → 转变）</span><span class='ex'>例：convert ideas into action 把想法变为行动</span></div>
+<div class='w'><b>reverse</b><span class='ipa'>/rɪˈvɜːs/</span>v. 反转，颠倒<span class='brk'>（re- 回 + vers 转 → 转回去 → 反转）</span><span class='ex'>例：reverse the order 颠倒顺序</span></div>
+<div class='w'><b>universe</b><span class='ipa'>/ˈjuːnɪvɜːs/</span>n. 宇宙<span class='brk'>（uni- 一 + vers 转 → 转成一体 → 宇宙）</span><span class='ex'>例：the whole universe 整个宇宙</span></div>
+<div class='w'><b>advertise</b><span class='ipa'>/ˈædvətaɪz/</span>v. 做广告<span class='brk'>（ad- 朝向 + vert 转 + -ise → 转向人 → 广告）</span><span class='ex'>例：They advertised the product. 他们为产品做广告。</span></div>
+<div class='w'><b>diverse</b><span class='ipa'>/daɪˈvɜːs/</span>adj. 多样的<span class='brk'>（di- 分开 + vers 转 → 转成不同 → 多样）</span><span class='ex'>例：a diverse culture 多元文化</span></div>
+<div class='w'><b>divert</b><span class='ipa'>/daɪˈvɜːt/</span>v. 使转向，转移<span class='brk'>（di- 分开 + vert 转 → 转开 → 使转向）</span><span class='ex'>例：divert traffic 疏导交通</span></div>
+<div class='w'><b>version</b><span class='ipa'>/ˈvɜːʃn/</span>n. 版本，说法<span class='brk'>（vers 转 + -ion → 转出来的样式 → 版本）</span><span class='ex'>例：the latest version 最新版本</span></div>
+</div>
+<div class='root' style='border-left-color:#16a34a'>
+<div class='rt' style='color:#16a34a'>词根 ④ -fer <span class='mean'>= 拿 / 带（carry / bring）</span></div>
+<p class='hook'>钩子：fer → 联想「offer 提供（拿出去）」「transfer 转移（搬运）」，核心是“拿/带”。</p>
+<div class='w'><b>refer</b><span class='ipa'>/rɪˈfɜː/</span>v. 提到，参考<span class='brk'>（re- 回 + fer 拿 → 拿回来说 → 提及）</span><span class='ex'>例：refer to a dictionary 查词典</span></div>
+<div class='w'><b>prefer</b><span class='ipa'>/prɪˈfɜː/</span>v. 更喜欢<span class='brk'>（pre- 前 + fer 拿 → 先拿 → 偏好）</span><span class='ex'>例：I prefer tea to coffee. 茶咖啡我更爱茶。</span></div>
+<div class='w'><b>transfer</b><span class='ipa'>/trænsˈfɜː/</span>v. 转移，调动<span class='brk'>（trans- 跨越 + fer 拿 → 搬运 → 转移）</span><span class='ex'>例：transfer money 转账</span></div>
+<div class='w'><b>differ</b><span class='ipa'>/ˈdɪfə/</span>v. 不同，有分歧<span class='brk'>（dif- 分开 + fer 拿 → 各拿各的 → 不同）</span><span class='ex'>例：Opinions differ. 意见不一。</span></div>
+<div class='w'><b>offer</b><span class='ipa'>/ˈɒfə/</span>v. 提供，提议<span class='brk'>（of- 朝向 + fer 拿 → 拿出去 → 提供）</span><span class='ex'>例：He offered me a job. 他给了我一份工作。</span></div>
+<div class='w'><b>infer</b><span class='ipa'>/ɪnˈfɜː/</span>v. 推断<span class='brk'>（in- 向内 + fer 拿 → 拿进来判断 → 推断）</span><span class='ex'>例：We inferred the truth. 我们推断出了真相。</span></div>
+<div class='w'><b>confer</b><span class='ipa'>/kənˈfɜː/</span>v. 协商，授予<span class='brk'>（con- 共同 + fer 拿 → 共同拿主意 → 商议）</span><span class='ex'>例：They conferred about the plan. 他们商议了计划。</span></div>
+</div>
+</div>
+<div class='batch'><h2 style='background:#d97706'>第04批 (08-13) · 20词</h2>
+<div class='root' style='border-left-color:#d97706'>
+<div class='rt' style='color:#d97706'>词根 ① -pose / -pos <span class='mean'>= 放 / 置（put）</span></div>
+<p class='hook'>钩子：pose → 联想「pose 摆姿势（把身体放好）」「position 位置」，核心是“放”。</p>
+<div class='w'><b>compose</b><span class='ipa'>/kəmˈpəʊz/</span>v. 组成，创作<span class='brk'>（com- 共同 + pose 放 → 放到一起 → 组成）</span><span class='ex'>例：compose a song 创作歌曲</span></div>
+<div class='w'><b>expose</b><span class='ipa'>/ɪkˈspəʊz/</span>v. 暴露，揭露<span class='brk'>（ex- 出 + pose 放 → 放出来 → 暴露）</span><span class='ex'>例：The truth was exposed. 真相被揭露。</span></div>
+<div class='w'><b>oppose</b><span class='ipa'>/əˈpəʊz/</span>v. 反对<span class='brk'>（op- 逆 + pose 放 → 放在对面 → 反对）</span><span class='ex'>例：We oppose the decision. 我们反对这个决定。</span></div>
+<div class='w'><b>propose</b><span class='ipa'>/prəˈpəʊz/</span>v. 提议，求婚<span class='brk'>（pro- 向前 + pose 放 → 提出 → 提议）</span><span class='ex'>例：He proposed a plan. 他提出了一个计划。</span></div>
+<div class='w'><b>impose</b><span class='ipa'>/ɪmˈpəʊz/</span>v. 强加，征税<span class='brk'>（im- 进 + pose 放 → 放上去 → 强加）</span><span class='ex'>例：impose a tax 征税</span></div>
+</div>
+<div class='root' style='border-left-color:#d97706'>
+<div class='rt' style='color:#d97706'>词根 ② -tain / -tend <span class='mean'>= 握 / 伸（hold / stretch）</span></div>
+<p class='hook'>钩子：tain → 联想「contain 包含（握在里面）」「maintain 维持（握住所）」，核心是“握/保持”；tend 伸。</p>
+<div class='w'><b>contain</b><span class='ipa'>/kənˈteɪn/</span>v. 包含，容纳<span class='brk'>（con- 共同 + tain 握 → 握在一起 → 包含）</span><span class='ex'>例：The box contains books. 盒子里装着书。</span></div>
+<div class='w'><b>maintain</b><span class='ipa'>/meɪnˈteɪn/</span>v. 维持，保养<span class='brk'>（main- 手 + tain 握 → 握住所 → 维持）</span><span class='ex'>例：maintain peace 维持和平</span></div>
+<div class='w'><b>obtain</b><span class='ipa'>/əbˈteɪn/</span>v. 获得<span class='brk'>（ob- 朝向 + tain 握 → 握到 → 获得）</span><span class='ex'>例：obtain a degree 获得学位</span></div>
+<div class='w'><b>extend</b><span class='ipa'>/ɪkˈstend/</span>v. 延伸，扩展<span class='brk'>（ex- 出 + tend 伸 → 伸出 → 延伸）</span><span class='ex'>例：extend the deadline 延长期限</span></div>
+<div class='w'><b>intend</b><span class='ipa'>/ɪnˈtend/</span>v. 打算，意图<span class='brk'>（in- 向内 + tend 伸 → 心伸向 → 打算）</span><span class='ex'>例：I intend to go. 我打算去。</span></div>
+</div>
+<div class='root' style='border-left-color:#d97706'>
+<div class='rt' style='color:#d97706'>词根 ③ -claim / -clam <span class='mean'>= 喊 / 叫（shout）</span></div>
+<p class='hook'>钩子：claim → 联想「claim 声称（大声说）」，核心是“喊/叫”。</p>
+<div class='w'><b>claim</b><span class='ipa'>/kleɪm/</span>v. 声称，要求<span class='brk'>（本词根原形 → 喊出主张）</span><span class='ex'>例：He claimed the prize. 他认领了奖品。</span></div>
+<div class='w'><b>proclaim</b><span class='ipa'>/prəˈkleɪm/</span>v. 宣布<span class='brk'>（pro- 向前 + claim 喊 → 向前喊 → 宣布）</span><span class='ex'>例：They proclaimed the result. 他们宣布了结果。</span></div>
+<div class='w'><b>exclaim</b><span class='ipa'>/ɪkˈskleɪm/</span>v. 惊呼，呼喊<span class='brk'>（ex- 出 + claim 喊 → 喊出来 → 惊呼）</span><span class='ex'>例：She exclaimed in surprise. 她惊讶地喊道。</span></div>
+<div class='w'><b>acclaim</b><span class='ipa'>/əˈkleɪm/</span>v. 称赞，欢呼<span class='brk'>（ac- 朝向 + claim 喊 → 向…欢呼 → 称赞）</span><span class='ex'>例：The film won acclaim. 影片赢得赞誉。</span></div>
+<div class='w'><b>reclaim</b><span class='ipa'>/rɪˈkleɪm/</span>v. 回收，开垦<span class='brk'>（re- 回 + claim 喊 → 喊回 → 收回）</span><span class='ex'>例：reclaim land 开垦土地</span></div>
+</div>
+<div class='root' style='border-left-color:#d97706'>
+<div class='rt' style='color:#d97706'>词根 ④ -duc / -duct <span class='mean'>= 引 / 导（lead）</span></div>
+<p class='hook'>钩子：duc → 联想「conduct 引导（带路）」「introduce 介绍（引进）」，核心是“引/领”。</p>
+<div class='w'><b>conduct</b><span class='ipa'>/kənˈdʌkt/</span>v. 进行，引导<span class='brk'>（con- 共同 + duct 引 → 带 → 引导）</span><span class='ex'>例：conduct an experiment 做实验</span></div>
+<div class='w'><b>introduce</b><span class='ipa'>/ˌɪntrəˈdjuːs/</span>v. 介绍，引入<span class='brk'>（intro- 向内 + duc 引 → 引进 → 介绍）</span><span class='ex'>例：Let me introduce myself. 我来自我介绍。</span></div>
+<div class='w'><b>produce</b><span class='ipa'>/prəˈdjuːs/</span>v. 生产，产生<span class='brk'>（pro- 向前 + duc 引 → 引出 → 生产）</span><span class='ex'>例：The factory produces cars. 工厂生产汽车。</span></div>
+<div class='w'><b>reduce</b><span class='ipa'>/rɪˈdjuːs/</span>v. 减少，降低<span class='brk'>（re- 回 + duc 引 → 引回 → 缩减）</span><span class='ex'>例：reduce the cost 降低成本</span></div>
+<div class='w'><b>educate</b><span class='ipa'>/ˈedʒukeɪt/</span>v. 教育<span class='brk'>（e- 向外 + duc 引 + -ate → 引出潜能 → 教育）</span><span class='ex'>例：educate the children 教育孩子</span></div>
+</div>
+</div>
+<div class='batch'><h2 style='background:#7c3aed'>第05批 (08-14) · 5词（其余 -scrib/-fer/-ject 已并入首现批次，当复习）</h2>
+<div class='root' style='border-left-color:#7c3aed'>
+<div class='rt' style='color:#7c3aed'>词根 ① -sign <span class='mean'>= 标记 / 信号（mark / sign）</span></div>
+<p class='hook'>钩子：sign → 联想「sign 标志/签名（做标记）」，核心是“标记”。</p>
+<div class='w'><b>signal</b><span class='ipa'>/ˈsɪɡnl/</span>n. 信号<span class='brk'>（sign 标记 + -al → 标记物 → 信号）</span><span class='ex'>例：a warning signal 警示信号</span></div>
+<div class='w'><b>signify</b><span class='ipa'>/ˈsɪɡnɪfaɪ/</span>v. 表示，意味<span class='brk'>（sign 标记 + -ify 使 → 使成标记 → 表示）</span><span class='ex'>例：It signifies danger. 这表示危险。</span></div>
+<div class='w'><b>design</b><span class='ipa'>/dɪˈzaɪn/</span>v./n. 设计<span class='brk'>（de- 向下 + sign 标记 → 标出 → 设计）</span><span class='ex'>例：design a logo 设计标志</span></div>
+<div class='w'><b>assign</b><span class='ipa'>/əˈsaɪn/</span>v. 分配，指派<span class='brk'>（as- 朝向 + sign 标记 → 标给 → 分配）</span><span class='ex'>例：assign a task 分配任务</span></div>
+<div class='w'><b>resign</b><span class='ipa'>/rɪˈzaɪn/</span>v. 辞职<span class='brk'>（re- 回 + sign 标记 → 交回署名 → 辞职）</span><span class='ex'>例：He resigned from his job. 他辞了职。</span></div>
+</div>
+</div>
+<div class='batch'><h2 style='background:#0891b2'>第06批 (08-16) · 18词（含第08批 -gress 合并）</h2>
+<div class='root' style='border-left-color:#0891b2'>
+<div class='rt' style='color:#0891b2'>词根 ① -cur / -cours <span class='mean'>= 跑 / 流（run / flow）</span></div>
+<p class='hook'>钩子：cur → 联想「current 当前的/水流（跑着的）」，核心是“跑/流”。</p>
+<div class='w'><b>occur</b><span class='ipa'>/əˈkɜː/</span>v. 发生，出现<span class='brk'>（oc- 朝向 + cur 跑 → 跑来 → 发生）</span><span class='ex'>例：The accident occurred yesterday. 事故昨天发生。</span></div>
+<div class='w'><b>recur</b><span class='ipa'>/rɪˈkɜː/</span>v. 重现，反复<span class='brk'>（re- 回 + cur 跑 → 跑回来 → 反复）</span><span class='ex'>例：The pain recurred. 疼痛又犯了。</span></div>
+<div class='w'><b>current</b><span class='ipa'>/ˈkʌrənt/</span>adj. 当前的；n. 水流/电流<span class='brk'>（cur 跑 + -ent → 跑着的 → 当前的）</span><span class='ex'>例：current affairs 时事</span></div>
+<div class='w'><b>currency</b><span class='ipa'>/ˈkʌrənsi/</span>n. 货币，流通<span class='brk'>（cur 跑 + -ency → 跑动的 → 货币）</span><span class='ex'>例：foreign currency 外币</span></div>
+<div class='w'><b>concur</b><span class='ipa'>/kənˈkɜː/</span>v. 同意，同时发生<span class='brk'>（con- 共同 + cur 跑 → 同跑 → 一致）</span><span class='ex'>例：I concur with you. 我同意你。</span></div>
+</div>
+<div class='root' style='border-left-color:#0891b2'>
+<div class='rt' style='color:#0891b2'>词根 ② -grad / -gress <span class='mean'>= 步 / 级 / 走（step / go）</span></div>
+<p class='hook'>钩子：grad → 联想「grade 年级/等级（台阶）」「progress 进步（向前走）」，核心是“步/级”。</p>
+<div class='w'><b>progress</b><span class='ipa'>/ˈprəʊɡres/</span>n./v. 进步，进展<span class='brk'>（pro- 向前 + gress 走 → 向前走 → 进步）</span><span class='ex'>例：make progress 取得进步</span></div>
+<div class='w'><b>gradual</b><span class='ipa'>/ˈɡrædʒuəl/</span>adj. 逐渐的<span class='brk'>（grad 级 + -ual → 一级级的 → 逐渐的）</span><span class='ex'>例：a gradual change 渐变</span></div>
+<div class='w'><b>grade</b><span class='ipa'>/ɡreɪd/</span>n. 年级，等级；v. 评分<span class='brk'>（grad 级 → 等级）</span><span class='ex'>例：a high grade 高分</span></div>
+<div class='w'><b>aggressive</b><span class='ipa'>/əˈɡresɪv/</span>adj. 侵略性的，进取的<span class='brk'>（ag- 朝向 + gress 走 + -ive → 向前冲的 → 进攻的）</span><span class='ex'>例：an aggressive attitude 咄咄逼人的态度</span></div>
+<div class='w'><b>degrade</b><span class='ipa'>/dɪˈɡreɪd/</span>v. 降级，退化<span class='brk'>（de- 向下 + grad 级 → 降級）</span><span class='ex'>例：degrade the environment 破坏环境</span></div>
+<div class='w'><b>congress</b><span class='ipa'>/ˈkɒŋɡres/</span>n. 国会，大会<span class='brk'>（con- 共同 + gress 走 → 走到一起 → 大会）</span><span class='ex'>例：a medical congress 医学大会</span></div>
+<div class='w'><b>digress</b><span class='ipa'>/daɪˈɡres/</span>v. 离题<span class='brk'>（di- 分开 + gress 走 → 走偏 → 离题）</span><span class='ex'>例：Sorry, I digressed. 抱歉，我跑题了。</span></div>
+<div class='w'><b>regress</b><span class='ipa'>/rɪˈɡres/</span>v. 倒退，退化<span class='brk'>（re- 回 + gress 走 → 往回走 → 倒退）</span><span class='ex'>例：regress to old habits 退回旧习惯</span></div>
+</div>
+<div class='root' style='border-left-color:#0891b2'>
+<div class='rt' style='color:#0891b2'>词根 ③ -loc <span class='mean'>= 放 / 位置（place）</span></div>
+<p class='hook'>钩子：loc → 联想「local 当地的（固定在位置的）」，核心是“放/位置”。</p>
+<div class='w'><b>locate</b><span class='ipa'>/ləʊˈkeɪt/</span>v. 定位，位于<span class='brk'>（loc 放 + -ate → 放在某处 → 定位）</span><span class='ex'>例：locate the city on the map 在地图上找到城市</span></div>
+<div class='w'><b>local</b><span class='ipa'>/ˈləʊkl/</span>adj. 当地的，局部的<span class='brk'>（loc 位置 + -al → 位置的 → 当地的）</span><span class='ex'>例：local food 本地食物</span></div>
+<div class='w'><b>location</b><span class='ipa'>/ləʊˈkeɪʃn/</span>n. 位置，地点<span class='brk'>（loc 放 + -ion → 所放之处）</span><span class='ex'>例：a good location 好位置</span></div>
+<div class='w'><b>allocate</b><span class='ipa'>/ˈæləkeɪt/</span>v. 分配<span class='brk'>（al- 朝向 + loc 放 + -ate → 放给 → 分配）</span><span class='ex'>例：allocate funds 拨款</span></div>
+<div class='w'><b>dislocate</b><span class='ipa'>/ˈdɪsləkeɪt/</span>v. 使脱位，扰乱<span class='brk'>（dis- 离开 + loc 位置 + -ate → 移出位置 → 脱位）</span><span class='ex'>例：dislocate a shoulder 肩脱位</span></div>
+</div>
+</div>
+<div class='batch'><h2 style='background:#db2777'>第07批 (08-17) · 9词（-vert/-form 已并入首现批次）</h2>
+<div class='root' style='border-left-color:#db2777'>
+<div class='rt' style='color:#db2777'>词根 ① -clud / -clus <span class='mean'>= 关 / 闭（close / shut）</span></div>
+<p class='hook'>钩子：clud → 联想「include 包含（关在里面）」「exclude 排除（关在外面）」，核心是“关”。</p>
+<div class='w'><b>include</b><span class='ipa'>/ɪnˈkluːd/</span>v. 包含<span class='brk'>（in- 向内 + clud 关 → 关进里面 → 包含）</span><span class='ex'>例：The price includes tax. 价格含税。</span></div>
+<div class='w'><b>exclude</b><span class='ipa'>/ɪkˈskluːd/</span>v. 排除，排斥<span class='brk'>（ex- 出 + clud 关 → 关在外面 → 排除）</span><span class='ex'>例：exclude the possibility 排除可能</span></div>
+<div class='w'><b>conclude</b><span class='ipa'>/kənˈkluːd/</span>v. 总结，结束<span class='brk'>（con- 共同 + clud 关 → 收拢 → 总结）</span><span class='ex'>例：conclude the meeting 结束会议</span></div>
+<div class='w'><b>exclusive</b><span class='ipa'>/ɪkˈskluːsɪv/</span>adj. 独有的，排外的<span class='brk'>（ex- 外 + clus 关 + -ive → 关在外面的 → 独享的）</span><span class='ex'>例：an exclusive club 私人会所</span></div>
+</div>
+<div class='root' style='border-left-color:#db2777'>
+<div class='rt' style='color:#db2777'>词根 ② -pend / -pens <span class='mean'>= 悬挂 / 花费 / 称重（hang / pay / weigh）</span></div>
+<p class='hook'>钩子：pend → 联想「depend 依赖（挂在…上）」「expense 花费（称重量支出）」，核心是“悬挂/花费”。</p>
+<div class='w'><b>depend</b><span class='ipa'>/dɪˈpend/</span>v. 依赖，取决于<span class='brk'>（de- 下 + pend 悬挂 → 挂在…下 → 依靠）</span><span class='ex'>例：It depends on you. 这取决于你。</span></div>
+<div class='w'><b>suspend</b><span class='ipa'>/səˈspend/</span>v. 悬挂，暂停<span class='brk'>（sus- 下 + pend 悬挂 → 吊起 → 悬挂/暂停）</span><span class='ex'>例：suspend the rule 暂停规则</span></div>
+<div class='w'><b>expense</b><span class='ipa'>/ɪkˈspens/</span>n. 花费，开销<span class='brk'>（ex- 出 + pens 称重/付 → 付出 → 花费）</span><span class='ex'>例：at someone's expense 由某人付费</span></div>
+<div class='w'><b>expensive</b><span class='ipa'>/ɪkˈspensɪv/</span>adj. 昂贵的<span class='brk'>（ex- 出 + pens 付 + -ive → 花钱的 → 贵的）</span><span class='ex'>例：an expensive car 昂贵的车</span></div>
+<div class='w'><b>pension</b><span class='ipa'>/ˈpenʃn/</span>n. 养老金<span class='brk'>（pens 付 + -ion → 付出的退休金）</span><span class='ex'>例：receive a pension 领养老金</span></div>
+</div>
+</div>
+<div class='batch'><h2 style='background:#65a30d'>第08批 (08-18) · 15词（-gress 已并入第06批）</h2>
+<div class='root' style='border-left-color:#65a30d'>
+<div class='rt' style='color:#65a30d'>词根 ① -vid / -vis <span class='mean'>= 看 / 看见（see）</span></div>
+<p class='hook'>钩子：vis → 联想「visit 参观（去看）」「visual 视觉的」，核心是“看”。</p>
+<div class='w'><b>video</b><span class='ipa'>/ˈvɪdiəʊ/</span>n. 视频<span class='brk'>（vid 看 + -eo → 能看的 → 视频）</span><span class='ex'>例：watch a video 看视频</span></div>
+<div class='w'><b>visible</b><span class='ipa'>/ˈvɪzəbl/</span>adj. 可见的<span class='brk'>（vis 看 + -ible 能…的 → 能看见的）</span><span class='ex'>例：The star is visible. 星星可见。</span></div>
+<div class='w'><b>visit</b><span class='ipa'>/ˈvɪzɪt/</span>v. 参观，拜访<span class='brk'>（vis 看 + -it → 去看 → 拜访）</span><span class='ex'>例：visit a museum 参观博物馆</span></div>
+<div class='w'><b>advise</b><span class='ipa'>/ədˈvaɪz/</span>v. 建议，劝告<span class='brk'>（ad- 朝向 + vis 看 → 看法给人 → 劝告）</span><span class='ex'>例：I advise you to rest. 我劝你休息。</span></div>
+<div class='w'><b>evident</b><span class='ipa'>/ˈevɪdənt/</span>adj. 明显的<span class='brk'>（e- 向外 + vid 看 + -ent → 看得出来的 → 明显的）</span><span class='ex'>例：an evident mistake 明显的错误</span></div>
+</div>
+<div class='root' style='border-left-color:#65a30d'>
+<div class='rt' style='color:#65a30d'>词根 ② -press <span class='mean'>= 压 / 按（press）</span></div>
+<p class='hook'>钩子：press → 联想「press 按压」「pressure 压力」，核心是“压”。</p>
+<div class='w'><b>press</b><span class='ipa'>/pres/</span>v. 压，按；n. 新闻界<span class='brk'>（本词根原形 → 压）</span><span class='ex'>例：press the button 按按钮</span></div>
+<div class='w'><b>pressure</b><span class='ipa'>/ˈpreʃə/</span>n. 压力<span class='brk'>（press 压 + -ure → 压的状态 → 压力）</span><span class='ex'>例：under pressure 在压力下</span></div>
+<div class='w'><b>compress</b><span class='ipa'>/kəmˈpres/</span>v. 压缩<span class='brk'>（com- 共同 + press 压 → 压在一起 → 压缩）</span><span class='ex'>例：compress the file 压缩文件</span></div>
+<div class='w'><b>depress</b><span class='ipa'>/dɪˈpres/</span>v. 使沮丧，压下<span class='brk'>（de- 向下 + press 压 → 压低 → 使消沉）</span><span class='ex'>例：The news depressed him. 消息让他沮丧。</span></div>
+<div class='w'><b>express</b><span class='ipa'>/ɪkˈspres/</span>v. 表达；adj. 特快的<span class='brk'>（ex- 出 + press 压 → 压出 → 表达）</span><span class='ex'>例：express your feelings 表达感受</span></div>
+</div>
+<div class='root' style='border-left-color:#65a30d'>
+<div class='rt' style='color:#65a30d'>词根 ③ -rupt <span class='mean'>= 断 / 破（break）</span></div>
+<p class='hook'>钩子：rupt → 联想「interrupt 打断（破开）」「bankrupt 破产（钱袋破了）」，核心是“断/破”。</p>
+<div class='w'><b>rupture</b><span class='ipa'>/ˈrʌptʃə/</span>n./v. 破裂<span class='brk'>（rupt 破 + -ure → 破）</span><span class='ex'>例：a rupture in relations 关系破裂</span></div>
+<div class='w'><b>abrupt</b><span class='ipa'>/əˈbrʌpt/</span>adj. 突然的，陡峭的<span class='brk'>（ab- 离开 + rupt 破 → 断开的 → 突兀的）</span><span class='ex'>例：an abrupt stop 急停</span></div>
+<div class='w'><b>bankrupt</b><span class='ipa'>/ˈbæŋkrʌpt/</span>adj. 破产的<span class='brk'>（bank 钱袋 + rupt 破 → 钱袋破了 → 破产）</span><span class='ex'>例：go bankrupt 破产</span></div>
+<div class='w'><b>corrupt</b><span class='ipa'>/kəˈrʌpt/</span>adj. 腐败的；v. 使堕落<span class='brk'>（cor- 全部 + rupt 破 → 全坏 → 腐败）</span><span class='ex'>例：a corrupt official 贪官</span></div>
+<div class='w'><b>disrupt</b><span class='ipa'>/dɪsˈrʌpt/</span>v. 扰乱，中断<span class='brk'>（dis- 分开 + rupt 破 → 破开 → 打乱）</span><span class='ex'>例：disrupt the meeting 扰乱会议</span></div>
+</div>
+</div>
+<div class='batch'><h2 style='background:#ea580c'>第09批 (08-19) · 20词</h2>
+<div class='root' style='border-left-color:#ea580c'>
+<div class='rt' style='color:#ea580c'>词根 ① -voc / -vok <span class='mean'>= 叫 / 声 / 呼（voice / call）</span></div>
+<p class='hook'>钩子：voc → 联想「voice 声音」「vocal 嗓音的」，核心是“叫/声”。</p>
+<div class='w'><b>voice</b><span class='ipa'>/vɔɪs/</span>n. 声音，嗓音<span class='brk'>（voc 声 + -e → 声音）</span><span class='ex'>例：in a loud voice 大声地</span></div>
+<div class='w'><b>vocal</b><span class='ipa'>/ˈvəʊkl/</span>adj. 嗓音的，直言的<span class='brk'>（voc 声 + -al → 声音的）</span><span class='ex'>例：vocal music 声乐</span></div>
+<div class='w'><b>advocate</b><span class='ipa'>/ˈædvəkeɪt/</span>v. 提倡；n. 倡导者<span class='brk'>（ad- 朝向 + voc 叫 + -ate → 叫好 → 提倡）</span><span class='ex'>例：advocate peace 提倡和平</span></div>
+<div class='w'><b>evoke</b><span class='ipa'>/ɪˈvəʊk/</span>v. 唤起，引起<span class='brk'>（e- 向外 + vok 叫 → 叫出 → 唤起）</span><span class='ex'>例：evoke memories 唤起回忆</span></div>
+<div class='w'><b>provoke</b><span class='ipa'>/prəˈvəʊk/</span>v. 挑衅，激起<span class='brk'>（pro- 向前 + vok 叫 → 向前叫嚣 → 激怒）</span><span class='ex'>例：provoke anger 激起愤怒</span></div>
+</div>
+<div class='root' style='border-left-color:#ea580c'>
+<div class='rt' style='color:#ea580c'>词根 ② -sens / -sent <span class='mean'>= 感觉 / 感知（feel / sense）</span></div>
+<p class='hook'>钩子：sens → 联想「sense 感觉」「sensitive 敏感的」，核心是“感觉”。</p>
+<div class='w'><b>sense</b><span class='ipa'>/sens/</span>n. 感觉，意义<span class='brk'>（本词根原形 → 感觉）</span><span class='ex'>例：common sense 常识</span></div>
+<div class='w'><b>sensible</b><span class='ipa'>/ˈsensəbl/</span>adj. 明智的，合理的<span class='brk'>（sens 感觉 + -ible → 有感应的 → 明智的）</span><span class='ex'>例：a sensible decision 明智的决定</span></div>
+<div class='w'><b>sensitive</b><span class='ipa'>/ˈsensətɪv/</span>adj. 敏感的<span class='brk'>（sens 感觉 + -itive → 感觉强的 → 敏感的）</span><span class='ex'>例：sensitive skin 敏感肌肤</span></div>
+<div class='w'><b>consent</b><span class='ipa'>/kənˈsent/</span>n./v. 同意<span class='brk'>（con- 共同 + sent 感觉 → 同感 → 同意）</span><span class='ex'>例：give consent 同意</span></div>
+<div class='w'><b>resent</b><span class='ipa'>/rɪˈzent/</span>v. 怨恨<span class='brk'>（re- 回 + sent 感觉 → 反感 → 怨恨）</span><span class='ex'>例：He resented the comment. 他怨恨那句评论。</span></div>
+</div>
+<div class='root' style='border-left-color:#ea580c'>
+<div class='rt' style='color:#ea580c'>词根 ③ -nov <span class='mean'>= 新 / 更新（new）</span></div>
+<p class='hook'>钩子：nov → 联想「novel 新颖的」「innovate 创新（引入新）」，核心是“新”。</p>
+<div class='w'><b>novel</b><span class='ipa'>/ˈnɒvl/</span>adj. 新颖的；n. 小说<span class='brk'>（nov 新 + -el → 新的 → 小说）</span><span class='ex'>例：a novel idea 新点子</span></div>
+<div class='w'><b>innovate</b><span class='ipa'>/ˈɪnəveɪt/</span>v. 创新<span class='brk'>（in- 进入 + nov 新 + -ate → 引入新 → 创新）</span><span class='ex'>例：innovate the process 革新流程</span></div>
+<div class='w'><b>innovation</b><span class='ipa'>/ˌɪnəˈveɪʃn/</span>n. 创新，革新<span class='brk'>（nov 新 + -ation → 新事物）</span><span class='ex'>例：technical innovation 技术创新</span></div>
+<div class='w'><b>novice</b><span class='ipa'>/ˈnɒvɪs/</span>n. 新手<span class='brk'>（nov 新 + -ice → 新人 → 新手）</span><span class='ex'>例：a novice driver 新司机</span></div>
+<div class='w'><b>renew</b><span class='ipa'>/rɪˈnjuː/</span>v. 更新，续期<span class='brk'>（re- 再 + new[nov] 新 → 再新 → 更新）</span><span class='ex'>例：renew the license 续证</span></div>
+</div>
+<div class='root' style='border-left-color:#ea580c'>
+<div class='rt' style='color:#ea580c'>词根 ④ -spir <span class='mean'>= 呼吸 / 精神（breath / spirit）</span></div>
+<p class='hook'>钩子：spir → 联想「spirit 精神（一口气/生命力）」「inspire 鼓舞（吹入气息）」，核心是“呼吸/精神”。</p>
+<div class='w'><b>spirit</b><span class='ipa'>/ˈspɪrɪt/</span>n. 精神，灵魂<span class='brk'>（spir 呼吸 + -it → 生命气息 → 精神）</span><span class='ex'>例：in high spirits 情绪高涨</span></div>
+<div class='w'><b>inspire</b><span class='ipa'>/ɪnˈspaɪə/</span>v. 鼓舞，启发<span class='brk'>（in- 向内 + spir 呼吸 → 吹入气息 → 鼓舞）</span><span class='ex'>例：The teacher inspired us. 老师鼓舞了我们。</span></div>
+<div class='w'><b>aspire</b><span class='ipa'>/əˈspaɪə/</span>v. 渴望，追求<span class='brk'>（a- 朝向 + spir 呼吸 → 向往 → 渴望）</span><span class='ex'>例：aspire to be a doctor 渴望成为医生</span></div>
+<div class='w'><b>expire</b><span class='ipa'>/ɪkˈspaɪə/</span>v. 到期，呼气<span class='brk'>（ex- 出 + spir 呼吸 → 呼出 → 到期）</span><span class='ex'>例：The contract expired. 合同到期了。</span></div>
+<div class='w'><b>conspire</b><span class='ipa'>/kənˈspaɪə/</span>v. 密谋，共谋<span class='brk'>（con- 共同 + spir 呼吸 → 同呼吸 → 勾结）</span><span class='ex'>例：They conspired against him. 他们密谋反对他。</span></div>
+</div>
+</div>
+<div class='batch'><h2 style='background:#4338ca'>第10批 (08-20) · 20词（对照本总表去重，零重复）</h2>
+<div class='root' style='border-left-color:#4338ca'>
+<div class='rt' style='color:#4338ca'>词根 ① -cap / -cip <span class='mean'>= 抓 / 取（take / seize）</span></div>
+<p class='hook'>钩子：cap → 联想「capture 捕获（抓住）」「capital 首都（抓权之地）」，核心是“抓/取”。</p>
+<div class='w'><b>capture</b><span class='ipa'>/ˈkæptʃə/</span>v. 捕获，占领<span class='brk'>（cap 抓 + -ture → 抓住）</span><span class='ex'>例：capture the moment 捕捉瞬间</span></div>
+<div class='w'><b>capable</b><span class='ipa'>/ˈkeɪpəbl/</span>adj. 有能力的<span class='brk'>（cap 抓 + -able 能…的 → 能抓事 → 有能力的）</span><span class='ex'>例：a capable leader 能干的领导</span></div>
+<div class='w'><b>capacity</b><span class='ipa'>/kəˈpæsəti/</span>n. 容量，能力<span class='brk'>（cap 抓 + -acity → 抓的量 → 容量）</span><span class='ex'>例：a large capacity 大容量</span></div>
+<div class='w'><b>captive</b><span class='ipa'>/ˈkæptɪv/</span>adj. 被俘的；n. 俘虏<span class='brk'>（cap 抓 + -ive → 被抓的）</span><span class='ex'>例：hold someone captive 囚禁某人</span></div>
+<div class='w'><b>occupy</b><span class='ipa'>/ˈɒkjupaɪ/</span>v. 占据，占用<span class='brk'>（oc- 朝向 + cup[y] 抓 → 抓住 → 占据）</span><span class='ex'>例：occupy the seat 占座</span></div>
+</div>
+<div class='root' style='border-left-color:#4338ca'>
+<div class='rt' style='color:#4338ca'>词根 ② -leg / -lig <span class='mean'>= 选 / 绑 / 读（choose / bind / read）</span></div>
+<p class='hook'>钩子：leg → 联想「legal 合法的（绑定的规则）」「college 学院（选出来的一群）」，核心是“选/绑”。</p>
+<div class='w'><b>legal</b><span class='ipa'>/ˈliːɡl/</span>adj. 合法的<span class='brk'>（leg 法/绑 + -al → 合法的）</span><span class='ex'>例：legal rights 合法权利</span></div>
+<div class='w'><b>legend</b><span class='ipa'>/ˈledʒənd/</span>n. 传说，图例<span class='brk'>（leg 读 + -end → 被读诵的 → 传说）</span><span class='ex'>例：a famous legend 著名传说</span></div>
+<div class='w'><b>college</b><span class='ipa'>/ˈkɒlɪdʒ/</span>n. 学院，大学<span class='brk'>（col- 共同 + leg 选 → 选在一起 → 学院）</span><span class='ex'>例：go to college 上大学</span></div>
+<div class='w'><b>eligible</b><span class='ipa'>/ˈelɪdʒəbl/</span>adj. 有资格的<span class='brk'>（e- 向外 + lig 选 + -ible → 被选出的 → 合格的）</span><span class='ex'>例：eligible for the job 有资格任职</span></div>
+<div class='w'><b>privilege</b><span class='ipa'>/ˈprɪvəlɪdʒ/</span>n. 特权<span class='brk'>（priv- 私 + leg 法 → 私法 → 特权）</span><span class='ex'>例：a special privilege 特殊特权</span></div>
+</div>
+<div class='root' style='border-left-color:#4338ca'>
+<div class='rt' style='color:#4338ca'>词根 ③ -mand / -mend <span class='mean'>= 命令 / 托付（order / entrust）</span></div>
+<p class='hook'>钩子：mand → 联想「command 命令（交托指令）」，核心是“命令/托付”。</p>
+<div class='w'><b>command</b><span class='ipa'>/kəˈmɑːnd/</span>v./n. 命令，指挥<span class='brk'>（com- 共同 + mand 托付 → 委命 → 指挥）</span><span class='ex'>例：command the army 指挥军队</span></div>
+<div class='w'><b>demand</b><span class='ipa'>/dɪˈmɑːnd/</span>v./n. 要求，需求<span class='brk'>（de- 向下 + mand 命令 → 下命令 → 要求）</span><span class='ex'>例：meet the demand 满足需求</span></div>
+<div class='w'><b>recommend</b><span class='ipa'>/ˌrekəˈmend/</span>v. 推荐，建议<span class='brk'>（re- 再 + com- + mend 托付 → 托付 → 推荐）</span><span class='ex'>例：I recommend this book. 我推荐这本书。</span></div>
+<div class='w'><b>mandatory</b><span class='ipa'>/ˈmændətəri/</span>adj. 强制的，义务的<span class='brk'>（mand 命令 + -atory → 命令的 → 必须的）</span><span class='ex'>例：mandatory training 强制培训</span></div>
+<div class='w'><b>commander</b><span class='ipa'>/kəˈmɑːndə/</span>n. 指挥官<span class='brk'>（command 指挥 + -er 人 → 指挥官）</span><span class='ex'>例：a troop commander 部队指挥官</span></div>
+</div>
+<div class='root' style='border-left-color:#4338ca'>
+<div class='rt' style='color:#4338ca'>词根 ④ -min / -minu <span class='mean'>= 小（small / less）</span></div>
+<p class='hook'>钩子：min → 联想「minor 较小的」「minimum 最小的」，核心是“小”。</p>
+<div class='w'><b>minute</b><span class='ipa'>/ˈmɪnɪt/</span>n. 分钟；/maɪˈnjuːt/ adj. 微小的<span class='brk'>（min 小 → 微小）</span><span class='ex'>例：a minute error 微小的错误</span></div>
+<div class='w'><b>minimum</b><span class='ipa'>/ˈmɪnɪməm/</span>n./adj. 最小（值）<span class='brk'>（min 小 + -imum → 最小）</span><span class='ex'>例：the minimum wage 最低工资</span></div>
+<div class='w'><b>minor</b><span class='ipa'>/ˈmaɪnə/</span>adj. 较小的，次要的<span class='brk'>（min 小 + -or → 较小的）</span><span class='ex'>例：a minor problem 小问题</span></div>
+<div class='w'><b>minority</b><span class='ipa'>/maɪˈnɒrəti/</span>n. 少数，少数民族<span class='brk'>（min 小 + -or + -ity → 少数）</span><span class='ex'>例：a minority group 少数群体</span></div>
+<div class='w'><b>diminish</b><span class='ipa'>/dɪˈmɪnɪʃ/</span>v. 减少，削弱<span class='brk'>（di- 分开 + min 小 + -ish → 变小 → 减少）</span><span class='ex'>例：diminish the risk 降低风险</span></div>
+</div>
+</div>
+<footer>数据来源：01~10_词根词表.txt（一手源文件）· 累计 10 批 · 本表为去重合并后的单一事实源（生成新批前对照此表避免跨批复用旧族）。</footer>
+</body></html>
