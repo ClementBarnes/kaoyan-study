@@ -1,15 +1,79 @@
 <!DOCTYPE html><html lang='zh-CN'><head><meta charset='utf-8'>
 <meta name='viewport' content='width=device-width,initial-scale=1'>
 <title>考研词根 · 听书音频</title><style>
-body{font-family:system-ui,'Microsoft YaHei',sans-serif;background:#f6f7f9;
-color:#1f2937;max-width:760px;margin:0 auto;padding:20px 16px 60px}
+body{font-family:system-ui,'Microsoft YaHei',sans-serif;background:#f6f7f9;color:#1f2937;max-width:760px;margin:0 auto;padding:20px 16px 60px}
 h1{font-size:20px;margin:0 0 4px} .sub{color:#6b7280;font-size:13px;margin-bottom:14px}
-.c{border:1px solid #e5e7eb;border-radius:10px;padding:12px 14px;margin:12px 0;background:#fff}
+.toolbar{position:sticky;top:0;z-index:10;background:#fff;border:1px solid #e5e7eb;border-radius:10px;padding:10px 12px;margin-bottom:14px;display:flex;gap:8px;box-shadow:0 2px 8px rgba(0,0,0,.05)}
+.toolbar button{border:none;border-radius:8px;padding:9px 16px;font-size:14px;font-weight:600;cursor:pointer;color:#fff}
+#playAll{background:#2f6bff} #stop{background:#9aa3af}
+.c{border:1px solid #e5e7eb;border-radius:10px;padding:12px 14px;margin:12px 0;background:#fff;transition:box-shadow .2s}
+.c.on{border-color:#2f6bff;box-shadow:0 0 0 2px rgba(47,107,255,.25);background:#f7faff}
 .w{font-size:17px;font-weight:700} .ipa{color:#6b7280;font-style:italic;font-weight:400;margin-left:6px}
 .m{color:#374151;font-size:14px;margin:2px 0} .ex{color:#6b7280;font-size:13px;margin-bottom:8px}
 audio{width:100%}
 </style></head><body>
 <h1>考研词根 · 听书音频</h1>
-<p class='sub'>每词：单词×2 → 词义 → 例句 → 翻译（edge-tts 生成）。由 gen_audio.py 产出。</p>
-<div class='c'><div class='w'>inspect <span class='ipa'>/ɪnˈspekt/</span></div><div class='m'>v. 检查，视察</div><div class='ex'>The manager will inspect the factory. 经理将视察工厂。</div><audio controls preload='none' src='audio/inspect.wav'></audio></div><div class='c'><div class='w'>respect <span class='ipa'>/rɪˈspekt/</span></div><div class='m'>v./n. 尊重</div><div class='ex'>We should respect the elderly. 我们应尊重老人。</div><audio controls preload='none' src='audio/respect.wav'></audio></div><div class='c'><div class='w'>expect <span class='ipa'>/ɪkˈspekt/</span></div><div class='m'>v. 期待，预期</div><div class='ex'>I expect a call from him. 我等他的电话。</div><audio controls preload='none' src='audio/expect.wav'></audio></div><div class='c'><div class='w'>aspect <span class='ipa'>/ˈæspekt/</span></div><div class='m'>n. 方面，外观</div><div class='ex'>This is only one aspect of the problem. 这只是问题的一个方面。</div><audio controls preload='none' src='audio/aspect.wav'></audio></div><div class='c'><div class='w'>prospect <span class='ipa'>/ˈprɒspekt/</span></div><div class='m'>n. 前景，展望</div><div class='ex'>The prospect of promotion excited him. 升职的前景令他兴奋。</div><audio controls preload='none' src='audio/prospect.wav'></audio></div><div class='c'><div class='w'>perspective <span class='ipa'>/pəˈspektɪv/</span></div><div class='m'>n. 观点，视角</div><div class='ex'>From my perspective, it is wrong. 依我看，这是错的。</div><audio controls preload='none' src='audio/perspective.wav'></audio></div><div class='c'><div class='w'>import <span class='ipa'>/ˈɪmpɔːt/</span></div><div class='m'>v./n. 进口</div><div class='ex'>We import oil from abroad. 我们从国外进口石油。</div><audio controls preload='none' src='audio/import.wav'></audio></div><div class='c'><div class='w'>export <span class='ipa'>/ˈekspɔːt/</span></div><div class='m'>v./n. 出口</div><div class='ex'>We export goods to Europe. 我们向欧洲出口商品。</div><audio controls preload='none' src='audio/export.wav'></audio></div>
+<p class='sub'>每词：单词×2 → 词义 → 例句 → 翻译。点「联播全部」连续听，播完自动下一个。</p>
+<div class='toolbar'>
+  <button id='playAll'>▶ 联播全部</button>
+  <button id='stop'>■ 停止</button>
+</div>
+<div class='c'><div class='w'>inspect <span class='ipa'>/ɪnˈspekt/</span></div><div class='m'>v. 检查，视察</div><div class='ex'>The manager will inspect the factory. 经理将视察工厂。</div><audio controls preload='none' src='audio/inspect.wav'></audio></div>
+<div class='c'><div class='w'>respect <span class='ipa'>/rɪˈspekt/</span></div><div class='m'>v./n. 尊重</div><div class='ex'>We should respect the elderly. 我们应尊重老人。</div><audio controls preload='none' src='audio/respect.wav'></audio></div>
+<div class='c'><div class='w'>expect <span class='ipa'>/ɪkˈspekt/</span></div><div class='m'>v. 期待，预期</div><div class='ex'>I expect a call from him. 我等他的电话。</div><audio controls preload='none' src='audio/expect.wav'></audio></div>
+<div class='c'><div class='w'>aspect <span class='ipa'>/ˈæspekt/</span></div><div class='m'>n. 方面，外观</div><div class='ex'>This is only one aspect of the problem. 这只是问题的一个方面。</div><audio controls preload='none' src='audio/aspect.wav'></audio></div>
+<div class='c'><div class='w'>prospect <span class='ipa'>/ˈprɒspekt/</span></div><div class='m'>n. 前景，展望</div><div class='ex'>The prospect of promotion excited him. 升职的前景令他兴奋。</div><audio controls preload='none' src='audio/prospect.wav'></audio></div>
+<div class='c'><div class='w'>perspective <span class='ipa'>/pəˈspektɪv/</span></div><div class='m'>n. 观点，视角</div><div class='ex'>From my perspective, it is wrong. 依我看，这是错的。</div><audio controls preload='none' src='audio/perspective.wav'></audio></div>
+<div class='c'><div class='w'>import <span class='ipa'>/ˈɪmpɔːt/</span></div><div class='m'>v./n. 进口</div><div class='ex'>We import oil from abroad. 我们从国外进口石油。</div><audio controls preload='none' src='audio/import.wav'></audio></div>
+<div class='c'><div class='w'>export <span class='ipa'>/ˈekspɔːt/</span></div><div class='m'>v./n. 出口</div><div class='ex'>We export goods to Europe. 我们向欧洲出口商品。</div><audio controls preload='none' src='audio/export.wav'></audio></div>
+<script>
+const audios = Array.from(document.querySelectorAll('audio'));
+const cards  = Array.from(document.querySelectorAll('.c'));
+const playAll = document.getElementById('playAll');
+const stopBtn = document.getElementById('stop');
+let chained = false;
+
+function setActive(i){
+  cards.forEach((c,idx)=>c.classList.toggle('on', idx===i));
+}
+
+// 同一时间只允许一个音频播放
+audios.forEach(a => a.addEventListener('play', ()=>{
+  audios.forEach(o => { if(o !== a) o.pause(); });
+  setActive(audios.indexOf(a));
+}));
+
+// 联播：播完自动播下一个
+audios.forEach((a, i) => a.addEventListener('ended', ()=>{
+  if(chained && i < audios.length - 1){
+    audios[i+1].currentTime = 0;
+    audios[i+1].play();
+  } else if(i === audios.length - 1){
+    chained = false;
+    playAll.textContent = '▶ 联播全部';
+    setActive(-1);
+  }
+}));
+
+playAll.addEventListener('click', ()=>{
+  chained = !chained;
+  if(chained){
+    audios.forEach(o => o.pause());
+    audios[0].currentTime = 0;
+    audios[0].play();
+    playAll.textContent = '⏸ 停止联播';
+  } else {
+    audios.forEach(o => o.pause());
+    playAll.textContent = '▶ 联播全部';
+    setActive(-1);
+  }
+});
+
+stopBtn.addEventListener('click', ()=>{
+  chained = false;
+  audios.forEach(o => o.pause());
+  playAll.textContent = '▶ 联播全部';
+  setActive(-1);
+});
+</script>
 </body></html>
