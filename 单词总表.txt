@@ -1,8 +1,8 @@
 ================================================================
 考研英语 · 词根单词总表（去重合并锚点版 · 组网格式整理后）
-最近更新：2026-08-20 · Day15 · 第10批（已合并跨批重复词根）
-数据来源：01~10_词根词表.txt（一手源文件，非记忆）
-去重结果：原 208 词条 → 合并为 34 词根族 / 约 186 不重复词
+最近更新：2026-08-20 · Day15 · 累计 20 批（第11-20批为预生成·待排期）
+数据来源：第01-10批来自 01~10_词根词表.txt；第11-20批来自 future_batches.py（非记忆）
+去重结果：第01-10批 208 词条合并为 34 族/185 词；第11-20批 40 族/200 词；合计 74 族/385 不重复词
 用途：每次生成新词根前先扫「一、已用词根族清单」，避免跨批复用旧族
 ================================================================
 
@@ -17,6 +17,16 @@
 第08批: -vid / -vis  -press  -rupt
 第09批: -voc / -vok  -sens / -sent  -nov  -spir
 第10批: -cap / -cip  -leg / -lig  -mand / -mend  -min / -minu
+第11批: -mob / -mot / -mov  -sol  -lev  -magn / -maj / -max
+第12批: -cert  -fac / -fact / -fect  -pel / -puls  -sequ / -secut
+第13批: -gen / -gener  -solv / -solut  -serv  -sist
+第14批: -aud  -cred  -flu  -her / -hes
+第15批: -manu / -mani  -med  -mem  -migr
+第16批: -mon  -nat  -neg  -nomin / -nomen
+第17批: -path  -ped  -phil  -phon
+第18批: -plac  -plen / -plet  -quest / -quir / -quis  -viv / -vit
+第19批: -rect / -reg  -scend  -sci  -sed / -sid / -sess
+第20批: -simil / -sembl  -tang / -tact  -term / -termin  -tort
 
 【二、按批次全词表（合并后）】
 
@@ -73,6 +83,66 @@
 -leg / -lig 选 / 绑 / 读: legal, legend, college, eligible, privilege
 -mand / -mend 命令 / 托付: command, demand, recommend, mandatory, commander
 -min / -minu 小: minute, minimum, minor, minority, diminish
+
+=== 第11批 第11批 (待排期) 20词 ===
+-mob / -mot / -mov 动: mobile, motion, motivate, promote, remove
+-sol 单独: sole, solo, isolate, desolate, solitude
+-lev 轻 / 举: elevate, lever, relieve, relevant, levy
+-magn / -maj / -max 大: magnify, magnitude, magnificent, major, maximum
+
+=== 第12批 第12批 (待排期) 20词 ===
+-cert 确定: certain, certify, certificate, ascertain, certitude
+-fac / -fact / -fect 做: factor, facilitate, manufacture, defect, efficient
+-pel / -puls 推: propel, compel, repel, impulse, compulsory
+-sequ / -secut 跟随: sequence, consequence, subsequent, pursue, execute
+
+=== 第13批 第13批 (待排期) 20词 ===
+-gen / -gener 生: generate, genuine, genius, generous, gender
+-solv / -solut 解开: solve, solution, resolve, dissolve, absolute
+-serv 保持 / 服务: serve, service, preserve, reserve, deserve
+-sist 站立: consist, insist, persist, resist, assist
+
+=== 第14批 第14批 (待排期) 20词 ===
+-aud 听: audio, audience, audible, auditorium, audit
+-cred 相信: credit, credible, incredible, credentials, creed
+-flu 流: fluent, influence, fluid, fluctuate, influx
+-her / -hes 粘附: adhere, coherent, hesitate, inherent, cohesion
+
+=== 第15批 第15批 (待排期) 20词 ===
+-manu / -mani 手: manual, manipulate, manage, manifest, manner
+-med 中间: medium, mediate, immediate, intermediate, medieval
+-mem 记忆: memory, remember, memorial, commemorate, memoir
+-migr 迁移: migrate, immigrant, emigrate, migrant, migration
+
+=== 第16批 第16批 (待排期) 20词 ===
+-mon 提醒 / 展示: monitor, monument, demonstrate, summon, admonish
+-nat 生 / 天然: nature, native, nation, innate, naive
+-neg 否定: negative, neglect, negotiate, negligible, negate
+-nomin / -nomen 名: nominate, nominee, denomination, nominal, renowned
+
+=== 第17批 第17批 (待排期) 20词 ===
+-path 情感 / 病: sympathy, apathy, empathy, pathetic, pathology
+-ped 脚 / 儿童: pedal, pedestrian, expedition, impede, centipede
+-phil 爱: philosophy, philanthropist, bibliophile, philharmonic, anglophile
+-phon 声音: telephone, symphony, microphone, phonetic, cacophony
+
+=== 第18批 第18批 (待排期) 20词 ===
+-plac 取悦 / 平静: placate, complacent, placebo, placid, implacable
+-plen / -plet 满: plenty, complete, supplement, implement, replenish
+-quest / -quir / -quis 求: request, acquire, inquire, require, quest
+-viv / -vit 生命 / 活: vivid, survive, revive, vital, vitamin
+
+=== 第19批 第19批 (待排期) 20词 ===
+-rect / -reg 直 / 规则: correct, direct, erect, regulate, regular
+-scend 爬 / 升: ascend, descend, transcend, descendant, ascent
+-sci 知道: science, conscious, conscience, omniscient, prescient
+-sed / -sid / -sess 坐: session, reside, resident, preside, sedentary
+
+=== 第20批 第20批 (待排期) 20词 ===
+-simil / -sembl 相似: similar, resemble, simulate, assemble, simultaneous
+-tang / -tact 接触: contact, intact, tangible, tactile, contagious
+-term / -termin 界限: term, terminal, determine, terminate, exterminate
+-tort 扭: distort, torture, retort, extort, contort
 
 【三、重复族合并记录（审计确认）】
 - 第05批 -scrib 并入第03批；新增 transcript
