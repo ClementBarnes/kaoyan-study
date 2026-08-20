@@ -37,10 +37,12 @@ function setActive(i){
   cards.forEach((c,idx)=>c.classList.toggle('on', idx===i));
 }
 
-// 同一时间只允许一个音频播放
+// 同一时间只允许一个音频播放 + 每次都从头开始
 audios.forEach(a => a.addEventListener('play', ()=>{
   audios.forEach(o => { if(o !== a) o.pause(); });
   setActive(audios.indexOf(a));
+  // 无论之前停在哪，每次播放都重置到 0:00，保证完整从头听
+  if(a.currentTime > 0.3) a.currentTime = 0;
 }));
 
 // 联播：播完自动播下一个
