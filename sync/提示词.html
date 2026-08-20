@@ -54,12 +54,13 @@
 1. 词汇新批仅周一/周四；生成前必须 Read 全部 0N_词根词表.txt + 单词总表.txt 去重，禁止凭记忆。
 2. 每次生成须同步更新：《英语词汇攻克方案》《管综写作辅导手册》两本「学习进度汇总」；若出词根新批还须更 单词总表(txt+html)。
 3. 子页面须含「←目录」浮窗（相对路径 ../index.html），勿删 .nojekyll。
+4. 新词日（当天学习清单含新批次单词）必须加「单词阅读」环节：用 TTS 听书音频过一遍本批新词（单词×2→词义→例句→翻译），可直接开《单词总表.html》点该批「▶ 联播本批」连续听，置于正式背单词之前。
 
-【文件体系】工作区 = 根目录 + online/(GitHub Pages 部署根) + kaoyan-study/(Gitee 备份)。online/ 含：index.html / 今日学习单_YYYY-MM-DD.html / 考研学习计划.html / 英语词汇攻克方案.html / 管综写作辅导手册.html / 单词总表.* / 0N_*_词根词表.txt / sync/。
+【文件体系】工作区 = 根目录（工作稿）+ online/（GitHub Pages 部署根，唯一托管+备份）。online/ 含：index.html / 今日学习单_YYYY-MM-DD.html / 考研学习计划.html / 英语词汇攻克方案.html / 管综写作辅导手册.html / 单词总表.html（已合并听书：每词播放条+每批「联播本批」按钮）/ 单词总表.txt / 0N_*_词根词表.txt / kaoyan_words_bbdc.txt / audio/（TTS 音频）/ 听书.html（跳转单词总表）/ sync/。
 
-【同步流程】1) online/ git pull → 2) 读 sync/提示词.txt 核进度 → 3) 生成+改 index「最新」+同步根与 kaoyan-study → 4) online/ add-commit-push → 5) 更新 sync 两文件一并推。
+【同步流程】1) online/ git pull → 2) 读 sync/提示词.txt 核进度 → 3) 生成 + 改 index「最新」+ 同步根与 online/（两处同步单推）→ 4) online/ add-commit-push → 5) 更新 sync 两文件一并推。
 
-【部署】GitHub Pages: https://ClementBarnes.github.io/kaoyan-study/（登录名带 s，main/root）。推送 SSH443: ssh://git@ssh.github.com:443/ClementBarnes/kaoyan-study.git；密钥 C:\Users\cyql0\.ssh\id_ed25519_kaoyan（.ssh/config 已配 Host ssh.github.com→IdentityFile）。沙箱 git: /mingw64/bin/git；用户 PS: C:\Users\cyql0\.workbuddy\vendor\PortableGit\cmd\git.exe。Gitee 备份: https://gitee.com/its-bald-its-bald/kaoyan_study（按需手 push）。
+【部署】GitHub Pages: https://ClementBarnes.github.io/kaoyan-study/（登录名带 s，main/root）。推送 SSH443: ssh://git@ssh.github.com:443/ClementBarnes/kaoyan-study.git；密钥 C:\Users\cyql0\.ssh\id_ed25519_kaoyan（.ssh/config 已配 Host ssh.github.com→IdentityFile）。沙箱 git: /mingw64/bin/git；用户 PS: C:\Users\cyql0\.workbuddy\vendor\PortableGit\cmd\git.exe。
 </textarea>
 
   </div>
