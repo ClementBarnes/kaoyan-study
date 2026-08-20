@@ -1,0 +1,29 @@
+第10批 · 2026-08-20 · 词根词表（20词 · 4组新词根，对照总表去重零重复）
+
+-cap / -cip 抓·取
+capture 捕获、占领（cap 抓 → 抓住→俘获）
+capable 有能力的（cap 抓 → 能抓住事 → 胜任的）
+capacity 容量、能力（cap 抓 → 容纳→容量）
+captive 俘虏（被抓住的人）
+occupy 占据、占领（ob- 加强 + cap → 抓住→占有）
+
+-leg / -lig 绑·选·读
+legal 合法的（leg 法律、法定义务）
+legend 传说（leg 读 → 被诵读的故事）
+college 学院（con- 共同 + leg 选 → 被选中聚集之地）
+eligible 符合条件的（e- 出 + lig 选 → 被选出的）
+privilege 特权（privi 私人 + leg 法 → 私人的法律 → 特权）
+
+-mand / -mend 命令·托付
+command 命令、指挥（com- 共同 + mand → 共同下令）
+demand 要求（de- 向下 + mand → 向下命令 → 强求）
+recommend 推荐（re- 再 + com- 共同 + mend → 共同托付 → 推荐）
+mandatory 强制的、必须的（mand 命令 + -atory）
+commander 指挥官（command + -er 执行者）
+
+-min / -minu 小
+minute 分钟、微小的（min 小 → 微小的时间单位）
+minimum 最小的（min 小 + -mum 最高级后缀）
+minor 较小的、未成年人（min 小 → 次要的）
+minority 少数（minor + -ity 名词化）
+diminish 减少、削弱（di- 分开 + min → 使变小）

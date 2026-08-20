@@ -1,8 +1,8 @@
 ============================================================
 考研英语 · 词根单词总表（接手对照版）
-最近更新：2026-08-19 · Day14 · 第09批
-数据来源：01~09_词根词表.txt（一手源文件，非记忆）
-总条目：188 个（含重复族中的重复词，见末尾对照）
+最近更新：2026-08-20 · Day15 · 第10批
+数据来源：01~10_词根词表.txt（一手源文件，非记忆）
+总条目：208 个（含重复族中的重复词，见末尾对照）
 用途：每次生成新词根前先扫「一、已用词根族清单」，
       避免跨批复用旧族；新词根族须从未出现族中选取。
 ============================================================
@@ -17,6 +17,7 @@
 第07批: -vert*  -form*  -clud/-clus  -pend/-pens
 第08批: -vid/-vis  -press  -gress*  -rupt
 第09批: -voc/-vok  -sens/-sent  -nov  -spir
+第10批: -cap/-cip  -leg/-lig  -mand  -min
 
 【二、按批次全词表】
 
@@ -75,6 +76,12 @@
 -nov 新·更新: novel, innovate, innovation, novice, renew
 -spir 呼吸·精神: spirit, inspire, aspire, expire, conspire
 
+=== 第10批 (08-20) 20词（对照本总表去重，零重复）===
+-cap/-cip 抓·取: capture, capable, capacity, captive, occupy
+-leg/-lig 选·绑·读: legal, legend, college, eligible, privilege
+-mand/-mend 命令·托付: command, demand, recommend, mandatory, commander
+-min/-minu 小: minute, minimum, minor, minority, diminish
+
 【三、重复族对照（审计确认，后续生成须规避）】
 - 第05批 -scrib 撞第03批：describe / prescribe / subscribe / manuscript
 - 第05批 -fer 撞第03批：refer / transfer / differ / offer（另加 infer / confer）
@@ -88,16 +95,16 @@
       （如 -cap 抓 / -leg 绑 / -mand 命令 / -min 小 / -mob 动 /
        -sol 单独 / -lev 轻 / -magn 大 / -cert 确定 等）。
 
-【四、待选未用族（供下一批参考）】
--cap/-cip 抓: capture, capable, occupy, participate
--leg/-lig 绑·选: legal, legend, intelligent, eligible
--mand/-mend 命令: command, demand, recommend
--min/-minu 小: minute, minimum, diminish
+【四、待选未用族（供下一批参考 · 已剔除去重用过的 -cap/-leg/-mand/-min）】
 -mob/-mot 动: mobile, motion, promote, remote
 -sol 单独: sole, solid, solve, absolute
 -lev/-liev 轻·升: level, elevate, relieve
 -magn 大: magnitude, magnificent, magnify
 -cert/-cern 确定·分辨: certain, concern, discern
 -fac/-fic/-fact 做: fact, factory, affect, effect, facility
+-pel/-puls 推: compel, expel, propel, pulse
+-sec/-sequ 跟随: sequence, consequence, follow, execute
+-gen/-gener 生·类: generate, general, genius, generous
+-solv/-solut 解: solve, solution, resolve, absolute
 （以上仅列族与示例，生成新批时按本清单择未用族展开 20 词）
 ============================================================
