@@ -9,12 +9,17 @@
 【硬性规则】
 1. 词汇新批仅周一/周四；生成前必须 Read 全部 0N_词根词表.txt + 单词总表.txt 去重，禁止凭记忆。
 2. 每次生成须同步更新：《英语词汇攻克方案》《管综写作辅导手册》两本「学习进度汇总」；若出词根新批还须更 单词总表(txt+html)。
-3. 所有页面（含脚本生成页）必须含「←目录」返回首页浮窗（.back-home）：根目录页面 href='index.html'、子目录页面 '../index.html'；勿删 .nojekyll。
+3. 所有页面右下角导航浮窗（.nav-fab，2026-08-21 双按钮版）：子页含「←目录」(.back-home，根目录 href='index.html'、子目录 '../index.html')＋「🏠主页」(.go-home，href='/')；导航页 index.html 仅「🏠主页」；勿删 .nojekyll。批量注入用 tools/add_back_button.py（幂等，已防 online/ 二次遍历覆盖）。
 4. 新词日（当天学习清单含新批次单词）必须加「单词阅读」环节：用 TTS 听书音频过一遍本批新词（单词×2→词义→例句→翻译），可直接开《单词总表.html》点该批「▶ 联播本批」连续听。顺序固定：先听建立印象 → 再正式背单词。
 5. 学习单单词区两套固定格式（2026-08-21 用户确认，均含 🔊发音按钮=播放 audio/<词>.wav、单播互斥+从头重播；例句英+中必须从 words_tts.json 取、与音频逐字一致）：
    - 复习日（非新批日）：每词一行四层——🔊＋单词＋汉译＋例句；不配音标、不配拆解；按批次分组卡片布局。参考《今日学习单_2026-08-21.html》。
    - 新词日（启用新批次）：词根块排版（仿《单词总表》：左色条＋词根＋含义＋记忆钩子）→ 每词一行六层——🔊＋单词＋音标＋词义＋结构拆解＋例句。参考《新词日单词区小样.html》。
 6. 学习单样式用「移动优先」模板（2026-08-21 用户确认）：默认=手机版（单列卡片/正文16px/发音按钮38px触控/间距收紧），@media(min-width:768px)自动恢复桌面增强（双列词卡/30px按钮/大间距）。样式见《今日学习单_2026-08-21.html》。
+
+【三仓库边界契约（2026-08-21 通勤侧交接，详见 D:\通勤音频\文稿\考研对话交接提示词.md）】
+- 三个独立仓库互不覆盖：个人门户 ClementBarnes.github.io（通勤侧维护，D:\通勤音频\_deploy_home）/ 考研站 kaoyan-study（本流程维护，online/）/ 通勤音频 commute-audio（通勤侧维护）。
+- 只推自己的仓库：本流程只 git -C online push；绝不 push 门户或 commute-audio；门户 index.html 归通勤侧，如需调整在对话中说明由通勤侧改。
+- 返回个人主页一律 href="/"（绝对路径）；考研站内返回 href="/kaoyan-study/"；门户卡片 href 契约不变。
 
 【文件体系】工作区 = 根目录（工作稿）+ online/（GitHub Pages 部署根，唯一托管+备份）。根目录含 tools/（生成脚本：build_master/gen_audio/gen_bbdc/gen_qr/add_back_button/future_batches）。online/ 含：index.html / 今日学习单_YYYY-MM-DD.html / 考研学习计划.html / 英语词汇攻克方案.html / 管综写作辅导手册.html / 单词总表.html（已合并听书：每词播放条+每批「联播本批」按钮）/ 单词总表.txt / 0N_*_词根词表.txt / kaoyan_words_bbdc.txt / audio/（TTS 音频）/ 听书.html（跳转单词总表）/ sync/。
 
