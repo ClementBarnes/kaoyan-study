@@ -39,6 +39,16 @@
   .night { background: #1e293b; color: #e2e8f0; border-radius: 12px; padding: 16px 20px; margin-top: 6px; }
   .night h2 { color: #fff; font-size: 17px; }
   .week { background: #eff6ff; border: 1px solid #bfdbfe; border-radius: 10px; padding: 12px 16px; margin: 8px 0; font-size: 14px; color: #1e40af; }
+  .vlist { margin: 10px 0 8px; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 10px; }
+  .vgrp { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 10px; padding: 8px 10px; }
+  .vgt { font-size: 12.5px; font-weight: 700; color: #15803d; margin-bottom: 6px; }
+  .vrow { display: flex; align-items: center; gap: 8px; padding: 3px 0; }
+  .vrow b { font-size: 15px; min-width: 100px; }
+  .vrow .tr { color: #374151; font-size: 14px; }
+  .spk { width: 30px; height: 30px; border: 1px solid #bbf7d0; background: #f0fdf4; border-radius: 50%; cursor: pointer; font-size: 14px; line-height: 1; flex-shrink: 0; transition: transform .12s; }
+  .spk:hover { background: #dcfce7; }
+  .spk:active { transform: scale(.9); }
+  .spk.playing { background: #4ade80; }
 </style><style>
   .back-home{position:fixed;right:18px;bottom:18px;z-index:9999;display:inline-flex;align-items:center;gap:6px;padding:10px 16px;background:#2C2C2A;color:#fff;font-size:14px;font-weight:600;text-decoration:none;border-radius:999px;box-shadow:0 4px 14px rgba(0,0,0,.22);font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif}
   .back-home:active{transform:scale(.96)}
@@ -73,11 +83,33 @@
       <h3>1. 单词 · APP 复习 + 本周生词汇总 · 30 min</h3>
       <p class="sub">不背单词打开词书，混推复习 <b>01–10 批全部 208 词</b>（本周新学的 07–10 批会高频出现，正好当"本周生词汇总"）。不导入任何新文件。</p>
       <div class="word">
-        <b>本周新词快检（07–10 批 · 看词说义，卡壳的标出来）：</b><br>
-        • <b>07 批</b>：convert 转变 / uniform 制服·统一的 / conclude 推断 / depend 依赖<br>
-        • <b>08 批</b>：evident 明显的 / compress 压缩 / congress 国会 / abrupt 突然的<br>
-        • <b>09 批</b>：advocate 提倡 / sensible 明智的 / novel 新颖的 / inspire 鼓舞<br>
-        • <b>10 批</b>：capable 有能力的 / legal 合法的 / recommend 推荐 / diminish 减少<br>
+        <b>本周新词快检（07–10 批 · 点 🔊 听音，看词说义，卡壳的标出来）：</b>
+        <div class="vlist">
+          <div class="vgrp"><div class="vgt">07 批</div>
+            <div class="vrow"><button class="spk" data-w="convert" title="播放发音">🔊</button><b>convert</b><span class="tr">转变</span></div>
+            <div class="vrow"><button class="spk" data-w="uniform" title="播放发音">🔊</button><b>uniform</b><span class="tr">制服·统一的</span></div>
+            <div class="vrow"><button class="spk" data-w="conclude" title="播放发音">🔊</button><b>conclude</b><span class="tr">推断</span></div>
+            <div class="vrow"><button class="spk" data-w="depend" title="播放发音">🔊</button><b>depend</b><span class="tr">依赖</span></div>
+          </div>
+          <div class="vgrp"><div class="vgt">08 批</div>
+            <div class="vrow"><button class="spk" data-w="evident" title="播放发音">🔊</button><b>evident</b><span class="tr">明显的</span></div>
+            <div class="vrow"><button class="spk" data-w="compress" title="播放发音">🔊</button><b>compress</b><span class="tr">压缩</span></div>
+            <div class="vrow"><button class="spk" data-w="congress" title="播放发音">🔊</button><b>congress</b><span class="tr">国会</span></div>
+            <div class="vrow"><button class="spk" data-w="abrupt" title="播放发音">🔊</button><b>abrupt</b><span class="tr">突然的</span></div>
+          </div>
+          <div class="vgrp"><div class="vgt">09 批</div>
+            <div class="vrow"><button class="spk" data-w="advocate" title="播放发音">🔊</button><b>advocate</b><span class="tr">提倡</span></div>
+            <div class="vrow"><button class="spk" data-w="sensible" title="播放发音">🔊</button><b>sensible</b><span class="tr">明智的</span></div>
+            <div class="vrow"><button class="spk" data-w="novel" title="播放发音">🔊</button><b>novel</b><span class="tr">新颖的</span></div>
+            <div class="vrow"><button class="spk" data-w="inspire" title="播放发音">🔊</button><b>inspire</b><span class="tr">鼓舞</span></div>
+          </div>
+          <div class="vgrp"><div class="vgt">10 批</div>
+            <div class="vrow"><button class="spk" data-w="capable" title="播放发音">🔊</button><b>capable</b><span class="tr">有能力的</span></div>
+            <div class="vrow"><button class="spk" data-w="legal" title="播放发音">🔊</button><b>legal</b><span class="tr">合法的</span></div>
+            <div class="vrow"><button class="spk" data-w="recommend" title="播放发音">🔊</button><b>recommend</b><span class="tr">推荐</span></div>
+            <div class="vrow"><button class="spk" data-w="diminish" title="播放发音">🔊</button><b>diminish</b><span class="tr">减少</span></div>
+          </div>
+        </div>
         <span style="color:#15803d">把上面 16 个词里<b>卡壳/记混</b>的挑出来，截个图或抄进私人生词本——这就是你的"本周易错清单"，周日错题整理时用它。</span>
       </div>
       <div class="tip purple">💡 复习不是"再过一遍"，而是"筛出错题"。APP 里标红的词就是下周复习的靶子。今天的 30 分钟，把时间花在<b>错的</b>上，而不是已经会的上。</div>
@@ -138,5 +170,24 @@
 
   </div>
 </div>
+<script>
+// 单词发音：单播互斥 + 从头重播
+(function(){
+  var cur = null, curBtn = null;
+  var btns = document.querySelectorAll('.spk');
+  btns.forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var w = btn.getAttribute('data-w');
+      if (cur) { cur.pause(); if (curBtn) curBtn.classList.remove('playing'); }
+      cur = new Audio('audio/' + w + '.wav');
+      curBtn = btn;
+      cur.currentTime = 0;
+      btn.classList.add('playing');
+      cur.play().catch(function(){ btn.classList.remove('playing'); });
+      cur.addEventListener('ended', function(){ btn.classList.remove('playing'); cur = null; curBtn = null; });
+    });
+  });
+})();
+</script>
 </body>
 </html>
