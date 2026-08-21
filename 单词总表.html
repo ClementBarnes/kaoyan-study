@@ -28,13 +28,23 @@ audio { width:100%; margin-top:6px; }
   font-weight:600; color:#fff; background:rgba(255,255,255,.28); cursor:pointer; vertical-align:middle; }
 .batchPlay:hover { background:rgba(255,255,255,.45); }
 .batchPlay.on { background:#fff; color:#111; }
-.back-home{position:fixed;right:18px;bottom:18px;z-index:9999;display:inline-flex;align-items:center;gap:6px;padding:10px 16px;background:#2C2C2A;color:#fff;font-size:14px;font-weight:600;text-decoration:none;border-radius:999px;box-shadow:0 4px 14px rgba(0,0,0,.22);font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif}
-.back-home:active{transform:scale(.96)}
-@media(max-width:600px){.back-home{padding:9px 13px;font-size:13px;right:12px;bottom:12px}}
+
 footer { margin-top:34px; font-size:12.5px; color:#9ca3af; border-top:1px solid #e5e7eb; padding-top:14px; }
+</style>
+
+<style>
+  .nav-fab{position:fixed;right:18px;bottom:18px;z-index:9999;display:flex;gap:10px;font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif}
+  .nav-fab a{display:inline-flex;align-items:center;gap:6px;padding:10px 16px;border-radius:999px;font-size:14px;font-weight:600;text-decoration:none;box-shadow:0 4px 14px rgba(0,0,0,.22)}
+  .nav-fab a:active{transform:scale(.96)}
+  .nav-fab .back-home{background:#2C2C2A;color:#fff}
+  .nav-fab .go-home{background:#085041;color:#fff}
+  @media(max-width:600px){.nav-fab{right:12px;bottom:12px;gap:8px}.nav-fab a{padding:9px 13px;font-size:13px}}
 </style>
 </head>
 <body>
+<div class="nav-fab"><a href="index.html" class="back-home" title="返回考研备考中心首页">← 目录</a><a href="/" class="go-home" title="返回个人主页">🏠 主页</a></div>
+
+
 <a href='index.html' class='back-home' title='返回备考中心首页'>← 目录</a>
 <h1>考研英语 · 词根单词总表（词根组网法）</h1>
 <p class='sub'>按「第一批词根组网」格式整理 · 每个词根配记忆钩子，每个单词结构拆解+例句 · 相邻批次配色不同 · 跨批重复词根已合并</p>

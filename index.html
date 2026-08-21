@@ -31,8 +31,20 @@
   footer{margin-top:36px;text-align:center;color:#888780;font-size:12px;line-height:1.8}
   footer b{color:#5F5E5A}
 </style>
+
+<style>
+  .nav-fab{position:fixed;right:18px;bottom:18px;z-index:9999;display:flex;gap:10px;font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif}
+  .nav-fab a{display:inline-flex;align-items:center;gap:6px;padding:10px 16px;border-radius:999px;font-size:14px;font-weight:600;text-decoration:none;box-shadow:0 4px 14px rgba(0,0,0,.22)}
+  .nav-fab a:active{transform:scale(.96)}
+  .nav-fab .back-home{background:#2C2C2A;color:#fff}
+  .nav-fab .go-home{background:#085041;color:#fff}
+  @media(max-width:600px){.nav-fab{right:12px;bottom:12px;gap:8px}.nav-fab a{padding:9px 13px;font-size:13px}}
+</style>
 </head>
 <body>
+<div class="nav-fab"><a href="/" class="go-home" title="返回个人主页">🏠 主页</a></div>
+
+
 <div class="wrap">
   <div class="hero">
     <h1>2027级 MBA 备考中心</h1>

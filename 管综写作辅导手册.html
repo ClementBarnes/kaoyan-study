@@ -46,14 +46,20 @@
   .kicker{font-size:13px;color:var(--brand);font-weight:600;letter-spacing:.04em}
   .footer{margin-top:40px;font-size:13px;color:var(--sub);border-top:1px solid var(--line);padding-top:14px}
   .point{font-weight:700;color:var(--pink)}
-</style><style>
-  .back-home{position:fixed;right:18px;bottom:18px;z-index:9999;display:inline-flex;align-items:center;gap:6px;padding:10px 16px;background:#2C2C2A;color:#fff;font-size:14px;font-weight:600;text-decoration:none;border-radius:999px;box-shadow:0 4px 14px rgba(0,0,0,.22);font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif}
-  .back-home:active{transform:scale(.96)}
-  @media(max-width:600px){.back-home{padding:9px 13px;font-size:13px;right:12px;bottom:12px}}
+</style>
+
+<style>
+  .nav-fab{position:fixed;right:18px;bottom:18px;z-index:9999;display:flex;gap:10px;font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif}
+  .nav-fab a{display:inline-flex;align-items:center;gap:6px;padding:10px 16px;border-radius:999px;font-size:14px;font-weight:600;text-decoration:none;box-shadow:0 4px 14px rgba(0,0,0,.22)}
+  .nav-fab a:active{transform:scale(.96)}
+  .nav-fab .back-home{background:#2C2C2A;color:#fff}
+  .nav-fab .go-home{background:#085041;color:#fff}
+  @media(max-width:600px){.nav-fab{right:12px;bottom:12px;gap:8px}.nav-fab a{padding:9px 13px;font-size:13px}}
 </style>
 </head>
 <body>
-<a href="index.html" class="back-home" title="返回备考中心首页">← 目录</a>
+<div class="nav-fab"><a href="index.html" class="back-home" title="返回考研备考中心首页">← 目录</a><a href="/" class="go-home" title="返回个人主页">🏠 主页</a></div>
+
 
 <div class="wrap">
 

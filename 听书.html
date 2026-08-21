@@ -5,12 +5,20 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="refresh" content="0;url=单词总表.html">
 <title>听书已合并到《单词总表》</title>
+
 <style>
-  .back-home{position:fixed;right:18px;bottom:18px;z-index:9999;display:inline-flex;align-items:center;gap:6px;padding:10px 16px;background:#2C2C2A;color:#fff;font-size:14px;font-weight:600;text-decoration:none;border-radius:999px;box-shadow:0 4px 14px rgba(0,0,0,.22);font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif}
+  .nav-fab{position:fixed;right:18px;bottom:18px;z-index:9999;display:flex;gap:10px;font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif}
+  .nav-fab a{display:inline-flex;align-items:center;gap:6px;padding:10px 16px;border-radius:999px;font-size:14px;font-weight:600;text-decoration:none;box-shadow:0 4px 14px rgba(0,0,0,.22)}
+  .nav-fab a:active{transform:scale(.96)}
+  .nav-fab .back-home{background:#2C2C2A;color:#fff}
+  .nav-fab .go-home{background:#085041;color:#fff}
+  @media(max-width:600px){.nav-fab{right:12px;bottom:12px;gap:8px}.nav-fab a{padding:9px 13px;font-size:13px}}
 </style>
 </head>
 <body style="font-family:system-ui,'Microsoft YaHei',sans-serif;background:#f6f7f9;color:#1f2937;text-align:center;padding-top:90px;line-height:1.8">
-<a href="index.html" class="back-home" title="返回备考中心首页">← 目录</a>
+<div class="nav-fab"><a href="index.html" class="back-home" title="返回考研备考中心首页">← 目录</a><a href="/" class="go-home" title="返回个人主页">🏠 主页</a></div>
+
+
 <p style="font-size:17px">听书音频与词根单词总表已合并为一个页面，正在跳转……</p>
 <p><a href="单词总表.html">若未自动跳转，请点此进入《单词总表》（每词可听、每批可联播）</a></p>
 </body>
