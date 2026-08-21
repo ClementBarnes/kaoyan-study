@@ -42,10 +42,13 @@
   .vlist { margin: 10px 0 8px; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 10px; }
   .vgrp { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 10px; padding: 8px 10px; }
   .vgt { font-size: 12.5px; font-weight: 700; color: #15803d; margin-bottom: 6px; }
-  .vrow { display: flex; align-items: center; gap: 8px; padding: 3px 0; }
-  .vrow b { font-size: 15px; min-width: 100px; }
-  .vrow .tr { color: #374151; font-size: 14px; }
-  .spk { width: 30px; height: 30px; border: 1px solid #bbf7d0; background: #f0fdf4; border-radius: 50%; cursor: pointer; font-size: 14px; line-height: 1; flex-shrink: 0; transition: transform .12s; }
+  .vrow { display: flex; align-items: flex-start; gap: 8px; padding: 3px 0; }
+  .vmain { flex: 1; min-width: 0; }
+  .vtop { display: flex; align-items: baseline; gap: 6px; flex-wrap: wrap; }
+  .vtop b { font-size: 15px; }
+  .vtop .tr { color: #374151; font-size: 14px; }
+  .vex { font-size: 12.5px; color: #6b7280; margin-top: 1px; line-height: 1.5; }
+  .spk { width: 30px; height: 30px; border: 1px solid #bbf7d0; background: #f0fdf4; border-radius: 50%; cursor: pointer; font-size: 14px; line-height: 1; flex-shrink: 0; margin-top: 2px; transition: transform .12s; }
   .spk:hover { background: #dcfce7; }
   .spk:active { transform: scale(.9); }
   .spk.playing { background: #4ade80; }
@@ -83,31 +86,31 @@
       <h3>1. 单词 · APP 复习 + 本周生词汇总 · 30 min</h3>
       <p class="sub">不背单词打开词书，混推复习 <b>01–10 批全部 208 词</b>（本周新学的 07–10 批会高频出现，正好当"本周生词汇总"）。不导入任何新文件。</p>
       <div class="word">
-        <b>本周新词快检（07–10 批 · 点 🔊 听音，看词说义，卡壳的标出来）：</b>
+        <b>本周新词快检（07–10 批 · 点 🔊 听音，看词说义 + 例句，卡壳的标出来）：</b>
         <div class="vlist">
           <div class="vgrp"><div class="vgt">07 批</div>
-            <div class="vrow"><button class="spk" data-w="convert" title="播放发音">🔊</button><b>convert</b><span class="tr">转变</span></div>
-            <div class="vrow"><button class="spk" data-w="uniform" title="播放发音">🔊</button><b>uniform</b><span class="tr">制服·统一的</span></div>
-            <div class="vrow"><button class="spk" data-w="conclude" title="播放发音">🔊</button><b>conclude</b><span class="tr">推断</span></div>
-            <div class="vrow"><button class="spk" data-w="depend" title="播放发音">🔊</button><b>depend</b><span class="tr">依赖</span></div>
+            <div class="vrow"><button class="spk" data-w="convert" title="播放发音">🔊</button><div class="vmain"><div class="vtop"><b>convert</b><span class="tr">转变，转换</span></div><div class="vex">convert ideas into action · 把想法变为行动</div></div></div>
+            <div class="vrow"><button class="spk" data-w="uniform" title="播放发音">🔊</button><div class="vmain"><div class="vtop"><b>uniform</b><span class="tr">一致的；制服</span></div><div class="vex">school uniform · 校服</div></div></div>
+            <div class="vrow"><button class="spk" data-w="conclude" title="播放发音">🔊</button><div class="vmain"><div class="vtop"><b>conclude</b><span class="tr">总结，结束</span></div><div class="vex">conclude the meeting · 结束会议</div></div></div>
+            <div class="vrow"><button class="spk" data-w="depend" title="播放发音">🔊</button><div class="vmain"><div class="vtop"><b>depend</b><span class="tr">依赖，取决于</span></div><div class="vex">It depends on you. · 这取决于你。</div></div></div>
           </div>
           <div class="vgrp"><div class="vgt">08 批</div>
-            <div class="vrow"><button class="spk" data-w="evident" title="播放发音">🔊</button><b>evident</b><span class="tr">明显的</span></div>
-            <div class="vrow"><button class="spk" data-w="compress" title="播放发音">🔊</button><b>compress</b><span class="tr">压缩</span></div>
-            <div class="vrow"><button class="spk" data-w="congress" title="播放发音">🔊</button><b>congress</b><span class="tr">国会</span></div>
-            <div class="vrow"><button class="spk" data-w="abrupt" title="播放发音">🔊</button><b>abrupt</b><span class="tr">突然的</span></div>
+            <div class="vrow"><button class="spk" data-w="evident" title="播放发音">🔊</button><div class="vmain"><div class="vtop"><b>evident</b><span class="tr">明显的</span></div><div class="vex">an evident mistake · 明显的错误</div></div></div>
+            <div class="vrow"><button class="spk" data-w="compress" title="播放发音">🔊</button><div class="vmain"><div class="vtop"><b>compress</b><span class="tr">压缩</span></div><div class="vex">compress the file · 压缩文件</div></div></div>
+            <div class="vrow"><button class="spk" data-w="congress" title="播放发音">🔊</button><div class="vmain"><div class="vtop"><b>congress</b><span class="tr">国会，大会</span></div><div class="vex">a medical congress · 医学大会</div></div></div>
+            <div class="vrow"><button class="spk" data-w="abrupt" title="播放发音">🔊</button><div class="vmain"><div class="vtop"><b>abrupt</b><span class="tr">突然的，陡峭的</span></div><div class="vex">an abrupt stop · 急停</div></div></div>
           </div>
           <div class="vgrp"><div class="vgt">09 批</div>
-            <div class="vrow"><button class="spk" data-w="advocate" title="播放发音">🔊</button><b>advocate</b><span class="tr">提倡</span></div>
-            <div class="vrow"><button class="spk" data-w="sensible" title="播放发音">🔊</button><b>sensible</b><span class="tr">明智的</span></div>
-            <div class="vrow"><button class="spk" data-w="novel" title="播放发音">🔊</button><b>novel</b><span class="tr">新颖的</span></div>
-            <div class="vrow"><button class="spk" data-w="inspire" title="播放发音">🔊</button><b>inspire</b><span class="tr">鼓舞</span></div>
+            <div class="vrow"><button class="spk" data-w="advocate" title="播放发音">🔊</button><div class="vmain"><div class="vtop"><b>advocate</b><span class="tr">提倡；倡导者</span></div><div class="vex">advocate peace · 提倡和平</div></div></div>
+            <div class="vrow"><button class="spk" data-w="sensible" title="播放发音">🔊</button><div class="vmain"><div class="vtop"><b>sensible</b><span class="tr">明智的，合理的</span></div><div class="vex">a sensible decision · 明智的决定</div></div></div>
+            <div class="vrow"><button class="spk" data-w="novel" title="播放发音">🔊</button><div class="vmain"><div class="vtop"><b>novel</b><span class="tr">新颖的；小说</span></div><div class="vex">a novel idea · 新点子</div></div></div>
+            <div class="vrow"><button class="spk" data-w="inspire" title="播放发音">🔊</button><div class="vmain"><div class="vtop"><b>inspire</b><span class="tr">鼓舞，启发</span></div><div class="vex">The teacher inspired us. · 老师鼓舞了我们。</div></div></div>
           </div>
           <div class="vgrp"><div class="vgt">10 批</div>
-            <div class="vrow"><button class="spk" data-w="capable" title="播放发音">🔊</button><b>capable</b><span class="tr">有能力的</span></div>
-            <div class="vrow"><button class="spk" data-w="legal" title="播放发音">🔊</button><b>legal</b><span class="tr">合法的</span></div>
-            <div class="vrow"><button class="spk" data-w="recommend" title="播放发音">🔊</button><b>recommend</b><span class="tr">推荐</span></div>
-            <div class="vrow"><button class="spk" data-w="diminish" title="播放发音">🔊</button><b>diminish</b><span class="tr">减少</span></div>
+            <div class="vrow"><button class="spk" data-w="capable" title="播放发音">🔊</button><div class="vmain"><div class="vtop"><b>capable</b><span class="tr">有能力的</span></div><div class="vex">a capable leader · 能干的领导</div></div></div>
+            <div class="vrow"><button class="spk" data-w="legal" title="播放发音">🔊</button><div class="vmain"><div class="vtop"><b>legal</b><span class="tr">合法的</span></div><div class="vex">legal rights · 合法权利</div></div></div>
+            <div class="vrow"><button class="spk" data-w="recommend" title="播放发音">🔊</button><div class="vmain"><div class="vtop"><b>recommend</b><span class="tr">推荐，建议</span></div><div class="vex">I recommend this book. · 我推荐这本书。</div></div></div>
+            <div class="vrow"><button class="spk" data-w="diminish" title="播放发音">🔊</button><div class="vmain"><div class="vtop"><b>diminish</b><span class="tr">减少，削弱</span></div><div class="vex">diminish the risk · 降低风险</div></div></div>
           </div>
         </div>
         <span style="color:#15803d">把上面 16 个词里<b>卡壳/记混</b>的挑出来，截个图或抄进私人生词本——这就是你的"本周易错清单"，周日错题整理时用它。</span>
