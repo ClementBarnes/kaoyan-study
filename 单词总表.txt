@@ -1,6 +1,6 @@
 ================================================================
 考研英语 · 词根单词总表（去重合并锚点版 · 组网格式整理后）
-最近更新：2026-08-20 · Day15 · 累计 20 批（第11-20批为预生成·待排期）
+最近更新：2026-08-24 · Day19 · 累计 20 批（第11批已启用 08-24，第12-20批为预生成·待排期）
 数据来源：第01-10批来自 01~10_词根词表.txt；第11-20批来自 future_batches.py（非记忆）
 去重结果：第01-10批 208 词条合并为 34 族/185 词；第11-20批 40 族/200 词；合计 74 族/385 不重复词
 用途：每次生成新词根前先扫「一、已用词根族清单」，避免跨批复用旧族
@@ -84,7 +84,7 @@
 -mand / -mend 命令 / 托付: command, demand, recommend, mandatory, commander
 -min / -minu 小: minute, minimum, minor, minority, diminish
 
-=== 第11批 第11批 (待排期) 20词 ===
+=== 第11批 第11批 (08-24 Day19) 20词 ===
 -mob / -mot / -mov 动: mobile, motion, motivate, promote, remove
 -sol 单独: sole, solo, isolate, desolate, solitude
 -lev 轻 / 举: elevate, lever, relieve, relevant, levy
