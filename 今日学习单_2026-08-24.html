@@ -56,6 +56,13 @@
   .spk:hover { background: #dcfce7; }
   .spk:active { transform: scale(.88); background: #bbf7d0; }
   .spk.playing { background: #4ade80; }
+  /* 词根连续播放（联播） */
+  .seqBtn { border:none; border-radius:8px; padding:6px 14px; font-size:13px; font-weight:600; color:#fff; background:#7c3aed; cursor:pointer; }
+  .seqBtn:hover { background:#6d28d9; }
+  .seqBtn.on { background:#4c1d95; box-shadow:0 0 0 2px #ddd6fe; }
+  .seqFamily { border:none; border-radius:6px; padding:3px 10px; font-size:12px; font-weight:600; color:#fff; background:#0e7490; cursor:pointer; margin-left:8px; vertical-align:middle; }
+  .seqFamily:hover { background:#155e75; }
+  .seqFamily.on { background:#155e75; box-shadow:0 0 0 2px #a5f3fc; }
   /* ===== 桌面增强（>=768px）===== */
   @media (min-width: 768px) {
     body { padding: 20px; }
@@ -111,13 +118,14 @@
 
       <h3>1. 单词阅读（听书环节）· 20 min · 必须最先做</h3>
       <p class="sub">硬规矩：新词日背单词前，先用 TTS 听书音频过一遍本批。<b>开《单词总表.html》→ 找到第 11 批 → 点「▶ 联播本批」</b>，顺序听：单词×2 → 词义 → 例句 → 翻译。听不懂的先不管，建立声音印象即可。</p>
-      <div class="tip">🔊 本学习单每个词也带 🔊 按钮（点按即听、单播互斥、从头重播），但「整批联播」只在《单词总表.html》有。建议：先去总表联播 1 遍 → 回本单逐词精学。</div>
+      <div class="tip">🔊 本学习单每个词带 🔊 单播按钮（点按即听、单播互斥、从头重播）；<b>也支持按词根连续播放</b>：下方「▶ 词根联播」整批连播、「▶ 本族」单族连播。建议：先联播 1 遍建声音印象 → 再逐词精学。</div>
 
       <h3>2. 新词精学 · 第 11 批 20 词（六层格式）· 60 min</h3>
       <p class="sub">每词六要素：🔊 发音 / 单词 / 音标 / 词义 / <b>结构拆解</b>（辅助记忆）/ 例句（英+中，与音频逐字一致）。先听→再跟读→再闭眼回忆词义→最后用例句造句。</p>
+      <div class="tip purple" style="display:flex;align-items:center;gap:10px;flex-wrap:wrap">🎧 <b>连续播放</b>：<button id="seqAll" class="seqBtn">▶ 词根联播（按词根顺序·20词）</button> 每个词根块标题后也有「▶ 本族」按钮，可单族连播。</div>
 
       <div class="root" style="border-left-color:#0e7490">
-        <div class="rt" style="color:#0e7490">词根 ① -mob / -mot / -mov <span class="mean">= = 动（move）</span></div>
+        <div class="rt" style="color:#0e7490">词根 ① -mob / -mot / -mov <span class="mean">= = 动（move）</span> <button class="seqFamily">▶ 本族</button></div>
         <p class="hook">钩子：mob → 联想「mobile 移动的」「motor 马达（驱动力）」，核心是"动"。</p>
         <div class="w"><button class="spk" data-w="mobile" title="播放发音">🔊</button><span class="wmain"><b>mobile</b><span class="ipa">/ˈməʊbaɪl/</span><span class="mean2">adj. 移动的，可动的</span><span class="brk">（mob 动 + -ile 能…的 → 能动的）</span></span><span class="ex">例：Mobile phones are everywhere. 手机无处不在。</span></div>
         <div class="w"><button class="spk" data-w="motion" title="播放发音">🔊</button><span class="wmain"><b>motion</b><span class="ipa">/ˈməʊʃn/</span><span class="mean2">n. 运动，动议</span><span class="brk">（mot 动 + -ion 名词 → 运动）</span></span><span class="ex">例：The car is in motion. 汽车在运动中。</span></div>
@@ -127,7 +135,7 @@
       </div>
 
       <div class="root" style="border-left-color:#7c3aed">
-        <div class="rt" style="color:#7c3aed">词根 ② -sol <span class="mean">= = 单独 / 唯一（alone）</span></div>
+        <div class="rt" style="color:#7c3aed">词根 ② -sol <span class="mean">= = 单独 / 唯一（alone）</span> <button class="seqFamily">▶ 本族</button></div>
         <p class="hook">钩子：sol → 联想「solo 独唱」「solitary 独居」，核心是"单独/唯一"。</p>
         <div class="w"><button class="spk" data-w="sole" title="播放发音">🔊</button><span class="wmain"><b>sole</b><span class="ipa">/səʊl/</span><span class="mean2">adj. 唯一的，单独的</span><span class="brk">（sol 单独 + -e → 唯一的）</span></span><span class="ex">例：the sole survivor 唯一的幸存者</span></div>
         <div class="w"><button class="spk" data-w="solo" title="播放发音">🔊</button><span class="wmain"><b>solo</b><span class="ipa">/ˈsəʊləʊ/</span><span class="mean2">n./adj. 独奏，单独的</span><span class="brk">（sol 单独 + -o 音乐术语 → 独奏）</span></span><span class="ex">例：a solo performance 独奏表演</span></div>
@@ -137,7 +145,7 @@
       </div>
 
       <div class="root" style="border-left-color:#d97706">
-        <div class="rt" style="color:#d97706">词根 ③ -lev <span class="mean">= = 轻 / 举（light / raise）</span></div>
+        <div class="rt" style="color:#d97706">词根 ③ -lev <span class="mean">= = 轻 / 举（light / raise）</span> <button class="seqFamily">▶ 本族</button></div>
         <p class="hook">钩子：lev → 联想「elevator 电梯（举起）」「alleviate 减轻」，核心是"举/轻"。</p>
         <div class="w"><button class="spk" data-w="elevate" title="播放发音">🔊</button><span class="wmain"><b>elevate</b><span class="ipa">/ˈelɪveɪt/</span><span class="mean2">v. 提升，抬高</span><span class="brk">（e- 出/向上 + lev 举 + -ate → 举起 → 提升）</span></span><span class="ex">例：elevate the standard 提高标准</span></div>
         <div class="w"><button class="spk" data-w="lever" title="播放发音">🔊</button><span class="wmain"><b>lever</b><span class="ipa">/ˈliːvə/</span><span class="mean2">n. 杠杆</span><span class="brk">（lev 举 + -er 工具 → 杠杆）</span></span><span class="ex">例：pull the lever 拉杠杆</span></div>
@@ -147,7 +155,7 @@
       </div>
 
       <div class="root" style="border-left-color:#be123c">
-        <div class="rt" style="color:#be123c">词根 ④ -magn / -maj / -max <span class="mean">= = 大（great / large）</span></div>
+        <div class="rt" style="color:#be123c">词根 ④ -magn / -maj / -max <span class="mean">= = 大（great / large）</span> <button class="seqFamily">▶ 本族</button></div>
         <p class="hook">钩子：magn → 联想「magnate 巨头（大人物）」「maximum 最大」，核心是"大"。</p>
         <div class="w"><button class="spk" data-w="magnify" title="播放发音">🔊</button><span class="wmain"><b>magnify</b><span class="ipa">/ˈmæɡnɪfaɪ/</span><span class="mean2">v. 放大，夸大</span><span class="brk">（magn 大 + -ify 使 → 放大）</span></span><span class="ex">例：magnify the image 放大图像</span></div>
         <div class="w"><button class="spk" data-w="magnitude" title="播放发音">🔊</button><span class="wmain"><b>magnitude</b><span class="ipa">/ˈmæɡnɪtjuːd/</span><span class="mean2">n. 巨大，量级</span><span class="brk">（magn 大 + -itude 名词 → 大小/量级）</span></span><span class="ex">例：the magnitude of the problem 问题的严重性</span></div>
@@ -195,21 +203,71 @@
   </div>
 </div>
 <script>
-// 单词发音：单播互斥 + 从头重播
+// 单词发音：单播互斥 + 从头重播；词根联播：按词根顺序连续播放
 (function(){
   var cur = null, curBtn = null;
-  var btns = document.querySelectorAll('.spk');
-  btns.forEach(function(btn){
-    btn.addEventListener('click', function(){
-      var w = btn.getAttribute('data-w');
-      if (cur) { cur.pause(); if (curBtn) curBtn.classList.remove('playing'); }
-      cur = new Audio('audio/' + w + '.wav');
-      curBtn = btn;
-      cur.currentTime = 0;
-      btn.classList.add('playing');
-      cur.play().catch(function(){ btn.classList.remove('playing'); });
-      cur.addEventListener('ended', function(){ btn.classList.remove('playing'); cur = null; curBtn = null; });
-    });
+  var seqOn = false, seqAudio = null, seqTimer = null;
+
+  function stopSeq(){
+    seqOn = false;
+    clearTimeout(seqTimer);
+    if (seqAudio){ seqAudio.pause(); seqAudio = null; }
+    if (cur){ cur.pause(); if (curBtn) curBtn.classList.remove('playing'); cur = null; curBtn = null; }
+    document.querySelectorAll('.spk.playing').forEach(function(b){ b.classList.remove('playing'); });
+    document.querySelectorAll('.seqBtn.on, .seqFamily.on').forEach(function(b){ b.classList.remove('on'); });
+  }
+
+  function singlePlay(w, btn){
+    stopSeq();
+    cur = new Audio('audio/' + w + '.wav');
+    curBtn = btn;
+    cur.currentTime = 0;
+    btn.classList.add('playing');
+    cur.play().catch(function(){ btn.classList.remove('playing'); });
+    cur.addEventListener('ended', function(){ btn.classList.remove('playing'); cur = null; curBtn = null; });
+  }
+
+  document.querySelectorAll('.spk').forEach(function(btn){
+    btn.addEventListener('click', function(){ singlePlay(btn.getAttribute('data-w'), btn); });
+  });
+
+  function playSeq(words, btn){
+    if (seqOn){ stopSeq(); return; }   // 再次点击 = 停止
+    seqOn = true;
+    btn.classList.add('on');
+    var i = 0;
+    function next(){
+      if (!seqOn) return;
+      if (i >= words.length){ stopSeq(); return; }
+      var w = words[i++];
+      var spk = document.querySelector('.spk[data-w="' + w + '"]');
+      if (spk) spk.classList.add('playing');
+      seqAudio = new Audio('audio/' + w + '.wav');
+      seqAudio.onended = function(){
+        if (spk) spk.classList.remove('playing');
+        if (!seqOn) return;
+        seqTimer = setTimeout(next, 400);   // 词间停顿
+      };
+      seqAudio.play().catch(function(){
+        if (spk) spk.classList.remove('playing');
+        if (!seqOn) return;
+        seqTimer = setTimeout(next, 400);
+      });
+    }
+    next();
+  }
+
+  // 整批联播（按 DOM/词根顺序）
+  var allWords = Array.prototype.map.call(document.querySelectorAll('.spk'), function(b){ return b.getAttribute('data-w'); });
+  var allBtn = document.getElementById('seqAll');
+  if (allBtn) allBtn.addEventListener('click', function(){ playSeq(allWords, allBtn); });
+
+  // 每族联播（每个词根块独立）
+  document.querySelectorAll('.root').forEach(function(root){
+    var b = root.querySelector('.seqFamily');
+    if (!b) return;
+    var ws = Array.prototype.map.call(root.querySelectorAll('.spk'), function(x){ return x.getAttribute('data-w'); });
+    b.addEventListener('click', function(){ playSeq(ws, b); });
   });
 })();
 </script>
