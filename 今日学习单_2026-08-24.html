@@ -207,6 +207,11 @@
 (function(){
   var cur = null, curBtn = null;
   var seqOn = false, seqAudio = null, seqTimer = null;
+  var seqCache = {};
+  function getSeqAudio(w){
+    if (!seqCache[w]) { var a = new Audio(); a.preload = 'auto'; a.src = 'audio/' + w + '.mp3'; a.load(); seqCache[w] = a; }
+    return seqCache[w];
+  }
 
   function stopSeq(){
     seqOn = false;
@@ -219,7 +224,7 @@
 
   function singlePlay(w, btn){
     stopSeq();
-    cur = new Audio('audio/' + w + '.wav');
+    cur = new Audio('audio/' + w + '.mp3');
     curBtn = btn;
     cur.currentTime = 0;
     btn.classList.add('playing');
@@ -235,6 +240,8 @@
     if (seqOn){ stopSeq(); return; }   // 再次点击 = 停止
     seqOn = true;
     btn.classList.add('on');
+    // 预加载整批音频（消除词间下载空档，联播更顺滑）
+    words.forEach(function(w){ getSeqAudio(w); });
     var i = 0;
     function next(){
       if (!seqOn) return;
@@ -242,7 +249,8 @@
       var w = words[i++];
       var spk = document.querySelector('.spk[data-w="' + w + '"]');
       if (spk) spk.classList.add('playing');
-      seqAudio = new Audio('audio/' + w + '.wav');
+      seqAudio = getSeqAudio(w);
+      seqAudio.currentTime = 0;
       seqAudio.onended = function(){
         if (spk) spk.classList.remove('playing');
         if (!seqOn) return;

@@ -222,7 +222,7 @@
     btn.addEventListener('click', function(){
       var w = btn.getAttribute('data-w');
       if (cur) { cur.pause(); if (curBtn) curBtn.classList.remove('playing'); }
-      cur = new Audio('audio/' + w + '.wav');
+      cur = new Audio('audio/' + w + '.mp3');
       curBtn = btn;
       cur.currentTime = 0;
       btn.classList.add('playing');
