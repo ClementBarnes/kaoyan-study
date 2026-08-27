@@ -19,7 +19,7 @@
 7. **三机制（生产式学习·2026-08-27 重启强制）**：① 主动回忆自测——每新词日+每复习日，本批自测正确率≥90%才过关（听音写词+遮义回想），不达标本批重测；② 遗忘曲线间隔复习——每批启用后排第 1/2/4/7/15/30 天回看，复习日精准指向具体批次（查《复习排程表》）；③ 输出倒逼——每批学完写 3-5 句 micro-writing 或用新词口述 30s，写作日(管综)用新词练论证段。
 
 【三仓库边界契约（2026-08-21 通勤侧交接，详见 D:\通勤音频\文稿\考研对话交接提示词.md）】
-- 三个独立仓库互不覆盖：个人门户 ClementBarnes.github.io（通勤侧维护，D:\通勤音频\_deploy_home）/ 考研站 kaoyan-study（本流程维护，online/）/ 通勤音频 commute-audio（通勤侧维护）。
+- 三个独立仓库互不覆盖：个人门户 ClementBarnes.github.io（通勤侧维护，D:\githubprogram\ClementBarnes.github.io）/ 考研站 kaoyan-study（本流程维护，online/）/ 通勤音频 commute-audio（通勤侧维护）。
 - 只推自己的仓库：本流程只 git -C online push；绝不 push 门户或 commute-audio；门户 index.html 归通勤侧，如需调整在对话中说明由通勤侧改。
 - 返回个人主页一律 href="/"（绝对路径）；考研站内返回 href="/kaoyan-study/"；门户卡片 href 契约不变。
 
