@@ -39,7 +39,7 @@
 
 <div class="wrap">
   <div class="head">
-    <div class="day">跨电脑同步 · 最近更新 2026-09-19</div>
+    <div class="day">跨电脑同步 · 最近更新 2026-09-19（本地版）</div>
     <h1>📌 同步提示词（给 AI 的接手包）</h1>
     <p>换电脑/新对话时，把下面文本框里的全部内容复制给任意 AI，它即可无缝接手继续给你出学习单。</p>
   </div>
@@ -58,12 +58,12 @@
 
 【考试结构】199 管综 200（数75/逻60/写65）；英语二 100（完10/阅50/译15/作25）。初试~2026-12-26 前后；阶段：二次重启期 9.21-11.30（每周一批重学 01-11 批）/ 12 月全量复习+视余力推新批 / 考前 2 周只复习。
 
-【进度 2026-09-19·二次重启·待启动】★节奏重排+内容重置（2026-09-19 拍板）：考研降为辅线，公考（2027 国考）主线不动；考研每日投入 ≤1h（词汇为主）。固定周节奏：每周一批、周一启用新批（首启 2026-09-21），废除浮动解锁；周日晚自测&lt;90% → 下周一不推新批、本批重学一周（连续 2 周不过关过关线降至 85%）。内容：01-11 批 385 词/74 族全部降回「待重学」，Day 编号重置，Day1=2026-09-21。机制不变：①主动回忆自测(≥90%过关) ②遗忘曲线间隔复习(第1/2/4/7/15/30天) ③输出倒逼(micro-writing)。预排：01批 09-21 → 11批 11-30 每周一轮换；12 月只复习+视余力推 12/13 批。(09-21 周一=新 Day1，当天生成学习单重学第01批)
+【进度 2026-09-19·二次重启·Day1 已启动】★节奏重排+内容重置（2026-09-19 拍板）：考研降为辅线，公考（2027 国考）主线不动；考研每日投入 ≤1h。固定周节奏：每周一批、周一启用新批；周日晚自测&lt;90% → 下周一不推新批、本批重学一周（连续 2 周不过关过关线降至 85%）。内容：01-11 批 385 词/74 族全部降回「待重学」，Day 编号重置，**Day1 = 2026-09-19（周六，提前启动）**，当日已生成重学第01批学习单（27 词/5 族，含自测区+输出区）。机制不变：①主动回忆自测(≥90%过关) ②遗忘曲线间隔复习(第1/2/4/7/15/30天) ③输出倒逼(micro-writing)。预排：02批 09-21（周一）→ 11批 11-23 每周一轮换；12 月只复习+视余力推 12/13 批。(09-20 周日=第01批间隔第1天复习+周日晚自测)
 
 【硬性规则】
 1. 词汇新批**固定周一启用，每周一批**（首启 2026-09-21）；周日晚自测&lt;90% 则下周一滞留重学本批，连续 2 周不过关过关线降为 85%。生成前必须 Read 全部 0N_词根词表.txt + 单词总表.txt 去重，禁止凭记忆。
 2. 每次生成须同步更新：《英语词汇攻克方案》《管综写作辅导手册》两本「学习进度汇总」；《复习排程表.md》记录自测分与复习节点；若出词根新批还须更 单词总表(txt+html)。
-3. 所有页面右下角导航浮窗（.nav-fab，2026-08-21 双按钮版）：子页含「←目录」(.back-home，href='index.html')＋「🏠主页」(.go-home，href='/')；导航页 index.html 仅「🏠主页」；勿删 .nojekyll。批量注入用 tools/add_back_button.py（幂等）。
+3. 所有页面右下角导航浮窗（.nav-fab）：子页含「←目录」(.back-home，href='index.html')，本地版「🏠主页」同样指向 index.html（无外链门户）；导航页 index.html 不放浮窗。批量注入用 tools/add_back_button.py（幂等）。
 4. 新词日（当天学习清单含新批次单词）必须加「单词阅读」环节：用 TTS 听书音频过一遍本批新词（单词×2→词义→例句→翻译），可直接开《单词总表.html》点该批「▶ 联播本批」连续听。顺序固定：先听建立印象 → 再正式背单词。
 5. 学习单单词区两套固定格式（2026-08-21 用户确认，均含 🔊发音按钮=播放 audio/&lt;词&gt;.mp3、单播互斥+从头重播；例句英+中必须从 words_tts.json 取、与音频逐字一致）：
    - 复习日（非新批日）：每词一行四层——🔊＋单词＋汉译＋例句；不配音标、不配拆解；按批次分组卡片布局。参考《今日学习单_2026-08-28.html》。
@@ -78,11 +78,11 @@
 - 只推自己的仓库：本流程只 push kaoyan-study；绝不 push 门户或 commute-audio。
 - 返回个人主页一律 href="/"（绝对路径）；考研站内返回 href="/kaoyan-study/"。
 
-【文件体系】工作区 = D:\githubprogram\kaoyan-study（**单仓库=工作区+部署根**，旧「根目录+online/」双区布局已废）。根目录含：tools/（10 个生成脚本：build_master/gen_audio/gen_bbdc/gen_qr/add_back_button/future_batches/gen_sample_new_word_day/convert_wav2mp3/gen_review_day/gen_day1，2026-09-19 从 8-28 备份包恢复入仓）/ words_tts.json（单一事实源）/ 0N_*_词根词表.txt（01-10 批源文件）/ audio/（385 词 mp3）/ 单词总表.html+.txt / kaoyan_words_bbdc.txt / 两手册 / 考研学习计划.html / 复习排程表.md / 重启方案.md / sync/。学习单 今日学习单_YYYY-MM-DD.html 直接放根目录。
+【运行模式：本地版（2026-09-19 老板拍板）】**只在本地做，不部署 GitHub Pages**。所有内容存本机 D:\githubprogram\kaoyan-study；桌面快捷方式「考研学习」→ index.html（本地目录页）。git 仅本地 add-commit 存档防丢，**不 push 远端**（如日后要恢复线上，再走 SSH443 push）。🔊 音频走本机 audio/ 相对路径；页面「🏠主页/←目录」一律指向本地 index.html，无外链门户。
 
-【同步流程】1) git -C D:\githubprogram\kaoyan-study pull → 2) 读 sync/提示词.txt 核进度 → 3) 生成产物 + 改 index「最新」卡 → 4) add-commit-push → 5) git ls-remote 校验云端 HEAD 与本地一致才算完成。
+【文件体系】工作区 = D:\githubprogram\kaoyan-study（**单仓库=本地工作区**，旧「根目录+online/」双区布局已废）。根目录含：tools/（11 个生成脚本：build_master/gen_audio/gen_bbdc/gen_qr/add_back_button/future_batches/gen_sample_new_word_day/convert_wav2mp3/gen_review_day/gen_day1/gen_day1_20260919 + 学习单模板）/ words_tts.json（单一事实源）/ 0N_*_词根词表.txt（01-10 批源文件）/ audio/（385 词 mp3）/ 单词总表.html+.txt / kaoyan_words_bbdc.txt / 两手册 / 考研学习计划.html / 复习排程表.md / 重启方案.md / sync/。学习单 今日学习单_YYYY-MM-DD.html 直接放根目录。
 
-【部署】GitHub Pages: https://ClementBarnes.github.io/kaoyan-study/（main/root）。推送 SSH443: ssh://git@ssh.github.com:443/ClementBarnes/kaoyan-study.git；密钥 C:\Users\cyql0\.ssh\id_ed25519_kaoyan（.ssh/config 已配 Host ssh.github.com→IdentityFile）。沙箱 git: /mingw64/bin/git。
+【同步流程（本地版）】1) 读 sync/提示词.txt 核进度 → 2) 生成产物 + 改 index「最新学习单」入口 → 3) git add-commit（仅本地，不 push）→ 4) 更新 复习排程表.md 自测分与节点。
 </textarea>
 
   </div>

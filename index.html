@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>2027级MBA备考中心</title>
+<title>2027级MBA备考中心（本地版）</title>
 <style>
   *{box-sizing:border-box;margin:0;padding:0}
   body{font-family:-apple-system,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;background:#F8F7F4;color:#2C2C2A;min-height:100vh;display:flex;flex-direction:column;align-items:center;padding:32px 20px}
@@ -24,45 +24,42 @@
   .t2{background:#E1F5EE;color:#085041}
   footer{margin-top:36px;text-align:center;color:#888780;font-size:12px;line-height:1.8}
   footer b{color:#5F5E5A}
-  .qrbox{margin-top:28px;text-align:center}
-  .qrbox h2{font-size:16px;font-weight:600;margin-bottom:8px}
-  .qrbox p{font-size:13px;color:#5F5E5A;margin-bottom:10px}
-  .qrbox img{width:200px;height:200px;border:1px solid #D3D1C7;border-radius:10px;background:#fff;padding:6px}
-</style>
-<style>
-  .nav-fab{position:fixed;right:18px;bottom:18px;z-index:9999;display:flex;gap:10px;font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif}
-  .nav-fab a{display:inline-flex;align-items:center;gap:6px;padding:10px 16px;border-radius:999px;font-size:14px;font-weight:600;text-decoration:none;box-shadow:0 4px 14px rgba(0,0,0,.22)}
-  .nav-fab a:active{transform:scale(.96)}
-  .nav-fab .go-home{background:#085041;color:#fff}
-  @media(max-width:600px){.nav-fab{right:12px;bottom:12px;gap:8px}.nav-fab a{padding:9px 13px;font-size:13px}}
+  .localbox{margin-top:28px;background:#fff;border:1px solid #D3D1C7;border-radius:14px;padding:22px}
+  .localbox h2{font-size:16px;font-weight:600;margin-bottom:8px;text-align:center}
+  .localbox p{font-size:13px;color:#5F5E5A;line-height:1.8}
 </style>
 </head>
 <body>
-<div class="nav-fab"><a href="/" class="go-home" title="返回个人主页">🏠 主页</a></div>
 
 <div class="wrap">
   <div class="hero">
-    <h1>2027级 MBA 备考中心</h1>
-    <p>跨端随时访问 · 平板 / 手机 / 电脑通用</p>
-    <span class="badge">二次重启 · Day1 = 09-21（周一）</span>
+    <h1>2027级 MBA 备考中心（本地版）</h1>
+    <p>本地学习版 · 双击即用 · 无需网络</p>
+    <span class="badge">二次重启 · Day1 = 2026-09-19</span>
   </div>
   <div class="cards">
     <div class="card">
       <div class="icon">📖</div>
       <h2>每日学习单</h2>
-      <p>每周一启用一批新词，其余日按遗忘曲线复习；学习单按需生成。考研降为辅线与公考并行，每日 ≤1h。告诉老师"生成今日学习单"即可获取最新版。</p>
-      <span class="tag t2">每周一批</span>
+      <p>每周一启用一批新词，其余日按遗忘曲线复习；学习单按需生成。考研降为辅线与公考并行，每日 ≤1h。</p>
+      <span class="tag t2">按需生成</span>
     </div>
-    <div class="card">
+    <a class="card" href="今日学习单_2026-09-19.html">
       <div class="icon">🆕</div>
-      <h2>首张学习单 · 09-21（周一）生成</h2>
-      <p>二次重启 Day1：重学词根第 01 批（听书 → 背词 → 自测 ≥90% → 输出）。生成后此处更新为最新入口。</p>
-      <span class="tag t2">待启动</span>
-    </div>
+      <h2>最新学习单 · 9.19（Day1 重学第01批）</h2>
+      <p>新词日六层格式：🔊+单词+音标+词义+拆解+例句，含词根联播、主动回忆自测区（≥90%过关）+ 输出区。点击进入今日任务。</p>
+      <span class="tag t2">今日</span>
+    </a>
+    <a class="card" href="复习排程表.md">
+      <div class="icon">🗓️</div>
+      <h2>复习排程表</h2>
+      <p>遗忘曲线 1/2/4/7/15/30 天排程 + 批次自测记录。每周一批、周一启用，滞留则顺延。</p>
+      <span class="tag t1">排程</span>
+    </a>
     <a class="card" href="考研学习计划.html">
       <div class="icon">📋</div>
       <h2>考研学习计划（总手册）</h2>
-      <p>三阶段作战计划 · 生产式学习三机制 · 新批解锁规则 · 每日作息与周节奏 · 进度追踪。打印贴墙、随时查阅的总指挥。</p>
+      <p>三阶段作战计划 · 生产式学习三机制 · 每周一批节奏 · 每日作息 · 进度追踪。打印贴墙、随时查阅的总指挥。</p>
       <span class="tag t1">长期文档</span>
     </a>
     <a class="card" href="英语词汇攻克方案.html">
@@ -80,7 +77,7 @@
     <a class="card" href="单词总表.html">
       <div class="icon">📚</div>
       <h2>单词总表（听书）</h2>
-      <p>全量词表 + 每词播放条 + 每批「▶ 联播本批」。通勤碎片时间磨耳朵，先听建立印象再背。</p>
+      <p>全量词表 + 每词播放条 + 每批「▶ 联播本批」。碎片时间磨耳朵，先听建立印象再背。</p>
       <span class="tag t1">音频</span>
     </a>
     <a class="card" href="听书.html">
@@ -90,14 +87,16 @@
       <span class="tag t1">音频</span>
     </a>
   </div>
-  <div class="qrbox">
-    <h2>📲 扫码直达</h2>
-    <p>用平板 / 手机相机扫下方二维码，一键打开本备考中心（免输网址）。</p>
-    <img src="在线中心二维码.png" alt="备考中心二维码">
+  <div class="localbox">
+    <h2>💻 本地使用说明</h2>
+    <p>· 学习目录：<b>D:\githubprogram\kaoyan-study</b>（桌面快捷方式「考研学习」直达本页）<br>
+       · <b>本地模式</b>：内容只存本机，不再发布 GitHub Pages；git 仅本地存档防丢。<br>
+       · 学习单由元宝按需生成，生成后自动更新「最新学习单」入口。<br>
+       · 🔊 发音按钮调用本机 audio/ 目录音频，双击页面即可播放。</p>
   </div>
   <footer>
-    <b>更新方式：</b>学习单每日生成，手册随进度同步更新。<br>
-    本页面为个人备考资料，请勿公开分享。
+    <b>更新方式：</b>学习单按需生成，手册随进度同步更新（本地存档）。<br>
+    本页面为个人备考资料，请勿外传。
   </footer>
 </div>
 </body>
