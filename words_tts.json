@@ -1,0 +1,3467 @@
+[
+ {
+  "word": "inspect",
+  "ipa": "/ɪnˈspekt/",
+  "meaning": "v. 检查，视察",
+  "example_en": "The manager will inspect the factory.",
+  "example_zh": "经理将视察工厂。",
+  "batch": 1,
+  "root": "-spect / -spic"
+ },
+ {
+  "word": "respect",
+  "ipa": "/rɪˈspekt/",
+  "meaning": "v./n. 尊重",
+  "example_en": "We should respect the elderly.",
+  "example_zh": "我们应尊重老人。",
+  "batch": 1,
+  "root": "-spect / -spic"
+ },
+ {
+  "word": "expect",
+  "ipa": "/ɪkˈspekt/",
+  "meaning": "v. 期待，预期",
+  "example_en": "I expect a call from him.",
+  "example_zh": "我等他的电话。",
+  "batch": 1,
+  "root": "-spect / -spic"
+ },
+ {
+  "word": "aspect",
+  "ipa": "/ˈæspekt/",
+  "meaning": "n. 方面，外观",
+  "example_en": "This is only one aspect of the problem.",
+  "example_zh": "这只是问题的一个方面。",
+  "batch": 1,
+  "root": "-spect / -spic"
+ },
+ {
+  "word": "prospect",
+  "ipa": "/ˈprɒspekt/",
+  "meaning": "n. 前景，展望",
+  "example_en": "The prospect of promotion excited him.",
+  "example_zh": "升职的前景令他兴奋。",
+  "batch": 1,
+  "root": "-spect / -spic"
+ },
+ {
+  "word": "perspective",
+  "ipa": "/pəˈspektɪv/",
+  "meaning": "n. 观点，视角",
+  "example_en": "From my perspective, it is wrong.",
+  "example_zh": "依我看，这是错的。",
+  "batch": 1,
+  "root": "-spect / -spic"
+ },
+ {
+  "word": "import",
+  "ipa": "/ˈɪmpɔːt/",
+  "meaning": "v./n. 进口",
+  "example_en": "We import oil from abroad.",
+  "example_zh": "我们从国外进口石油。",
+  "batch": 1,
+  "root": "-port"
+ },
+ {
+  "word": "export",
+  "ipa": "/ˈekspɔːt/",
+  "meaning": "v./n. 出口",
+  "example_en": "We export goods to Europe.",
+  "example_zh": "我们向欧洲出口商品。",
+  "batch": 1,
+  "root": "-port"
+ },
+ {
+  "word": "transport",
+  "ipa": "/trænsˈpɔːt/",
+  "meaning": "v./n. 运输",
+  "example_en": "Public transport is convenient.",
+  "example_zh": "公共交通很方便。",
+  "batch": 1,
+  "root": "-port"
+ },
+ {
+  "word": "report",
+  "ipa": "/rɪˈpɔːt/",
+  "meaning": "v./n. 报告",
+  "example_en": "He reported the news to his boss.",
+  "example_zh": "他向老板汇报了消息。",
+  "batch": 1,
+  "root": "-port"
+ },
+ {
+  "word": "support",
+  "ipa": "/səˈpɔːt/",
+  "meaning": "v./n. 支持",
+  "example_en": "Her family supports her decision.",
+  "example_zh": "家人支持她的决定。",
+  "batch": 1,
+  "root": "-port"
+ },
+ {
+  "word": "portable",
+  "ipa": "/ˈpɔːtəbl/",
+  "meaning": "adj. 便携的",
+  "example_en": "a portable computer",
+  "example_zh": "便携电脑",
+  "batch": 1,
+  "root": "-port"
+ },
+ {
+  "word": "dictate",
+  "ipa": "/dɪkˈteɪt/",
+  "meaning": "v. 口述，命令",
+  "example_en": "The boss dictated a letter.",
+  "example_zh": "老板口述了一封信。",
+  "batch": 1,
+  "root": "-dict / -dic"
+ },
+ {
+  "word": "predict",
+  "ipa": "/prɪˈdɪkt/",
+  "meaning": "v. 预测",
+  "example_en": "Scientists predict the weather.",
+  "example_zh": "科学家预测天气。",
+  "batch": 1,
+  "root": "-dict / -dic"
+ },
+ {
+  "word": "contradict",
+  "ipa": "/ˌkɒntrəˈdɪkt/",
+  "meaning": "v. 反驳，矛盾",
+  "example_en": "His words contradict the facts.",
+  "example_zh": "他的话与事实矛盾。",
+  "batch": 1,
+  "root": "-dict / -dic"
+ },
+ {
+  "word": "indicate",
+  "ipa": "/ˈɪndɪkeɪt/",
+  "meaning": "v. 表明，指示",
+  "example_en": "The map indicates the way.",
+  "example_zh": "地图指示了路线。",
+  "batch": 1,
+  "root": "-dict / -dic"
+ },
+ {
+  "word": "dedicate",
+  "ipa": "/ˈdedɪkeɪt/",
+  "meaning": "v. 致力于",
+  "example_en": "He dedicated himself to research.",
+  "example_zh": "他投身研究。",
+  "batch": 1,
+  "root": "-dict / -dic"
+ },
+ {
+  "word": "admit",
+  "ipa": "/ədˈmɪt/",
+  "meaning": "v. 承认，准许进入",
+  "example_en": "He admitted his mistake.",
+  "example_zh": "他承认了错误。",
+  "batch": 1,
+  "root": "-mit / -miss"
+ },
+ {
+  "word": "commit",
+  "ipa": "/kəˈmɪt/",
+  "meaning": "v. 犯（错），承诺",
+  "example_en": "commit a crime 犯罪；commit to 承诺",
+  "example_zh": "犯罪；作出承诺",
+  "batch": 1,
+  "root": "-mit / -miss"
+ },
+ {
+  "word": "permit",
+  "ipa": "/pəˈmɪt/",
+  "meaning": "v. 允许",
+  "example_en": "Smoking is not permitted here.",
+  "example_zh": "此处禁止吸烟。",
+  "batch": 1,
+  "root": "-mit / -miss"
+ },
+ {
+  "word": "submit",
+  "ipa": "/səbˈmɪt/",
+  "meaning": "v. 提交，屈服",
+  "example_en": "Please submit your paper.",
+  "example_zh": "请提交论文。",
+  "batch": 1,
+  "root": "-mit / -miss"
+ },
+ {
+  "word": "mission",
+  "ipa": "/ˈmɪʃn/",
+  "meaning": "n. 任务，使命",
+  "example_en": "a business mission",
+  "example_zh": "商务使命",
+  "batch": 1,
+  "root": "-mit / -miss"
+ },
+ {
+  "word": "dismiss",
+  "ipa": "/dɪsˈmɪs/",
+  "meaning": "v. 解雇，解散",
+  "example_en": "The case was dismissed.",
+  "example_zh": "案件被驳回。",
+  "batch": 1,
+  "root": "-mit / -miss"
+ },
+ {
+  "word": "structure",
+  "ipa": "/ˈstrʌktʃə/",
+  "meaning": "n. 结构，建筑物",
+  "example_en": "the structure of a sentence",
+  "example_zh": "句子结构",
+  "batch": 1,
+  "root": "-struct"
+ },
+ {
+  "word": "construct",
+  "ipa": "/kənˈstrʌkt/",
+  "meaning": "v. 建造，构建",
+  "example_en": "construct a bridge",
+  "example_zh": "建桥",
+  "batch": 1,
+  "root": "-struct"
+ },
+ {
+  "word": "instruct",
+  "ipa": "/ɪnˈstrʌkt/",
+  "meaning": "v. 指导，通知",
+  "example_en": "The teacher instructed us.",
+  "example_zh": "老师指导了我们。",
+  "batch": 1,
+  "root": "-struct"
+ },
+ {
+  "word": "destroy",
+  "ipa": "/dɪˈstrɔɪ/",
+  "meaning": "v. 摧毁",
+  "example_en": "The fire destroyed the building.",
+  "example_zh": "大火摧毁了大楼。",
+  "batch": 1,
+  "root": "-struct"
+ },
+ {
+  "word": "form",
+  "ipa": "/fɔːm/",
+  "meaning": "n. 形式，表格；v. 形成",
+  "example_en": "Fill in the form.",
+  "example_zh": "填表格。",
+  "batch": 2,
+  "root": "-form"
+ },
+ {
+  "word": "reform",
+  "ipa": "/rɪˈfɔːm/",
+  "meaning": "v./n. 改革",
+  "example_en": "They reformed the system.",
+  "example_zh": "他们改革了制度。",
+  "batch": 2,
+  "root": "-form"
+ },
+ {
+  "word": "transform",
+  "ipa": "/trænsˈfɔːm/",
+  "meaning": "v. 改变，使变形",
+  "example_en": "Technology transformed our life.",
+  "example_zh": "科技改变了我们的生活。",
+  "batch": 2,
+  "root": "-form"
+ },
+ {
+  "word": "inform",
+  "ipa": "/ɪnˈfɔːm/",
+  "meaning": "v. 通知，告知",
+  "example_en": "Please inform me of the change.",
+  "example_zh": "请通知我变动。",
+  "batch": 2,
+  "root": "-form"
+ },
+ {
+  "word": "perform",
+  "ipa": "/pəˈfɔːm/",
+  "meaning": "v. 执行，表演",
+  "example_en": "The band performed well.",
+  "example_zh": "乐队表演出色。",
+  "batch": 2,
+  "root": "-form"
+ },
+ {
+  "word": "formal",
+  "ipa": "/ˈfɔːml/",
+  "meaning": "adj. 正式的",
+  "example_en": "a formal meeting",
+  "example_zh": "正式会议",
+  "batch": 2,
+  "root": "-form"
+ },
+ {
+  "word": "formula",
+  "ipa": "/ˈfɔːmjələ/",
+  "meaning": "n. 公式，配方",
+  "example_en": "a chemical formula",
+  "example_zh": "化学公式",
+  "batch": 2,
+  "root": "-form"
+ },
+ {
+  "word": "uniform",
+  "ipa": "/ˈjuːnɪfɔːm/",
+  "meaning": "adj. 一致的；n. 制服",
+  "example_en": "school uniform",
+  "example_zh": "校服",
+  "batch": 2,
+  "root": "-form"
+ },
+ {
+  "word": "success",
+  "ipa": "/səkˈses/",
+  "meaning": "n. 成功",
+  "example_en": "Hard work brings success.",
+  "example_zh": "努力带来成功。",
+  "batch": 2,
+  "root": "-cess / -ceed / -ced"
+ },
+ {
+  "word": "process",
+  "ipa": "/ˈprəʊses/",
+  "meaning": "n. 过程，进程",
+  "example_en": "the learning process",
+  "example_zh": "学习过程",
+  "batch": 2,
+  "root": "-cess / -ceed / -ced"
+ },
+ {
+  "word": "access",
+  "ipa": "/ˈækses/",
+  "meaning": "n./v. 接近，进入",
+  "example_en": "Get access to the data.",
+  "example_zh": "获取数据。",
+  "batch": 2,
+  "root": "-cess / -ceed / -ced"
+ },
+ {
+  "word": "exceed",
+  "ipa": "/ɪkˈsiːd/",
+  "meaning": "v. 超过",
+  "example_en": "The cost exceeded our budget.",
+  "example_zh": "成本超出预算。",
+  "batch": 2,
+  "root": "-cess / -ceed / -ced"
+ },
+ {
+  "word": "proceed",
+  "ipa": "/prəˈsiːd/",
+  "meaning": "v. 继续进行",
+  "example_en": "We proceeded with the plan.",
+  "example_zh": "我们推进计划。",
+  "batch": 2,
+  "root": "-cess / -ceed / -ced"
+ },
+ {
+  "word": "succeed",
+  "ipa": "/səkˈsiːd/",
+  "meaning": "v. 成功，继承",
+  "example_en": "He succeeded in the exam.",
+  "example_zh": "他考试成功了。",
+  "batch": 2,
+  "root": "-cess / -ceed / -ced"
+ },
+ {
+  "word": "recede",
+  "ipa": "/rɪˈsiːd/",
+  "meaning": "v. 后退，退去",
+  "example_en": "The flood receded.",
+  "example_zh": "洪水退去。",
+  "batch": 2,
+  "root": "-cess / -ceed / -ced"
+ },
+ {
+  "word": "precede",
+  "ipa": "/prɪˈsiːd/",
+  "meaning": "v. 在…之前",
+  "example_en": "A precedes B.",
+  "example_zh": "A 在 B 之前。",
+  "batch": 2,
+  "root": "-cess / -ceed / -ced"
+ },
+ {
+  "word": "accept",
+  "ipa": "/əkˈsept/",
+  "meaning": "v. 接受",
+  "example_en": "I accept your invitation.",
+  "example_zh": "我接受你的邀请。",
+  "batch": 2,
+  "root": "-cept"
+ },
+ {
+  "word": "except",
+  "ipa": "/ɪkˈsept/",
+  "meaning": "prep. 除…之外",
+  "example_en": "Everyone came except him.",
+  "example_zh": "除他外都来了。",
+  "batch": 2,
+  "root": "-cept"
+ },
+ {
+  "word": "concept",
+  "ipa": "/ˈkɒnsept/",
+  "meaning": "n. 概念",
+  "example_en": "a new concept",
+  "example_zh": "新概念",
+  "batch": 2,
+  "root": "-cept"
+ },
+ {
+  "word": "receive",
+  "ipa": "/rɪˈsiːv/",
+  "meaning": "v. 收到",
+  "example_en": "I received a gift.",
+  "example_zh": "我收到一份礼物。",
+  "batch": 2,
+  "root": "-cept"
+ },
+ {
+  "word": "deceive",
+  "ipa": "/dɪˈsiːv/",
+  "meaning": "v. 欺骗",
+  "example_en": "Don't deceive others.",
+  "example_zh": "别欺骗别人。",
+  "batch": 2,
+  "root": "-cept"
+ },
+ {
+  "word": "reject",
+  "ipa": "/rɪˈdʒekt/",
+  "meaning": "v. 拒绝，驳回",
+  "example_en": "They rejected my idea.",
+  "example_zh": "他们拒绝了我的想法。",
+  "batch": 2,
+  "root": "-ject"
+ },
+ {
+  "word": "project",
+  "ipa": "/ˈprɒdʒekt/",
+  "meaning": "n. 项目；v. 投射",
+  "example_en": "a new project",
+  "example_zh": "新项目",
+  "batch": 2,
+  "root": "-ject"
+ },
+ {
+  "word": "object",
+  "ipa": "/ˈɒbdʒɪkt/",
+  "meaning": "n. 物体；v. 反对",
+  "example_en": "I object to this plan.",
+  "example_zh": "我反对这个计划。",
+  "batch": 2,
+  "root": "-ject"
+ },
+ {
+  "word": "subject",
+  "ipa": "/ˈsʌbdʒɪkt/",
+  "meaning": "n. 主题，科目",
+  "example_en": "the subject of the talk",
+  "example_zh": "谈话主题",
+  "batch": 2,
+  "root": "-ject"
+ },
+ {
+  "word": "inject",
+  "ipa": "/ɪnˈdʒekt/",
+  "meaning": "v. 注射，注入",
+  "example_en": "The nurse injected the drug.",
+  "example_zh": "护士注射了药物。",
+  "batch": 2,
+  "root": "-ject"
+ },
+ {
+  "word": "describe",
+  "ipa": "/dɪˈskraɪb/",
+  "meaning": "v. 描述",
+  "example_en": "Can you describe the photo?",
+  "example_zh": "你能描述这张照片吗？",
+  "batch": 3,
+  "root": "-scrib / -scribe"
+ },
+ {
+  "word": "prescribe",
+  "ipa": "/prɪˈskraɪb/",
+  "meaning": "v. 开处方，规定",
+  "example_en": "The doctor prescribed medicine.",
+  "example_zh": "医生开了药。",
+  "batch": 3,
+  "root": "-scrib / -scribe"
+ },
+ {
+  "word": "subscribe",
+  "ipa": "/səbˈskraɪb/",
+  "meaning": "v. 订阅，同意",
+  "example_en": "subscribe to a magazine",
+  "example_zh": "订阅杂志",
+  "batch": 3,
+  "root": "-scrib / -scribe"
+ },
+ {
+  "word": "manuscript",
+  "ipa": "/ˈmænjəskrɪpt/",
+  "meaning": "n. 手稿，原稿",
+  "example_en": "an ancient manuscript",
+  "example_zh": "古代手稿",
+  "batch": 3,
+  "root": "-scrib / -scribe"
+ },
+ {
+  "word": "inscribe",
+  "ipa": "/ɪnˈskraɪb/",
+  "meaning": "v. 题写，刻",
+  "example_en": "His name was inscribed on the stone.",
+  "example_zh": "他的名字刻在石头上。",
+  "batch": 3,
+  "root": "-scrib / -scribe"
+ },
+ {
+  "word": "transcript",
+  "ipa": "/ˈtrænskrɪpt/",
+  "meaning": "n. 转录本，成绩单",
+  "example_en": "a school transcript",
+  "example_zh": "成绩单",
+  "batch": 3,
+  "root": "-scrib / -scribe"
+ },
+ {
+  "word": "attract",
+  "ipa": "/əˈtrækt/",
+  "meaning": "v. 吸引",
+  "example_en": "The show attracted many people.",
+  "example_zh": "演出吸引了许多人。",
+  "batch": 3,
+  "root": "-tract"
+ },
+ {
+  "word": "contract",
+  "ipa": "/ˈkɒntrækt/",
+  "meaning": "n. 合同；v. 收缩",
+  "example_en": "sign a contract",
+  "example_zh": "签合同",
+  "batch": 3,
+  "root": "-tract"
+ },
+ {
+  "word": "distract",
+  "ipa": "/dɪˈstrækt/",
+  "meaning": "v. 使分心",
+  "example_en": "Don't distract me.",
+  "example_zh": "别让我分心。",
+  "batch": 3,
+  "root": "-tract"
+ },
+ {
+  "word": "extract",
+  "ipa": "/ɪkˈstrækt/",
+  "meaning": "v. 提取，拔出",
+  "example_en": "extract the tooth",
+  "example_zh": "拔牙",
+  "batch": 3,
+  "root": "-tract"
+ },
+ {
+  "word": "subtract",
+  "ipa": "/səbˈtrækt/",
+  "meaning": "v. 减去",
+  "example_en": "Subtract 3 from 10.",
+  "example_zh": "10减3。",
+  "batch": 3,
+  "root": "-tract"
+ },
+ {
+  "word": "convert",
+  "ipa": "/kənˈvɜːt/",
+  "meaning": "v. 转变，转换",
+  "example_en": "convert ideas into action",
+  "example_zh": "把想法变为行动",
+  "batch": 3,
+  "root": "-vert / -vers"
+ },
+ {
+  "word": "reverse",
+  "ipa": "/rɪˈvɜːs/",
+  "meaning": "v. 反转，颠倒",
+  "example_en": "reverse the order",
+  "example_zh": "颠倒顺序",
+  "batch": 3,
+  "root": "-vert / -vers"
+ },
+ {
+  "word": "universe",
+  "ipa": "/ˈjuːnɪvɜːs/",
+  "meaning": "n. 宇宙",
+  "example_en": "the whole universe",
+  "example_zh": "整个宇宙",
+  "batch": 3,
+  "root": "-vert / -vers"
+ },
+ {
+  "word": "advertise",
+  "ipa": "/ˈædvətaɪz/",
+  "meaning": "v. 做广告",
+  "example_en": "They advertised the product.",
+  "example_zh": "他们为产品做广告。",
+  "batch": 3,
+  "root": "-vert / -vers"
+ },
+ {
+  "word": "diverse",
+  "ipa": "/daɪˈvɜːs/",
+  "meaning": "adj. 多样的",
+  "example_en": "a diverse culture",
+  "example_zh": "多元文化",
+  "batch": 3,
+  "root": "-vert / -vers"
+ },
+ {
+  "word": "divert",
+  "ipa": "/daɪˈvɜːt/",
+  "meaning": "v. 使转向，转移",
+  "example_en": "divert traffic",
+  "example_zh": "疏导交通",
+  "batch": 3,
+  "root": "-vert / -vers"
+ },
+ {
+  "word": "version",
+  "ipa": "/ˈvɜːʃn/",
+  "meaning": "n. 版本，说法",
+  "example_en": "the latest version",
+  "example_zh": "最新版本",
+  "batch": 3,
+  "root": "-vert / -vers"
+ },
+ {
+  "word": "refer",
+  "ipa": "/rɪˈfɜː/",
+  "meaning": "v. 提到，参考",
+  "example_en": "refer to a dictionary",
+  "example_zh": "查词典",
+  "batch": 3,
+  "root": "-fer"
+ },
+ {
+  "word": "prefer",
+  "ipa": "/prɪˈfɜː/",
+  "meaning": "v. 更喜欢",
+  "example_en": "I prefer tea to coffee.",
+  "example_zh": "茶咖啡我更爱茶。",
+  "batch": 3,
+  "root": "-fer"
+ },
+ {
+  "word": "transfer",
+  "ipa": "/trænsˈfɜː/",
+  "meaning": "v. 转移，调动",
+  "example_en": "transfer money",
+  "example_zh": "转账",
+  "batch": 3,
+  "root": "-fer"
+ },
+ {
+  "word": "differ",
+  "ipa": "/ˈdɪfə/",
+  "meaning": "v. 不同，有分歧",
+  "example_en": "Opinions differ.",
+  "example_zh": "意见不一。",
+  "batch": 3,
+  "root": "-fer"
+ },
+ {
+  "word": "offer",
+  "ipa": "/ˈɒfə/",
+  "meaning": "v. 提供，提议",
+  "example_en": "He offered me a job.",
+  "example_zh": "他给了我一份工作。",
+  "batch": 3,
+  "root": "-fer"
+ },
+ {
+  "word": "infer",
+  "ipa": "/ɪnˈfɜː/",
+  "meaning": "v. 推断",
+  "example_en": "We inferred the truth.",
+  "example_zh": "我们推断出了真相。",
+  "batch": 3,
+  "root": "-fer"
+ },
+ {
+  "word": "confer",
+  "ipa": "/kənˈfɜː/",
+  "meaning": "v. 协商，授予",
+  "example_en": "They conferred about the plan.",
+  "example_zh": "他们商议了计划。",
+  "batch": 3,
+  "root": "-fer"
+ },
+ {
+  "word": "compose",
+  "ipa": "/kəmˈpəʊz/",
+  "meaning": "v. 组成，创作",
+  "example_en": "compose a song",
+  "example_zh": "创作歌曲",
+  "batch": 4,
+  "root": "-pose / -pos"
+ },
+ {
+  "word": "expose",
+  "ipa": "/ɪkˈspəʊz/",
+  "meaning": "v. 暴露，揭露",
+  "example_en": "The truth was exposed.",
+  "example_zh": "真相被揭露。",
+  "batch": 4,
+  "root": "-pose / -pos"
+ },
+ {
+  "word": "oppose",
+  "ipa": "/əˈpəʊz/",
+  "meaning": "v. 反对",
+  "example_en": "We oppose the decision.",
+  "example_zh": "我们反对这个决定。",
+  "batch": 4,
+  "root": "-pose / -pos"
+ },
+ {
+  "word": "propose",
+  "ipa": "/prəˈpəʊz/",
+  "meaning": "v. 提议，求婚",
+  "example_en": "He proposed a plan.",
+  "example_zh": "他提出了一个计划。",
+  "batch": 4,
+  "root": "-pose / -pos"
+ },
+ {
+  "word": "impose",
+  "ipa": "/ɪmˈpəʊz/",
+  "meaning": "v. 强加，征税",
+  "example_en": "impose a tax",
+  "example_zh": "征税",
+  "batch": 4,
+  "root": "-pose / -pos"
+ },
+ {
+  "word": "contain",
+  "ipa": "/kənˈteɪn/",
+  "meaning": "v. 包含，容纳",
+  "example_en": "The box contains books.",
+  "example_zh": "盒子里装着书。",
+  "batch": 4,
+  "root": "-tain / -tend"
+ },
+ {
+  "word": "maintain",
+  "ipa": "/meɪnˈteɪn/",
+  "meaning": "v. 维持，保养",
+  "example_en": "maintain peace",
+  "example_zh": "维持和平",
+  "batch": 4,
+  "root": "-tain / -tend"
+ },
+ {
+  "word": "obtain",
+  "ipa": "/əbˈteɪn/",
+  "meaning": "v. 获得",
+  "example_en": "obtain a degree",
+  "example_zh": "获得学位",
+  "batch": 4,
+  "root": "-tain / -tend"
+ },
+ {
+  "word": "extend",
+  "ipa": "/ɪkˈstend/",
+  "meaning": "v. 延伸，扩展",
+  "example_en": "extend the deadline",
+  "example_zh": "延长期限",
+  "batch": 4,
+  "root": "-tain / -tend"
+ },
+ {
+  "word": "intend",
+  "ipa": "/ɪnˈtend/",
+  "meaning": "v. 打算，意图",
+  "example_en": "I intend to go.",
+  "example_zh": "我打算去。",
+  "batch": 4,
+  "root": "-tain / -tend"
+ },
+ {
+  "word": "claim",
+  "ipa": "/kleɪm/",
+  "meaning": "v. 声称，要求",
+  "example_en": "He claimed the prize.",
+  "example_zh": "他认领了奖品。",
+  "batch": 4,
+  "root": "-claim / -clam"
+ },
+ {
+  "word": "proclaim",
+  "ipa": "/prəˈkleɪm/",
+  "meaning": "v. 宣布",
+  "example_en": "They proclaimed the result.",
+  "example_zh": "他们宣布了结果。",
+  "batch": 4,
+  "root": "-claim / -clam"
+ },
+ {
+  "word": "exclaim",
+  "ipa": "/ɪkˈskleɪm/",
+  "meaning": "v. 惊呼，呼喊",
+  "example_en": "She exclaimed in surprise.",
+  "example_zh": "她惊讶地喊道。",
+  "batch": 4,
+  "root": "-claim / -clam"
+ },
+ {
+  "word": "acclaim",
+  "ipa": "/əˈkleɪm/",
+  "meaning": "v. 称赞，欢呼",
+  "example_en": "The film won acclaim.",
+  "example_zh": "影片赢得赞誉。",
+  "batch": 4,
+  "root": "-claim / -clam"
+ },
+ {
+  "word": "reclaim",
+  "ipa": "/rɪˈkleɪm/",
+  "meaning": "v. 回收，开垦",
+  "example_en": "reclaim land",
+  "example_zh": "开垦土地",
+  "batch": 4,
+  "root": "-claim / -clam"
+ },
+ {
+  "word": "conduct",
+  "ipa": "/kənˈdʌkt/",
+  "meaning": "v. 进行，引导",
+  "example_en": "conduct an experiment",
+  "example_zh": "做实验",
+  "batch": 4,
+  "root": "-duc / -duct"
+ },
+ {
+  "word": "introduce",
+  "ipa": "/ˌɪntrəˈdjuːs/",
+  "meaning": "v. 介绍，引入",
+  "example_en": "Let me introduce myself.",
+  "example_zh": "我来自我介绍。",
+  "batch": 4,
+  "root": "-duc / -duct"
+ },
+ {
+  "word": "produce",
+  "ipa": "/prəˈdjuːs/",
+  "meaning": "v. 生产，产生",
+  "example_en": "The factory produces cars.",
+  "example_zh": "工厂生产汽车。",
+  "batch": 4,
+  "root": "-duc / -duct"
+ },
+ {
+  "word": "reduce",
+  "ipa": "/rɪˈdjuːs/",
+  "meaning": "v. 减少，降低",
+  "example_en": "reduce the cost",
+  "example_zh": "降低成本",
+  "batch": 4,
+  "root": "-duc / -duct"
+ },
+ {
+  "word": "educate",
+  "ipa": "/ˈedʒukeɪt/",
+  "meaning": "v. 教育",
+  "example_en": "educate the children",
+  "example_zh": "教育孩子",
+  "batch": 4,
+  "root": "-duc / -duct"
+ },
+ {
+  "word": "signal",
+  "ipa": "/ˈsɪɡnl/",
+  "meaning": "n. 信号",
+  "example_en": "a warning signal",
+  "example_zh": "警示信号",
+  "batch": 5,
+  "root": "-sign"
+ },
+ {
+  "word": "signify",
+  "ipa": "/ˈsɪɡnɪfaɪ/",
+  "meaning": "v. 表示，意味",
+  "example_en": "It signifies danger.",
+  "example_zh": "这表示危险。",
+  "batch": 5,
+  "root": "-sign"
+ },
+ {
+  "word": "design",
+  "ipa": "/dɪˈzaɪn/",
+  "meaning": "v./n. 设计",
+  "example_en": "design a logo",
+  "example_zh": "设计标志",
+  "batch": 5,
+  "root": "-sign"
+ },
+ {
+  "word": "assign",
+  "ipa": "/əˈsaɪn/",
+  "meaning": "v. 分配，指派",
+  "example_en": "assign a task",
+  "example_zh": "分配任务",
+  "batch": 5,
+  "root": "-sign"
+ },
+ {
+  "word": "resign",
+  "ipa": "/rɪˈzaɪn/",
+  "meaning": "v. 辞职",
+  "example_en": "He resigned from his job.",
+  "example_zh": "他辞了职。",
+  "batch": 5,
+  "root": "-sign"
+ },
+ {
+  "word": "occur",
+  "ipa": "/əˈkɜː/",
+  "meaning": "v. 发生，出现",
+  "example_en": "The accident occurred yesterday.",
+  "example_zh": "事故昨天发生。",
+  "batch": 6,
+  "root": "-cur / -cours"
+ },
+ {
+  "word": "recur",
+  "ipa": "/rɪˈkɜː/",
+  "meaning": "v. 重现，反复",
+  "example_en": "The pain recurred.",
+  "example_zh": "疼痛又犯了。",
+  "batch": 6,
+  "root": "-cur / -cours"
+ },
+ {
+  "word": "current",
+  "ipa": "/ˈkʌrənt/",
+  "meaning": "adj. 当前的；n. 水流/电流",
+  "example_en": "current affairs",
+  "example_zh": "时事",
+  "batch": 6,
+  "root": "-cur / -cours"
+ },
+ {
+  "word": "currency",
+  "ipa": "/ˈkʌrənsi/",
+  "meaning": "n. 货币，流通",
+  "example_en": "foreign currency",
+  "example_zh": "外币",
+  "batch": 6,
+  "root": "-cur / -cours"
+ },
+ {
+  "word": "concur",
+  "ipa": "/kənˈkɜː/",
+  "meaning": "v. 同意，同时发生",
+  "example_en": "I concur with you.",
+  "example_zh": "我同意你。",
+  "batch": 6,
+  "root": "-cur / -cours"
+ },
+ {
+  "word": "progress",
+  "ipa": "/ˈprəʊɡres/",
+  "meaning": "n./v. 进步，进展",
+  "example_en": "make progress",
+  "example_zh": "取得进步",
+  "batch": 6,
+  "root": "-grad / -gress"
+ },
+ {
+  "word": "gradual",
+  "ipa": "/ˈɡrædʒuəl/",
+  "meaning": "adj. 逐渐的",
+  "example_en": "a gradual change",
+  "example_zh": "渐变",
+  "batch": 6,
+  "root": "-grad / -gress"
+ },
+ {
+  "word": "grade",
+  "ipa": "/ɡreɪd/",
+  "meaning": "n. 年级，等级；v. 评分",
+  "example_en": "a high grade",
+  "example_zh": "高分",
+  "batch": 6,
+  "root": "-grad / -gress"
+ },
+ {
+  "word": "aggressive",
+  "ipa": "/əˈɡresɪv/",
+  "meaning": "adj. 侵略性的，进取的",
+  "example_en": "an aggressive attitude",
+  "example_zh": "咄咄逼人的态度",
+  "batch": 6,
+  "root": "-grad / -gress"
+ },
+ {
+  "word": "degrade",
+  "ipa": "/dɪˈɡreɪd/",
+  "meaning": "v. 降级，退化",
+  "example_en": "degrade the environment",
+  "example_zh": "破坏环境",
+  "batch": 6,
+  "root": "-grad / -gress"
+ },
+ {
+  "word": "congress",
+  "ipa": "/ˈkɒŋɡres/",
+  "meaning": "n. 国会，大会",
+  "example_en": "a medical congress",
+  "example_zh": "医学大会",
+  "batch": 6,
+  "root": "-grad / -gress"
+ },
+ {
+  "word": "digress",
+  "ipa": "/daɪˈɡres/",
+  "meaning": "v. 离题",
+  "example_en": "Sorry, I digressed.",
+  "example_zh": "抱歉，我跑题了。",
+  "batch": 6,
+  "root": "-grad / -gress"
+ },
+ {
+  "word": "regress",
+  "ipa": "/rɪˈɡres/",
+  "meaning": "v. 倒退，退化",
+  "example_en": "regress to old habits",
+  "example_zh": "退回旧习惯",
+  "batch": 6,
+  "root": "-grad / -gress"
+ },
+ {
+  "word": "locate",
+  "ipa": "/ləʊˈkeɪt/",
+  "meaning": "v. 定位，位于",
+  "example_en": "locate the city on the map",
+  "example_zh": "在地图上找到城市",
+  "batch": 6,
+  "root": "-loc"
+ },
+ {
+  "word": "local",
+  "ipa": "/ˈləʊkl/",
+  "meaning": "adj. 当地的，局部的",
+  "example_en": "local food",
+  "example_zh": "本地食物",
+  "batch": 6,
+  "root": "-loc"
+ },
+ {
+  "word": "location",
+  "ipa": "/ləʊˈkeɪʃn/",
+  "meaning": "n. 位置，地点",
+  "example_en": "a good location",
+  "example_zh": "好位置",
+  "batch": 6,
+  "root": "-loc"
+ },
+ {
+  "word": "allocate",
+  "ipa": "/ˈæləkeɪt/",
+  "meaning": "v. 分配",
+  "example_en": "allocate funds",
+  "example_zh": "拨款",
+  "batch": 6,
+  "root": "-loc"
+ },
+ {
+  "word": "dislocate",
+  "ipa": "/ˈdɪsləkeɪt/",
+  "meaning": "v. 使脱位，扰乱",
+  "example_en": "dislocate a shoulder",
+  "example_zh": "肩脱位",
+  "batch": 6,
+  "root": "-loc"
+ },
+ {
+  "word": "include",
+  "ipa": "/ɪnˈkluːd/",
+  "meaning": "v. 包含",
+  "example_en": "The price includes tax.",
+  "example_zh": "价格含税。",
+  "batch": 7,
+  "root": "-clud / -clus"
+ },
+ {
+  "word": "exclude",
+  "ipa": "/ɪkˈskluːd/",
+  "meaning": "v. 排除，排斥",
+  "example_en": "exclude the possibility",
+  "example_zh": "排除可能",
+  "batch": 7,
+  "root": "-clud / -clus"
+ },
+ {
+  "word": "conclude",
+  "ipa": "/kənˈkluːd/",
+  "meaning": "v. 总结，结束",
+  "example_en": "conclude the meeting",
+  "example_zh": "结束会议",
+  "batch": 7,
+  "root": "-clud / -clus"
+ },
+ {
+  "word": "exclusive",
+  "ipa": "/ɪkˈskluːsɪv/",
+  "meaning": "adj. 独有的，排外的",
+  "example_en": "an exclusive club",
+  "example_zh": "私人会所",
+  "batch": 7,
+  "root": "-clud / -clus"
+ },
+ {
+  "word": "depend",
+  "ipa": "/dɪˈpend/",
+  "meaning": "v. 依赖，取决于",
+  "example_en": "It depends on you.",
+  "example_zh": "这取决于你。",
+  "batch": 7,
+  "root": "-pend / -pens"
+ },
+ {
+  "word": "suspend",
+  "ipa": "/səˈspend/",
+  "meaning": "v. 悬挂，暂停",
+  "example_en": "suspend the rule",
+  "example_zh": "暂停规则",
+  "batch": 7,
+  "root": "-pend / -pens"
+ },
+ {
+  "word": "expense",
+  "ipa": "/ɪkˈspens/",
+  "meaning": "n. 花费，开销",
+  "example_en": "at someone's expense",
+  "example_zh": "由某人付费",
+  "batch": 7,
+  "root": "-pend / -pens"
+ },
+ {
+  "word": "expensive",
+  "ipa": "/ɪkˈspensɪv/",
+  "meaning": "adj. 昂贵的",
+  "example_en": "an expensive car",
+  "example_zh": "昂贵的车",
+  "batch": 7,
+  "root": "-pend / -pens"
+ },
+ {
+  "word": "pension",
+  "ipa": "/ˈpenʃn/",
+  "meaning": "n. 养老金",
+  "example_en": "receive a pension",
+  "example_zh": "领养老金",
+  "batch": 7,
+  "root": "-pend / -pens"
+ },
+ {
+  "word": "video",
+  "ipa": "/ˈvɪdiəʊ/",
+  "meaning": "n. 视频",
+  "example_en": "watch a video",
+  "example_zh": "看视频",
+  "batch": 8,
+  "root": "-vid / -vis"
+ },
+ {
+  "word": "visible",
+  "ipa": "/ˈvɪzəbl/",
+  "meaning": "adj. 可见的",
+  "example_en": "The star is visible.",
+  "example_zh": "星星可见。",
+  "batch": 8,
+  "root": "-vid / -vis"
+ },
+ {
+  "word": "visit",
+  "ipa": "/ˈvɪzɪt/",
+  "meaning": "v. 参观，拜访",
+  "example_en": "visit a museum",
+  "example_zh": "参观博物馆",
+  "batch": 8,
+  "root": "-vid / -vis"
+ },
+ {
+  "word": "advise",
+  "ipa": "/ədˈvaɪz/",
+  "meaning": "v. 建议，劝告",
+  "example_en": "I advise you to rest.",
+  "example_zh": "我劝你休息。",
+  "batch": 8,
+  "root": "-vid / -vis"
+ },
+ {
+  "word": "evident",
+  "ipa": "/ˈevɪdənt/",
+  "meaning": "adj. 明显的",
+  "example_en": "an evident mistake",
+  "example_zh": "明显的错误",
+  "batch": 8,
+  "root": "-vid / -vis"
+ },
+ {
+  "word": "press",
+  "ipa": "/pres/",
+  "meaning": "v. 压，按；n. 新闻界",
+  "example_en": "press the button",
+  "example_zh": "按按钮",
+  "batch": 8,
+  "root": "-press"
+ },
+ {
+  "word": "pressure",
+  "ipa": "/ˈpreʃə/",
+  "meaning": "n. 压力",
+  "example_en": "under pressure",
+  "example_zh": "在压力下",
+  "batch": 8,
+  "root": "-press"
+ },
+ {
+  "word": "compress",
+  "ipa": "/kəmˈpres/",
+  "meaning": "v. 压缩",
+  "example_en": "compress the file",
+  "example_zh": "压缩文件",
+  "batch": 8,
+  "root": "-press"
+ },
+ {
+  "word": "depress",
+  "ipa": "/dɪˈpres/",
+  "meaning": "v. 使沮丧，压下",
+  "example_en": "The news depressed him.",
+  "example_zh": "消息让他沮丧。",
+  "batch": 8,
+  "root": "-press"
+ },
+ {
+  "word": "express",
+  "ipa": "/ɪkˈspres/",
+  "meaning": "v. 表达；adj. 特快的",
+  "example_en": "express your feelings",
+  "example_zh": "表达感受",
+  "batch": 8,
+  "root": "-press"
+ },
+ {
+  "word": "rupture",
+  "ipa": "/ˈrʌptʃə/",
+  "meaning": "n./v. 破裂",
+  "example_en": "a rupture in relations",
+  "example_zh": "关系破裂",
+  "batch": 8,
+  "root": "-rupt"
+ },
+ {
+  "word": "abrupt",
+  "ipa": "/əˈbrʌpt/",
+  "meaning": "adj. 突然的，陡峭的",
+  "example_en": "an abrupt stop",
+  "example_zh": "急停",
+  "batch": 8,
+  "root": "-rupt"
+ },
+ {
+  "word": "bankrupt",
+  "ipa": "/ˈbæŋkrʌpt/",
+  "meaning": "adj. 破产的",
+  "example_en": "go bankrupt",
+  "example_zh": "破产",
+  "batch": 8,
+  "root": "-rupt"
+ },
+ {
+  "word": "corrupt",
+  "ipa": "/kəˈrʌpt/",
+  "meaning": "adj. 腐败的；v. 使堕落",
+  "example_en": "a corrupt official",
+  "example_zh": "贪官",
+  "batch": 8,
+  "root": "-rupt"
+ },
+ {
+  "word": "disrupt",
+  "ipa": "/dɪsˈrʌpt/",
+  "meaning": "v. 扰乱，中断",
+  "example_en": "disrupt the meeting",
+  "example_zh": "扰乱会议",
+  "batch": 8,
+  "root": "-rupt"
+ },
+ {
+  "word": "voice",
+  "ipa": "/vɔɪs/",
+  "meaning": "n. 声音，嗓音",
+  "example_en": "in a loud voice",
+  "example_zh": "大声地",
+  "batch": 9,
+  "root": "-voc / -vok"
+ },
+ {
+  "word": "vocal",
+  "ipa": "/ˈvəʊkl/",
+  "meaning": "adj. 嗓音的，直言的",
+  "example_en": "vocal music",
+  "example_zh": "声乐",
+  "batch": 9,
+  "root": "-voc / -vok"
+ },
+ {
+  "word": "advocate",
+  "ipa": "/ˈædvəkeɪt/",
+  "meaning": "v. 提倡；n. 倡导者",
+  "example_en": "advocate peace",
+  "example_zh": "提倡和平",
+  "batch": 9,
+  "root": "-voc / -vok"
+ },
+ {
+  "word": "evoke",
+  "ipa": "/ɪˈvəʊk/",
+  "meaning": "v. 唤起，引起",
+  "example_en": "evoke memories",
+  "example_zh": "唤起回忆",
+  "batch": 9,
+  "root": "-voc / -vok"
+ },
+ {
+  "word": "provoke",
+  "ipa": "/prəˈvəʊk/",
+  "meaning": "v. 挑衅，激起",
+  "example_en": "provoke anger",
+  "example_zh": "激起愤怒",
+  "batch": 9,
+  "root": "-voc / -vok"
+ },
+ {
+  "word": "sense",
+  "ipa": "/sens/",
+  "meaning": "n. 感觉，意义",
+  "example_en": "common sense",
+  "example_zh": "常识",
+  "batch": 9,
+  "root": "-sens / -sent"
+ },
+ {
+  "word": "sensible",
+  "ipa": "/ˈsensəbl/",
+  "meaning": "adj. 明智的，合理的",
+  "example_en": "a sensible decision",
+  "example_zh": "明智的决定",
+  "batch": 9,
+  "root": "-sens / -sent"
+ },
+ {
+  "word": "sensitive",
+  "ipa": "/ˈsensətɪv/",
+  "meaning": "adj. 敏感的",
+  "example_en": "sensitive skin",
+  "example_zh": "敏感肌肤",
+  "batch": 9,
+  "root": "-sens / -sent"
+ },
+ {
+  "word": "consent",
+  "ipa": "/kənˈsent/",
+  "meaning": "n./v. 同意",
+  "example_en": "give consent",
+  "example_zh": "同意",
+  "batch": 9,
+  "root": "-sens / -sent"
+ },
+ {
+  "word": "resent",
+  "ipa": "/rɪˈzent/",
+  "meaning": "v. 怨恨",
+  "example_en": "He resented the comment.",
+  "example_zh": "他怨恨那句评论。",
+  "batch": 9,
+  "root": "-sens / -sent"
+ },
+ {
+  "word": "novel",
+  "ipa": "/ˈnɒvl/",
+  "meaning": "adj. 新颖的；n. 小说",
+  "example_en": "a novel idea",
+  "example_zh": "新点子",
+  "batch": 9,
+  "root": "-nov"
+ },
+ {
+  "word": "innovate",
+  "ipa": "/ˈɪnəveɪt/",
+  "meaning": "v. 创新",
+  "example_en": "innovate the process",
+  "example_zh": "革新流程",
+  "batch": 9,
+  "root": "-nov"
+ },
+ {
+  "word": "innovation",
+  "ipa": "/ˌɪnəˈveɪʃn/",
+  "meaning": "n. 创新，革新",
+  "example_en": "technical innovation",
+  "example_zh": "技术创新",
+  "batch": 9,
+  "root": "-nov"
+ },
+ {
+  "word": "novice",
+  "ipa": "/ˈnɒvɪs/",
+  "meaning": "n. 新手",
+  "example_en": "a novice driver",
+  "example_zh": "新司机",
+  "batch": 9,
+  "root": "-nov"
+ },
+ {
+  "word": "renew",
+  "ipa": "/rɪˈnjuː/",
+  "meaning": "v. 更新，续期",
+  "example_en": "renew the license",
+  "example_zh": "续证",
+  "batch": 9,
+  "root": "-nov"
+ },
+ {
+  "word": "spirit",
+  "ipa": "/ˈspɪrɪt/",
+  "meaning": "n. 精神，灵魂",
+  "example_en": "in high spirits",
+  "example_zh": "情绪高涨",
+  "batch": 9,
+  "root": "-spir"
+ },
+ {
+  "word": "inspire",
+  "ipa": "/ɪnˈspaɪə/",
+  "meaning": "v. 鼓舞，启发",
+  "example_en": "The teacher inspired us.",
+  "example_zh": "老师鼓舞了我们。",
+  "batch": 9,
+  "root": "-spir"
+ },
+ {
+  "word": "aspire",
+  "ipa": "/əˈspaɪə/",
+  "meaning": "v. 渴望，追求",
+  "example_en": "aspire to be a doctor",
+  "example_zh": "渴望成为医生",
+  "batch": 9,
+  "root": "-spir"
+ },
+ {
+  "word": "expire",
+  "ipa": "/ɪkˈspaɪə/",
+  "meaning": "v. 到期，呼气",
+  "example_en": "The contract expired.",
+  "example_zh": "合同到期了。",
+  "batch": 9,
+  "root": "-spir"
+ },
+ {
+  "word": "conspire",
+  "ipa": "/kənˈspaɪə/",
+  "meaning": "v. 密谋，共谋",
+  "example_en": "They conspired against him.",
+  "example_zh": "他们密谋反对他。",
+  "batch": 9,
+  "root": "-spir"
+ },
+ {
+  "word": "capture",
+  "ipa": "/ˈkæptʃə/",
+  "meaning": "v. 捕获，占领",
+  "example_en": "capture the moment",
+  "example_zh": "捕捉瞬间",
+  "batch": 10,
+  "root": "-cap / -cip"
+ },
+ {
+  "word": "capable",
+  "ipa": "/ˈkeɪpəbl/",
+  "meaning": "adj. 有能力的",
+  "example_en": "a capable leader",
+  "example_zh": "能干的领导",
+  "batch": 10,
+  "root": "-cap / -cip"
+ },
+ {
+  "word": "capacity",
+  "ipa": "/kəˈpæsəti/",
+  "meaning": "n. 容量，能力",
+  "example_en": "a large capacity",
+  "example_zh": "大容量",
+  "batch": 10,
+  "root": "-cap / -cip"
+ },
+ {
+  "word": "captive",
+  "ipa": "/ˈkæptɪv/",
+  "meaning": "adj. 被俘的；n. 俘虏",
+  "example_en": "hold someone captive",
+  "example_zh": "囚禁某人",
+  "batch": 10,
+  "root": "-cap / -cip"
+ },
+ {
+  "word": "occupy",
+  "ipa": "/ˈɒkjupaɪ/",
+  "meaning": "v. 占据，占用",
+  "example_en": "occupy the seat",
+  "example_zh": "占座",
+  "batch": 10,
+  "root": "-cap / -cip"
+ },
+ {
+  "word": "legal",
+  "ipa": "/ˈliːɡl/",
+  "meaning": "adj. 合法的",
+  "example_en": "legal rights",
+  "example_zh": "合法权利",
+  "batch": 10,
+  "root": "-leg / -lig"
+ },
+ {
+  "word": "legend",
+  "ipa": "/ˈledʒənd/",
+  "meaning": "n. 传说，图例",
+  "example_en": "a famous legend",
+  "example_zh": "著名传说",
+  "batch": 10,
+  "root": "-leg / -lig"
+ },
+ {
+  "word": "college",
+  "ipa": "/ˈkɒlɪdʒ/",
+  "meaning": "n. 学院，大学",
+  "example_en": "go to college",
+  "example_zh": "上大学",
+  "batch": 10,
+  "root": "-leg / -lig"
+ },
+ {
+  "word": "eligible",
+  "ipa": "/ˈelɪdʒəbl/",
+  "meaning": "adj. 有资格的",
+  "example_en": "eligible for the job",
+  "example_zh": "有资格任职",
+  "batch": 10,
+  "root": "-leg / -lig"
+ },
+ {
+  "word": "privilege",
+  "ipa": "/ˈprɪvəlɪdʒ/",
+  "meaning": "n. 特权",
+  "example_en": "a special privilege",
+  "example_zh": "特殊特权",
+  "batch": 10,
+  "root": "-leg / -lig"
+ },
+ {
+  "word": "command",
+  "ipa": "/kəˈmɑːnd/",
+  "meaning": "v./n. 命令，指挥",
+  "example_en": "command the army",
+  "example_zh": "指挥军队",
+  "batch": 10,
+  "root": "-mand / -mend"
+ },
+ {
+  "word": "demand",
+  "ipa": "/dɪˈmɑːnd/",
+  "meaning": "v./n. 要求，需求",
+  "example_en": "meet the demand",
+  "example_zh": "满足需求",
+  "batch": 10,
+  "root": "-mand / -mend"
+ },
+ {
+  "word": "recommend",
+  "ipa": "/ˌrekəˈmend/",
+  "meaning": "v. 推荐，建议",
+  "example_en": "I recommend this book.",
+  "example_zh": "我推荐这本书。",
+  "batch": 10,
+  "root": "-mand / -mend"
+ },
+ {
+  "word": "mandatory",
+  "ipa": "/ˈmændətəri/",
+  "meaning": "adj. 强制的，义务的",
+  "example_en": "mandatory training",
+  "example_zh": "强制培训",
+  "batch": 10,
+  "root": "-mand / -mend"
+ },
+ {
+  "word": "commander",
+  "ipa": "/kəˈmɑːndə/",
+  "meaning": "n. 指挥官",
+  "example_en": "a troop commander",
+  "example_zh": "部队指挥官",
+  "batch": 10,
+  "root": "-mand / -mend"
+ },
+ {
+  "word": "minute",
+  "ipa": "/ˈmɪnɪt/",
+  "meaning": "n. 分钟；/maɪˈnjuːt/ adj. 微小的",
+  "example_en": "a minute error",
+  "example_zh": "微小的错误",
+  "batch": 10,
+  "root": "-min / -minu"
+ },
+ {
+  "word": "minimum",
+  "ipa": "/ˈmɪnɪməm/",
+  "meaning": "n./adj. 最小（值）",
+  "example_en": "the minimum wage",
+  "example_zh": "最低工资",
+  "batch": 10,
+  "root": "-min / -minu"
+ },
+ {
+  "word": "minor",
+  "ipa": "/ˈmaɪnə/",
+  "meaning": "adj. 较小的，次要的",
+  "example_en": "a minor problem",
+  "example_zh": "小问题",
+  "batch": 10,
+  "root": "-min / -minu"
+ },
+ {
+  "word": "minority",
+  "ipa": "/maɪˈnɒrəti/",
+  "meaning": "n. 少数，少数民族",
+  "example_en": "a minority group",
+  "example_zh": "少数群体",
+  "batch": 10,
+  "root": "-min / -minu"
+ },
+ {
+  "word": "diminish",
+  "ipa": "/dɪˈmɪnɪʃ/",
+  "meaning": "v. 减少，削弱",
+  "example_en": "diminish the risk",
+  "example_zh": "降低风险",
+  "batch": 10,
+  "root": "-min / -minu"
+ },
+ {
+  "word": "mobile",
+  "ipa": "/ˈməʊbaɪl/",
+  "meaning": "adj. 移动的，可动的",
+  "example_en": "Mobile phones are everywhere.",
+  "example_zh": "手机无处不在。",
+  "batch": 11,
+  "root": "-mob / -mot / -mov"
+ },
+ {
+  "word": "motion",
+  "ipa": "/ˈməʊʃn/",
+  "meaning": "n. 运动，动议",
+  "example_en": "The car is in motion.",
+  "example_zh": "汽车在运动中。",
+  "batch": 11,
+  "root": "-mob / -mot / -mov"
+ },
+ {
+  "word": "motivate",
+  "ipa": "/ˈməʊtɪveɪt/",
+  "meaning": "v. 激励，激发",
+  "example_en": "Praise can motivate students.",
+  "example_zh": "表扬能激励学生。",
+  "batch": 11,
+  "root": "-mob / -mot / -mov"
+ },
+ {
+  "word": "promote",
+  "ipa": "/prəˈməʊt/",
+  "meaning": "v. 促进，晋升",
+  "example_en": "The policy promotes growth.",
+  "example_zh": "该政策促进增长。",
+  "batch": 11,
+  "root": "-mob / -mot / -mov"
+ },
+ {
+  "word": "remove",
+  "ipa": "/rɪˈmuːv/",
+  "meaning": "v. 移开，去除",
+  "example_en": "Remove the obstacles.",
+  "example_zh": "清除障碍。",
+  "batch": 11,
+  "root": "-mob / -mot / -mov"
+ },
+ {
+  "word": "sole",
+  "ipa": "/səʊl/",
+  "meaning": "adj. 唯一的，单独的",
+  "example_en": "the sole survivor",
+  "example_zh": "唯一的幸存者",
+  "batch": 11,
+  "root": "-sol"
+ },
+ {
+  "word": "solo",
+  "ipa": "/ˈsəʊləʊ/",
+  "meaning": "n./adj. 独奏，单独的",
+  "example_en": "a solo performance",
+  "example_zh": "独奏表演",
+  "batch": 11,
+  "root": "-sol"
+ },
+ {
+  "word": "isolate",
+  "ipa": "/ˈaɪsəleɪt/",
+  "meaning": "v. 隔离，孤立",
+  "example_en": "isolate the patient",
+  "example_zh": "隔离病人",
+  "batch": 11,
+  "root": "-sol"
+ },
+ {
+  "word": "desolate",
+  "ipa": "/ˈdesələt/",
+  "meaning": "adj. 荒凉的，孤独的",
+  "example_en": "a desolate island",
+  "example_zh": "荒岛",
+  "batch": 11,
+  "root": "-sol"
+ },
+ {
+  "word": "solitude",
+  "ipa": "/ˈsɒlɪtjuːd/",
+  "meaning": "n. 独处，孤独",
+  "example_en": "enjoy solitude",
+  "example_zh": "享受独处",
+  "batch": 11,
+  "root": "-sol"
+ },
+ {
+  "word": "elevate",
+  "ipa": "/ˈelɪveɪt/",
+  "meaning": "v. 提升，抬高",
+  "example_en": "elevate the standard",
+  "example_zh": "提高标准",
+  "batch": 11,
+  "root": "-lev"
+ },
+ {
+  "word": "lever",
+  "ipa": "/ˈliːvə/",
+  "meaning": "n. 杠杆",
+  "example_en": "pull the lever",
+  "example_zh": "拉杠杆",
+  "batch": 11,
+  "root": "-lev"
+ },
+ {
+  "word": "relieve",
+  "ipa": "/rɪˈliːv/",
+  "meaning": "v. 减轻，缓解",
+  "example_en": "relieve the pain",
+  "example_zh": "缓解疼痛",
+  "batch": 11,
+  "root": "-lev"
+ },
+ {
+  "word": "relevant",
+  "ipa": "/ˈreləvənt/",
+  "meaning": "adj. 相关的",
+  "example_en": "relevant information",
+  "example_zh": "相关信息",
+  "batch": 11,
+  "root": "-lev"
+ },
+ {
+  "word": "levy",
+  "ipa": "/ˈlevi/",
+  "meaning": "v./n. 征收",
+  "example_en": "levy a tax",
+  "example_zh": "征税",
+  "batch": 11,
+  "root": "-lev"
+ },
+ {
+  "word": "magnify",
+  "ipa": "/ˈmæɡnɪfaɪ/",
+  "meaning": "v. 放大，夸大",
+  "example_en": "magnify the image",
+  "example_zh": "放大图像",
+  "batch": 11,
+  "root": "-magn / -maj / -max"
+ },
+ {
+  "word": "magnitude",
+  "ipa": "/ˈmæɡnɪtjuːd/",
+  "meaning": "n. 巨大，量级",
+  "example_en": "the magnitude of the problem",
+  "example_zh": "问题的严重性",
+  "batch": 11,
+  "root": "-magn / -maj / -max"
+ },
+ {
+  "word": "magnificent",
+  "ipa": "/mæɡˈnɪfɪsnt/",
+  "meaning": "adj. 壮丽的",
+  "example_en": "a magnificent view",
+  "example_zh": "壮丽的景色",
+  "batch": 11,
+  "root": "-magn / -maj / -max"
+ },
+ {
+  "word": "major",
+  "ipa": "/ˈmeɪdʒə/",
+  "meaning": "adj. 主要的；n. 主修",
+  "example_en": "a major problem",
+  "example_zh": "主要问题",
+  "batch": 11,
+  "root": "-magn / -maj / -max"
+ },
+ {
+  "word": "maximum",
+  "ipa": "/ˈmæksɪməm/",
+  "meaning": "n./adj. 最大（值）",
+  "example_en": "the maximum speed",
+  "example_zh": "最大速度",
+  "batch": 11,
+  "root": "-magn / -maj / -max"
+ },
+ {
+  "word": "certain",
+  "ipa": "/ˈsɜːtn/",
+  "meaning": "adj. 确定的，某些",
+  "example_en": "I am certain of it.",
+  "example_zh": "我对此很确定。",
+  "batch": 12,
+  "root": "-cert"
+ },
+ {
+  "word": "certify",
+  "ipa": "/ˈsɜːtɪfaɪ/",
+  "meaning": "v. 证明，认证",
+  "example_en": "certify the document",
+  "example_zh": "认证文件",
+  "batch": 12,
+  "root": "-cert"
+ },
+ {
+  "word": "certificate",
+  "ipa": "/səˈtɪfɪkət/",
+  "meaning": "n. 证书",
+  "example_en": "a birth certificate",
+  "example_zh": "出生证明",
+  "batch": 12,
+  "root": "-cert"
+ },
+ {
+  "word": "ascertain",
+  "ipa": "/ˌæsəˈteɪn/",
+  "meaning": "v. 查明，确定",
+  "example_en": "ascertain the facts",
+  "example_zh": "查明事实",
+  "batch": 12,
+  "root": "-cert"
+ },
+ {
+  "word": "certitude",
+  "ipa": "/ˈsɜːtɪtjuːd/",
+  "meaning": "n. 确信",
+  "example_en": "with certitude",
+  "example_zh": "确信地",
+  "batch": 12,
+  "root": "-cert"
+ },
+ {
+  "word": "factor",
+  "ipa": "/ˈfæktə/",
+  "meaning": "n. 因素",
+  "example_en": "a key factor",
+  "example_zh": "关键因素",
+  "batch": 12,
+  "root": "-fac / -fact / -fect"
+ },
+ {
+  "word": "facilitate",
+  "ipa": "/fəˈsɪlɪteɪt/",
+  "meaning": "v. 促进，使便利",
+  "example_en": "facilitate the process",
+  "example_zh": "简化流程",
+  "batch": 12,
+  "root": "-fac / -fact / -fect"
+ },
+ {
+  "word": "manufacture",
+  "ipa": "/ˌmænjuˈfæktʃə/",
+  "meaning": "v./n. 制造",
+  "example_en": "manufacture goods",
+  "example_zh": "制造商品",
+  "batch": 12,
+  "root": "-fac / -fact / -fect"
+ },
+ {
+  "word": "defect",
+  "ipa": "/ˈdiːfekt/",
+  "meaning": "n. 缺陷",
+  "example_en": "a defect in design",
+  "example_zh": "设计缺陷",
+  "batch": 12,
+  "root": "-fac / -fact / -fect"
+ },
+ {
+  "word": "efficient",
+  "ipa": "/ɪˈfɪʃnt/",
+  "meaning": "adj. 高效的",
+  "example_en": "an efficient method",
+  "example_zh": "高效方法",
+  "batch": 12,
+  "root": "-fac / -fact / -fect"
+ },
+ {
+  "word": "propel",
+  "ipa": "/prəˈpel/",
+  "meaning": "v. 推进，驱动",
+  "example_en": "The engine propels the ship.",
+  "example_zh": "发动机推动轮船。",
+  "batch": 12,
+  "root": "-pel / -puls"
+ },
+ {
+  "word": "compel",
+  "ipa": "/kəmˈpel/",
+  "meaning": "v. 强迫",
+  "example_en": "The law compels us.",
+  "example_zh": "法律迫使我们。",
+  "batch": 12,
+  "root": "-pel / -puls"
+ },
+ {
+  "word": "repel",
+  "ipa": "/rɪˈpel/",
+  "meaning": "v. 击退，排斥",
+  "example_en": "repel the attack",
+  "example_zh": "击退进攻",
+  "batch": 12,
+  "root": "-pel / -puls"
+ },
+ {
+  "word": "impulse",
+  "ipa": "/ˈɪmpʌls/",
+  "meaning": "n. 冲动，脉冲",
+  "example_en": "act on impulse",
+  "example_zh": "冲动行事",
+  "batch": 12,
+  "root": "-pel / -puls"
+ },
+ {
+  "word": "compulsory",
+  "ipa": "/kəmˈpʌlsəri/",
+  "meaning": "adj. 强制的",
+  "example_en": "compulsory education",
+  "example_zh": "义务教育",
+  "batch": 12,
+  "root": "-pel / -puls"
+ },
+ {
+  "word": "sequence",
+  "ipa": "/ˈsiːkwəns/",
+  "meaning": "n. 顺序，序列",
+  "example_en": "in sequence",
+  "example_zh": "依次",
+  "batch": 12,
+  "root": "-sequ / -secut"
+ },
+ {
+  "word": "consequence",
+  "ipa": "/ˈkɒnsɪkwəns/",
+  "meaning": "n. 结果，后果",
+  "example_en": "face the consequence",
+  "example_zh": "承担后果",
+  "batch": 12,
+  "root": "-sequ / -secut"
+ },
+ {
+  "word": "subsequent",
+  "ipa": "/ˈsʌbsɪkwənt/",
+  "meaning": "adj. 随后的",
+  "example_en": "subsequent events",
+  "example_zh": "随后事件",
+  "batch": 12,
+  "root": "-sequ / -secut"
+ },
+ {
+  "word": "pursue",
+  "ipa": "/pəˈsjuː/",
+  "meaning": "v. 追求，从事",
+  "example_en": "pursue a dream",
+  "example_zh": "追求梦想",
+  "batch": 12,
+  "root": "-sequ / -secut"
+ },
+ {
+  "word": "execute",
+  "ipa": "/ˈeksɪkjuːt/",
+  "meaning": "v. 执行，处决",
+  "example_en": "execute the plan",
+  "example_zh": "执行计划",
+  "batch": 12,
+  "root": "-sequ / -secut"
+ },
+ {
+  "word": "generate",
+  "ipa": "/ˈdʒenəreɪt/",
+  "meaning": "v. 产生，发电",
+  "example_en": "generate electricity",
+  "example_zh": "发电",
+  "batch": 13,
+  "root": "-gen / -gener"
+ },
+ {
+  "word": "genuine",
+  "ipa": "/ˈdʒenjuɪn/",
+  "meaning": "adj. 真正的",
+  "example_en": "genuine leather",
+  "example_zh": "真皮",
+  "batch": 13,
+  "root": "-gen / -gener"
+ },
+ {
+  "word": "genius",
+  "ipa": "/ˈdʒiːniəs/",
+  "meaning": "n. 天才",
+  "example_en": "a genius at math",
+  "example_zh": "数学天才",
+  "batch": 13,
+  "root": "-gen / -gener"
+ },
+ {
+  "word": "generous",
+  "ipa": "/ˈdʒenərəs/",
+  "meaning": "adj. 慷慨的",
+  "example_en": "a generous donation",
+  "example_zh": "慷慨捐赠",
+  "batch": 13,
+  "root": "-gen / -gener"
+ },
+ {
+  "word": "gender",
+  "ipa": "/ˈdʒendə/",
+  "meaning": "n. 性别",
+  "example_en": "gender equality",
+  "example_zh": "性别平等",
+  "batch": 13,
+  "root": "-gen / -gener"
+ },
+ {
+  "word": "solve",
+  "ipa": "/sɒlv/",
+  "meaning": "v. 解决",
+  "example_en": "solve the problem",
+  "example_zh": "解决问题",
+  "batch": 13,
+  "root": "-solv / -solut"
+ },
+ {
+  "word": "solution",
+  "ipa": "/səˈluːʃn/",
+  "meaning": "n. 解决方案",
+  "example_en": "find a solution",
+  "example_zh": "找到解决办法",
+  "batch": 13,
+  "root": "-solv / -solut"
+ },
+ {
+  "word": "resolve",
+  "ipa": "/rɪˈzɒlv/",
+  "meaning": "v. 解决，决心",
+  "example_en": "resolve the conflict",
+  "example_zh": "化解冲突",
+  "batch": 13,
+  "root": "-solv / -solut"
+ },
+ {
+  "word": "dissolve",
+  "ipa": "/dɪˈzɒlv/",
+  "meaning": "v. 溶解，解散",
+  "example_en": "Sugar dissolves in water.",
+  "example_zh": "糖溶于水。",
+  "batch": 13,
+  "root": "-solv / -solut"
+ },
+ {
+  "word": "absolute",
+  "ipa": "/ˈæbsəluːt/",
+  "meaning": "adj. 绝对的",
+  "example_en": "absolute power",
+  "example_zh": "绝对权力",
+  "batch": 13,
+  "root": "-solv / -solut"
+ },
+ {
+  "word": "serve",
+  "ipa": "/sɜːv/",
+  "meaning": "v. 服务，服役",
+  "example_en": "serve the community",
+  "example_zh": "服务社区",
+  "batch": 13,
+  "root": "-serv"
+ },
+ {
+  "word": "service",
+  "ipa": "/ˈsɜːvɪs/",
+  "meaning": "n. 服务",
+  "example_en": "customer service",
+  "example_zh": "客服",
+  "batch": 13,
+  "root": "-serv"
+ },
+ {
+  "word": "preserve",
+  "ipa": "/prɪˈzɜːv/",
+  "meaning": "v. 保存，保护",
+  "example_en": "preserve the environment",
+  "example_zh": "保护环境",
+  "batch": 13,
+  "root": "-serv"
+ },
+ {
+  "word": "reserve",
+  "ipa": "/rɪˈzɜːv/",
+  "meaning": "v. 预订，保留",
+  "example_en": "reserve a table",
+  "example_zh": "订位",
+  "batch": 13,
+  "root": "-serv"
+ },
+ {
+  "word": "deserve",
+  "ipa": "/dɪˈzɜːv/",
+  "meaning": "v. 应得",
+  "example_en": "You deserve it.",
+  "example_zh": "这是你应得的。",
+  "batch": 13,
+  "root": "-serv"
+ },
+ {
+  "word": "consist",
+  "ipa": "/kənˈsɪst/",
+  "meaning": "v. 由…组成",
+  "example_en": "consist of",
+  "example_zh": "由…组成",
+  "batch": 13,
+  "root": "-sist"
+ },
+ {
+  "word": "insist",
+  "ipa": "/ɪnˈsɪst/",
+  "meaning": "v. 坚持",
+  "example_en": "He insisted on it.",
+  "example_zh": "他坚持此事。",
+  "batch": 13,
+  "root": "-sist"
+ },
+ {
+  "word": "persist",
+  "ipa": "/pəˈsɪst/",
+  "meaning": "v. 坚持，持续",
+  "example_en": "persist in effort",
+  "example_zh": "坚持不懈",
+  "batch": 13,
+  "root": "-sist"
+ },
+ {
+  "word": "resist",
+  "ipa": "/rɪˈzɪst/",
+  "meaning": "v. 抵抗",
+  "example_en": "resist temptation",
+  "example_zh": "抵制诱惑",
+  "batch": 13,
+  "root": "-sist"
+ },
+ {
+  "word": "assist",
+  "ipa": "/əˈsɪst/",
+  "meaning": "v. 协助",
+  "example_en": "assist the teacher",
+  "example_zh": "协助老师",
+  "batch": 13,
+  "root": "-sist"
+ },
+ {
+  "word": "audio",
+  "ipa": "/ˈɔːdiəʊ/",
+  "meaning": "adj./n. 音频",
+  "example_en": "audio equipment",
+  "example_zh": "音频设备",
+  "batch": 14,
+  "root": "-aud"
+ },
+ {
+  "word": "audience",
+  "ipa": "/ˈɔːdiəns/",
+  "meaning": "n. 观众，听众",
+  "example_en": "a large audience",
+  "example_zh": "大批观众",
+  "batch": 14,
+  "root": "-aud"
+ },
+ {
+  "word": "audible",
+  "ipa": "/ˈɔːdəbl/",
+  "meaning": "adj. 听得见的",
+  "example_en": "an audible sigh",
+  "example_zh": "听得见的叹息",
+  "batch": 14,
+  "root": "-aud"
+ },
+ {
+  "word": "auditorium",
+  "ipa": "/ˌɔːdɪˈtɔːriəm/",
+  "meaning": "n. 礼堂，观众席",
+  "example_en": "a school auditorium",
+  "example_zh": "学校礼堂",
+  "batch": 14,
+  "root": "-aud"
+ },
+ {
+  "word": "audit",
+  "ipa": "/ˈɔːdɪt/",
+  "meaning": "v./n. 审计，旁听",
+  "example_en": "audit the accounts",
+  "example_zh": "审计账目",
+  "batch": 14,
+  "root": "-aud"
+ },
+ {
+  "word": "credit",
+  "ipa": "/ˈkredɪt/",
+  "meaning": "n. 信用，学分",
+  "example_en": "credit card",
+  "example_zh": "信用卡",
+  "batch": 14,
+  "root": "-cred"
+ },
+ {
+  "word": "credible",
+  "ipa": "/ˈkredəbl/",
+  "meaning": "adj. 可信的",
+  "example_en": "a credible witness",
+  "example_zh": "可信的证人",
+  "batch": 14,
+  "root": "-cred"
+ },
+ {
+  "word": "incredible",
+  "ipa": "/ɪnˈkredəbl/",
+  "meaning": "adj. 难以置信的",
+  "example_en": "an incredible story",
+  "example_zh": "不可思议的故事",
+  "batch": 14,
+  "root": "-cred"
+ },
+ {
+  "word": "credentials",
+  "ipa": "/krəˈdenʃlz/",
+  "meaning": "n. 资格，证书",
+  "example_en": "professional credentials",
+  "example_zh": "专业资质",
+  "batch": 14,
+  "root": "-cred"
+ },
+ {
+  "word": "creed",
+  "ipa": "/kriːd/",
+  "meaning": "n. 信条",
+  "example_en": "a political creed",
+  "example_zh": "政治信条",
+  "batch": 14,
+  "root": "-cred"
+ },
+ {
+  "word": "fluent",
+  "ipa": "/ˈfluːənt/",
+  "meaning": "adj. 流利的",
+  "example_en": "fluent English",
+  "example_zh": "流利的英语",
+  "batch": 14,
+  "root": "-flu"
+ },
+ {
+  "word": "influence",
+  "ipa": "/ˈɪnfluəns/",
+  "meaning": "n./v. 影响",
+  "example_en": "have influence on",
+  "example_zh": "对…有影响",
+  "batch": 14,
+  "root": "-flu"
+ },
+ {
+  "word": "fluid",
+  "ipa": "/ˈfluːɪd/",
+  "meaning": "n. 流体；adj. 流动的",
+  "example_en": "body fluid",
+  "example_zh": "体液",
+  "batch": 14,
+  "root": "-flu"
+ },
+ {
+  "word": "fluctuate",
+  "ipa": "/ˈflʌktʃueɪt/",
+  "meaning": "v. 波动",
+  "example_en": "Prices fluctuate.",
+  "example_zh": "价格波动。",
+  "batch": 14,
+  "root": "-flu"
+ },
+ {
+  "word": "influx",
+  "ipa": "/ˈɪnflʌks/",
+  "meaning": "n. 涌入",
+  "example_en": "an influx of tourists",
+  "example_zh": "游客涌入",
+  "batch": 14,
+  "root": "-flu"
+ },
+ {
+  "word": "adhere",
+  "ipa": "/ədˈhɪə/",
+  "meaning": "v. 粘附，遵守",
+  "example_en": "adhere to the rules",
+  "example_zh": "遵守规则",
+  "batch": 14,
+  "root": "-her / -hes"
+ },
+ {
+  "word": "coherent",
+  "ipa": "/kəʊˈhɪərənt/",
+  "meaning": "adj. 连贯的",
+  "example_en": "a coherent argument",
+  "example_zh": "连贯的论证",
+  "batch": 14,
+  "root": "-her / -hes"
+ },
+ {
+  "word": "hesitate",
+  "ipa": "/ˈhezɪteɪt/",
+  "meaning": "v. 犹豫",
+  "example_en": "Don't hesitate to ask.",
+  "example_zh": "别犹豫，尽管问。",
+  "batch": 14,
+  "root": "-her / -hes"
+ },
+ {
+  "word": "inherent",
+  "ipa": "/ɪnˈhɪərənt/",
+  "meaning": "adj. 固有的",
+  "example_en": "inherent risk",
+  "example_zh": "固有风险",
+  "batch": 14,
+  "root": "-her / -hes"
+ },
+ {
+  "word": "cohesion",
+  "ipa": "/kəʊˈhiːʒn/",
+  "meaning": "n. 凝聚力",
+  "example_en": "social cohesion",
+  "example_zh": "社会凝聚力",
+  "batch": 14,
+  "root": "-her / -hes"
+ },
+ {
+  "word": "manual",
+  "ipa": "/ˈmænjuəl/",
+  "meaning": "adj. 手工的；n. 手册",
+  "example_en": "a manual task",
+  "example_zh": "手工活",
+  "batch": 15,
+  "root": "-manu / -mani"
+ },
+ {
+  "word": "manipulate",
+  "ipa": "/məˈnɪpjuleɪt/",
+  "meaning": "v. 操纵，操作",
+  "example_en": "manipulate the data",
+  "example_zh": "操纵数据",
+  "batch": 15,
+  "root": "-manu / -mani"
+ },
+ {
+  "word": "manage",
+  "ipa": "/ˈmænɪdʒ/",
+  "meaning": "v. 管理",
+  "example_en": "manage a team",
+  "example_zh": "管理团队",
+  "batch": 15,
+  "root": "-manu / -mani"
+ },
+ {
+  "word": "manifest",
+  "ipa": "/ˈmænɪfest/",
+  "meaning": "v. 表明；adj. 明显的",
+  "example_en": "manifest the truth",
+  "example_zh": "表明真相",
+  "batch": 15,
+  "root": "-manu / -mani"
+ },
+ {
+  "word": "manner",
+  "ipa": "/ˈmænə/",
+  "meaning": "n. 方式，举止",
+  "example_en": "in a polite manner",
+  "example_zh": "礼貌地",
+  "batch": 15,
+  "root": "-manu / -mani"
+ },
+ {
+  "word": "medium",
+  "ipa": "/ˈmiːdiəm/",
+  "meaning": "n. 媒介；adj. 中等的",
+  "example_en": "the medium of TV",
+  "example_zh": "电视媒介",
+  "batch": 15,
+  "root": "-med"
+ },
+ {
+  "word": "mediate",
+  "ipa": "/ˈmiːdieɪt/",
+  "meaning": "v. 调解，斡旋",
+  "example_en": "mediate a dispute",
+  "example_zh": "调解纠纷",
+  "batch": 15,
+  "root": "-med"
+ },
+ {
+  "word": "immediate",
+  "ipa": "/ɪˈmiːdiət/",
+  "meaning": "adj. 立即的，直接的",
+  "example_en": "an immediate reply",
+  "example_zh": "立即回复",
+  "batch": 15,
+  "root": "-med"
+ },
+ {
+  "word": "intermediate",
+  "ipa": "/ˌɪntəˈmiːdiət/",
+  "meaning": "adj. 中间的，中级的",
+  "example_en": "intermediate level",
+  "example_zh": "中级水平",
+  "batch": 15,
+  "root": "-med"
+ },
+ {
+  "word": "medieval",
+  "ipa": "/ˌmediˈiːvl/",
+  "meaning": "adj. 中世纪的",
+  "example_en": "medieval history",
+  "example_zh": "中世纪史",
+  "batch": 15,
+  "root": "-med"
+ },
+ {
+  "word": "memory",
+  "ipa": "/ˈmeməri/",
+  "meaning": "n. 记忆",
+  "example_en": "a good memory",
+  "example_zh": "好记性",
+  "batch": 15,
+  "root": "-mem"
+ },
+ {
+  "word": "remember",
+  "ipa": "/rɪˈmembə/",
+  "meaning": "v. 记得",
+  "example_en": "Remember to lock.",
+  "example_zh": "记得锁门。",
+  "batch": 15,
+  "root": "-mem"
+ },
+ {
+  "word": "memorial",
+  "ipa": "/məˈmɔːriəl/",
+  "meaning": "n. 纪念碑；adj. 纪念的",
+  "example_en": "a war memorial",
+  "example_zh": "战争纪念碑",
+  "batch": 15,
+  "root": "-mem"
+ },
+ {
+  "word": "commemorate",
+  "ipa": "/kəˈmeməreɪt/",
+  "meaning": "v. 纪念",
+  "example_en": "commemorate the event",
+  "example_zh": "纪念该事件",
+  "batch": 15,
+  "root": "-mem"
+ },
+ {
+  "word": "memoir",
+  "ipa": "/ˈmemwɑː/",
+  "meaning": "n. 回忆录",
+  "example_en": "write a memoir",
+  "example_zh": "写回忆录",
+  "batch": 15,
+  "root": "-mem"
+ },
+ {
+  "word": "migrate",
+  "ipa": "/maɪˈɡreɪt/",
+  "meaning": "v. 迁移，迁徙",
+  "example_en": "Birds migrate south.",
+  "example_zh": "鸟向南迁徙。",
+  "batch": 15,
+  "root": "-migr"
+ },
+ {
+  "word": "immigrant",
+  "ipa": "/ˈɪmɪɡrənt/",
+  "meaning": "n. 移民（迁入）",
+  "example_en": "an immigrant family",
+  "example_zh": "移民家庭",
+  "batch": 15,
+  "root": "-migr"
+ },
+ {
+  "word": "emigrate",
+  "ipa": "/ˈemɪɡreɪt/",
+  "meaning": "v. 移居国外",
+  "example_en": "emigrate to Canada",
+  "example_zh": "移民加拿大",
+  "batch": 15,
+  "root": "-migr"
+ },
+ {
+  "word": "migrant",
+  "ipa": "/ˈmaɪɡrənt/",
+  "meaning": "n. 移民，候鸟",
+  "example_en": "migrant workers",
+  "example_zh": "农民工",
+  "batch": 15,
+  "root": "-migr"
+ },
+ {
+  "word": "migration",
+  "ipa": "/maɪˈɡreɪʃn/",
+  "meaning": "n. 迁移",
+  "example_en": "bird migration",
+  "example_zh": "鸟类迁徙",
+  "batch": 15,
+  "root": "-migr"
+ },
+ {
+  "word": "monitor",
+  "ipa": "/ˈmɒnɪtə/",
+  "meaning": "v./n. 监控，显示器",
+  "example_en": "monitor the system",
+  "example_zh": "监控系统",
+  "batch": 16,
+  "root": "-mon"
+ },
+ {
+  "word": "monument",
+  "ipa": "/ˈmɒnjumənt/",
+  "meaning": "n. 纪念碑",
+  "example_en": "a historic monument",
+  "example_zh": "历史纪念碑",
+  "batch": 16,
+  "root": "-mon"
+ },
+ {
+  "word": "demonstrate",
+  "ipa": "/ˈdemənstreɪt/",
+  "meaning": "v. 演示，证明",
+  "example_en": "demonstrate the method",
+  "example_zh": "演示方法",
+  "batch": 16,
+  "root": "-mon"
+ },
+ {
+  "word": "summon",
+  "ipa": "/ˈsʌmən/",
+  "meaning": "v. 召唤",
+  "example_en": "summon a meeting",
+  "example_zh": "召集会议",
+  "batch": 16,
+  "root": "-mon"
+ },
+ {
+  "word": "admonish",
+  "ipa": "/ədˈmɒnɪʃ/",
+  "meaning": "v. 告诫",
+  "example_en": "admonish the child",
+  "example_zh": "告诫孩子",
+  "batch": 16,
+  "root": "-mon"
+ },
+ {
+  "word": "nature",
+  "ipa": "/ˈneɪtʃə/",
+  "meaning": "n. 自然，本性",
+  "example_en": "protect nature",
+  "example_zh": "保护自然",
+  "batch": 16,
+  "root": "-nat"
+ },
+ {
+  "word": "native",
+  "ipa": "/ˈneɪtɪv/",
+  "meaning": "adj. 本地的，天生的",
+  "example_en": "a native speaker",
+  "example_zh": "母语者",
+  "batch": 16,
+  "root": "-nat"
+ },
+ {
+  "word": "nation",
+  "ipa": "/ˈneɪʃn/",
+  "meaning": "n. 国家，民族",
+  "example_en": "a great nation",
+  "example_zh": "伟大的民族",
+  "batch": 16,
+  "root": "-nat"
+ },
+ {
+  "word": "innate",
+  "ipa": "/ɪˈneɪt/",
+  "meaning": "adj. 天生的",
+  "example_en": "innate ability",
+  "example_zh": "天赋",
+  "batch": 16,
+  "root": "-nat"
+ },
+ {
+  "word": "naive",
+  "ipa": "/naɪˈiːv/",
+  "meaning": "adj. 天真的",
+  "example_en": "a naive question",
+  "example_zh": "天真的问题",
+  "batch": 16,
+  "root": "-nat"
+ },
+ {
+  "word": "negative",
+  "ipa": "/ˈneɡətɪv/",
+  "meaning": "adj. 否定的，消极的",
+  "example_en": "a negative attitude",
+  "example_zh": "消极态度",
+  "batch": 16,
+  "root": "-neg"
+ },
+ {
+  "word": "neglect",
+  "ipa": "/nɪˈɡlekt/",
+  "meaning": "v./n. 忽视",
+  "example_en": "neglect one's duty",
+  "example_zh": "玩忽职守",
+  "batch": 16,
+  "root": "-neg"
+ },
+ {
+  "word": "negotiate",
+  "ipa": "/nɪˈɡəʊʃieɪt/",
+  "meaning": "v. 谈判",
+  "example_en": "negotiate a deal",
+  "example_zh": "洽谈交易",
+  "batch": 16,
+  "root": "-neg"
+ },
+ {
+  "word": "negligible",
+  "ipa": "/ˈneɡlɪdʒəbl/",
+  "meaning": "adj. 微不足道的",
+  "example_en": "a negligible amount",
+  "example_zh": "微乎其微",
+  "batch": 16,
+  "root": "-neg"
+ },
+ {
+  "word": "negate",
+  "ipa": "/nɪˈɡeɪt/",
+  "meaning": "v. 否定，取消",
+  "example_en": "negate the effect",
+  "example_zh": "抵消效果",
+  "batch": 16,
+  "root": "-neg"
+ },
+ {
+  "word": "nominate",
+  "ipa": "/ˈnɒmɪneɪt/",
+  "meaning": "v. 提名，任命",
+  "example_en": "nominate a candidate",
+  "example_zh": "提名候选人",
+  "batch": 16,
+  "root": "-nomin / -nomen"
+ },
+ {
+  "word": "nominee",
+  "ipa": "/ˌnɒmɪˈniː/",
+  "meaning": "n. 被提名者",
+  "example_en": "a nominee for the prize",
+  "example_zh": "奖项候选人",
+  "batch": 16,
+  "root": "-nomin / -nomen"
+ },
+ {
+  "word": "denomination",
+  "ipa": "/dɪˌnɒmɪˈneɪʃn/",
+  "meaning": "n. 面额，教派",
+  "example_en": "banknotes of various denominations",
+  "example_zh": "各种面额纸币",
+  "batch": 16,
+  "root": "-nomin / -nomen"
+ },
+ {
+  "word": "nominal",
+  "ipa": "/ˈnɒmɪnl/",
+  "meaning": "adj. 名义上的",
+  "example_en": "a nominal fee",
+  "example_zh": "象征性费用",
+  "batch": 16,
+  "root": "-nomin / -nomen"
+ },
+ {
+  "word": "renowned",
+  "ipa": "/rɪˈnaʊnd/",
+  "meaning": "adj. 著名的",
+  "example_en": "a renowned scientist",
+  "example_zh": "著名科学家",
+  "batch": 16,
+  "root": "-nomin / -nomen"
+ },
+ {
+  "word": "sympathy",
+  "ipa": "/ˈsɪmpəθi/",
+  "meaning": "n. 同情",
+  "example_en": "show sympathy",
+  "example_zh": "表示同情",
+  "batch": 17,
+  "root": "-path"
+ },
+ {
+  "word": "apathy",
+  "ipa": "/ˈæpəθi/",
+  "meaning": "n. 冷漠",
+  "example_en": "public apathy",
+  "example_zh": "公众冷漠",
+  "batch": 17,
+  "root": "-path"
+ },
+ {
+  "word": "empathy",
+  "ipa": "/ˈempəθi/",
+  "meaning": "n. 共情",
+  "example_en": "feel empathy",
+  "example_zh": "产生共情",
+  "batch": 17,
+  "root": "-path"
+ },
+ {
+  "word": "pathetic",
+  "ipa": "/pəˈθetɪk/",
+  "meaning": "adj. 可怜的",
+  "example_en": "a pathetic sight",
+  "example_zh": "凄惨景象",
+  "batch": 17,
+  "root": "-path"
+ },
+ {
+  "word": "pathology",
+  "ipa": "/pəˈθɒlədʒi/",
+  "meaning": "n. 病理学",
+  "example_en": "study pathology",
+  "example_zh": "研究病理学",
+  "batch": 17,
+  "root": "-path"
+ },
+ {
+  "word": "pedal",
+  "ipa": "/ˈpedl/",
+  "meaning": "n. 踏板",
+  "example_en": "the brake pedal",
+  "example_zh": "刹车踏板",
+  "batch": 17,
+  "root": "-ped"
+ },
+ {
+  "word": "pedestrian",
+  "ipa": "/pəˈdestriən/",
+  "meaning": "n. 行人",
+  "example_en": "a pedestrian street",
+  "example_zh": "步行街",
+  "batch": 17,
+  "root": "-ped"
+ },
+ {
+  "word": "expedition",
+  "ipa": "/ˌekspəˈdɪʃn/",
+  "meaning": "n. 远征，考察",
+  "example_en": "an expedition to the Arctic",
+  "example_zh": "北极考察",
+  "batch": 17,
+  "root": "-ped"
+ },
+ {
+  "word": "impede",
+  "ipa": "/ɪmˈpiːd/",
+  "meaning": "v. 阻碍",
+  "example_en": "impede progress",
+  "example_zh": "阻碍进展",
+  "batch": 17,
+  "root": "-ped"
+ },
+ {
+  "word": "centipede",
+  "ipa": "/ˈsentɪpiːd/",
+  "meaning": "n. 蜈蚣",
+  "example_en": "a centipede",
+  "example_zh": "蜈蚣",
+  "batch": 17,
+  "root": "-ped"
+ },
+ {
+  "word": "philosophy",
+  "ipa": "/fəˈlɒsəfi/",
+  "meaning": "n. 哲学",
+  "example_en": "study philosophy",
+  "example_zh": "研究哲学",
+  "batch": 17,
+  "root": "-phil"
+ },
+ {
+  "word": "philanthropist",
+  "ipa": "/fɪˈlænθrəpɪst/",
+  "meaning": "n. 慈善家",
+  "example_en": "a generous philanthropist",
+  "example_zh": "慷慨的慈善家",
+  "batch": 17,
+  "root": "-phil"
+ },
+ {
+  "word": "bibliophile",
+  "ipa": "/ˈbɪbliəfaɪl/",
+  "meaning": "n. 藏书家",
+  "example_en": "a keen bibliophile",
+  "example_zh": "热忱藏书家",
+  "batch": 17,
+  "root": "-phil"
+ },
+ {
+  "word": "philharmonic",
+  "ipa": "/ˌfɪləˈmɒnɪk/",
+  "meaning": "adj. 爱乐的",
+  "example_en": "the philharmonic orchestra",
+  "example_zh": "爱乐乐团",
+  "batch": 17,
+  "root": "-phil"
+ },
+ {
+  "word": "anglophile",
+  "ipa": "/ˈæŋɡləfaɪl/",
+  "meaning": "n. 亲英者",
+  "example_en": "an anglophile",
+  "example_zh": "亲英派",
+  "batch": 17,
+  "root": "-phil"
+ },
+ {
+  "word": "telephone",
+  "ipa": "/ˈtelɪfəʊn/",
+  "meaning": "n. 电话",
+  "example_en": "answer the telephone",
+  "example_zh": "接电话",
+  "batch": 17,
+  "root": "-phon"
+ },
+ {
+  "word": "symphony",
+  "ipa": "/ˈsɪmfəni/",
+  "meaning": "n. 交响乐",
+  "example_en": "a symphony concert",
+  "example_zh": "交响音乐会",
+  "batch": 17,
+  "root": "-phon"
+ },
+ {
+  "word": "microphone",
+  "ipa": "/ˈmaɪkrəfəʊn/",
+  "meaning": "n. 麦克风",
+  "example_en": "speak into the microphone",
+  "example_zh": "对着麦克风讲话",
+  "batch": 17,
+  "root": "-phon"
+ },
+ {
+  "word": "phonetic",
+  "ipa": "/fəˈnetɪk/",
+  "meaning": "adj. 语音的",
+  "example_en": "phonetic symbols",
+  "example_zh": "音标",
+  "batch": 17,
+  "root": "-phon"
+ },
+ {
+  "word": "cacophony",
+  "ipa": "/kəˈkɒfəni/",
+  "meaning": "n. 刺耳杂音",
+  "example_en": "a cacophony of noise",
+  "example_zh": "嘈杂声",
+  "batch": 17,
+  "root": "-phon"
+ },
+ {
+  "word": "placate",
+  "ipa": "/pləˈkeɪt/",
+  "meaning": "v. 安抚",
+  "example_en": "placate the crowd",
+  "example_zh": "安抚人群",
+  "batch": 18,
+  "root": "-plac"
+ },
+ {
+  "word": "complacent",
+  "ipa": "/kəmˈpleɪsnt/",
+  "meaning": "adj. 自满的",
+  "example_en": "a complacent attitude",
+  "example_zh": "自满态度",
+  "batch": 18,
+  "root": "-plac"
+ },
+ {
+  "word": "placebo",
+  "ipa": "/pləˈsiːbəʊ/",
+  "meaning": "n. 安慰剂",
+  "example_en": "a placebo effect",
+  "example_zh": "安慰剂效应",
+  "batch": 18,
+  "root": "-plac"
+ },
+ {
+  "word": "placid",
+  "ipa": "/ˈplæsɪd/",
+  "meaning": "adj. 平静的",
+  "example_en": "a placid lake",
+  "example_zh": "平静的湖",
+  "batch": 18,
+  "root": "-plac"
+ },
+ {
+  "word": "implacable",
+  "ipa": "/ɪmˈplækəbl/",
+  "meaning": "adj. 无法平息的",
+  "example_en": "implacable anger",
+  "example_zh": "无法平息的怒火",
+  "batch": 18,
+  "root": "-plac"
+ },
+ {
+  "word": "plenty",
+  "ipa": "/ˈplenti/",
+  "meaning": "n. 大量，充足",
+  "example_en": "plenty of time",
+  "example_zh": "充足的时间",
+  "batch": 18,
+  "root": "-plen / -plet"
+ },
+ {
+  "word": "complete",
+  "ipa": "/kəmˈpliːt/",
+  "meaning": "v./adj. 完成，完整的",
+  "example_en": "complete the task",
+  "example_zh": "完成任务",
+  "batch": 18,
+  "root": "-plen / -plet"
+ },
+ {
+  "word": "supplement",
+  "ipa": "/ˈsʌplɪmənt/",
+  "meaning": "n./v. 补充",
+  "example_en": "a vitamin supplement",
+  "example_zh": "维生素补充剂",
+  "batch": 18,
+  "root": "-plen / -plet"
+ },
+ {
+  "word": "implement",
+  "ipa": "/ˈɪmplɪmənt/",
+  "meaning": "v. 实施",
+  "example_en": "implement the policy",
+  "example_zh": "实施政策",
+  "batch": 18,
+  "root": "-plen / -plet"
+ },
+ {
+  "word": "replenish",
+  "ipa": "/rɪˈplenɪʃ/",
+  "meaning": "v. 补充",
+  "example_en": "replenish supplies",
+  "example_zh": "补充物资",
+  "batch": 18,
+  "root": "-plen / -plet"
+ },
+ {
+  "word": "request",
+  "ipa": "/rɪˈkwest/",
+  "meaning": "v./n. 请求",
+  "example_en": "request a favor",
+  "example_zh": "请求帮助",
+  "batch": 18,
+  "root": "-quest / -quir / -quis"
+ },
+ {
+  "word": "acquire",
+  "ipa": "/əˈkwaɪə/",
+  "meaning": "v. 获得",
+  "example_en": "acquire knowledge",
+  "example_zh": "获取知识",
+  "batch": 18,
+  "root": "-quest / -quir / -quis"
+ },
+ {
+  "word": "inquire",
+  "ipa": "/ɪnˈkwaɪə/",
+  "meaning": "v. 询问",
+  "example_en": "inquire about the price",
+  "example_zh": "询问价格",
+  "batch": 18,
+  "root": "-quest / -quir / -quis"
+ },
+ {
+  "word": "require",
+  "ipa": "/rɪˈkwaɪə/",
+  "meaning": "v. 需要，要求",
+  "example_en": "The job requires skills.",
+  "example_zh": "这份工作需要技能。",
+  "batch": 18,
+  "root": "-quest / -quir / -quis"
+ },
+ {
+  "word": "quest",
+  "ipa": "/kwest/",
+  "meaning": "n. 探索，追求",
+  "example_en": "a quest for truth",
+  "example_zh": "对真理的追求",
+  "batch": 18,
+  "root": "-quest / -quir / -quis"
+ },
+ {
+  "word": "vivid",
+  "ipa": "/ˈvɪvɪd/",
+  "meaning": "adj. 生动的",
+  "example_en": "a vivid description",
+  "example_zh": "生动的描述",
+  "batch": 18,
+  "root": "-viv / -vit"
+ },
+ {
+  "word": "survive",
+  "ipa": "/səˈvaɪv/",
+  "meaning": "v. 幸存",
+  "example_en": "survive the disaster",
+  "example_zh": "在灾难中幸存",
+  "batch": 18,
+  "root": "-viv / -vit"
+ },
+ {
+  "word": "revive",
+  "ipa": "/rɪˈvaɪv/",
+  "meaning": "v. 复苏，复兴",
+  "example_en": "revive the economy",
+  "example_zh": "振兴经济",
+  "batch": 18,
+  "root": "-viv / -vit"
+ },
+ {
+  "word": "vital",
+  "ipa": "/ˈvaɪtl/",
+  "meaning": "adj. 至关重要的，生命的",
+  "example_en": "vital importance",
+  "example_zh": "至关重要",
+  "batch": 18,
+  "root": "-viv / -vit"
+ },
+ {
+  "word": "vitamin",
+  "ipa": "/ˈvɪtəmɪn/",
+  "meaning": "n. 维生素",
+  "example_en": "take vitamins",
+  "example_zh": "服用维生素",
+  "batch": 18,
+  "root": "-viv / -vit"
+ },
+ {
+  "word": "correct",
+  "ipa": "/kəˈrekt/",
+  "meaning": "adj./v. 正确的，纠正",
+  "example_en": "the correct answer",
+  "example_zh": "正确答案",
+  "batch": 19,
+  "root": "-rect / -reg"
+ },
+ {
+  "word": "direct",
+  "ipa": "/dəˈrekt/",
+  "meaning": "adj./v. 直接的，指导",
+  "example_en": "direct the traffic",
+  "example_zh": "指挥交通",
+  "batch": 19,
+  "root": "-rect / -reg"
+ },
+ {
+  "word": "erect",
+  "ipa": "/ɪˈrekt/",
+  "meaning": "v. 竖立；adj. 直立的",
+  "example_en": "erect a building",
+  "example_zh": "建楼",
+  "batch": 19,
+  "root": "-rect / -reg"
+ },
+ {
+  "word": "regulate",
+  "ipa": "/ˈreɡjuleɪt/",
+  "meaning": "v. 规范，调节",
+  "example_en": "regulate the market",
+  "example_zh": "规范市场",
+  "batch": 19,
+  "root": "-rect / -reg"
+ },
+ {
+  "word": "regular",
+  "ipa": "/ˈreɡjələ/",
+  "meaning": "adj. 规律的，定期的",
+  "example_en": "regular exercise",
+  "example_zh": "规律锻炼",
+  "batch": 19,
+  "root": "-rect / -reg"
+ },
+ {
+  "word": "ascend",
+  "ipa": "/əˈsend/",
+  "meaning": "v. 上升",
+  "example_en": "ascend the mountain",
+  "example_zh": "登山",
+  "batch": 19,
+  "root": "-scend"
+ },
+ {
+  "word": "descend",
+  "ipa": "/dɪˈsend/",
+  "meaning": "v. 下降",
+  "example_en": "descend the stairs",
+  "example_zh": "下楼梯",
+  "batch": 19,
+  "root": "-scend"
+ },
+ {
+  "word": "transcend",
+  "ipa": "/trænˈsend/",
+  "meaning": "v. 超越",
+  "example_en": "transcend the limit",
+  "example_zh": "超越极限",
+  "batch": 19,
+  "root": "-scend"
+ },
+ {
+  "word": "descendant",
+  "ipa": "/dɪˈsendənt/",
+  "meaning": "n. 后代",
+  "example_en": "a descendant of the family",
+  "example_zh": "家族后代",
+  "batch": 19,
+  "root": "-scend"
+ },
+ {
+  "word": "ascent",
+  "ipa": "/əˈsent/",
+  "meaning": "n. 上升，攀登",
+  "example_en": "a steep ascent",
+  "example_zh": "陡峭的上坡",
+  "batch": 19,
+  "root": "-scend"
+ },
+ {
+  "word": "science",
+  "ipa": "/ˈsaɪəns/",
+  "meaning": "n. 科学",
+  "example_en": "modern science",
+  "example_zh": "现代科学",
+  "batch": 19,
+  "root": "-sci"
+ },
+ {
+  "word": "conscious",
+  "ipa": "/ˈkɒnʃəs/",
+  "meaning": "adj. 有意识的",
+  "example_en": "be conscious of",
+  "example_zh": "意识到",
+  "batch": 19,
+  "root": "-sci"
+ },
+ {
+  "word": "conscience",
+  "ipa": "/ˈkɒnʃəns/",
+  "meaning": "n. 良心",
+  "example_en": "a clear conscience",
+  "example_zh": "问心无愧",
+  "batch": 19,
+  "root": "-sci"
+ },
+ {
+  "word": "omniscient",
+  "ipa": "/ɒmˈnɪsiənt/",
+  "meaning": "adj. 无所不知的",
+  "example_en": "an omniscient narrator",
+  "example_zh": "全知叙述者",
+  "batch": 19,
+  "root": "-sci"
+ },
+ {
+  "word": "prescient",
+  "ipa": "/ˈpresiənt/",
+  "meaning": "adj. 有先见之明的",
+  "example_en": "a prescient warning",
+  "example_zh": "有先见之明的警告",
+  "batch": 19,
+  "root": "-sci"
+ },
+ {
+  "word": "session",
+  "ipa": "/ˈseʃn/",
+  "meaning": "n. 会议，一段时间",
+  "example_en": "a training session",
+  "example_zh": "培训课程",
+  "batch": 19,
+  "root": "-sed / -sid / -sess"
+ },
+ {
+  "word": "reside",
+  "ipa": "/rɪˈzaɪd/",
+  "meaning": "v. 居住",
+  "example_en": "reside in the city",
+  "example_zh": "居住在城市",
+  "batch": 19,
+  "root": "-sed / -sid / -sess"
+ },
+ {
+  "word": "resident",
+  "ipa": "/ˈrezɪdənt/",
+  "meaning": "n. 居民",
+  "example_en": "local residents",
+  "example_zh": "当地居民",
+  "batch": 19,
+  "root": "-sed / -sid / -sess"
+ },
+ {
+  "word": "preside",
+  "ipa": "/prɪˈzaɪd/",
+  "meaning": "v. 主持",
+  "example_en": "preside over the meeting",
+  "example_zh": "主持会议",
+  "batch": 19,
+  "root": "-sed / -sid / -sess"
+ },
+ {
+  "word": "sedentary",
+  "ipa": "/ˈsedntri/",
+  "meaning": "adj. 久坐的",
+  "example_en": "a sedentary lifestyle",
+  "example_zh": "久坐的生活方式",
+  "batch": 19,
+  "root": "-sed / -sid / -sess"
+ },
+ {
+  "word": "similar",
+  "ipa": "/ˈsɪmələ/",
+  "meaning": "adj. 相似的",
+  "example_en": "similar interests",
+  "example_zh": "相似兴趣",
+  "batch": 20,
+  "root": "-simil / -sembl"
+ },
+ {
+  "word": "resemble",
+  "ipa": "/rɪˈzembl/",
+  "meaning": "v. 相像",
+  "example_en": "He resembles his father.",
+  "example_zh": "他像他父亲。",
+  "batch": 20,
+  "root": "-simil / -sembl"
+ },
+ {
+  "word": "simulate",
+  "ipa": "/ˈsɪmjuleɪt/",
+  "meaning": "v. 模拟",
+  "example_en": "simulate the process",
+  "example_zh": "模拟过程",
+  "batch": 20,
+  "root": "-simil / -sembl"
+ },
+ {
+  "word": "assemble",
+  "ipa": "/əˈsembl/",
+  "meaning": "v. 集合，组装",
+  "example_en": "assemble the parts",
+  "example_zh": "组装零件",
+  "batch": 20,
+  "root": "-simil / -sembl"
+ },
+ {
+  "word": "simultaneous",
+  "ipa": "/ˌsɪmlˈteɪniəs/",
+  "meaning": "adj. 同时的",
+  "example_en": "simultaneous translation",
+  "example_zh": "同声传译",
+  "batch": 20,
+  "root": "-simil / -sembl"
+ },
+ {
+  "word": "contact",
+  "ipa": "/ˈkɒntækt/",
+  "meaning": "n./v. 接触，联系",
+  "example_en": "contact the manager",
+  "example_zh": "联系经理",
+  "batch": 20,
+  "root": "-tang / -tact"
+ },
+ {
+  "word": "intact",
+  "ipa": "/ɪnˈtækt/",
+  "meaning": "adj. 完好无损的",
+  "example_en": "remain intact",
+  "example_zh": "保持完好",
+  "batch": 20,
+  "root": "-tang / -tact"
+ },
+ {
+  "word": "tangible",
+  "ipa": "/ˈtændʒəbl/",
+  "meaning": "adj. 有形的，切实的",
+  "example_en": "tangible results",
+  "example_zh": "切实成果",
+  "batch": 20,
+  "root": "-tang / -tact"
+ },
+ {
+  "word": "tactile",
+  "ipa": "/ˈtæktaɪl/",
+  "meaning": "adj. 触觉的",
+  "example_en": "tactile feedback",
+  "example_zh": "触觉反馈",
+  "batch": 20,
+  "root": "-tang / -tact"
+ },
+ {
+  "word": "contagious",
+  "ipa": "/kənˈteɪdʒəs/",
+  "meaning": "adj. 传染性的",
+  "example_en": "a contagious disease",
+  "example_zh": "传染病",
+  "batch": 20,
+  "root": "-tang / -tact"
+ },
+ {
+  "word": "term",
+  "ipa": "/tɜːm/",
+  "meaning": "n. 术语，学期，条款",
+  "example_en": "in the long term",
+  "example_zh": "从长远看",
+  "batch": 20,
+  "root": "-term / -termin"
+ },
+ {
+  "word": "terminal",
+  "ipa": "/ˈtɜːmɪnl/",
+  "meaning": "n. 终点站；adj. 末期的",
+  "example_en": "a bus terminal",
+  "example_zh": "公交总站",
+  "batch": 20,
+  "root": "-term / -termin"
+ },
+ {
+  "word": "determine",
+  "ipa": "/dɪˈtɜːmɪn/",
+  "meaning": "v. 决定，确定",
+  "example_en": "determine the result",
+  "example_zh": "决定结果",
+  "batch": 20,
+  "root": "-term / -termin"
+ },
+ {
+  "word": "terminate",
+  "ipa": "/ˈtɜːmɪneɪt/",
+  "meaning": "v. 终止",
+  "example_en": "terminate the contract",
+  "example_zh": "终止合同",
+  "batch": 20,
+  "root": "-term / -termin"
+ },
+ {
+  "word": "exterminate",
+  "ipa": "/ɪkˈstɜːmɪneɪt/",
+  "meaning": "v. 消灭",
+  "example_en": "exterminate pests",
+  "example_zh": "消灭害虫",
+  "batch": 20,
+  "root": "-term / -termin"
+ },
+ {
+  "word": "distort",
+  "ipa": "/dɪˈstɔːt/",
+  "meaning": "v. 扭曲，歪曲",
+  "example_en": "distort the facts",
+  "example_zh": "歪曲事实",
+  "batch": 20,
+  "root": "-tort"
+ },
+ {
+  "word": "torture",
+  "ipa": "/ˈtɔːtʃə/",
+  "meaning": "n./v. 折磨，拷问",
+  "example_en": "ban torture",
+  "example_zh": "禁止酷刑",
+  "batch": 20,
+  "root": "-tort"
+ },
+ {
+  "word": "retort",
+  "ipa": "/rɪˈtɔːt/",
+  "meaning": "v./n. 反驳",
+  "example_en": "a sharp retort",
+  "example_zh": "尖锐的反驳",
+  "batch": 20,
+  "root": "-tort"
+ },
+ {
+  "word": "extort",
+  "ipa": "/ɪkˈstɔːt/",
+  "meaning": "v. 敲诈",
+  "example_en": "extort money",
+  "example_zh": "勒索钱财",
+  "batch": 20,
+  "root": "-tort"
+ },
+ {
+  "word": "contort",
+  "ipa": "/kənˈtɔːt/",
+  "meaning": "v. 扭曲",
+  "example_en": "contort with pain",
+  "example_zh": "痛得扭曲",
+  "batch": 20,
+  "root": "-tort"
+ }
+]
