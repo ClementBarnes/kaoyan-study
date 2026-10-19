@@ -110,11 +110,17 @@ h3{{font-size:15px;margin:18px 0 8px;color:#0C447C}}
   border:none;border-radius:8px;padding:10px 16px;font-size:14px;font-weight:600;cursor:pointer}}
 .timer.run{{background:#b91c1c}}
 .passage{{background:#fff;border:1px solid #D3D1C7;border-radius:12px;padding:18px;margin:14px 0}}
-.en{{font-family:Georgia,"Times New Roman",serif;font-size:16.5px;line-height:1.85;color:#1f2937}}
+.en{{font-family:Georgia,"Times New Roman",serif;font-size:17px;line-height:1.95;color:#111827}}
+.en p{{margin:0 0 4px;text-indent:0}}
+.en p:last-child{{margin-bottom:0}}
 .pn{{display:inline-block;background:#185FA5;color:#fff;border-radius:4px;
-  padding:0 7px;font-size:13px;font-weight:600;margin-right:7px;font-family:system-ui}}
-.cn{{background:#F1EFE8;border-left:3px solid #888780;padding:9px 12px;margin:8px 0 0;
-  border-radius:0 6px 6px 0;font-size:14.5px;color:#444441}}
+  padding:0 8px;font-size:13.5px;font-weight:600;margin-right:8px;font-family:system-ui;
+  vertical-align:2px}}
+.psent{{padding:3px 0;border-radius:4px}}
+.psent:hover{{background:#F1EFE8}}
+.sidx{{display:inline-block;min-width:22px;color:#B4B2A9;font-family:system-ui;font-size:13px}}
+.cn{{background:#F1EFE8;border-left:3px solid #888780;padding:11px 13px;margin:12px 0 0;
+  border-radius:0 6px 6px 0;font-size:15px;color:#444441;line-height:1.85}}
 .cn.hide{{filter:blur(5px);cursor:pointer;user-select:none;transition:filter .15s}}
 .sent{{background:#FAEEDA;border-left:4px solid #BA7517;border-radius:0 10px 10px 0;
   padding:12px 14px;margin:12px 0}}
@@ -149,20 +155,45 @@ th{{background:#F1EFE8;font-weight:600}}
 .nav-fab a{{background:#2C2C2A;color:#fff;padding:10px 15px;border-radius:999px;font-size:13px;
   text-decoration:none;font-weight:600}}
 @media(min-width:768px){{body{{font-size:17px;padding:26px 22px 90px}}
-  .en{{font-size:17.5px}}.stem{{font-size:16px}}}}
+  .en{{font-size:18px}}.stem{{font-size:16px}}}}
 </style>
 </head>
 <body>
 <div class="nav-fab"><a href="../../index.html">← 目录</a></div>
 
 <h1>2010 英语二 · Text 1 精翻</h1>
-<p class="meta">艺术市场萧条 · 5段 · 21–25题 · 全文 2709 词· 今日主攻</p>
+<p class="meta">艺术市场萧条 · 5 段 20 句 · 469 词 · 21–25 题 · 今日主攻</p>
 
 <div class="src">📄 来源：<b>学信网（yz.chsi.com.cn）官方转载</b>「2010年全国硕士研究生入学统一考试英语（二）试题」。已落盘 <code>papers/2010/text.txt</code>（21,366 字符），含完形 + 阅读4篇 + 新题型 + 翻译 + 写作 + 全部答案。<b>原页OCR 错字已全部修正</b>（空格丢失、字母小写、&amp; 转义等问题，正文与选项均为干净文本）。</div>
 
-<div class="warn">⚠️ <b>做题顺序不能反</b>：① 先<b>遮住全部译文</b>，限时 18 分钟做 21–25 题 → ② 对答案（答案在页面最下方，先别看）→ ③ 逐段精翻：<b>先自己拆，拆不动再看中译</b> → ④ 订正错项归因 → ⑤ 抄生词（今天上限 20 个）。</div>
+<div class="warn">⚠️ <b>做题顺序不能反</b>：① 先<b>不看译文</b>，通读原文 5 分钟 → ② <b>限时 18 分钟</b>做 21–25 题（在「三、做题」区）→ ③ 对答案 → ④ 回到「二、精翻」逐段拆句子、写译文，<b>拆不动再点开该段中译</b> → ⑤ 订正错项归因 → ⑥ 抄生词（今天上限 20 个）。</div>
 
-<h2>一、限时做题 21–25题</h2>
+<h2>一、原文 · Text 1（5 段 · 20 句 · 469 词）</h2>
+<p style="color:#5F5E5A;font-size:14px;margin:0 0 10px">按句分行、每句编号，方便逐句拆结构。<b>先自己拆，拆不出来再点下方「本段中译」。</b></p>
+'''
+for k in range(1, 6):
+    sents = [x.strip() for x in re.split(r'(?<=[.!?])\s+(?=[A-Z"\'(])', paras[k-1]) if x.strip()]
+    rows = ''.join(f'<p class="psent"><span class="sidx">{k}.{i+1}</span> {t}</p>'
+                   for i, t in enumerate(sents))
+    HTML += f'''<details class="passage" open>
+<summary style="cursor:pointer;font-weight:600;font-size:15px;color:#185FA5;padding:2px 0 8px">
+Paragraph {k}（{len(sents)} 句 · {len(paras[k-1].split())} 词）</summary>
+<div class="en"><span class="pn">P{k}</span></div>
+<div style="margin-top:6px">{rows}</div>
+<details class="ans" style="margin-top:10px"><summary>📖 点击展开本段中译（建议先自己写）</summary>
+<div class="cn" style="margin-top:8px">{CN[k]}</div>
+</details>
+</details>'''
+
+HTML += '''
+<h2>二、逐段精翻 · 5 段</h2>
+<p style="color:#5F5E5A;font-size:14px">在原文区每段下方写，或直接用下面的大格。每段流程：<b>① 逐句拆结构（标主干）→ ② 写中文 → ③ 对照中译改错</b>。</p>
+'''
+for k in range(1, 6):
+    HTML += f'<h3>P{k} · 我的拆解与译文</h3><div class="write" contenteditable="true">P{k} 主干：<br><br>译文：</div>'
+
+HTML += '''
+<h2>三、限时做题 · 21–25 题</h2>
 <button class="timer" id="tm">⏱ 开始计时 · 18 分钟</button>
 <div style="margin-top:12px">
 '''
@@ -183,21 +214,8 @@ HTML += '''
 <details class="ans"><summary>✅ 答案（做完再展开）</summary>
 <p style="margin:8px 0 0"><b>21 D ｜ 22 A ｜ 23 B ｜ 24 C ｜ 25 C</b></p>
 </details>
-'''
 
-HTML += '''
-<h2>二、逐段精翻 · 5 段</h2>
-<p style="color:#5F5E5A;font-size:14px">点每段译文可<b>显示/隐藏</b>（默认模糊，防止偷看）。<b>先自己拆→ 拆不动再点开</b>。</p>
-'''
-for k in range(1, 6):
-    HTML += f'''<div class="passage">
-<div class="en"><span class="pn">P{k}</span>{paras[k-1]}</div>
-<div class="cn hide" onclick="this.classList.toggle('hide')">{CN[k]}</div>
-</div>
-'''
-
-HTML += '''
-<h2>三、长难句拆解 · 3 句</h2>
+<h2>四、长难句拆解 · 3 句</h2>
 '''
 for t, e, b, _c in SENTS:
     HTML += f'''<div class="sent"><div class="t">{t}</div>
@@ -206,7 +224,7 @@ for t, e, b, _c in SENTS:
 HTML += '''
 <div class="warn"><b>铁律</b>：<b>先找主干（主+谓+宾）→ 再挂修饰 → 最后才处理插入语和从句</b>。任何句子 3 遍内拆不开就别硬拆，标进错题本。明天起从真题原文挑真句练。</div>
 
-<h2>四、错项归因表（填完再看解析）</h2>
+<h2>五、错项归因表（填完再看解析）</h2>
 <table>
 <tr><th style="width:34px">题</th><th style="width:60px">你的答案</th><th>错因归类（勾一个）</th><th style="width:150px">正确项定位句</th></tr>
 '''
@@ -224,7 +242,7 @@ HTML += f'''</table>
 <p><b>25 C</b>：全文讲 art market 在 decline（首段牛市结束→P4 worst downturn），A只讲价格波动太窄，D"兴趣转移"无中生有 → <b>主旨题选最全面概括</b>。</p>
 </details>
 
-<h2>五、生词表 · 抄进错题本（上限 20 个）</h2>
+<h2>六、生词表 · 抄进错题本（上限 20 个）</h2>
 <table class="vt">
 '''
 for w, ipa, mean, ex in VOCAB:
@@ -232,13 +250,6 @@ for w, ipa, mean, ex in VOCAB:
 HTML += '''</table>
 <p style="color:#5F5E5A;font-size:13.5px">📌 这 9 个是本篇<b>考研高频词</b>，务必抄进错题本反复回看。今日若还想扩，只准再抄 11 个（全文生词上限 20）。</p>
 
-<h2>六、我的翻译练习区</h2>
-<p style="color:#5F5E5A;font-size:14px">逐段写：<b>先拆结构（标出主干）→ 再写中文</b>。写不出来就先点开译文对照，但必须<b>自己重写一遍</b>。</p>
-'''
-for k in range(1, 6):
-    HTML += f'<h3>P{k} · 我的拆解与译文</h3><div class="write" contenteditable="true">P{k} 主干：<br><br>译文：</div>'
-
-HTML += '''
 <h2>七、今日过关线</h2>
 <div class="ok">
 □ 限时 <b>18 分钟</b>做完 21–25 题，不查词典<br>
@@ -253,13 +264,6 @@ HTML += '''
 <p style="margin-top:28px;text-align:center;color:#888780;font-size:12px">真题来源：学信网官方转载 · 本页为个人备考资料，请勿外传</p>
 
 <script>
-document.querySelectorAll('.cn.hide').forEach(el=>{{
-  el.title='点击显示/隐藏译文';
-  const obs=new IntersectionObserver((es)=>{{
-    es.forEach(e=>{{ if(e.isIntersecting) e.target.classList.add('hide'); }});
-  }},{{threshold:0.1}});
-  obs.observe(el);
-}});
 const tm=document.getElementById('tm');let sec=1080,t=null;
 tm.addEventListener('click',()=>{{
   if(t){{clearInterval(t);t=null;tm.classList.remove('run');

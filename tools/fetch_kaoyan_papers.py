@@ -40,6 +40,25 @@ def clean(html):
     return '\n'.join([x for x in lines if x])
 
 
+def ocr_fix(t):
+    """修官方页 OCR 错字（空格丢失、字母大小写、实体残留）。"""
+    r = [('\u101b70m', '\u00a370m'), ('\u010170m', '\u00a370m'),
+         ('\u0100m', 'm'),
+         ('hadwitnessed', 'had witnessed'), ('hadsuffered', 'had suffered'),
+         ('victoryies', 'victories'), ('to2008', 'to 2008'), ('from2003', 'from 2003'),
+         ('ture', 'true'), ('DuDa', 'D. A'), ('Da female', 'D. A female'),
+         ('public tan women', 'public than women'), ('tan women', 'than women'),
+         ('50percent', '50 percent'), ('D.a brief', 'D. A brief'),
+         ('20007', '2007'), ('Mian idea', 'main idea'), ('wofe', 'wife'),
+         ('Shsring', 'Sharing'), ('2025,17th,19th', '2025, 17th, 19th')]
+    for a, b in r:
+        t = t.replace(a, b)
+    # 修复选项字母粘连（Dxxx / Axxx）
+    t = re.sub(r'\b([ABCD]) (?=[a-z]{3,})', r'\1. ', t)
+    t = re.sub(r'(?<=[a-z])\b([ABCD])(?=\s*[A-Z][a-z])', r' \1 ', t)
+    return t
+
+
 def fetch(year, artid):
     out = f'papers/{year}'
     os.makedirs(out, exist_ok=True)
@@ -68,7 +87,7 @@ def fetch(year, artid):
                 ends.append(i)
         b = min(ends) if ends else len(t)
         parts.append(t[a:b] if b > a else t[a:])
-    body = '\n'.join(parts)
+    body = ocr_fix('\n'.join(parts))
 
     txt = body
     path = f'{out}/text.txt'
