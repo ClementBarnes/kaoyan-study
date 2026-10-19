@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>2027考研 · 学习进度工作台</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,system-ui,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;
+ background:#F8F7F4;color:#2C2C2A;line-height:1.7;font-size:16px;padding:20px 16px 80px}
+.wrap{max-width:1000px;margin:0 auto}
+h1{font-size:24px;font-weight:600;letter-spacing:.5px}
+.sub{color:#5F5E5A;font-size:13.5px;margin-bottom:18px}
+.bar{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:18px;align-items:center}
+.btn{background:#fff;border:1px solid #D3D1C7;border-radius:8px;padding:8px 15px;font-size:14px;
+ cursor:pointer;color:#2C2C2A;font-family:inherit}
+.btn:hover{background:#F1EFE8}
+.btn.on{background:#185FA5;color:#fff;border-color:#185FA5}
+.btn.pri{background:#185FA5;color:#fff;border-color:#185FA5;font-weight:600}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:10px;margin-bottom:22px}
+.stat{background:#fff;border:1px solid #D3D1C7;border-radius:12px;padding:14px 16px}
+.stat .l{font-size:12.5px;color:#5F5E5A;margin-bottom:4px}
+.stat .v{font-size:26px;font-weight:600;letter-spacing:-.5px}
+.stat.hl .v{color:#185FA5}
+.card{background:#fff;border:1px solid #D3D1C7;border-radius:14px;padding:18px;margin-bottom:16px}
+.card h2{font-size:18px;font-weight:600;margin-bottom:4px}
+.card .hint{font-size:13px;color:#5F5E5A;margin-bottom:12px}
+table{width:100%;border-collapse:collapse;font-size:14px}
+th,td{border-bottom:1px solid #EEF0F2;padding:9px 8px;text-align:left;vertical-align:top}
+th{background:#F1EFE8;font-weight:600;font-size:13px;white-space:nowrap}
+tbody tr:hover{background:#FAFBFC}
+.pill{display:inline-block;padding:2px 10px;border-radius:999px;font-size:12.5px;font-weight:500;white-space:nowrap}
+.s-todo{background:#F1EFE8;color:#5F5E5A}
+.s-doing{background:#FAEEDA;color:#854F0B}
+.s-done{background:#EAF3DE;color:#3B6D11}
+.s-fail{background:#FCEBEB;color:#A32D2D}
+.m{font-size:12.5px;color:#5F5E5A;white-space:nowrap}
+.num{font-variant-numeric:tabular-nums;white-space:nowrap}
+.empty{color:#888780;font-size:14px;padding:28px 0;text-align:center}
+.acts{display:flex;gap:6px}
+.acts button{border:1px solid #D3D1C7;background:#fff;border-radius:6px;padding:3px 9px;font-size:12.5px;
+ cursor:pointer;font-family:inherit;color:#5F5E5A}
+.acts button:hover{background:#F1EFE8}
+form .row{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:10px}
+form .f{flex:1 1 200px;display:flex;flex-direction:column;gap:4px}
+form label{font-size:12.5px;color:#5F5E5A;font-weight:500}
+input,select,textarea{font-family:inherit;font-size:14.5px;padding:9px 11px;border:1px solid #D3D1C7;
+ border-radius:8px;background:#fff;color:#2C2C2A;width:100%}
+input:focus,select:focus,textarea:focus{outline:0;border-color:#185FA5}
+textarea{min-height:64px;resize:vertical}
+.msg{padding:10px 13px;border-radius:8px;font-size:13.5px;margin-bottom:12px}
+.msg.ok{background:#EAF3DE;color:#3B6D11}
+.msg.err{background:#FCEBEB;color:#A32D2D}
+.msg.loading{background:#E6F1FB;color:#185FA5}
+.note{background:#E6F1FB;border-left:4px solid #185FA5;border-radius:0 10px 10px 0;
+ padding:12px 14px;font-size:13.5px;color:#0C447C;margin-bottom:16px}
+footer{margin-top:30px;text-align:center;color:#888780;font-size:12.5px;line-height:1.9}
+@media(min-width:768px){body{font-size:17px;padding:28px 22px 80px}h1{font-size:28px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<h1>2027考研 · 学习进度工作台</h1>
+<p class="sub">初试 2026-12-19 · 数据存云端，换设备登录即可继续 · 每天更新这里</p>
+
+<div class="note">
+<b>怎么用</b>：① 上面四个数字自动统计，不用手填；② 下面表格按模块筛选；③ 「新增记录」填写后点保存，<b>换台设备登录就能看到你刚填的内容</b>；④ 点行尾「改」可更新状态和分数，「删」可移除。
+</div>
+
+<div class="stats">
+<div class="stat hl"><div class="l">总记录</div><div class="v" data-stat="total" data-sp-bindable="database" data-sp-database-id="viKHrhJ8u1jZEPWDDXKiVI">—</div></div>
+<div class="stat"><div class="l">已完成</div><div class="v" data-stat="done" data-sp-bindable="database" data-sp-database-id="viKHrhJ8u1jZEPWDDXKiVI">—</div></div>
+<div class="stat"><div class="l">进行中</div><div class="v" data-stat="doing" data-sp-bindable="database" data-sp-database-id="viKHrhJ8u1jZEPWDDXKiVI">—</div></div>
+<div class="stat"><div class="l">未开始</div><div class="v" data-stat="todo" data-sp-bindable="database" data-sp-database-id="viKHrhJ8u1jZEPWDDXKiVI">—</div></div>
+</div>
+
+<div class="card">
+<h2>新增记录</h2>
+<p class="hint">今天学了什么、考了多少分，花 20 秒记一条。换设备后自动同步。</p>
+<div id="msg" style="display:none"></div>
+<form id="f">
+  <div class="row">
+    <div class="f" style="flex:2 1 280px"><label>事项 *</label>
+      <input name="事项" id="in-item" placeholder="例：Day2 第02批26词压缩复习" required></div>
+    <div class="f"><label>模块</label>
+      <select name="模块" id="in-mod"><option value="">请选择</option></select></div>
+  </div>
+  <div class="row">
+    <div class="f"><label>状态</label>
+      <select name="状态" id="in-st"><option value="">请选择</option></select></div>
+    <div class="f"><label>日期</label>
+      <input type="date" name="日期" id="in-date"></div>
+  </div>
+  <div class="row">
+    <div class="f"><label>用时（分钟）</label>
+      <input type="number" name="用时分钟" id="in-min" placeholder="25" min="0" step="1"></div>
+    <div class="f"><label>得分（模考填）</label>
+      <input type="number" name="得分" id="in-score" placeholder="55" min="0" step="0.5"></div>
+    <div class="f"><label>正确率 %</label>
+      <input type="number" name="正确率" id="in-acc" placeholder="70" min="0" max="100" step="1"></div>
+  </div>
+  <div class="row"><div class="f" style="flex:1 1 100%"><label>备注</label>
+    <textarea name="备注" id="in-note" placeholder="记录要点，比如错在哪、哪个结构没拆开"></textarea></div></div>
+  <div class="row" style="margin-top:4px">
+    <button type="submit" class="btn pri">保存记录</button>
+    <button type="button" class="btn" id="btn-clear">清空</button>
+  </div>
+</form>
+</div>
+
+<div class="bar" id="filters">
+  <button class="btn on" data-f="all">全部</button>
+  <button class="btn" data-f="词汇">词汇</button>
+  <button class="btn" data-f="阅读">阅读</button>
+  <button class="btn" data-f="作文">作文</button>
+  <button class="btn" data-f="模考">模考</button>
+  <button class="btn" data-f="打卡">打卡</button>
+</div>
+
+<div class="card" data-sp-bindable="database" data-sp-database-id="viKHrhJ8u1jZEPWDDXKiVI">
+<h2 id="list-title">全部记录</h2>
+<p class="hint" id="list-hint">按日期排序</p>
+<div id="tbl-wrap">
+<table id="proto" style="display:none"><thead><tr>
+<th>日期</th><th>事项</th><th>模块</th><th>状态</th><th>用时</th><th>得分</th><th>正确率</th><th>备注</th><th>操作</th>
+</tr></thead><tbody><tr>
+<td class="cell-date"></td>
+<td class="cell-item"></td>
+<td class="cell-mod"></td>
+<td class="cell-st"></td>
+<td class="cell-min"></td>
+<td class="cell-score"></td>
+<td class="cell-acc"></td>
+<td class="cell-note"></td>
+<td></td>
+</tr></tbody></table>
+<p class="empty">加载中…</p></div>
+</div>
+
+<footer>
+数据存在你的资料库，登录同一账号即可在任意设备查看和编辑<br>
+个人备考资料，请勿外传
+</footer>
+
+</div>
+
+<script>
+var DATABASE_ID = "viKHrhJ8u1jZEPWDDXKiVI";
+var FILTER = "all";
+var ROWS = [];
+var OPTIONS_MAP = { "模块": {}, "状态": {} };
+
+function $(s){ return document.querySelector(s); }
+function esc(t){ return String(t==null?"":t).replace(/[&<>"]/g,function(c){
+  return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]; }); }
+function notify(text,kind){
+  var el=$("#msg"); el.className="msg "+(kind||"ok"); el.textContent=text; el.style.display="block";
+  clearTimeout(el._t); el._t=setTimeout(function(){ el.style.display="none"; },3200);
+}
+var SDK = window.__SMART_PAGE__ ? window.__SMART_PAGE__.database : null;
+
+/* ---- 表单本地缓存（DSDK008）：只缓存真正提交的字段，300ms 防抖，成功后清空，失败保留 ---- */
+var CACHE_KEY = "kaoyan_form_cache_v1";
+var CACHE_FIELDS = ["事项","模块","状态","日期","用时分钟","得分","正确率","备注"];
+var cacheTimer = null;
+function cacheGet(){
+  try{ return JSON.parse(localStorage.getItem(CACHE_KEY) || "{}"); }catch(e){ return {}; }
+}
+function cacheSet(){
+  var d = cacheGet(), dirty = false;
+  CACHE_FIELDS.forEach(function(f){
+    var el = document.querySelector('[name="'+f+'"]');
+    if(el){ d[f] = el.value; dirty = true; }
+  });
+  if(!dirty) return;
+  try{ localStorage.setItem(CACHE_KEY, JSON.stringify(d)); }catch(e){}
+}
+function cacheClear(){
+  try{ localStorage.removeItem(CACHE_KEY); }catch(e){}
+}
+function cacheRefill(){
+  var d = cacheGet();
+  CACHE_FIELDS.forEach(function(f){
+    var el = document.querySelector('[name="'+f+'"]');
+    if(el && d[f]!==undefined && d[f]!=="" && !el.value) el.value = d[f];
+  });
+}
+function cacheBind(){
+  CACHE_FIELDS.forEach(function(f){
+    var el = document.querySelector('[name="'+f+'"]');
+    if(!el) return;
+    var ev = (el.tagName==="SELECT"||el.type==="date") ? "change" : "input";
+    el.addEventListener(ev, function(){
+      clearTimeout(cacheTimer);
+      cacheTimer = setTimeout(cacheSet, 300);
+    });
+  });
+}
+
+function fillSelect(sel, map){
+  sel.innerHTML = '<option value="">请选择</option>';
+  Object.keys(map).forEach(function(text){
+    var o=document.createElement("option"); o.value=text; o.textContent=text; sel.appendChild(o);
+  });
+}
+
+function statUpdate(){
+  var c={total:ROWS.length,done:0,doing:0,todo:0,fail:0};
+  ROWS.forEach(function(r){
+    var s=r["状态"];
+    if(s==="已完成")c.done++; else if(s==="进行中")c.doing++;
+    else if(s==="未过关")c.fail++; else c.todo++;
+  });
+  var map={total:c.total,done:c.done,doing:c.doing,todo:c.todo};
+  Object.keys(map).forEach(function(k){
+    var el=document.querySelector('[data-stat="'+k+'"]'); if(el)el.textContent=map[k];
+  });
+}
+
+function render(){
+  var list = ROWS.slice();
+  if(FILTER!=="all"){
+    list = list.filter(function(r){ return r["模块"]===FILTER; });
+  }
+  list.sort(function(a,b){
+    var x=a["日期"]||"", y=b["日期"]||"";
+    if(x===y) return 0;
+    return x<y ? 1 : -1;
+  });
+  $("#list-title").textContent = (FILTER==="all"?"全部记录":FILTER+"记录") + "（"+list.length+"）";
+  var wrap=$("#tbl-wrap");
+  var proto=document.getElementById("proto");
+  if(proto && proto.parentNode) proto.parentNode.removeChild(proto);
+  if(!list.length){
+    wrap.textContent="";
+    var e0=document.createElement("p");
+    e0.className="empty";
+    e0.textContent="这个筛选下还没有记录。上面「新增记录」加一条。";
+    wrap.appendChild(e0);
+    return;
+  }
+  wrap.textContent="";
+  var tb=document.createElement("table");
+  var thead=document.createElement("thead");
+  var htr=document.createElement("tr");
+  ["日期","事项","模块","状态","用时","得分","正确率","备注","操作"].forEach(function(h){
+    var th=document.createElement("th"); th.textContent=h; htr.appendChild(th);
+  });
+  thead.appendChild(htr); tb.appendChild(thead);
+  var tbody=document.createElement("tbody");
+  list.forEach(function(r){
+    var st=r["状态"]||"未开始";
+    var cls= st==="已完成"?"s-done": st==="进行中"?"s-doing": st==="未过关"?"s-fail":"s-todo";
+    var tr=document.createElement("tr");
+    function td(clsName,txt){
+      var d=document.createElement("td");
+      if(clsName) d.className=clsName;
+      if(txt!==undefined && txt!==null) d.textContent=txt;
+      return d;
+    }
+    tr.appendChild(td("m cell-date",(r["日期"]||"").slice(5,10)||"—"));
+    var tdItem=td("cell-item"); var b=document.createElement("b");
+    b.textContent=r["事项"]||""; tdItem.appendChild(b); tr.appendChild(tdItem);
+    tr.appendChild(td("m cell-mod",r["模块"]||"—"));
+    var tdSt=document.createElement("td"); tdSt.className="cell-st";
+    var pill=document.createElement("span"); pill.className="pill "+cls; pill.textContent=st;
+    tdSt.appendChild(pill); tr.appendChild(tdSt);
+    tr.appendChild(td("num cell-min", r["用时分钟"]!=null ? r["用时分钟"]+"′" : "—"));
+    tr.appendChild(td("num cell-score", r["得分"]!=null ? r["得分"] : "—"));
+    tr.appendChild(td("num cell-acc", r["正确率"]!=null ? r["正确率"]+"%" : "—"));
+    var tdNote=td("cell-note",r["备注"]||"");
+    tdNote.style.fontSize="13.5px"; tdNote.style.color="#5F5E5A";
+    tr.appendChild(tdNote);
+    var tdAct=document.createElement("td"); var acts=document.createElement("div"); acts.className="acts";
+    var be=document.createElement("button"); be.textContent="改"; be.type="button";
+    be.setAttribute("data-act","e"); be.setAttribute("data-id", r._id);
+    var bd=document.createElement("button"); bd.textContent="删"; bd.type="button";
+    bd.setAttribute("data-act","d"); bd.setAttribute("data-id", r._id);
+    acts.appendChild(be); acts.appendChild(bd); tdAct.appendChild(acts); tr.appendChild(tdAct);
+    tbody.appendChild(tr);
+  });
+  tb.appendChild(tbody);
+  wrap.appendChild(tb);
+}
+
+function loadAll(startCursor, acc, guard){
+  acc=acc||[]; guard=guard||0;
+  if(guard>100) return Promise.resolve(acc);
+  return window.__SMART_PAGE__.database.query({databaseId:DATABASE_ID,pageSize:200,startCursor:startCursor})
+    .catch(function(e){ console.error("[database] query failed:", e); throw e; })
+    .then(function(r){
+      acc=acc.concat(r.results||[]);
+      var next=r.nextCursor;
+      if(r.hasMore && next && next!==startCursor && (r.results||[]).length){
+        return loadAll(next,acc,guard+1);
+      }
+      return acc;
+    });
+}
+
+function refresh(){
+  return loadAll().then(function(all){
+    ROWS=all; statUpdate(); render();
+  }).catch(function(e){
+    notify("读取失败："+(e&&e.message||e),"err");
+    var w=$("#tbl-wrap"); w.textContent="";
+    var p0=document.createElement("p"); p0.className="empty";
+    p0.textContent="暂时读不到数据，稍后刷新试试。"; w.appendChild(p0);
+  }).catch(function(e){ console.error("[database] refresh failed:", e); });
+}
+
+function initSelects(){
+  return window.__SMART_PAGE__.database.getSchema({databaseId:DATABASE_ID}).then(function(s){
+    (s.properties||[]).forEach(function(p){
+      if(p.type!=="select") return;
+      var map={}; (p.config&&p.config.options||[]).forEach(function(o){ map[o.text]=o; });
+      OPTIONS_MAP[p.name]=map;
+    });
+    if(OPTIONS_MAP["模块"]) fillSelect($("#in-mod"), OPTIONS_MAP["模块"]);
+    if(OPTIONS_MAP["状态"]) fillSelect($("#in-st"), OPTIONS_MAP["状态"]);
+    cacheRefill();
+    cacheBind();
+  }).catch(function(e){ console.error('[database] getSchema failed:', e); });
+}
+
+function prop(field,kind,val){
+  var o={}; o[field]={}; o[field][kind]=val; return o;
+}
+
+function onSubmit(e){
+  e.preventDefault();
+  if(!db()){ notify("数据功能不可用","err"); return; }
+  var item=$("#in-item").value.trim();
+  if(!item){ notify("「事项」必须填","err"); return; }
+  var props={};
+  props["事项"]={text:item};
+  var mod=$("#in-mod").value, st=$("#in-st").value, dt=$("#in-date").value;
+  var mn=$("#in-min").value, sc=$("#in-score").value, ac=$("#in-acc").value, nt=$("#in-note").value.trim();
+  if(mod) props["模块"]={select:mod};
+  if(st) props["状态"]={select:st};
+  if(dt) props["日期"]={date:dt};
+  if(mn!=="") props["用时分钟"]={number:Number(mn)};
+  if(sc!=="") props["得分"]={number:Number(sc)};
+  if(ac!=="") props["正确率"]={number:Number(ac)};
+  if(nt) props["备注"]={text:nt};
+  var submitBtn = $("#f button[type=submit]");
+  if(submitBtn){ submitBtn.disabled = true; submitBtn.textContent = "保存中…"; }
+  notify("保存中…","loading");
+  window.__SMART_PAGE__.database.addRecord({databaseId:DATABASE_ID,properties:props}).then(function(){
+    if(submitBtn){ submitBtn.disabled = false; submitBtn.textContent = "保存记录"; }
+    notify("已保存，换台设备登录就能看到","ok");
+    $("#f").reset();
+    cacheClear();
+    return refresh();
+  }).catch(function(err){
+    if(submitBtn){ submitBtn.disabled = false; submitBtn.textContent = "保存记录"; }
+    notify("保存失败："+(err&&err.message||err),"err");
+  });
+}
+
+function quickStatus(id){
+  var r=ROWS.filter(function(x){return x._id===id;})[0];
+  if(!r) return null;
+  var order=["未开始","进行中","未过关","已完成"];
+  var cur=order.indexOf(r["状态"]||"未开始");
+  return order[(cur+1)%order.length];
+}
+
+document.addEventListener("click",function(e){
+  var t=e.target;
+  if(t.matches("#filters .btn")){
+    var fs=document.querySelectorAll("#filters .btn");
+    for(var i=0;i<fs.length;i++) fs[i].classList.remove("on");
+    t.classList.add("on");
+    FILTER=t.getAttribute("data-f");
+    render();
+    return;
+  }
+  var act=t.getAttribute && t.getAttribute("data-act");
+  if(!act) return;
+  var id=t.getAttribute("data-id");
+  if(act==="d"){
+    if(!confirm("确定删除这条记录？删除后无法恢复。")) return;
+    window.__SMART_PAGE__.database.deleteRecord({databaseId:DATABASE_ID,recordId:id}).then(function(){
+      notify("已删除","ok"); return refresh();
+    }).catch(function(err){ notify("删除失败："+(err&&err.message||err),"err"); });
+  }
+  if(act==="e"){
+    var r=ROWS.filter(function(x){return x._id===id;})[0];
+    if(!r) return;
+    var ns=quickStatus(id);
+    var ask=prompt("「"+r["事项"]+"」\n\n输入新状态（未开始 / 进行中 / 未过关 / 已完成）\n当前："+(r["状态"]||"未开始")+"\n直接回车=改为 "+ns, r["状态"]||"");
+    if(ask===null) return;
+    var val=(ask.trim()||ns);
+    window.__SMART_PAGE__.database.updateRecord({databaseId:DATABASE_ID,recordId:id,properties:{"状态":{select:val}}})
+      .then(function(){ notify("状态已改为 "+val,"ok"); return refresh(); })
+      .catch(function(err){ notify("更新失败："+(err&&err.message||err),"err"); });
+  }
+});
+
+document.addEventListener("DOMContentLoaded",function(){
+  $("#f").addEventListener("submit",onSubmit);
+  $("#btn-clear").addEventListener("click",function(){ $("#f").reset(); cacheClear(); });
+  if(!window.__SMART_PAGE__ || !window.__SMART_PAGE__.database){
+    var w0=$("#tbl-wrap"); w0.textContent="";
+    var p1=document.createElement("p"); p1.className="empty";
+    p1.textContent="数据功能在资料库页面中可用。"; w0.appendChild(p1);
+    return;
+  }
+  initSelects()
+    .then(refresh)
+    .catch(function(e){
+      notify("表结构读取失败，正在尝试直接读数据","err");
+      return refresh();
+    })
+    .catch(function(e){ console.error("[database] init failed:", e); });
+  if(window.__SMART_PAGE__.database.onUpdated){
+    var timer=null;
+    window.__SMART_PAGE__.database.onUpdated(function(){
+      clearTimeout(timer);
+      timer=setTimeout(function(){ refresh(); },600);
+    });
+  }
+});
+</script>
+</body>
+</html>
