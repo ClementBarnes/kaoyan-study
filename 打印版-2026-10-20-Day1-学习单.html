@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>打印版 · 2027考研 Day1 学习单 · 2026-10-20</title>
+<style>
+@page { size: A4 portrait; margin: 13mm 13mm 11mm; }
+* { box-sizing: border-box; }
+html, body { margin:0; padding:0; }
+body { font-family: "Microsoft YaHei","PingFang SC","Hiragino Sans GB",sans-serif;
+  color:#000; background:#e8e8e8; font-size:11.5pt; line-height:1.55; }
+.page { width:186mm; min-height:268mm; margin:0 auto 8mm; padding:0 0 0;
+  background:#fff; position:relative; page-break-after:always; break-after:page;
+  display:block; }
+.page:last-child { page-break-after:auto; break-after:auto; }
+@media screen {
+  .page { box-shadow:0 2px 14px rgba(0,0,0,.18); padding:14mm 13mm 12mm; }
+}
+@media print {
+  html, body { background:#fff; margin:0; padding:0; }
+  .page { margin:0 !important; box-shadow:none; width:100%; min-height:0; height:auto;
+    page-break-after:always; break-after:page; page-break-inside:auto; }
+  .page:last-child { page-break-after:auto; break-after:auto; }
+}
+
+/* 页眉 */
+.ph { display:flex; justify-content:space-between; border-bottom:1.5px solid #000;
+  padding-bottom:4px; margin-bottom:10px; font-size:9pt; letter-spacing:.3px; }
+.ph-l { font-weight:700; }
+.ph-r { }
+
+h1.ttl { font-size:19pt; margin:0 0 3px; letter-spacing:-.3px; }
+h2.sec { font-size:13.5pt; margin:0 0 6px; padding:5px 9px; background:#000; color:#fff;
+  display:inline-block; letter-spacing:.2px; }
+h3.sub2 { font-size:11pt; margin:9px 0 4px; border-bottom:1px solid #000; padding-bottom:2px; }
+p.sub { font-size:9.5pt; color:#333; margin:0 0 10px; }
+p.hint { font-size:9pt; color:#222; margin:0 0 9px; padding:6px 9px;
+  border:1px solid #000; border-radius:2px; background:#f4f4f4; }
+b { font-weight:700; }
+
+/* 任务清单 */
+.taskbox { border:2px solid #000; border-radius:2px; padding:9px 12px; margin-bottom:10px; }
+.tb-h { font-weight:700; font-size:11pt; border-bottom:1px solid #000; padding-bottom:4px; margin-bottom:6px; }
+.taskbox ul { list-style:none; margin:0; padding:0; }
+.taskbox li { font-size:10.5pt; padding:3px 0 3px 2px; border-bottom:1px dotted #bbb; }
+.taskbox li:last-child { border-bottom:none; }
+.warnbox { border:1.5px solid #000; border-left:6px solid #000; border-radius:2px;
+  padding:8px 11px; font-size:9.5pt; margin-top:9px; background:#f7f7f7; }
+
+/* 表格 */
+table { width:100%; border-collapse:collapse; }
+th, td { border:1px solid #000; padding:3px 6px; vertical-align:middle; }
+th { background:#ddd; font-size:9.5pt; font-weight:700; text-align:left; }
+td { font-size:10pt; }
+td.c { text-align:center; width:32px; font-size:9.5pt; }
+td.gr { font-size:8.5pt; line-height:1.2; width:48px; white-space:nowrap; }
+td.w, td.w2 { font-weight:700; font-size:11.5pt; }
+td.ipa { font-family:Georgia,serif; font-size:9.5pt; color:#222; }
+th.ipa-h { width:22%; }
+td.writec { height:7.4mm; }
+td.writec2 { height:7.2mm; }
+.wt th:nth-child(4) { }
+.wt tbody tr { height:7.4mm; }
+.et td.en { font-family:Georgia,serif; font-size:9.5pt; line-height:1.4; }
+.at td { font-size:9pt; padding:2px 5px; }
+.at td.ip { font-size:8.5pt; color:#333; }
+.footnote { margin-top:8px; font-size:9pt; color:#333; border-top:1px dotted #999; padding-top:5px; }
+
+/* 长难句 */
+.sent { border:1.5px solid #000; border-radius:2px; padding:8px 10px; margin-bottom:9px;
+  page-break-inside:avoid; break-inside:avoid; }
+.s-t { font-weight:700; font-size:10.5pt; border-bottom:1px solid #000; padding-bottom:3px; margin-bottom:5px; }
+.s-en { font-family:Georgia,"Times New Roman",serif; font-size:11pt; line-height:1.7; margin-bottom:6px; }
+.s-q { font-size:9pt; margin:5px 0 2px; }
+.s-tip { border-top:1px dashed #000; margin-top:6px; padding-top:5px; font-size:8.5pt; color:#222; }
+.ln { border-bottom:1px solid #666; height:7.4mm; margin:0 0 1mm; }
+
+/* 阅读 */
+.para { margin-bottom:5px; page-break-inside:avoid; break-inside:avoid; }
+.p-h { font-weight:700; font-size:10pt; border-left:4px solid #000; padding-left:6px; margin-bottom:3px; }
+.p-en { font-family:Georgia,"Times New Roman",serif; font-size:10pt; line-height:1.55;
+  margin:0 0 2px 10px; }
+.q { border:1.5px solid #000; border-radius:2px; padding:8px 10px; margin-bottom:8px;
+  page-break-inside:avoid; break-inside:avoid; }
+.q-s { font-size:10.5pt; margin-bottom:4px; }
+.q-o { list-style:none; margin:0 0 5px; padding:0; }
+.q-o li { font-size:9.5pt; padding:1.5px 0 1.5px 14px; position:relative; }
+.q-o li b { position:absolute; left:0; }
+.q-a { font-size:9.5pt; border-top:1px dotted #000; padding-top:4px; }
+.blank { display:inline-block; width:30mm; border-bottom:1px solid #000; }
+
+/* 作文 */
+.tpl { border:1.5px solid #000; border-radius:2px; padding:8px 10px; margin-bottom:9px;
+  page-break-inside:avoid; break-inside:avoid; }
+.t-t { font-weight:700; font-size:11pt; border-bottom:1px solid #000; padding-bottom:3px; margin-bottom:5px; }
+.t-s { margin:0 0 6px; padding-left:18px; }
+.t-s li { font-size:9.5pt; padding:1.5px 0; }
+.t-row { font-size:9pt; margin:3px 0; }
+.t-row.warnv { border:1px solid #000; padding:4px 7px; margin-top:5px; background:#f2f2f2; }
+.t-q { font-size:9pt; margin:6px 0 3px; font-weight:700; }
+.gridpaper { height:34mm; border:1px solid #000;
+  background-image:
+    repeating-linear-gradient(to right, transparent 0 6.4mm, #d5d5d5 6.4mm 6.6mm),
+    repeating-linear-gradient(to bottom, transparent 0 7mm, #d5d5d5 7mm 7.2mm);
+  background-position:0 0; }
+
+/* 自检 */
+.chkbox { border:2px solid #000; border-radius:2px; padding:9px 12px; margin-bottom:9px; }
+.cb-h { font-weight:700; font-size:11pt; border-bottom:1px solid #000; padding-bottom:4px; margin-bottom:6px; }
+.cb { font-size:10.5pt; padding:3.5px 0; border-bottom:1px dotted #bbb; }
+.cb:last-child { border-bottom:none; }
+.mgr { border:1.5px solid #000; border-radius:2px; padding:8px 10px; margin-bottom:9px; }
+.mgr .cb { border-bottom:none; font-weight:700; margin-bottom:4px; }
+
+/* 答案 */
+.ac { list-style:none; margin:0; padding:0; columns:3; column-gap:14px; }
+.ac li { font-size:8.5pt; padding:0.5px 0; break-inside:avoid; }
+.ans-s { border:1px solid #000; border-radius:2px; padding:5px 8px; margin-bottom:5px;
+  font-size:8.4pt; page-break-inside:avoid; break-inside:avoid; }
+.ans-s .s-en { font-size:9pt; margin:2px 0; }
+.ans-line { border:2px solid #000; padding:6px 10px; font-size:11pt; margin-bottom:8px; }
+</style>
+</head>
+<body>
+<div class="page">
+<div class="ph"><span class="ph-l">2027 考研 · 每日学习单</span><span class="ph-r">2026-10-20 · Day1 · 距初试 61 天</span></div>
+<h1 class="ttl">Day 1 学习单</h1>
+<p class="sub">第1批压缩复习 + 长难句 + 阅读精翻 + 作文模板</p>
+<div class="taskbox">
+  <div class="tb-h">今日任务清单（做完一项划掉）</div>
+  <ul><li>第 1 批 27 词压缩复习（25min）—— 看词写义 + 例句英译中</li><li>★ 主动回忆自测（10min）—— 正确率 ≥ 90%%（错 ≤ 2）</li><li>长难句拆解 2 句（20min）</li><li>真题阅读精翻 · 2010 Text 1（60min）—— 18′ 做题 + 逐句英译中 + 选项归因 + 抄生词</li><li>作文模板背诵（30min）+ micro-writing（10min）</li><li>管综数学手感维持（30min）—— 默公式 + 5 道真题</li></ul>
+</div>
+<div class="warnbox"><b>打印说明</b>：单词区用「看词写义」方式做，不要直接翻答案页（答案在最后一张）。
+长难句、精翻、作文的横线区可直接手写。全部内容 A4 竖排，单面印即可。</div>
+</div>
+<div class="page">
+<div class="ph"><span class="ph-l">2027 考研 · 每日学习单</span><span class="ph-r">第1批 · 单词（看词写义）</span></div>
+<h2 class="sec">一、单词区 · 第1批 27 词</h2>
+<p class="hint">看英文 → 在空格写中文义。写不出的打「□ 生」，明天优先看生词。<b>不要先翻页看答案。</b></p>
+<table class="wt">
+<thead><tr><th class="c">#</th><th>单词</th><th class="ipa-h">音标</th><th>中文义（自己写）</th><th class="c">掌握度</th></tr></thead>
+<tbody><tr><td class="c">01</td><td class="w">inspect</td><td class="ipa">/ɪnˈspekt/</td><td class="writec"></td><td class="c gr">□熟 □生</td></tr><tr><td class="c">02</td><td class="w">respect</td><td class="ipa">/rɪˈspekt/</td><td class="writec"></td><td class="c gr">□熟 □生</td></tr><tr><td class="c">03</td><td class="w">expect</td><td class="ipa">/ɪkˈspekt/</td><td class="writec"></td><td class="c gr">□熟 □生</td></tr><tr><td class="c">04</td><td class="w">aspect</td><td class="ipa">/ˈæspekt/</td><td class="writec"></td><td class="c gr">□熟 □生</td></tr><tr><td class="c">05</td><td class="w">prospect</td><td class="ipa">/ˈprɒspekt/</td><td class="writec"></td><td class="c gr">□熟 □生</td></tr><tr><td class="c">06</td><td class="w">perspective</td><td class="ipa">/pəˈspektɪv/</td><td class="writec"></td><td class="c gr">□熟 □生</td></tr><tr><td class="c">07</td><td class="w">import</td><td class="ipa">/ˈɪmpɔːt/</td><td class="writec"></td><td class="c gr">□熟 □生</td></tr><tr><td class="c">08</td><td class="w">export</td><td class="ipa">/ˈekspɔːt/</td><td class="writec"></td><td class="c gr">□熟 □生</td></tr><tr><td class="c">09</td><td class="w">transport</td><td class="ipa">/trænsˈpɔːt/</td><td class="writec"></td><td class="c gr">□熟 □生</td></tr><tr><td class="c">10</td><td class="w">report</td><td class="ipa">/rɪˈpɔːt/</td><td class="writec"></td><td class="c gr">□熟 □生</td></tr><tr><td class="c">11</td><td class="w">support</td><td class="ipa">/səˈpɔːt/</td><td class="writec"></td><td class="c gr">□熟 □生</td></tr><tr><td class="c">12</td><td class="w">portable</td><td class="ipa">/ˈpɔːtəbl/</td><td class="writec"></td><td class="c gr">□熟 □生</td></tr><tr><td class="c">13</td><td class="w">dictate</td><td class="ipa">/dɪkˈteɪt/</td><td class="writec"></td><td class="c gr">□熟 □生</td></tr><tr><td class="c">14</td><td class="w">predict</td><td class="ipa">/prɪˈdɪkt/</td><td class="writec"></td><td class="c gr">□熟 □生</td></tr><tr><td class="c">15</td><td class="w">contradict</td><td class="ipa">/ˌkɒntrəˈdɪkt/</td><td class="writec"></td><td class="c gr">□熟 □生</td></tr><tr><td class="c">16</td><td class="w">indicate</td><td class="ipa">/ˈɪndɪkeɪt/</td><td class="writec"></td><td class="c gr">□熟 □生</td></tr><tr><td class="c">17</td><td class="w">dedicate</td><td class="ipa">/ˈdedɪkeɪt/</td><td class="writec"></td><td class="c gr">□熟 □生</td></tr><tr><td class="c">18</td><td class="w">admit</td><td class="ipa">/ədˈmɪt/</td><td class="writec"></td><td class="c gr">□熟 □生</td></tr><tr><td class="c">19</td><td class="w">commit</td><td class="ipa">/kəˈmɪt/</td><td class="writec"></td><td class="c gr">□熟 □生</td></tr><tr><td class="c">20</td><td class="w">permit</td><td class="ipa">/pəˈmɪt/</td><td class="writec"></td><td class="c gr">□熟 □生</td></tr><tr><td class="c">21</td><td class="w">submit</td><td class="ipa">/səbˈmɪt/</td><td class="writec"></td><td class="c gr">□熟 □生</td></tr><tr><td class="c">22</td><td class="w">mission</td><td class="ipa">/ˈmɪʃn/</td><td class="writec"></td><td class="c gr">□熟 □生</td></tr><tr><td class="c">23</td><td class="w">dismiss</td><td class="ipa">/dɪsˈmɪs/</td><td class="writec"></td><td class="c gr">□熟 □生</td></tr><tr><td class="c">24</td><td class="w">structure</td><td class="ipa">/ˈstrʌktʃə/</td><td class="writec"></td><td class="c gr">□熟 □生</td></tr><tr><td class="c">25</td><td class="w">construct</td><td class="ipa">/kənˈstrʌkt/</td><td class="writec"></td><td class="c gr">□熟 □生</td></tr><tr><td class="c">26</td><td class="w">instruct</td><td class="ipa">/ɪnˈstrʌkt/</td><td class="writec"></td><td class="c gr">□熟 □生</td></tr><tr><td class="c">27</td><td class="w">destroy</td><td class="ipa">/dɪˈstrɔɪ/</td><td class="writec"></td><td class="c gr">□熟 □生</td></tr></tbody>
+</table>
+<div class="footnote">词根提示：</div>
+</div>
+<div class="page">
+<div class="ph"><span class="ph-l">2027 考研 · 每日学习单</span><span class="ph-r">例句 · 英译中</span></div>
+<h2 class="sec">二、例句 · 英译中（自己写中文）</h2>
+<p class="hint">先自己写，写完再对答案页。写不出就空着，明天补。<b>要求：写出来的中文要像人话，不要逐词对译。</b></p>
+<table class="et">
+<thead><tr><th style="width:22%">单词</th><th style="width:40%">英文例句</th><th>中文（自己写）</th></tr></thead>
+<tbody><tr><td class="w2">inspect</td><td class="en">The manager will inspect the factory.</td><td class="writec2"></td></tr><tr><td class="w2">respect</td><td class="en">We should respect the elderly.</td><td class="writec2"></td></tr><tr><td class="w2">expect</td><td class="en">I expect a call from him.</td><td class="writec2"></td></tr><tr><td class="w2">aspect</td><td class="en">This is only one aspect of the problem.</td><td class="writec2"></td></tr><tr><td class="w2">prospect</td><td class="en">The prospect of promotion excited him.</td><td class="writec2"></td></tr><tr><td class="w2">perspective</td><td class="en">From my perspective, it is wrong.</td><td class="writec2"></td></tr><tr><td class="w2">import</td><td class="en">We import oil from abroad.</td><td class="writec2"></td></tr><tr><td class="w2">export</td><td class="en">We export goods to Europe.</td><td class="writec2"></td></tr><tr><td class="w2">transport</td><td class="en">Public transport is convenient.</td><td class="writec2"></td></tr><tr><td class="w2">report</td><td class="en">He reported the news to his boss.</td><td class="writec2"></td></tr><tr><td class="w2">support</td><td class="en">Her family supports her decision.</td><td class="writec2"></td></tr><tr><td class="w2">portable</td><td class="en">a portable computer</td><td class="writec2"></td></tr><tr><td class="w2">dictate</td><td class="en">The boss dictated a letter.</td><td class="writec2"></td></tr><tr><td class="w2">predict</td><td class="en">Scientists predict the weather.</td><td class="writec2"></td></tr><tr><td class="w2">contradict</td><td class="en">His words contradict the facts.</td><td class="writec2"></td></tr><tr><td class="w2">indicate</td><td class="en">The map indicates the way.</td><td class="writec2"></td></tr><tr><td class="w2">dedicate</td><td class="en">He dedicated himself to research.</td><td class="writec2"></td></tr><tr><td class="w2">admit</td><td class="en">He admitted his mistake.</td><td class="writec2"></td></tr><tr><td class="w2">commit</td><td class="en">commit a crime 犯罪；commit to 承诺</td><td class="writec2"></td></tr><tr><td class="w2">permit</td><td class="en">Smoking is not permitted here.</td><td class="writec2"></td></tr><tr><td class="w2">submit</td><td class="en">Please submit your paper.</td><td class="writec2"></td></tr><tr><td class="w2">mission</td><td class="en">a business mission</td><td class="writec2"></td></tr><tr><td class="w2">dismiss</td><td class="en">The case was dismissed.</td><td class="writec2"></td></tr><tr><td class="w2">structure</td><td class="en">the structure of a sentence</td><td class="writec2"></td></tr><tr><td class="w2">construct</td><td class="en">construct a bridge</td><td class="writec2"></td></tr><tr><td class="w2">instruct</td><td class="en">The teacher instructed us.</td><td class="writec2"></td></tr><tr><td class="w2">destroy</td><td class="en">The fire destroyed the building.</td><td class="writec2"></td></tr></tbody>
+</table>
+</div>
+<div class="page">
+<div class="ph"><span class="ph-l">2027 考研 · 每日学习单</span><span class="ph-r">长难句拆解</span></div>
+<h2 class="sec">三、长难句拆解 · 2 句</h2>
+<p class="hint">铁律：<b>先找主干（主+谓+宾）→ 再挂修饰 → 最后才处理插入语和从句</b>。
+3 遍内拆不开就别硬拆，标记出来放错题本。</p>
+<div class="sent">
+<div class="s-t">句 1 · 倒装 + 主语后置</div>
+<div class="s-en">Only when the report was submitted did the structure of the argument become clear.</div>
+<div class="s-q"><b>拆解（自己写）</b></div>
+<div class="ln"></div><div class="ln"></div><div class="ln"></div>
+<div class="s-q"><b>翻译（自己写）</b></div>
+<div class="ln"></div><div class="ln"></div>
+<div class="s-tip"><b>参考答案</b>（拆解）：Only when 引导的状语从句前置 → 主句倒装（助动词 did 提到主语前）。主干 = did the structure become clear。<br>
+<b>参考译文</b>：只有当报告被提交时，这个论证的结构才变得清晰。<br>
+<b>考点</b>：Only when / Not until 置于句首必倒装，2015–2021 高频句式，看到就条件反射。</div>
+</div><div class="sent">
+<div class="s-t">句 2 · 分词作状语 + 插入语</div>
+<div class="s-en">The policy, contrary to public expectation, was opposed by those who respect the old structure.</div>
+<div class="s-q"><b>拆解（自己写）</b></div>
+<div class="ln"></div><div class="ln"></div><div class="ln"></div>
+<div class="s-q"><b>翻译（自己写）</b></div>
+<div class="ln"></div><div class="ln"></div>
+<div class="s-tip"><b>参考答案</b>（拆解）：逗号后 contrary to public expectation 为插入语（可删）；those who respect the old structure 是 who 引导的定语从句作后置定语。主干 = The policy was opposed by those...。<br>
+<b>参考译文</b>：该政策与公众预期相反，遭到了那些尊重旧结构的人的反对。<br>
+<b>考点</b>：插入语读的时候直接跳过，别在括号里死磕。主干找完再回头补。</div>
+</div>
+</div>
+<div class="page">
+<div class="ph"><span class="ph-l">2027 考研 · 每日学习单</span><span class="ph-r">真题阅读 · 2010 Text 1</span></div>
+<h2 class="sec">四、阅读原文 · 2010 Text 1</h2>
+<p class="hint">限时 <b>18 分钟</b>做完 21–25 题（不查词典），然后逐句英译中。<b>主题：艺术市场萧条</b>（赫斯特 56 件作品 7000 万英镑 / 雷曼兄弟破产）。</p>
+<div class="para"><div class="p-h">Paragraph 1</div><p class="p-en">The longest bull run in a century of art-market history ended on a dramatic note with a sale of 56 works by Damien Hirst, "Beautiful Inside My Head Forever", at Sotheby's in London on September 15th 2008 (see picture).</p><p class="p-en">All but two pieces sold, fetching more than £70m, a record for a sale by a single artist.</p><p class="p-en">It was a last hurrah.</p><p class="p-en">As the auctioneer called out bids, in New York one of the oldest banks on Wall Street, Lehman Brothers, filed for bankruptcy.</p></div><div class="para"><div class="p-h">Paragraph 2</div><p class="p-en">The art market's last days were anything but controlled.</p><p class="p-en">The current downturn is a decidedly temporary one, and the buying public, it seems, is continuing to spend.</p><p class="p-en">And so it is a boom in the art market that is happening now, in contrast to a bust that occurred from 2000 to 2003.</p><p class="p-en">In that earlier downturn, the famous art auction houses -- Christie's and Sotheby's -- were the worst-hit, with sales falling by 70 per cent.</p></div><div class="para"><div class="p-h">Paragraph 3</div><p class="p-en">Collectors and art dealers had been similarly affected.</p><p class="p-en">But the current slump is different.</p><p class="p-en">A survey published last week by the Economist intelligence unit found that of the 1,000 or so American collectors it surveyed, 54 per cent plan to buy more art in the next year, and 11 per cent plan to spend more money on art than they did last year.</p><p class="p-en">That roughly accords with the pattern of art sales in 19th and early 20th centuries, when fortunes made in the stock market and in the land were poured into the art market.</p></div><div class="para"><div class="p-h">Paragraph 4</div><p class="p-en">The art market was an early casino, and it was only in the 1920s that America began to take an interest in art as an investment, a trend that lasted until the Depression of the 1930s.</p><p class="p-en">As the economy began to slow in the early 1990s, the art market, already feeling the effects of the overheated Japanese market, began to slide.</p><p class="p-en">In 1994 sales fell by 19 per cent.</p><p class="p-en">The following year sales fell by 7 per cent, and art market slump continued, though at a slower pace, until sales rose in the late 1990s.</p></div><div class="para"><div class="p-h">Paragraph 5</div><p class="p-en">Many art investors believe that the present slump is not over.</p><p class="p-en">The current downturn is a decidedly temporary one, and the buying public, it seems, is continuing to spend.</p><p class="p-en">Sotheby's, the auction house that sells the most contemporary art, said it was 'very pleased' with results.</p><p class="p-en">Christie's, which holds an annual contemporary art sale in June and November, said it had set a record for the amount of contemporary art sold in a single auction.</p></div>
+</div><div class="page">
+<div class="ph"><span class="ph-l">2027 考研 · 每日学习单</span><span class="ph-r">真题阅读 · 题目 21–23</span></div>
+<h2 class="sec">五、题目与作答区（21–23）</h2>
+<div class="q">
+<div class="q-s"><b>21.</b> In the first paragraph, Damien Hirst's sale was referred to as "a last victory" because ____.</div>
+<ol class="q-o"><li><b>A.</b> the art market had witnessed a succession of victories</li><li><b>B.</b> the auctioneer finally got the two pieces at the highest bids</li><li><b>C.</b> Beautiful Inside My Head Forever won over all masterpieces</li><li><b>D.</b> it was successfully made just before the world financial crisis</li></ol>
+<div class="q-a">我的答案（21D / 22A / 23B / 24C / 25C）：<span class="blank"></span></div>
+<div class="q-r"><b>错项归因</b>（选错的题写：主旨混淆 / 过度推断 / 细节拼凑 / 无中生有）：</div>
+<div class="ln"></div><div class="ln"></div>
+</div><div class="q">
+<div class="q-s"><b>22.</b> By saying "spending of any sort became deeply unfashionable" (Line 1-2, Para.3), the author suggests that ____.</div>
+<ol class="q-o"><li><b>A.</b> collectors were no longer actively involved in art-market auctions</li><li><b>B.</b> people stopped every kind of spending and stayed away from galleries</li><li><b>C.</b> art collection as a fashion had lost its appeal to the public</li><li><b>D.</b> spending of any sort had become a fashion of the art world</li></ol>
+<div class="q-a">我的答案（21D / 22A / 23B / 24C / 25C）：<span class="blank"></span></div>
+<div class="q-r"><b>错项归因</b>（选错的题写：主旨混淆 / 过度推断 / 细节拼凑 / 无中生有）：</div>
+<div class="ln"></div><div class="ln"></div>
+</div><div class="q">
+<div class="q-s"><b>23.</b> The following would be the most likely title for the passage.</div>
+<ol class="q-o"><li><b>A.</b> A Crisis for the Art Market</li><li><b>B.</b> A Trend in the Art Market</li><li><b>C.</b> The Decline of the Art Market</li><li><b>D.</b> The Return of the Art Market</li></ol>
+<div class="q-a">我的答案（21D / 22A / 23B / 24C / 25C）：<span class="blank"></span></div>
+<div class="q-r"><b>错项归因</b>（选错的题写：主旨混淆 / 过度推断 / 细节拼凑 / 无中生有）：</div>
+<div class="ln"></div><div class="ln"></div>
+</div>
+</div><div class="page">
+<div class="ph"><span class="ph-l">2027 考研 · 每日学习单</span><span class="ph-r">真题阅读 · 题目 24–25</span></div>
+<h2 class="sec">五、题目与作答区（24–25）</h2>
+<div class="q">
+<div class="q-s"><b>24.</b> The author implies that the art market ____.</div>
+<ol class="q-o"><li><b>A.</b> is in the process of a full recovery</li><li><b>B.</b> will remain depressed for a considerable time</li><li><b>C.</b> has temporarily lost its momentum</li><li><b>D.</b> is unaffected by the general economic conditions</li></ol>
+<div class="q-a">我的答案（21D / 22A / 23B / 24C / 25C）：<span class="blank"></span></div>
+<div class="q-r"><b>错项归因</b>（选错的题写：主旨混淆 / 过度推断 / 细节拼凑 / 无中生有）：</div>
+<div class="ln"></div><div class="ln"></div>
+</div><div class="q">
+<div class="q-s"><b>25.</b> The sentence "The art market was an early casino" (Para. 4) is used to illustrate ____.</div>
+<ol class="q-o"><li><b>A.</b> the art market in the past was similar to a gambling house</li><li><b>B.</b> in the past, art investment was risky and unpredictable</li><li><b>C.</b> buying art was seen as a quick way to make money</li><li><b>D.</b> the art market in the past was controlled by gamblers</li></ol>
+<div class="q-a">我的答案（21D / 22A / 23B / 24C / 25C）：<span class="blank"></span></div>
+<div class="q-r"><b>错项归因</b>（选错的题写：主旨混淆 / 过度推断 / 细节拼凑 / 无中生有）：</div>
+<div class="ln"></div><div class="ln"></div>
+</div>
+<div class="warnbox"><b>本篇过关线</b>：单题 ≤ 20 分钟、正确率 ≥ 50%。低于 50% 不是失败——阶段一主打慢。
+但低于 50% 就把这篇在 11/26 前刷第二遍，别急着往下推。</div>
+</div>
+<div class="page">
+<div class="ph"><span class="ph-l">2027 考研 · 每日学习单</span><span class="ph-r">作文模板</span></div>
+<h2 class="sec">六、作文模板背诵（30 min）</h2>
+<p class="hint">先读三遍理解结构。英语二作文 25 分是纯模板分，晚背一天就少一分。</p>
+<div class="tpl">
+<div class="t-t">小作文 · 书信（万能三段）</div>
+<ol class="t-s"><li>① 开头（2 句）：I am writing to &lt;目的&gt;. / I am writing to you in order to &lt;目的&gt;.</li><li>② 正文（3 句）：To begin with, &lt;原因1&gt;. What is more, &lt;原因2&gt;. Finally, I would like to &lt;建议/请求&gt;.</li><li>③ 结尾（1 句）：Looking forward to your early reply.</li></ol>
+<div class="t-row"><b>万能动词</b>：suggest / recommend / advise / appreciate / devote / attach / solve</div>
+<div class="t-row"><b>万能形容词</b>：grateful / convenient / beneficial / urgent / significant</div>
+<div class="t-row warnv"><b>避雷</b>：别用复杂句。阅卷老师看的是踩点（有没有写到该写的点），不是句式多漂亮。</div>
+</div><div class="tpl">
+<div class="t-t">大作文 · 图表（万能三段）</div>
+<ol class="t-s"><li>① 描述（2 句）：As is vividly shown in the chart, &lt;图表描述&gt;.</li><li>② 分析（3 句）：This phenomenon mainly results from &lt;原因1&gt;. Additionally, &lt;原因2&gt; should not be ignored.</li><li>③ 结论（2 句）：In conclusion, it is high time that we &lt;采取行动&gt;. Only in this way can we &lt;美好结果&gt;.</li></ol>
+<div class="t-row"><b>万能动词</b>：account for / contribute to / result from / attribute to / witness / soar / decline</div>
+<div class="t-row"><b>万能形容词</b>：considerable / dramatic / remarkable / gradual / decline / tendency</div>
+<div class="t-row warnv"><b>避雷</b>：别写议论文体！必须「图表描述 → 原因分析 → 结论建议」三段齐，缺一段结构分就没了。</div>
+</div>
+</div><div class="page">
+<div class="ph"><span class="ph-l">2027 考研 · 每日学习单</span><span class="ph-r">作文默写 + micro-writing</span></div>
+<h2 class="sec">七、作文默写 + micro-writing</h2>
+<p class="hint">默写要<b>合上模板</b>写，不是看着念。micro-writing 用今天第1批的词写 3–5 句工作里的真实场景。</p>
+<div class="tpl">
+<div class="t-t">默写 · 小作文 · 书信（万能三段）</div>
+<div class="t-q">合上模板，把上面三段默写出来</div>
+<div class="gridpaper" data-rows="5" data-cols="28"></div>
+</div><div class="tpl">
+<div class="t-t">默写 · 大作文 · 图表（万能三段）</div>
+<div class="t-q">合上模板，把上面三段默写出来</div>
+<div class="gridpaper" data-rows="5" data-cols="28"></div>
+</div>
+<div class="tpl">
+<div class="t-t">micro-writing（10 min）</div>
+<div class="gridpaper" data-rows="6" data-cols="28"></div>
+</div>
+</div>
+<div class="page">
+<div class="ph"><span class="ph-l">2027 考研 · 每日学习单</span><span class="ph-r">自检 + 明日</span></div>
+<h2 class="sec">八、管综手感维持（30 min）</h2>
+<p class="hint">今天只做数学（明天逻辑，后天写作，轮替）。<b>不碰新难题</b>——管综 180 是地板分，保住就行。</p>
+<div class="chkbox">
+<div class="cb-h">今日自检（打勾才算完成）</div>
+<div class="cb">□ 单词第1批逐词自测 <b>≥ 90%</b>（1 词错 ≤ 2）</div>
+<div class="cb">□ 例句英译中写完（写不出的标出来）</div>
+<div class="cb">□ 长难句 2 句拆完，能口述主干</div>
+<div class="cb">□ 2010 T1：18′ 做完 + 逐句英译中 + 选项归因 + 抄生词</div>
+<div class="cb">□ 作文模板能<b>默写</b>三段开头和结尾（不是看着念）</div>
+<div class="cb">□ micro-writing 3–5 句写完</div>
+<div class="cb">□ 管综公式回忆（数列/排列组合/概率/函数）+ 5 道真题</div>
+</div>
+<div class="mgr">
+<div class="cb">数学公式默写区（自己写一遍）</div>
+<div class="ln"></div><div class="ln"></div><div class="ln"></div><div class="ln"></div><div class="ln"></div><div class="ln"></div>
+</div>
+<div class="warnbox"><b>过关线</b>：单词自测 ≥ 90%（错 ≤ 2）。不达标 → 明天不推新批，本批重测一轮。</div>
+</div>
+<div class="page">
+<div class="ph"><span class="ph-l">2027 考研 · 每日学习单</span><span class="ph-r">答案页 A</span></div>
+<h2 class="sec">★ 答案页 A（全部做完后才对）</h2>
+<h3 class="sub2">A. 单词答案（第1批 27 词）</h3>
+<table class="at">
+<thead><tr><th style="width:19%">单词</th><th style="width:25%">中文义</th><th style="width:21%">音标</th><th>例句参考译文</th></tr></thead>
+<tbody><tr><td class="w2">inspect</td><td>v. 检查，视察</td><td class="ipa">/ɪnˈspekt/</td><td>经理将视察工厂。</td></tr><tr><td class="w2">respect</td><td>v./n. 尊重</td><td class="ipa">/rɪˈspekt/</td><td>我们应尊重老人。</td></tr><tr><td class="w2">expect</td><td>v. 期待，预期</td><td class="ipa">/ɪkˈspekt/</td><td>我等他的电话。</td></tr><tr><td class="w2">aspect</td><td>n. 方面，外观</td><td class="ipa">/ˈæspekt/</td><td>这只是问题的一个方面。</td></tr><tr><td class="w2">prospect</td><td>n. 前景，展望</td><td class="ipa">/ˈprɒspekt/</td><td>升职的前景令他兴奋。</td></tr><tr><td class="w2">perspective</td><td>n. 观点，视角</td><td class="ipa">/pəˈspektɪv/</td><td>依我看，这是错的。</td></tr><tr><td class="w2">import</td><td>v./n. 进口</td><td class="ipa">/ˈɪmpɔːt/</td><td>我们从国外进口石油。</td></tr><tr><td class="w2">export</td><td>v./n. 出口</td><td class="ipa">/ˈekspɔːt/</td><td>我们向欧洲出口商品。</td></tr><tr><td class="w2">transport</td><td>v./n. 运输</td><td class="ipa">/trænsˈpɔːt/</td><td>公共交通很方便。</td></tr><tr><td class="w2">report</td><td>v./n. 报告</td><td class="ipa">/rɪˈpɔːt/</td><td>他向老板汇报了消息。</td></tr><tr><td class="w2">support</td><td>v./n. 支持</td><td class="ipa">/səˈpɔːt/</td><td>家人支持她的决定。</td></tr><tr><td class="w2">portable</td><td>adj. 便携的</td><td class="ipa">/ˈpɔːtəbl/</td><td>便携电脑</td></tr><tr><td class="w2">dictate</td><td>v. 口述，命令</td><td class="ipa">/dɪkˈteɪt/</td><td>老板口述了一封信。</td></tr><tr><td class="w2">predict</td><td>v. 预测</td><td class="ipa">/prɪˈdɪkt/</td><td>科学家预测天气。</td></tr><tr><td class="w2">contradict</td><td>v. 反驳，矛盾</td><td class="ipa">/ˌkɒntrəˈdɪkt/</td><td>他的话与事实矛盾。</td></tr><tr><td class="w2">indicate</td><td>v. 表明，指示</td><td class="ipa">/ˈɪndɪkeɪt/</td><td>地图指示了路线。</td></tr><tr><td class="w2">dedicate</td><td>v. 致力于</td><td class="ipa">/ˈdedɪkeɪt/</td><td>他投身研究。</td></tr><tr><td class="w2">admit</td><td>v. 承认，准许进入</td><td class="ipa">/ədˈmɪt/</td><td>他承认了错误。</td></tr><tr><td class="w2">commit</td><td>v. 犯（错），承诺</td><td class="ipa">/kəˈmɪt/</td><td>犯罪；作出承诺</td></tr><tr><td class="w2">permit</td><td>v. 允许</td><td class="ipa">/pəˈmɪt/</td><td>此处禁止吸烟。</td></tr><tr><td class="w2">submit</td><td>v. 提交，屈服</td><td class="ipa">/səbˈmɪt/</td><td>请提交论文。</td></tr><tr><td class="w2">mission</td><td>n. 任务，使命</td><td class="ipa">/ˈmɪʃn/</td><td>商务使命</td></tr><tr><td class="w2">dismiss</td><td>v. 解雇，解散</td><td class="ipa">/dɪsˈmɪs/</td><td>案件被驳回。</td></tr><tr><td class="w2">structure</td><td>n. 结构，建筑物</td><td class="ipa">/ˈstrʌktʃə/</td><td>句子结构</td></tr><tr><td class="w2">construct</td><td>v. 建造，构建</td><td class="ipa">/kənˈstrʌkt/</td><td>建桥</td></tr><tr><td class="w2">instruct</td><td>v. 指导，通知</td><td class="ipa">/ɪnˈstrʌkt/</td><td>老师指导了我们。</td></tr><tr><td class="w2">destroy</td><td>v. 摧毁</td><td class="ipa">/dɪˈstrɔɪ/</td><td>大火摧毁了大楼。</td></tr></tbody>
+</table>
+</div><div class="page">
+<div class="ph"><span class="ph-l">2027 考研 · 每日学习单</span><span class="ph-r">答案页 B</span></div>
+<h2 class="sec">★ 答案页 B</h2>
+<h3 class="sub2">B. 例句参考答案（对照自己写的中文看）</h3>
+<ul class="ac"><li><b>inspect</b> — v. 检查，视察</li><li><b>respect</b> — v./n. 尊重</li><li><b>expect</b> — v. 期待，预期</li><li><b>aspect</b> — n. 方面，外观</li><li><b>prospect</b> — n. 前景，展望</li><li><b>perspective</b> — n. 观点，视角</li><li><b>import</b> — v./n. 进口</li><li><b>export</b> — v./n. 出口</li><li><b>transport</b> — v./n. 运输</li><li><b>report</b> — v./n. 报告</li><li><b>support</b> — v./n. 支持</li><li><b>portable</b> — adj. 便携的</li><li><b>dictate</b> — v. 口述，命令</li><li><b>predict</b> — v. 预测</li><li><b>contradict</b> — v. 反驳，矛盾</li><li><b>indicate</b> — v. 表明，指示</li><li><b>dedicate</b> — v. 致力于</li><li><b>admit</b> — v. 承认，准许进入</li><li><b>commit</b> — v. 犯（错），承诺</li><li><b>permit</b> — v. 允许</li><li><b>submit</b> — v. 提交，屈服</li><li><b>mission</b> — n. 任务，使命</li><li><b>dismiss</b> — v. 解雇，解散</li><li><b>structure</b> — n. 结构，建筑物</li><li><b>construct</b> — v. 建造，构建</li><li><b>instruct</b> — v. 指导，通知</li><li><b>destroy</b> — v. 摧毁</li></ul>
+<h3 class="sub2">C. 长难句参考答案</h3>
+<div class="ans-s"><b>句1 · 倒装 + 主语后置</b><div class="s-en">Only when the report was submitted did the structure of the argument become clear.</div><div><b>拆解</b>：Only when 引导的状语从句前置 → 主句倒装（助动词 did 提到主语前）。主干 = did the structure become clear。</div><div><b>译文</b>：只有当报告被提交时，这个论证的结构才变得清晰。</div><div><b>考点</b>：Only when / Not until 置于句首必倒装，2015–2021 高频句式，看到就条件反射。</div></div><div class="ans-s"><b>句2 · 分词作状语 + 插入语</b><div class="s-en">The policy, contrary to public expectation, was opposed by those who respect the old structure.</div><div><b>拆解</b>：逗号后 contrary to public expectation 为插入语（可删）；those who respect the old structure 是 who 引导的定语从句作后置定语。主干 = The policy was opposed by those...。</div><div><b>译文</b>：该政策与公众预期相反，遭到了那些尊重旧结构的人的反对。</div><div><b>考点</b>：插入语读的时候直接跳过，别在括号里死磕。主干找完再回头补。</div></div>
+<h3 class="sub2">D. 阅读答案与生词</h3>
+<div class="ans-line"><b>21 D ｜ 22 A ｜ 23 B ｜ 24 C ｜ 25 C</b></div>
+<table class="at">
+<thead><tr><th style="width:19%">生词</th><th style="width:21%">音标</th><th style="width:23%">词义</th><th>提示</th></tr></thead>
+<tbody><tr><td class="w2">vertiginously</td><td class="ipa">/ˌvɜːtɪˈdʒɪnəsli/</td><td>adv. 令人眩晕地</td><td class="ip">the artist dizzyingly 达到了让人眩晕的高度</td></tr><tr><td class="w2">momentum</td><td class="ipa">/məˈmentəm/</td><td>n. 势头，动力</td><td class="ip">the momentum of the bull run 牛市的势头</td></tr><tr><td class="w2">bail-out</td><td class="ipa">/ˈbeɪl aʊt/</td><td>n. 纾困救助</td><td class="ip">Lehman Brothers' bail-out 雷曼兄弟的破产保护</td></tr><tr><td class="w2">contraction</td><td class="ipa">/kənˈtrækʃn/</td><td>n. 收缩，紧缩</td><td class="ip">the current contraction 当前的收缩</td></tr><tr><td class="w2">volatile</td><td class="ipa">/ˈvɒlətaɪl/</td><td>adj. 波动大的，易变的</td><td class="ip">the overheated Japanese market 过度膨胀的日本市场</td></tr><tr><td class="w2">slump</td><td class="ipa">/slʌmp/</td><td>n./v. 暴跌，萧条</td><td class="ip">the current slump 当前的萧条</td></tr><tr><td class="w2">whereas</td><td class="ipa">/weərˈæz/</td><td>conj. 然而，尽管</td><td class="ip">a bust, whereas a boom 萧条与繁荣的对比</td></tr><tr><td class="w2">reckon</td><td class="ipa">/ˈrekən/</td><td>v. 估计，认为</td><td class="ip">many investors reckon 许多投资者认为</td></tr><tr><td class="w2">fetch</td><td class="ipa">/fetʃ/</td><td>v. 售得，获得</td><td class="ip">fetching more than £70m 拍得七千万英镑以上</td></tr></tbody>
+</table>
+</div>
+</body>
+</html>

@@ -1,0 +1,20 @@
+{
+ "name": "考研单词卡",
+ "short_name": "考研单词",
+ "description": "2027 考研英语二 · 主动回忆单词卡（385 词 / 01-11 批为主线）",
+ "start_url": "单词卡.html",
+ "scope": "./",
+ "display": "standalone",
+ "orientation": "portrait",
+ "background_color": "#F4F6F8",
+ "theme_color": "#185FA5",
+ "lang": "zh-CN",
+ "icons": [
+  {
+   "src": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxOTIgMTkyIj48cmVjdCB3aWR0aD0iMTkyIiBoZWlnaHQ9IjE5MiIgcng9IjQyIiBmaWxsPSIjMTg1RkE1Ii8+PHRleHQgeD0iOTYiIHk9IjEyOCIgZm9udC1zaXplPSI5NiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iI2ZmZiIgZm9udC1mYW1pbHk9Ikdlb3JnaWEsc2VyaWYiIGZvbnQtd2VpZ2h0PSJib2xkIj5XPC90ZXh0Pjwvc3ZnPg==",
+   "sizes": "192x192",
+   "type": "image/svg+xml",
+   "purpose": "any maskable"
+  }
+ ]
+}
