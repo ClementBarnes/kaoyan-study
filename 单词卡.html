@@ -8,6 +8,9 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="考研单词">
 <link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
 <title>考研单词卡 · 主动回忆</title>
 <style>
 *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
@@ -106,10 +109,25 @@ body{font-family:-apple-system,system-ui,"PingFang SC","Microsoft YaHei",sans-se
 
 .hook{font-size:12px;color:#5F5E5A;background:#F1EFE8;border-left:3px solid #C9C7BD;
  padding:7px 10px;border-radius:0 6px 6px 0;margin-top:10px;line-height:1.7}
+/* 安装到手机 */
+.instbar{display:none;align-items:center;gap:10px;background:linear-gradient(135deg,#185FA5,#0D3E70);
+ color:#fff;border-radius:12px;padding:10px 12px;margin-bottom:10px;font-size:13.5px;line-height:1.5}
+.instbar.show{display:flex}
+.instbar .itxt{flex:1}
+.instbar .ibtn{background:#fff;color:#185FA5;border:0;border-radius:9px;padding:8px 14px;
+ font-size:13.5px;font-weight:700;cursor:pointer;white-space:nowrap;font-family:inherit}
+.instbar .ix{background:transparent;border:0;color:rgba(255,255,255,.75);font-size:19px;
+ cursor:pointer;padding:0 2px;line-height:1}
 </style>
 </head>
 <body>
 <div class="wrap">
+
+<div class="instbar" id="instbar">
+  <div class="itxt" id="insttxt">装到手机桌面，像 App 一样全屏使用</div>
+  <button class="ibtn" id="instbtn">安装</button>
+  <button class="ix" id="instx" title="关闭">×</button>
+</div>
 
 <div class="top">
   <h1>🎓 考研单词卡</h1>
@@ -552,6 +570,75 @@ document.addEventListener('keydown',function(e){
   if('serviceWorker' in navigator){
     navigator.serviceWorker.register('sw.js').catch(function(){});
   }
+})();
+
+/* ---------- 安装到手机桌面（PWA） ---------- */
+(function(){
+  var bar=$('#instbar'), txt=$('#insttxt'), btn=$('#instbtn'), x=$('#instx');
+  if(!bar) return;
+
+  // 已是独立 App 模式（或用户主动关过）→ 不打扰
+  var standalone = (window.matchMedia && window.matchMedia('(display-mode: standalone)').matches)
+                || window.navigator.standalone === true;
+  if(standalone || localStorage.getItem('instDismissed')==='1') return;
+
+  var deferredPrompt = null;
+
+  function isAndroid(){ return /Android/i.test(navigator.userAgent); }
+  function isIOS(){ return /iPhone|iPad|iPod/i.test(navigator.userAgent) ||
+      (navigator.platform==='MacIntel' && navigator.maxTouchPoints>1); }
+
+  function show(text, btnText){
+    txt.textContent=text;
+    btn.textContent=btnText;
+    bar.classList.add('show');
+  }
+
+  // Android + Chrome：可直接调起系统安装弹窗
+  window.addEventListener('beforeinstallprompt', function(e){
+    e.preventDefault();
+    deferredPrompt=e;
+    show('装到手机桌面，像 App 一样全屏使用','一键安装');
+  });
+
+  // 已装成 App 或不支持安装：显示手动引导（Android 菜单路径）
+  setTimeout(function(){
+    if(bar.classList.contains('show')) return;
+    if(isAndroid()){
+      show('装到桌面：点浏览器右上角「⋮」→「添加到主屏幕」','怎么装');
+    } else if(isIOS()){
+      show('装到桌面：点底部「分享」→「添加到主屏幕」','怎么装');
+    } else {
+      show('装到手机桌面，打开时全屏无地址栏，离线也能用','怎么装');
+    }
+  }, 2500);
+
+  btn.addEventListener('click', function(){
+    if(deferredPrompt){
+      deferredPrompt.prompt();
+      deferredPrompt.userChoice.then(function(c){
+        if(c && c.outcome==='accepted'){ bar.classList.remove('show'); }
+        deferredPrompt=null;
+      });
+      return;
+    }
+    // 没有可调起的安装弹窗 → 弹详细步骤
+    var ua=navigator.userAgent;
+    var steps;
+    if(isAndroid()){
+      steps='安卓安装步骤：\n1. 点浏览器右上角「⋮」\n2. 选「添加到主屏幕」或「安装应用」\n3. 桌面会出现「考研单词」图标\n4. 点开即全屏运行，无地址栏';
+    } else if(isIOS()){
+      steps='iPhone 安装步骤：\n1. 点底部「分享」按钮\n2. 下滑选「添加到主屏幕」\n3. 桌面会出现「考研单词」图标';
+    } else {
+      steps='请用手机浏览器打开本页，再按提示添加到主屏幕。';
+    }
+    alert(steps);
+  });
+
+  x.addEventListener('click', function(){
+    bar.classList.remove('show');
+    localStorage.setItem('instDismissed','1');
+  });
 })();
 </script>
 </body>

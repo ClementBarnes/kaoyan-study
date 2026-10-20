@@ -1,6 +1,14 @@
-/* 考研单词卡 Service Worker —— 缓存页面与已播放过的音频 */
-var CACHE = 'ky-words-v1';
-var SHELL = ['单词卡.html', 'manifest.webmanifest'];
+/* 考研单词卡 Service Worker —— 缓存页面、图标与已播放过的音频 */
+var CACHE = 'ky-words-v2';
+var SHELL = [
+  './',
+  '单词卡.html',
+  'manifest.webmanifest',
+  'icons/icon-192.png',
+  'icons/icon-512.png',
+  'icons/apple-touch-icon.png',
+  'icons/favicon-32.png'
+];
 
 self.addEventListener('install', function (e) {
   e.waitUntil(
@@ -37,6 +45,24 @@ self.addEventListener('fetch', function (e) {
             caches.open(CACHE).then(function (c) { c.put(req, copy); });
           }
           return res;
+        });
+      })
+    );
+    return;
+  }
+
+  /* 页面导航：网络优先，失败回落缓存（保证离线能开） */
+  if (req.mode === 'navigate') {
+    e.respondWith(
+      fetch(req).then(function (res) {
+        if (res && res.status === 200) {
+          var copy = res.clone();
+          caches.open(CACHE).then(function (c) { c.put(req, copy); });
+        }
+        return res;
+      }).catch(function () {
+        return caches.match(req).then(function (hit) {
+          return hit || caches.match('单词卡.html');
         });
       })
     );

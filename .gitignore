@@ -1,0 +1,13 @@
+# Android 构建产物（体积大、可重新生成）
+android/build/
+android/kaoyan-release.jks
+android/.gradle/
+
+# APK assets 由 tools/准备APK资源.py 从 ../../audio 生成，不进仓库
+android/app/src/main/assets/
+
+# 交付 APK 不进仓库（19MB 太大，Pages 也不需要）
+交付/*.apk
+
+# 临时文件
+__probe.html
