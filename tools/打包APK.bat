@@ -17,8 +17,8 @@ set "APPDIR=%PROJ%\app\src\main"
 set "OUT=%PROJ%\build"
 set "KEYSTORE=%PROJ%\kaoyan-release.jks"
 set "PASSFILE=%PROJ%\signpass.txt"
-set "VER_CODE=2"
-set "VER_NAME=1.1.0"
+set "VER_CODE=3"
+set "VER_NAME=1.1.1"
 
 set "PATH=%JAVA_HOME%\bin;%PATH%"
 

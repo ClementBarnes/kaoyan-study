@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+      Android 10+（含 vivo OriginOS / 小米 MIUI / OPPO ColorOS 的深色模式）
+      默认会「强制适配」第三方应用：把 WebView 里的白底页面压暗、文字反色，
+      卡片边框和浅灰背景会变得脏且难读。这里关掉强制深色，
+      页面配色始终由 HTML/CSS 自己决定。
+    -->
+    <style name="AppTheme" parent="@android:style/Theme.Material.Light.NoActionBar">
+        <item name="android:statusBarColor">#185FA5</item>
+        <item name="android:navigationBarColor">#F4F6F8</item>
+        <item name="android:windowBackground">#F4F6F8</item>
+        <item name="android:forceDarkAllowed">false</item>
+    </style>
+</resources>

@@ -56,6 +56,8 @@ public class MainActivity extends Activity {
         s.setDomStorageEnabled(true);              // localStorage：学习进度靠它
         s.setMediaPlaybackRequiresUserGesture(false);
         s.setCacheMode(WebSettings.LOAD_DEFAULT);
+        // 页面版式按固定字号设计；跟随系统字体放大会把卡片撑破
+        s.setTextZoom(100);
         // 走虚拟 https 域名后不再需要 file:// 访问，关掉以缩小攻击面
         s.setAllowFileAccess(false);
         s.setAllowContentAccess(false);
