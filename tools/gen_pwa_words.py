@@ -406,6 +406,8 @@ function batchStat(b){{
   if(!s.seen || typeof s.seen !== 'object' || Array.isArray(s.seen)) s.seen = {{}};
   if(typeof s.known !== 'number') s.known = 0;
   if(!Array.isArray(s.unknownIdx)) s.unknownIdx = [];
+  /* knownSet：记录哪些词已计入 known，判重用，防止重复点「认识」导致计数溢出 */
+  if(!s.knownSet || typeof s.knownSet !== 'object' || Array.isArray(s.knownSet)) s.knownSet = {{}};
   return s;
 }}
 
@@ -427,9 +429,14 @@ function buildOrder(){{
   // 未标记的先来，unknown 追加到末尾
   var unknownSet={{}};
   (st.unknownIdx||{{}}).forEach(function(x){{unknownSet[x]=1;}});
-  var head=pending.filter(function(x){{return !unknownSet[x];}});
-  var tail=pending.filter(function(x){{return unknownSet[x];}});
-  return head.concat(tail).concat(done);
+  /* 「不认识」的词必须排到本批末尾重考 —— 哪怕它已经 seen 过。
+     所以先从 done 里摘出来，放到 pending 之后。 */
+  var doneReal = done.filter(function(x){{ return !unknownSet[x]; }});
+  var reTest  = done.filter(function(x){{ return unknownSet[x]; }});
+  var head = pending.filter(function(x){{return !unknownSet[x];}});
+  var tail = pending.filter(function(x){{return unknownSet[x];}});
+  /* 顺序：未看过的 → 未看但不认识的 → 已看过但不认识的（重考）→ 已掌握的 */
+  return head.concat(tail, reTest, doneReal);
 }}
 
 function cur(){{
@@ -530,12 +537,16 @@ function judge(known){{
   if(!st.unknownIdx) st.unknownIdx=[];
   var idx=cur();
   if(idx==null) return;
+  var wasKnown = !!st.knownSet[idx];     /* 之前是否已算作「认识」 */
   st.seen[idx]=1;
   if(known){{
-    st.known=(st.known||0)+1;
+    /* 计数去重：同一词重复点「认识」不重复累加，否则 known 会超过总词数 */
+    if(!wasKnown){{ st.known=(st.known||0)+1; st.knownSet[idx]=1; }}
     var p=st.unknownIdx.indexOf(idx);
     if(p>=0) st.unknownIdx.splice(p,1);
   }} else {{
+    /* 标「不认识」= 撤销「认识」资格，该词必须重新考 */
+    if(wasKnown){{ st.known=Math.max(0,(st.known||0)-1); delete st.knownSet[idx]; }}
     if(st.unknownIdx.indexOf(idx)<0) st.unknownIdx.push(idx);
   }}
   store.progress[state.batch]=st;
