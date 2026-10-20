@@ -286,7 +286,7 @@ def p_reading():
         qs.append(f'''<div class="q">
 <div class="q-s"><b>{num}.</b> {esc(stem)}</div>
 <ol class="q-o">{ol}</ol>
-<div class="q-a">我的答案（21D / 22A / 23B / 24C / 25C）：<span class="blank"></span></div>
+<div class="q-a">我的答案（做完 5 题再对答案页）：<span class="blank"></span></div>
 <div class="q-r"><b>错项归因</b>（选错的题写：主旨混淆 / 过度推断 / 细节拼凑 / 无中生有）：</div>
 {lined(2)}
 </div>''')
@@ -356,7 +356,8 @@ def p_answers(words, sents, batch):
                   f'<td>{esc(v[2])}</td><td class="ip">{esc(v[3])}</td></tr>' for v in T1_VOCAB)
     p1 = f'''<div class="page">
 <div class="ph"><span class="ph-l">2027 考研 · 每日学习单</span><span class="ph-r">答案页 A</span></div>
-<h2 class="sec">★ 答案页 A（全部做完后才对）</h2>
+<h2 class="sec">★ 答案页 A（翻到这里 = 前面全做完了）</h2>
+<div class="answarn">⚠️ <b>做题时不要翻到这两页</b>。先做完 21–25 题、先写完错项归因，再回来对答案。</div>
 <h3 class="sub2">A. 单词答案（第{batch}批 {len(words)} 词）</h3>
 <table class="at">
 <thead><tr><th style="width:19%">单词</th><th style="width:25%">中文义</th><th style="width:21%">音标</th><th>例句参考译文</th></tr></thead>
@@ -366,6 +367,7 @@ def p_answers(words, sents, batch):
     p2 = f'''<div class="page">
 <div class="ph"><span class="ph-l">2027 考研 · 每日学习单</span><span class="ph-r">答案页 B</span></div>
 <h2 class="sec">★ 答案页 B</h2>
+<div class="answarn">⚠️ <b>做题时不要翻到这两页</b>。先做完 21–25 题、先写完错项归因，再回来对答案。</div>
 <h3 class="sub2">B. 例句参考答案（对照自己写的中文看）</h3>
 <ul class="ac">{''.join(ac)}</ul>
 <h3 class="sub2">C. 长难句参考答案</h3>
@@ -374,7 +376,7 @@ def p_answers(words, sents, batch):
          f'<div><b>考点</b>：{esc(s[4])}</div></div>'
          for i, s in enumerate(sents, 1))}
 <h3 class="sub2">D. 阅读答案与生词</h3>
-<div class="ans-line"><b>21 D ｜ 22 A ｜ 23 B ｜ 24 C ｜ 25 C</b></div>
+<div class="ans-line">21 <b>D</b> ｜ 22 <b>A</b> ｜ 23 <b>B</b> ｜ 24 <b>C</b> ｜ 25 <b>C</b></div>
 <table class="at">
 <thead><tr><th style="width:19%">生词</th><th style="width:21%">音标</th><th style="width:23%">词义</th><th>提示</th></tr></thead>
 <tbody>{av}</tbody>
@@ -523,6 +525,8 @@ td.writec2 { height:7.2mm; }
   font-size:8.4pt; page-break-inside:avoid; break-inside:avoid; }
 .ans-s .s-en { font-size:9pt; margin:2px 0; }
 .ans-line { border:2px solid #000; padding:6px 10px; font-size:11pt; margin-bottom:8px; }
+.answarn { border:2px solid #000; padding:6px 10px; font-size:9.5pt; margin:0 0 8px;
+  background:#eee;letter-spacing:.2px; }
 '''
 
 
