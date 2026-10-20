@@ -31,6 +31,16 @@ body{font-family:-apple-system,system-ui,"PingFang SC","Microsoft YaHei",sans-se
 .bchip{flex:0 0 auto;border:1px solid #D3D1C7;background:#fff;border-radius:999px;
  padding:6px 13px;font-size:13px;cursor:pointer;white-space:nowrap;color:#444}
 .bchip.on{background:#185FA5;color:#fff;border-color:#185FA5;font-weight:600}
+/* 整批音频缓存 */
+.dlbox { background:#fff; border:1px solid #E3E1D8; border-radius:12px; padding:9px 11px; margin:8px 0 2px; }
+.dlbox button { width:100%; background:#F1EFE8; border:1px solid #D3D1C7; border-radius:9px;
+  padding:10px; font-size:14.5px; font-weight:600; color:#2C2C2A; cursor:pointer; font-family:inherit; }
+.dlbox button:active { transform:scale(.99); }
+.dlbox button.on { background:#E1F5EE; border-color:#1D9E75; color:#085041; }
+.dlstat { display:block; font-size:12.5px; color:#5F5E5A; margin-top:6px; min-height:16px; }
+.dlprog { height:4px; background:#EEEDFE; border-radius:2px; margin-top:5px; overflow:hidden; }
+.dlprog i { display:block; height:100%; width:0; background:#1D9E75; border-radius:2px; transition:width .2s; }
+
 .bchip.done{border-color:#1D9E75;color:#1D9E75}
 .bchip.ext{opacity:.62}
 .bchip.done.on{background:#1D9E75;color:#fff}
@@ -109,6 +119,12 @@ body{font-family:-apple-system,system-ui,"PingFang SC","Microsoft YaHei",sans-se
 
 <div class="batches" id="batches"></div>
 
+<div class="dlbox">
+  <button id="btnDl">⬇️ 缓存本批音频（之后离线可听）</button>
+  <span class="dlstat" id="dlstat"></span>
+  <div class="dlprog"><i id="dlbar" style="width:0%"></i></div>
+</div>
+
 <div class="prog"><i id="bar" style="width:0%"></i></div>
 <div class="ptext">
   <span id="stat">加载中…</span>
@@ -175,8 +191,65 @@ var CORE = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
 var state = {
   batch: 1, i: 0, order: [], unknown: [], auto: false, autoIdx: 0
 };
-var AUDIO_BASE = 'audio/';
-var STORE_KEY = 'ky_words_pwa_v1';
+/* 音频源可切换：默认 GitHub Pages；实测 GitHub Pages 最快，jsDelivr 主站在国内连不上 */
+var AUDIO_SOURCES = {
+  'gh':  'https://clementbarnes.github.io/kaoyan-study/audio/',
+  'rel': 'audio/'
+};
+var AUDIO_MODE = 'gh';
+var AUDIO_BASE = AUDIO_SOURCES[AUDIO_MODE];
+/* 整批预下载状态：batch -> {done:n, total:n} */
+var PREFETCH = {};
+function audioUrl(w){ return AUDIO_SOURCES[AUDIO_MODE] + w + '.mp3'; }
+
+/* 整批预下载：一次请求把本批所有音频拉进 Service Worker 缓存，
+   之后整批播放零等待、彻底离线。放在页面开头由用户手动触发，避免一进页面就吃流量。 */
+function prefetchBatch(b, onProgress){
+  var list = DATA[String(b)] || [];
+  if(!list.length) return Promise.resolve();
+  var total = list.length, done = 0;
+  var i = 0;
+  var CONC = 4;                       /* 4路并发，再多会被浏览器掐 */
+  function next(){
+    if(i >= total) { PREFETCH[b] = {done:total, total:total}; if(onProgress) onProgress(total, total, true); return; }
+    var w = list[i++].w;
+    var img = new Image();           /* 用Image 预热，走SW fetch 缓存，最省代码 */
+    img.onload = img.onerror = function(){
+      done++; if(onProgress) onProgress(done, total, false); next();
+    };
+    img.src = audioUrl(w) + '?pf=' + Date.now();
+  }
+  for(var k=0;k<CONC;k++) next();
+}
+
+/* 把本批音频下载到浏览器本地缓存（之后整批离线可播） */
+function cacheBatch(b, onProg){
+  if(!('caches' in window)) { toast('此浏览器不支持离线缓存'); return Promise.reject('no-cache-api'); }
+  var list = DATA[String(b)] || [];
+  var total = list.length, done = 0, i = 0;
+  var CONC = 4;
+  return caches.open('ky-audio-v1').then(function(c){
+    return new Promise(function(resolve, reject){
+      function step(){
+        if(i >= total) { resolve({batch:b, n:total}); return; }
+        var w = list[i++].w;
+        var req = new Request(audioUrl(w), {mode:'no-cors'});
+        c.match(req).then(function(hit){
+          if(hit) { bump(); return; }
+          return fetch(req).then(function(res){ return c.put(req, res); })
+            .catch(function(){ /* 离线或失败，跳过 */ })
+            .then(bump);
+        }).catch(bump);
+      }
+      function bump(){
+        done++;
+        if(onProg) onProg(done, total);
+        step();
+      }
+      for(var k = 0; k < CONC; k++) step();
+    });
+  });
+}
 
 function loadStore(){
   try { return JSON.parse(localStorage.getItem(STORE_KEY) || '{}'); } catch(e) { return {}; }
@@ -282,12 +355,19 @@ function render(){
 var curAudio=null;
 function play(w){
   if(curAudio){curAudio.pause();curAudio=null;}
-  var a=new Audio(AUDIO_BASE+w+'.mp3');
+  var a=new Audio(audioUrl(w));
   var btn=$('#spk');
   a.onplay=function(){btn.classList.add('playing');btn.textContent='🔊 播放中';};
   a.onended=function(){btn.classList.remove('playing');btn.textContent='🔊 播放';};
   a.onerror=function(){
     btn.classList.remove('playing'); btn.textContent='🔊 播放';
+    /* 自动降级到相对路径重试一次（本地双击打开时有效） */
+    if(AUDIO_MODE !== 'rel'){
+      AUDIO_MODE = 'rel';
+      toast('主源加载失败，已切换本地源');
+      play(w);
+      return;
+    }
     toast('音频加载失败，请检查网络');
   };
   a.play();
@@ -375,6 +455,37 @@ $('#btnAuto').onclick=function(){
   if(state.auto){ state.auto=false; clearTimeout(autoTimer); updateAutoBtn(); }
   else autoPlay();
 };
+/* 整批音频缓存：一次下载本批，之后离线可听 */
+$('#btnDl').onclick = function(){
+  var btn = this;
+  if(btn.classList.contains('on')) {
+    btn.textContent = '⬇️ 缓存本批音频（之后离线可听）';
+    btn.classList.remove('on');
+    $('#dlstat').textContent = '';
+    $('#dlbar').style.width = '0%';
+    return;
+  }
+  var b = state.batch, list = DATA[String(b)] || [];
+  if(!list.length) return;
+  btn.classList.add('on');
+  btn.textContent = '⏳ 正在缓存…';
+  $('#dlstat').textContent = '0 / ' + list.length;
+  cacheBatch(b, function(d, t){
+    $('#dlbar').style.width = Math.round(d / t * 100) + '%';
+    if(d >= t){
+      btn.textContent = '✓ 本批已缓存 · 点此清除';
+      $('#dlstat').textContent = '本批 ' + t + ' 个音频已存本地，断网也能播';
+      toast('本批缓存完成，之后离线可听');
+    } else {
+      $('#dlstat').textContent = d + ' / ' + t + ' 下载中…';
+    }
+  }).catch(function(){
+    btn.classList.remove('on');
+    btn.textContent = '⬇️ 缓存本批音频（之后离线可听）';
+    $('#dlstat').textContent = '缓存失败，请检查网络';
+  });
+};
+
 $('#btnReset').onclick=function(){
   if(!confirm('重置第'+String(state.batch).padStart(2,'0')+'批的掌握记录？')) return;
   store.progress[state.batch]={known:0,seen:{},unknownIdx:[]};
