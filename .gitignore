@@ -3,6 +3,9 @@ android/build/
 android/kaoyan-release.jks
 android/.gradle/
 
+# 签名口令：只存本地，绝不进仓库
+android/signpass.txt
+
 # APK assets 由 tools/准备APK资源.py 从 ../../audio 生成，不进仓库
 android/app/src/main/assets/
 

@@ -153,14 +153,28 @@ def copy_www():
     with open(p, "r", encoding="utf-8") as f:
         html = f.read()
     html = html.replace("var AUDIO_MODE = 'gh';", "var AUDIO_MODE = 'rel';")
-    # APK 内不需要 PWA 安装引导（本身就是 app）
-    html = html.replace(
-        "if(standalone || localStorage.getItem('instDismissed')==='1') return;",
-        "if(standalone || location.protocol.indexOf('file')===0 "
-        "|| localStorage.getItem('instDismissed')==='1') return;")
+
+    # APK 内本身就是 app，不再显示安装引导。
+    # 走虚拟 https 域名（appassets.androidplatform.net），原 file:// 判断已不适用
+    old_guard = "if(standalone || localStorage.getItem('instDismissed')==='1') return;"
+    new_guard = ("if(standalone || location.hostname==='appassets.androidplatform.net' "
+                 "|| location.protocol.indexOf('file')===0 "
+                 "|| localStorage.getItem('instDismissed')==='1') return;")
+    assert old_guard in html, "安装横幅守卫锚点未找到，页面结构可能已变"
+    html = html.replace(old_guard, new_guard)
+
+    # APK 内 385 个音频已全部内置，「缓存本批音频」按钮点了只会失败，直接隐藏
+    assert "</style>" in html, "样式块锚点未找到"
+    html = html.replace("</style>", ".dlbox{display:none!important}</style>", 1)
+
+    # APK 内资源本地化，Service Worker 无意义且 sw.js 未打包，会持续 404
+    sw_reg = "navigator.serviceWorker.register('sw.js').catch(function(){});"
+    assert sw_reg in html, "Service Worker 注册锚点未找到"
+    html = html.replace(sw_reg, "/* APK: 本地资源，无需 Service Worker */")
+
     with open(p, "w", encoding="utf-8") as f:
         f.write(html)
-    print("APK 版 index.html 已切换为本地音频模式")
+    print("APK 版 index.html 已切换为本地音频模式 + 隐藏安装引导/缓存按钮 + 关闭 SW 注册")
     return n
 
 
