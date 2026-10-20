@@ -255,7 +255,20 @@ function loadStore(){
   try { return JSON.parse(localStorage.getItem(STORE_KEY) || '{}'); } catch(e) { return {}; }
 }
 function saveStore(){
-  try { localStorage.setItem(STORE_KEY, JSON.stringify(store)); } catch(e) {}
+  /* 迁移旧数据：seen 曾存成数字 0 的批次，统一转成空对象，否则读时索引报错 */
+  try {
+    if(store.progress){
+      Object.keys(store.progress).forEach(function(b){
+        var s = store.progress[b];
+        if(s && (!s.seen || typeof s.seen !== 'object' || Array.isArray(s.seen))) {
+          s.seen = {};
+          if(typeof s.known !== 'number') s.known = 0;
+          if(!Array.isArray(s.unknownIdx)) s.unknownIdx = [];
+        }
+      });
+    }
+    localStorage.setItem(STORE_KEY, JSON.stringify(store));
+  } catch(e) {}
 }
 var store = loadStore();
 if(!store.progress) store.progress = {};
@@ -288,7 +301,13 @@ function renderBatches(){
 }
 
 function batchStat(b){
-  var s=store.progress[b]||{known:0,seen:0};
+  var s=store.progress[b]||{known:0,seen:{}};
+  /* 容错：旧版本 seen 存的是数字 0，直接下标访问会抛 TypeError 把整个渲染打断。
+     这里统一规范成对象，seen 不是对象就当空。 */
+  if(!s || typeof s !== 'object') s = {known:0, seen:{}};
+  if(!s.seen || typeof s.seen !== 'object' || Array.isArray(s.seen)) s.seen = {};
+  if(typeof s.known !== 'number') s.known = 0;
+  if(!Array.isArray(s.unknownIdx)) s.unknownIdx = [];
   return s;
 }
 
@@ -503,10 +522,21 @@ document.addEventListener('keydown',function(e){
 
 /* 初始化 */
 (function init(){
-  var t=today();
-  $('#streak').textContent='连续 '+(store.streak.count||0)+' 天';
-  renderBatches();
-  render();
+  try {
+    var t=today();
+    $('#streak').textContent='连续 '+(store.streak.count||0)+' 天';
+    renderBatches();
+    render();
+  } catch(err){
+    /* 兜底：渲染失败时给出可见提示，而不是留一块白板让人以为没词了 */
+    console.error('[单词卡] 初始化失败:', err);
+    var w=$('#word');
+    if(w) w.textContent='⚠️';
+    var st=$('#stat');
+    if(st) st.textContent='数据读取出错：'+(err && err.message || err);
+    var rs=$('#rootline');
+    if(rs) rs.textContent='点「重置本批进度」可修复';
+  }
   // PWA 注册
   if('serviceWorker' in navigator){
     navigator.serviceWorker.register('sw.js').catch(function(){});
