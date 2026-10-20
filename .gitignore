@@ -9,8 +9,9 @@ android/signpass.txt
 # APK assets 由 tools/准备APK资源.py 从 ../../audio 生成，不进仓库
 android/app/src/main/assets/
 
-# 交付 APK 不进仓库（19MB 太大，Pages 也不需要）
+# 交付 APK 本地留一份，另在 download/ 放一份供手机直链下载
 交付/*.apk
+# download/ 下的 apk 要进仓库（Pages 提供下载直链）
 
 # 临时文件
 __probe.html
