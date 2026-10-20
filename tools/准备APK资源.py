@@ -154,6 +154,37 @@ def copy_www():
         html = f.read()
     html = html.replace("var AUDIO_MODE = 'gh';", "var AUDIO_MODE = 'rel';")
 
+    # ---- 音频改走原生桥（Java 读 assets → base64 → Blob URL）----
+    # 不依赖 http(s) 拦截器，也不依赖 file:// 协议，
+    # 规避个别 ROM 上 shouldInterceptRequest 不生效导致完全没声音。
+    anchor_fn = "function audioUrl(w){ return AUDIO_SOURCES[AUDIO_MODE] + w + '.mp3'; }"
+    assert anchor_fn in html, "audioUrl 函数锚点未找到"
+    bridge_js = anchor_fn + """
+/* APK：优先用原生音频桥，完全不经过网络与 file 协议 */
+var __audioCache = {};
+function nativeAudioUrl(w){
+  if(__audioCache[w]) return __audioCache[w];
+  try{
+    if(window.NativeAudio && NativeAudio.available()){
+      var b64 = NativeAudio.getAudio(w);
+      if(b64 && b64.length > 100){
+        var bin = atob(b64), n = bin.length, buf = new Uint8Array(n);
+        for(var i=0;i<n;i++) buf[i] = bin.charCodeAt(i);
+        var url = URL.createObjectURL(new Blob([buf], {type:'audio/mpeg'}));
+        __audioCache[w] = url;
+        return url;
+      }
+    }
+  }catch(e){}
+  return '';
+}"""
+    html = html.replace(anchor_fn, bridge_js)
+
+    # 播放时优先取原生源
+    old_play = "var a=new Audio(audioUrl(w));"
+    assert old_play in html, "播放调用锚点未找到"
+    html = html.replace(old_play, "var a=new Audio(nativeAudioUrl(w) || audioUrl(w));")
+
     # APK 内本身就是 app，不再显示安装引导。
     # 走虚拟 https 域名（appassets.androidplatform.net），原 file:// 判断已不适用
     old_guard = "if(standalone || localStorage.getItem('instDismissed')==='1') return;"
@@ -174,7 +205,7 @@ def copy_www():
 
     with open(p, "w", encoding="utf-8") as f:
         f.write(html)
-    print("APK 版 index.html 已切换为本地音频模式 + 隐藏安装引导/缓存按钮 + 关闭 SW 注册")
+    print("APK 版 index.html：本地音频 + 原生音频桥 + 隐藏安装引导/缓存按钮 + 关闭 SW")
     return n
 
 

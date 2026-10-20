@@ -8,6 +8,8 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
+import android.view.ViewGroup;
+import android.widget.TextView;
 import android.webkit.JsResult;
 import android.webkit.WebChromeClient;
 import android.webkit.WebResourceRequest;
@@ -36,12 +38,10 @@ public class MainActivity extends Activity {
 
     /** 虚拟域名，与官方 WebViewAssetLoader 默认值一致 */
     private static final String HOST = "appassets.androidplatform.net";
-    private static final String HOME = "https://" + HOST + "/www/index.html";
-    /** 兜底入口：万一某些机型不触发 shouldInterceptRequest，回退到 file:// 保证能用 */
-    private static final String FALLBACK = "file:///android_asset/www/index.html";
+    /** 页面基地址：相对路径（audio/x.mp3、icons/x.png）都会解析到这里，由拦截器读 assets */
+    private static final String BASE_URL = "https://" + HOST + "/www/";
 
     private WebView web;
-    private boolean fellBack = false;
 
     @SuppressLint("SetJavaScriptEnabled")
     @Override
@@ -80,6 +80,9 @@ public class MainActivity extends Activity {
             }
         });
 
+        // 音频桥：详见 AudioBridge，不依赖任何 URL 协议
+        web.addJavascriptInterface(new AudioBridge(), "NativeAudio");
+
         web.setWebViewClient(new WebViewClient() {
             /* API 24+ 实际只会调用这个重载；旧重载保留仅为低版本兜底 */
             @Override
@@ -104,26 +107,108 @@ public class MainActivity extends Activity {
             public WebResourceResponse shouldInterceptRequest(WebView view, String url) {
                 return serve(url == null ? null : Uri.parse(url), null);
             }
-
-            /* 主框架加载失败（拦截器未生效 / 虚拟域名解析失败）→ 自动退回 file:// */
-            @Override
-            public void onReceivedError(WebView view, WebResourceRequest request,
-                                        android.webkit.WebResourceError error) {
-                if (request != null && request.isForMainFrame()) fallback(view);
-            }
-
-            @Override
-            public void onReceivedHttpError(WebView view, WebResourceRequest request,
-                                            WebResourceResponse errorResponse) {
-                if (request != null && request.isForMainFrame()) fallback(view);
-            }
         });
 
         if (savedInstanceState == null) {
-            web.loadUrl(HOME);
+            loadApp();
         } else {
             web.restoreState(savedInstanceState);
         }
+    }
+
+    /**
+     * 音频通道：完全不走网络、不走 file:// 协议。
+     * JS 通过 NativeAudio.getAudio(词) 拿到 base64，前端转成 Blob URL 播放。
+     * 这样即使某些 ROM 的 shouldInterceptRequest 不生效，发音也照样能响。
+     */
+    private class AudioBridge {
+        @android.webkit.JavascriptInterface
+        public boolean available() {
+            return true;
+        }
+
+        /** 只接受字母词条，杜绝任意路径读取 */
+        @android.webkit.JavascriptInterface
+        public String getAudio(String word) {
+            if (word == null) return "";
+            String w = word.trim().toLowerCase();
+            if (w.length() == 0 || w.length() > 40) return "";
+            for (int i = 0; i < w.length(); i++) {
+                char c = w.charAt(i);
+                boolean ok = (c >= 'a' && c <= 'z') || c == '-' || c == ' ' || c == '\'';
+                if (!ok) return "";
+            }
+            try {
+                byte[] data = readAll(getAssets().open("www/audio/" + w + ".mp3"));
+                return android.util.Base64.encodeToString(data, android.util.Base64.NO_WRAP);
+            } catch (Throwable t) {
+                return "";
+            }
+        }
+    }
+
+    /**
+     * 直接由 Java 把 index.html 读成字符串再交给 WebView。
+     * 不依赖 WebView 自己对 file:///android_asset/ 的路径解析，
+     * 避免个别 ROM（如 vivo OriginOS）解析失败导致 ERR_FILE_NOT_FOUND。
+     * baseUrl 仍用虚拟域名，保证 origin 固定、相对路径与 localStorage 正常。
+     */
+    private void loadApp() {
+        String html;
+        try {
+            html = readAsset("www/index.html");
+        } catch (Throwable t) {
+            showDiagnostics(t);
+            return;
+        }
+        web.loadDataWithBaseURL(BASE_URL, html, "text/html", "utf-8", null);
+    }
+
+    private String readAsset(String path) throws IOException {
+        InputStream in = getAssets().open(path);
+        try {
+            byte[] data = readAll(in);
+            return new String(data, "UTF-8");
+        } finally {
+            try { in.close(); } catch (IOException ignored) { }
+        }
+    }
+
+    /** 读不到资源时，把 assets 实际结构显示出来，便于定位 */
+    private void showDiagnostics(Throwable t) {
+        StringBuilder sb = new StringBuilder();
+        sb.append("页面资源读取失败\n\n");
+        sb.append(t.toString()).append("\n\n");
+
+        sb.append("assets 根目录：\n");
+        try {
+            for (String s : getAssets().list("")) sb.append("  ").append(s).append("\n");
+        } catch (Throwable e) {
+            sb.append("  读取失败 ").append(e).append("\n");
+        }
+
+        sb.append("\nassets/www 目录：\n");
+        try {
+            String[] list = getAssets().list("www");
+            if (list == null || list.length == 0) {
+                sb.append("  （空）\n");
+            } else {
+                int n = 0;
+                for (String s : list) {
+                    if (n++ >= 30) { sb.append("  …\n"); break; }
+                    sb.append("  ").append(s).append("\n");
+                }
+            }
+        } catch (Throwable e) {
+            sb.append("  读取失败 ").append(e).append("\n");
+        }
+
+        TextView tv = new TextView(this);
+        tv.setText(sb.toString());
+        tv.setTextSize(12f);
+        tv.setPadding(36, 80, 36, 36);
+        tv.setTextIsSelectable(true);
+        setContentView(tv);
     }
 
     /** 只放行内部导航；其余交给系统浏览器 */
@@ -131,23 +216,13 @@ public class MainActivity extends Activity {
         if (uri == null) return true;
         if (HOST.equals(uri.getHost())) return false;                 // 虚拟域名内部资源
         String s = uri.toString();
-        if (s.startsWith("file:///android_asset/")) return false;      // 兜底模式下的内部资源
+        if (s.startsWith("file:///android_asset/")) return false;      // 内部资源
         try {
             startActivity(new Intent(Intent.ACTION_VIEW, uri));
         } catch (Exception ignored) {
             // 没有可处理的 App，忽略，避免崩溃
         }
         return true;
-    }
-
-    /** 主框架加载失败时退回 file://，并临时放开文件访问（file:// 必需） */
-    private void fallback(WebView view) {
-        if (fellBack || view == null) return;
-        fellBack = true;
-        try {
-            view.getSettings().setAllowFileAccess(true);
-        } catch (Exception ignored) { }
-        view.loadUrl(FALLBACK);
     }
 
     /** 把虚拟域名请求映射到 assets 目录并返回内容（含 Range 支持） */
